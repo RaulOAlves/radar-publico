@@ -1,0 +1,57 @@
+{
+  "edition_date": "2026-10-15",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-15T07:29:00-03:00",
+      "edition_date": "2026-10-15",
+      "id": "radar-137bd70caf345667",
+      "published": "patch em 2026-10-13; boletim em 2026-10-14 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "IMAC — Plataforma GIS",
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "Esri — ArcGIS Server Security 2026 Update 3 Patch",
+      "tags": [
+        "esri",
+        "arcgis-server",
+        "arcgis-enterprise",
+        "seguranca",
+        "patch",
+        "cve",
+        "sql-injection"
+      ],
+      "title": "Esri publica correção crítica para ArcGIS Server",
+      "url": "https://support.esri.com/en-us/patches-updates/2026/arcgis-server-security-2026-update-3-patch",
+      "why_it_matters": "patch cumulativo cobre ArcGIS Server 12.1, 12.0, 11.5, 11.3 e 11.1 em Windows e Linux, incluindo falha de injeção SQL com CVSS 9,8. Ambientes ArcGIS Enterprise devem verificar versão, planejar implantação e considerar que a instalação reinicia o serviço."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-15T07:29:00-03:00",
+      "edition_date": "2026-10-15",
+      "id": "radar-5b8961a811158e57",
+      "published": "2026-10-14 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "Eucatex — Monitoramento de vigor florestal",
+        "BP — Nutrição de plantas",
+        "São Martinho — Planejamento agrícola"
+      ],
+      "source": "Planet Documentation — ARPS v1.2.0 Release Notes",
+      "tags": [
+        "planet",
+        "arps",
+        "red-edge",
+        "ndvi",
+        "sensoriamento-remoto",
+        "florestal",
+        "agricultura",
+        "qualidade-de-dados"
+      ],
+      "title": "Planet adiciona banda red-edge e acelera entrega de imagens ARPS",
+      "url": "https://docs.planet.com/",
+      "why_it_matters": "ARPS 1.2 oferece produto opcional de cinco bandas com red-edge; o produto de quatro bandas chega cerca de 17 horas antes e recebeu correções radiométricas para vegetação densa e ciclos rápidos de crescimento, além de máscara de nuvens melhorada. Isso afeta séries de NDVI e detecção de vigor em florestas e lavouras; a quinta banda exige nova assinatura e o acervo anterior não será reprocessado."
+    }
+  ],
+  "schema_version": "1.0"
+}

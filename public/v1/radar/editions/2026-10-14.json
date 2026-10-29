@@ -1,0 +1,81 @@
+{
+  "edition_date": "2026-10-14",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-14T07:27:00-03:00",
+      "edition_date": "2026-10-14",
+      "id": "radar-d141466fb9da2b0a",
+      "published": "2026-10-13 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro",
+        "Vale — GeoIA SAB.IA"
+      ],
+      "source": "Google Cloud — Gemini 4 Argon available on Google Cloud",
+      "tags": [
+        "google-cloud",
+        "gemini",
+        "modelo",
+        "api",
+        "preco",
+        "agentes-ia",
+        "desenvolvimento"
+      ],
+      "title": "Google disponibiliza Gemini 4 Argon por API com preço introdutório",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud",
+      "why_it_matters": "modelo `gemini-4-argon` está disponível em GA na plataforma Gemini, com contexto combinado de 1.048.576 tokens. Preço introdutório até 30/11: US$ 2 por milhão de tokens de entrada e US$ 10 por milhão de saída; depois, US$ 4 e US$ 20. Mudança concreta para comparar custo e capacidade em agentes de análise e desenvolvimento."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-14T07:27:00-03:00",
+      "edition_date": "2026-10-14",
+      "id": "radar-f37c6be44973d3e4",
+      "published": "2026-10-13 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "Google Cloud — One Agent Development Kit, five languages",
+      "tags": [
+        "google-cloud",
+        "adk",
+        "mcp",
+        "a2a",
+        "agentes-ia",
+        "sdk",
+        "interoperabilidade"
+      ],
+      "title": "Google amplia ADK para cinco linguagens com MCP e A2A",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/one-agent-development-kit-five-languages",
+      "why_it_matters": "ADK cobre Python, Go, TypeScript, Java e Kotlin; cada versão inclui cliente MCP e suporte a comunicação A2A. O CLI gera projetos com endpoints A2A e configuração para Cloud Run, Gemini Enterprise Agent Runtime ou GKE, facilitando integração de agentes em stacks corporativas existentes."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-14T07:27:00-03:00",
+      "edition_date": "2026-10-14",
+      "id": "radar-9ba1fe6858400596",
+      "published": "2026-10-13 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "Amaggi — Monitoramento de desmatamento",
+        "Eucatex — Monitoramento de vigor florestal",
+        "Bracell — GeoIA Estradas"
+      ],
+      "source": "Planet — Slovenia's Automated Space Resilience Infrastructure",
+      "tags": [
+        "planet",
+        "esa",
+        "observacao-da-terra",
+        "automacao-geoespacial",
+        "incendios",
+        "florestal",
+        "tasking"
+      ],
+      "title": "Planet inicia piloto de monitoramento e solicitação automática de imagens para incêndios",
+      "url": "https://www.planet.com/pulse/inside-slovenia-s-automated-space-resilience-infrastructure-reshaping-disaster-management-across/",
+      "why_it_matters": "Planet e Lucis desenvolverão, em 12 meses, plataforma financiada pela ESA para proteção civil da Eslovênia. O desenho liga detecção contínua por série temporal, alerta por limiar e solicitação automática de imagens VHR à entrega em mapa operacional — arquitetura aplicável ao monitoramento florestal; trata-se de projeto iniciado, não implantação concluída."
+    }
+  ],
+  "schema_version": "1.0"
+}

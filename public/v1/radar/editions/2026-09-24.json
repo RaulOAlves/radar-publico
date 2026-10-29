@@ -1,0 +1,31 @@
+{
+  "edition_date": "2026-09-24",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-24T07:31:00-03:00",
+      "edition_date": "2026-09-24",
+      "id": "radar-3930e8dede7666d8",
+      "published": "2026-09-23 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "IMAC — Plataforma GIS",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "Notas de versão do ChatGPT",
+      "tags": [
+        "openai",
+        "chatgpt-work",
+        "voice",
+        "plugins",
+        "agentes-ia",
+        "automacao",
+        "apps-conectados"
+      ],
+      "title": "ChatGPT Voice passa a executar plugins e tarefas em Work",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "why_it_matters": "Voice agora usa plugins e apps conectados em web e mobile; no Work pode criar artefatos, usar apps e operar navegador, com tarefa inacabada continuando em texto. Amplia a interface para operações em campo, mas mantém permissões e limites das conexões já configuradas."
+    }
+  ],
+  "schema_version": "1.0"
+}

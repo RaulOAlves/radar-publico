@@ -1,0 +1,31 @@
+{
+  "edition_date": "2026-09-01",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-01T07:30:00-03:00",
+      "edition_date": "2026-09-01",
+      "id": "radar-fbb8d7fddb582132",
+      "published": "2026-08-31 (horário/fuso não informado na fonte)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "codex",
+        "claude-code",
+        "agentes-ia",
+        "mlops",
+        "dados-geoespaciais",
+        "automacao"
+      ],
+      "title": "Google Cloud lança Data Agent Kit para pipelines e MLOps assistidos por agentes",
+      "url": "https://cloud.google.com/blog/products/data-analytics/build-data-pipelines-in-less-time-with-data-agent-kit",
+      "why_it_matters": "o kit aberto integra IDEs e agentes de código, incluindo Codex e Claude Code, para consultar dados, criar pipelines, treinar modelos e operar ciclos de MLOps. O exemplo combina dados geográficos, BigQuery, Spark e inferência diária, oferecendo um caminho concreto para automatizar pipelines geoespaciais com governança de dados."
+    }
+  ],
+  "schema_version": "1.0"
+}

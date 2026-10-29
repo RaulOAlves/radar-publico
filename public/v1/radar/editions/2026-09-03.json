@@ -1,0 +1,30 @@
+{
+  "edition_date": "2026-09-03",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-03T07:30:00-03:00",
+      "edition_date": "2026-09-03",
+      "id": "radar-8a8e02e5f6e7e368",
+      "published": "2026-09-02 (horário/fuso não informado na fonte)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "IMAC — Plataforma GIS"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "seguranca",
+        "agentes-ia",
+        "ferramentas-dev",
+        "open-source",
+        "sandbox"
+      ],
+      "title": "Google abre o Mantis, harness de agentes para encontrar, reproduzir e corrigir falhas",
+      "url": "https://cloud.google.com/blog/products/identity-security/getting-started-with-the-mantis-harness-to-find-and-fix-bugs",
+      "why_it_matters": "o framework open source orquestra agentes de crítica e revisão, análise de repositório e reprodução isolada de vulnerabilidades antes do *patch*. Oferece um padrão operacional de segurança para usar agentes de código com contexto, critérios de aceitação e evidência reprodutível — não apenas varredura baseada em LLM."
+    }
+  ],
+  "schema_version": "1.0"
+}

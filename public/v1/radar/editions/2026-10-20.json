@@ -1,0 +1,107 @@
+{
+  "edition_date": "2026-10-20",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-20T07:28:00-03:00",
+      "edition_date": "2026-10-20",
+      "id": "radar-5af1102112d0a75b",
+      "published": "2026-10-19 06:46 (horário exibido pelo GitHub; fuso não informado; posição exata na janela de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro",
+        "Vale — GeoIA SAB.IA"
+      ],
+      "source": "Model Context Protocol — servers v2.0.0",
+      "tags": [
+        "mcp",
+        "servidores",
+        "release",
+        "interoperabilidade",
+        "seguranca",
+        "nodejs",
+        "python",
+        "agentes-ia"
+      ],
+      "title": "Servidores oficiais MCP chegam à versão 2.0",
+      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.0.0",
+      "why_it_matters": "servidores oficiais de filesystem, memory, fetch, git e time passam a servir a revisão MCP 2026-07-28 mantendo clientes legados. Pacotes TypeScript exigem Node 24; Python exige `mcp>=2.3,<3`. A atualização altera respostas de erro e corrige condições de corrida na atualização de roots do filesystem, exigindo testes de compatibilidade e permissões."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-20T07:28:00-03:00",
+      "edition_date": "2026-10-20",
+      "id": "radar-8c981e335f6cfd88",
+      "published": "2026-10-19 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "IMAC — Plataforma GIS",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "Google Cloud — Developer’s guide to implementing MCP apps in Gemini",
+      "tags": [
+        "google-cloud",
+        "gemini-enterprise",
+        "mcp-apps",
+        "agentes-ia",
+        "interface-interativa",
+        "cloud-run",
+        "governanca"
+      ],
+      "title": "Gemini Enterprise documenta MCP Apps interativos com servidor privado",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/devs-guide-to-mcp-apps-in-gemini",
+      "why_it_matters": "ferramentas MCP podem entregar interface interativa dentro do chat do Gemini Enterprise, hospedada em Cloud Run privado. O guia detalha dois níveis de autenticação, controles de acesso e aprovação humana; arquitetura útil para agentes que combinam mapas, inspeção espacial e ações corporativas sem recriar chat e identidade."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-20T07:28:00-03:00",
+      "edition_date": "2026-10-20",
+      "id": "radar-72e6ec30e3634b63",
+      "published": "2026-10-19 09:00 ET (comunicado da Exyn); seleção do DOE anunciada em 2026-09-30",
+      "relations": [
+        "Itaminas — Monitoramento geotécnico",
+        "Vale — GeoIA SAB.IA",
+        "Vale — Fechamento de minas"
+      ],
+      "source": "Exyn Technologies — MAP-POD/Mine of the Future",
+      "tags": [
+        "mineracao",
+        "geoia",
+        "robotica",
+        "mapeamento-subterraneo",
+        "hiperespectral",
+        "autonomia",
+        "sem-gps"
+      ],
+      "title": "Exyn integra equipe selecionada para projeto de mapeamento autônomo subterrâneo",
+      "url": "https://www.globenewswire.com/fr/news-release/2026/10/19/3383494/0/en/exyn-technologies-joins-national-laboratory-led-autonomous-mining-project-selected-under-doe-s-29-5-million-mine-of-the-future-initiative.html",
+      "why_it_matters": "projeto MAP-POD combina robótica, sensores hiperespectrais e IA para mapear minas e localizar minerais em ambiente sem GPS. A Exyn prevê contribuir navegação autônoma para veículos terrestres; o financiamento ainda está em negociação, portanto não é implantação concluída."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-20T07:28:00-03:00",
+      "edition_date": "2026-10-20",
+      "id": "radar-9f6c1d6cd55f3820",
+      "published": "2026-10-19 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "OpenAI — Advancing coding in low-resource programming languages",
+      "tags": [
+        "openai",
+        "modelos-de-codigo",
+        "benchmark",
+        "fortran",
+        "cobol",
+        "modernizacao",
+        "migracao-de-codigo",
+        "avaliacao"
+      ],
+      "title": "OpenAI publica benchmark reproduzível para codificação e migração de legados",
+      "url": "https://openai.com/index/low-resource-programming-languages/",
+      "why_it_matters": "avaliação em 20 linguagens mede geração de software e migração com testes de comportamento; resultados e suíte são liberados para inspeção. Mostra ganhos em COBOL, Fortran e Visual Basic, mas a aplicação em sistemas críticos ainda requer validação humana e testes próprios — referência para modernização de código técnico legado."
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,106 @@
+{
+  "edition_date": "2026-10-02",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-02T07:30:00-03:00",
+      "edition_date": "2026-10-02",
+      "id": "radar-3930e8dede7666d8",
+      "published": "2026-10-01 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "Notas de versão do ChatGPT",
+      "tags": [
+        "openai",
+        "codex",
+        "chatgpt-work",
+        "gpt-6-1-sol",
+        "agentes-ia",
+        "governanca",
+        "rollout"
+      ],
+      "title": "GPT-6.1 Sol chega ao ChatGPT Work e Codex",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "why_it_matters": "GPT-6.1 Sol melhora o desempenho de *agentic coding*, uso de computador e trabalho profissional sobre GPT-6 Sol. O rollout começa em Pro e se expande a Plus, Business, Enterprise e Edu; organizações podem governar o acesso via papéis e permissões do workspace."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-02T07:30:00-03:00",
+      "edition_date": "2026-10-02",
+      "id": "radar-3930e8dede7666d8",
+      "published": "2026-10-01 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "NAVIS / GeoFramework",
+        "IMAC — Plataforma GIS"
+      ],
+      "source": "Notas de versão do ChatGPT",
+      "tags": [
+        "openai",
+        "agentes-ia",
+        "automacao",
+        "computador-em-nuvem",
+        "apps-conectados",
+        "governanca",
+        "beta"
+      ],
+      "title": "OpenAI introduz dots, agentes persistentes com computador em nuvem",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "why_it_matters": "os *dots* recebem um objetivo, apps conectados e limites de autonomia; continuam o trabalho entre conversas em computador próprio de nuvem, com resultados retornando para revisão. Estão em rollout para Pro e Business Premium, com beta Enterprise desligada por padrão — modelo de execução persistente relevante para rotinas operacionais."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-02T07:30:00-03:00",
+      "edition_date": "2026-10-02",
+      "id": "radar-525597bd51105bb0",
+      "published": "2026-10-01 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
+      "relations": [
+        "GeoNext — LiDAR e rodovias",
+        "Bracell — POC RGB + LiDAR",
+        "Itaminas — Monitoramento geotécnico"
+      ],
+      "source": "Esri — ArcGIS Earth October 2026",
+      "tags": [
+        "esri",
+        "arcgis-earth",
+        "3d-gis",
+        "gaussian-splats",
+        "captura-de-realidade",
+        "lidar",
+        "campo"
+      ],
+      "title": "ArcGIS Earth 3.0 adiciona cenas locais, Gaussian splats e projetos",
+      "url": "https://www.esri.com/arcgis-blog/products/arcgis-earth/3d-gis/whats-new-in-arcgis-earth-october-2026",
+      "why_it_matters": "ArcGIS Earth desktop passa a suportar cenas locais, camadas de edifícios 3D, *Gaussian splats* georreferenciados e projetos; mobile ganha cenas locais e camadas de edifícios. Isso preserva sistemas de coordenadas locais e leva captura de realidade, terreno e ativos para inspeção e operação de campo."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-02T07:30:00-03:00",
+      "edition_date": "2026-10-02",
+      "id": "radar-bab0e18b2802152d",
+      "published": "2026-10-01",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "OpenAI — Depreciações de API",
+      "tags": [
+        "openai",
+        "codex",
+        "api",
+        "deprecacao",
+        "migracao",
+        "gpt-6-sol",
+        "gpt-6-luna"
+      ],
+      "title": "OpenAI depreca GPT-5.3-Codex; migração para GPT-6 Sol até abril de 2027",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "why_it_matters": "`gpt-5.3-codex`, `gpt-5.1` e `gpt-5.4-nano` foram depreciados e deixam a API em 2027-04-01. A substituição indicada é GPT-6 Sol para Codex/5.1 e GPT-6 Luna para Nano; fluxos produtivos devem testar compatibilidade, custo e avaliações antes do desligamento."
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,32 @@
+{
+  "edition_date": "2026-10-08",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-08T07:32:00-03:00",
+      "edition_date": "2026-10-08",
+      "id": "radar-cdb1d51fae043110",
+      "published": "2026-10-07 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "Anthropic — Claude Haiku 5.5",
+      "tags": [
+        "anthropic",
+        "claude",
+        "haiku-5-5",
+        "subagentes",
+        "custos",
+        "cache",
+        "agentes-ia",
+        "api"
+      ],
+      "title": "Anthropic lança Claude Haiku 5.5 e reduz custo de agentes",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "why_it_matters": "Haiku 5.5 é voltado a tarefas de alto volume — sumarização, compactação, consultas a banco, classificação e subagentes — com custo médio declarado 75% menor que Haiku 4.5. A Anthropic também reduz pela metade o preço de leitura de cache do Sonnet 5.5, tornando trabalho agentivo cerca de 20% mais barato, e adiciona crédito mensal de API para Max e Team."
+    }
+  ],
+  "schema_version": "1.0"
+}

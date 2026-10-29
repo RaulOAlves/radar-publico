@@ -1,0 +1,32 @@
+{
+  "edition_date": "2026-10-07",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-07T07:31:00-03:00",
+      "edition_date": "2026-10-07",
+      "id": "radar-b6158a7625215fb5",
+      "published": "2026-10-06 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
+      "relations": [
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "Google Cloud — MCP Toolbox Java SDK 1.0",
+      "tags": [
+        "google-cloud",
+        "mcp",
+        "java",
+        "sdk",
+        "agentes-ia",
+        "oidc",
+        "seguranca",
+        "dados-corporativos"
+      ],
+      "title": "Google lança MCP Toolbox Java SDK 1.0 para acesso corporativo a dados por agentes",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/announcing-mcp-toolbox-java-sdk-v10-agentic-data-access-for-the-enterprise",
+      "why_it_matters": "SDK Java 1.0 adiciona orquestração MCP tipada para agentes corporativos, com identidade via Application Default Credentials e tokens OIDC sem chaves fixas. A separação entre Toolbox e agente Spring Boot permite escalar acesso a dados e conversas com controles adequados a sistemas transacionais."
+    }
+  ],
+  "schema_version": "1.0"
+}

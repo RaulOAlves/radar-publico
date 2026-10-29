@@ -1,0 +1,81 @@
+{
+  "edition_date": "2026-10-22",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-22T07:27:00-03:00",
+      "edition_date": "2026-10-22",
+      "id": "radar-1f4559e41bf13b35",
+      "published": "2026-10-21 22:17 (horário exibido pelo GitHub; fuso não informado)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "Anthropic — Claude Code v2.1.307",
+      "tags": [
+        "anthropic",
+        "claude-code",
+        "mcp",
+        "agentes-ia",
+        "idempotencia",
+        "observabilidade",
+        "release"
+      ],
+      "title": "Claude Code 2.1.307 evita duplicar chamadas de escrita via MCP HTTP",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.307",
+      "why_it_matters": "se a conexão caía durante uma chamada MCP HTTP, ferramentas podiam ser acionadas duas vezes; agora só operações de leitura ou idempotentes são repetidas. Release também adiciona evento OpenTelemetry para decisões de segurança e corrige atualização de ferramentas de servidores MCP do SDK durante tarefas em segundo plano — pontos críticos para agentes que escrevem em sistemas corporativos."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-22T07:27:00-03:00",
+      "edition_date": "2026-10-22",
+      "id": "radar-3634ecbbbb3a5eca",
+      "published": "2026-10-21 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro",
+        "Vale — GeoIA SAB.IA"
+      ],
+      "source": "Google Cloud — OpenAI models in Model Garden",
+      "tags": [
+        "openai",
+        "codex",
+        "google-cloud",
+        "model-garden",
+        "agentes-ia",
+        "parceria",
+        "preview"
+      ],
+      "title": "Modelos OpenAI e fluxos Codex entram no Google Cloud em prévia privada",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers",
+      "why_it_matters": "GPT-6 Astra, GPT-6.1 Sol e GPT-6 Luna começam a chegar ao Model Garden para clientes empresariais selecionados; Google informa que esses clientes já podem conectar Codex CLI/Desktop para inferência na plataforma. Isso cria opção de testar agentes e desenvolvimento com governança, auditoria e faturamento Google Cloud, mas ainda não é disponibilidade geral."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-22T07:27:00-03:00",
+      "edition_date": "2026-10-22",
+      "id": "radar-c063fbad0dd44a03",
+      "published": "2026-10-21 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "IMAC — Plataforma GIS",
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "Esri — Recent PHP Vulnerabilities",
+      "tags": [
+        "esri",
+        "arcgis",
+        "php",
+        "seguranca",
+        "cve",
+        "infraestrutura",
+        "avaliacao-de-impacto"
+      ],
+      "title": "Esri avalia impacto de duas falhas críticas de PHP no ecossistema ArcGIS",
+      "url": "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/recent-php-vulnerabilities",
+      "why_it_matters": "PHP corrigiu CVE-2026-109618 e CVE-2026-109619, ambas com potencial de execução remota sem autenticação, nas versões 8.5.12, 8.4.27, 8.3.36 e 8.2.35. Esri informa que ArcGIS Online não usa PHP e ainda avalia demais produtos; não há impacto confirmado em ArcGIS Enterprise. Verificar componentes PHP próprios ou adjacentes e acompanhar conclusão da avaliação Esri."
+    }
+  ],
+  "schema_version": "1.0"
+}

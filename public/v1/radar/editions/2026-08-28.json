@@ -1,0 +1,53 @@
+{
+  "edition_date": "2026-08-28",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-08-28T07:30:00-03:00",
+      "edition_date": "2026-08-28",
+      "id": "radar-8c9708217f756b87",
+      "published": "2026-08-27 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Suzano — Rotas e logística",
+        "Bracell — GeoIA Estradas",
+        "GeoNext — LiDAR e rodovias"
+      ],
+      "source": "Esri ArcGIS Blog",
+      "tags": [
+        "arcgis",
+        "r",
+        "roteirizacao",
+        "logistica",
+        "automacao-geoespacial",
+        "api"
+      ],
+      "title": "ArcGIS Routing chega ao R-ArcGIS Bridge",
+      "url": "https://www.esri.com/arcgis-blog/products/r-bridge/developers/welcome-arcgisrouting-to-the-r-arcgis-bridge-%F0%9F%91%8B",
+      "why_it_matters": "o novo pacote `{arcgisrouting}` expõe no R rotas, áreas de serviço/isócronas, roteirização de frotas, *map matching* de GPS e alocação de localização — incluindo requisições assíncronas e de grande porte. Reduz atrito para colocar análise logística reprodutível sobre serviços ArcGIS."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-08-28T07:30:00-03:00",
+      "edition_date": "2026-08-28",
+      "id": "radar-c5c55e89eae81ad9",
+      "published": "2026-08-27 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "cloud-run",
+        "agentes-ia",
+        "infraestrutura",
+        "serverless",
+        "preview"
+      ],
+      "title": "Cloud Run Instances entra em prévia para agentes persistentes",
+      "url": "https://cloud.google.com/blog/products/serverless/introducing-cloud-run-instances",
+      "why_it_matters": "a nova modalidade mantém uma instância Cloud Run ativa para cargas com estado e longa duração, que não se ajustam ao padrão *scale-to-zero*. É uma alternativa de implantação para agentes contínuos, com menos partidas a frio e sem operar infraestrutura própria."
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,58 @@
+{
+  "edition_date": "2026-09-25",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-25T07:30:00-03:00",
+      "edition_date": "2026-09-25",
+      "id": "radar-d45b7494905ab202",
+      "published": "2026-09-24 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "GeoFiscal-Sinter",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "alloydb",
+        "postgresql",
+        "agentes-ia",
+        "dados-em-tempo-real",
+        "dados-geoespaciais",
+        "seguranca",
+        "preview"
+      ],
+      "title": "AlloyDB anuncia PostgreSQL para agentes com leitura isolada de dados de produção",
+      "url": "https://cloud.google.com/blog/products/databases/announcing-postgresql-for-agents-in-alloydb",
+      "why_it_matters": "em preview, AlloyDB passa a provisionar instâncias de banco isoladas para picos de agentes, com leitura atualizada e somente leitura dos dados de produção. A arquitetura usa IAM, VPC Service Controls, criptografia e auditoria, permitindo consultas espaciais, vetoriais e textuais sem competir com o sistema transacional."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-25T07:30:00-03:00",
+      "edition_date": "2026-09-25",
+      "id": "radar-ba5a58e9c2c65164",
+      "published": "2026-09-24 (horário/fuso não informado na fonte)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "IMAC — Plataforma GIS"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "gke",
+        "mcp",
+        "skills",
+        "agentes-ia",
+        "cicd",
+        "governanca",
+        "open-source"
+      ],
+      "title": "Google libera plugin de migração EKS→GKE com skills, MCP e guardrails",
+      "url": "https://cloud.google.com/blog/products/containers-kubernetes/gke-agentic-migration",
+      "why_it_matters": "a ferramenta open source combina skills de agentes e servidor MCP local para converter IaC e manifestos Kubernetes em *landing zones* GKE por Pull Requests. Os guardrails determinísticos e a revisão via Git preservam rastreabilidade e rollback, em vez de alterar clusters ativos diretamente."
+    }
+  ],
+  "schema_version": "1.0"
+}

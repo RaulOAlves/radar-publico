@@ -1,0 +1,53 @@
+{
+  "edition_date": "2026-08-27",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-08-27T09:33:00-03:00",
+      "edition_date": "2026-08-27",
+      "id": "radar-136f83bb402008db",
+      "published": "2026-08-26 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "agentes-ia",
+        "finops",
+        "governanca",
+        "preco",
+        "ferramentas-dev"
+      ],
+      "title": "Google Cloud adiciona cobrança flexível e limites de gasto para agentes",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/flexible-billing-and-cost-controls-for-agents-on-google-cloud",
+      "why_it_matters": "Gemini Enterprise ganhou opção pay-as-you-go, quotas compartilhadas entre agentes e ferramentas de desenvolvimento, limites mensais por projeto e detecção de anomalias. Isso torna custo, pausa automática e governança do uso de agentes parâmetros operacionais — não só estimativas de arquitetura."
+    },
+    {
+      "confidence": "média",
+      "edition_at": "2026-08-27T09:33:00-03:00",
+      "edition_date": "2026-08-27",
+      "id": "radar-5591308255047f01",
+      "published": "2026-08-26 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "GeoFiscal-Sinter",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "agentes-ia",
+        "conhecimento",
+        "governanca",
+        "linhagem",
+        "markdown"
+      ],
+      "title": "Knowledge Catalog passa a organizar contexto verificável para agentes via OKF",
+      "url": "https://cloud.google.com/blog/products/data-analytics/scale-okf-bundles-across-an-organization-with-knowledge-catalog",
+      "why_it_matters": "o padrão Open Knowledge Format (OKF) pode ser publicado no Knowledge Catalog com proveniência, verificação, atualização, linhagem e IAM. É uma referência prática para transformar bases Markdown e dados corporativos em contexto pesquisável e governado por agentes."
+    }
+  ],
+  "schema_version": "1.0"
+}

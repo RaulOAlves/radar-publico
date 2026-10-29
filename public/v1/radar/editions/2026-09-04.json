@@ -1,0 +1,56 @@
+{
+  "edition_date": "2026-09-04",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-04T07:31:00-03:00",
+      "edition_date": "2026-09-04",
+      "id": "radar-ea74e2fffbc50210",
+      "published": "2026-09-03 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "OpenAI — GPT-6 Astra",
+      "tags": [
+        "openai",
+        "gpt-6-astra",
+        "agentes-ia",
+        "automacao",
+        "api",
+        "ferramentas-dev",
+        "seguranca"
+      ],
+      "title": "OpenAI inicia rollout limitado do GPT-6 Astra para trabalho agêntico complexo",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "why_it_matters": "o modelo entra em rollout controlado para tarefas longas de pesquisa, código, documentos e uso de computador, com API e contexto de até 1,05 milhão de tokens. É uma opção de maior capacidade para fluxos auditáveis que cruzam dados, regras e automação; disponibilidade ainda é limitada, portanto não deve ser assumida como padrão de produção."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-04T07:31:00-03:00",
+      "edition_date": "2026-09-04",
+      "id": "radar-99e525dfe2cd9d3b",
+      "published": "2026-09-03 (horário/fuso não informado na fonte)",
+      "relations": [
+        "IMAC — Plataforma GIS",
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "Notas de versão do ChatGPT",
+      "tags": [
+        "openai",
+        "codex",
+        "webmcp",
+        "mcp",
+        "agentes-ia",
+        "automacao-web",
+        "integracao"
+      ],
+      "title": "ChatGPT Work e Codex passam a usar Site tools via WebMCP",
+      "url": "https://help.openai.com/en/articles/6825453",
+      "why_it_matters": "sites compatíveis podem expor ferramentas diretamente ao navegador integrado do ChatGPT Work e do Codex via WebMCP. Isso reduz a necessidade de integrações ad hoc para operações web, mas depende de site, plano e modelo compatíveis; é relevante para avaliar portais GIS e dados que possam oferecer ações controladas."
+    }
+  ],
+  "schema_version": "1.0"
+}

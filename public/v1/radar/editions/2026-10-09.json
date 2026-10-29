@@ -1,0 +1,81 @@
+{
+  "edition_date": "2026-10-09",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-09T07:31:00-03:00",
+      "edition_date": "2026-10-09",
+      "id": "radar-d23b22ea89341409",
+      "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "Google Cloud — Gemini at Work 2026",
+      "tags": [
+        "google-cloud",
+        "gemini",
+        "agentes-ia",
+        "mcp",
+        "multiagente",
+        "governanca",
+        "skills",
+        "execucao-persistente"
+      ],
+      "title": "Google lança Gemini agent para trabalho empresarial persistente e multiagente",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026/",
+      "why_it_matters": "o Gemini agent une execução persistente em nuvem, memória, skills, ferramentas e orquestração dinâmica de subagentes, inclusive por MCP. A plataforma traz identidade, políticas, permissões, sandbox, *gateways* de rede, *Smart Routing* e limites de gasto — referência concreta para agentes corporativos governados que cruzam dados e sistemas de registro."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-09T07:31:00-03:00",
+      "edition_date": "2026-10-09",
+      "id": "radar-3930e8dede7666d8",
+      "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "Notas de versão do ChatGPT",
+      "tags": [
+        "openai",
+        "codex",
+        "steering",
+        "agentes-ia",
+        "desktop",
+        "controle-de-execucao"
+      ],
+      "title": "OpenAI acelera steering de tarefas em execução no Codex Desktop",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "why_it_matters": "mensagens de acompanhamento agora redirecionam mais cedo uma tarefa em execução no Codex. A configuração de comportamento de *follow-up* escolhe entre intervir na execução atual ou aguardar a próxima, reduzindo retrabalho em tarefas longas e preservando controle humano sobre agentes."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-09T07:31:00-03:00",
+      "edition_date": "2026-10-09",
+      "id": "radar-29b989b34f8f02c3",
+      "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
+      "relations": [
+        "GeoNext — LiDAR e rodovias",
+        "Bracell — POC RGB + LiDAR",
+        "Itaminas — Monitoramento geotécnico"
+      ],
+      "source": "Esri — MassDOT drone imagery as infrastructure",
+      "tags": [
+        "esri",
+        "drones",
+        "lidar",
+        "infraestrutura",
+        "dados-geoespaciais",
+        "campo",
+        "5g"
+      ],
+      "title": "MassDOT operacionaliza drones e LiDAR como sistema de registro estadual",
+      "url": "https://www.esri.com/about/newsroom/blog/massdot-drone-imagery-as-infrastructure",
+      "why_it_matters": "implantação padronizou o pipeline de drones, transformando imagens em sistema de registro compartilhado; a equipe transmitiu 400 milhões de pontos LiDAR para iPad em campo via 5G. É evidência operacional de distribuição *edge* de nuvem de pontos em inspeções de infraestrutura e manutenção."
+    }
+  ],
+  "schema_version": "1.0"
+}

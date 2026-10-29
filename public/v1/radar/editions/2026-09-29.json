@@ -1,0 +1,32 @@
+{
+  "edition_date": "2026-09-29",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-29T08:02:00-03:00",
+      "edition_date": "2026-09-29",
+      "id": "radar-4e3ca8a95d366330",
+      "published": "2026-09-28 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "Anthropic — Claude Sonnet 5.5",
+      "tags": [
+        "anthropic",
+        "claude",
+        "claude-code",
+        "agentes-ia",
+        "modelos",
+        "seguranca",
+        "custos",
+        "cloud"
+      ],
+      "title": "Anthropic lança Claude Sonnet 5.5 com menor custo e maior velocidade para agentes",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "why_it_matters": "novo modelo para tarefas bem delimitadas, correções e artefatos, com preço de US$ 2/US$ 10 por milhão de tokens de entrada/saída e geração 30%+ mais rápida que Sonnet 5. Introduz salvaguardas cibernéticas e *fallbacks*, além de estar disponível também em AWS, Google Cloud e Azure; opção prática para agentes de engenharia e automação de dados sob governança."
+    }
+  ],
+  "schema_version": "1.0"
+}

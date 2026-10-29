@@ -1,0 +1,77 @@
+{
+  "edition_date": "2026-10-13",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-13T07:30:00-03:00",
+      "edition_date": "2026-10-13",
+      "id": "radar-106bf0512d9e37c8",
+      "published": "2026-10-12 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "GeoNext — LiDAR e rodovias",
+        "IMAC — Plataforma GIS"
+      ],
+      "source": "Planet — Introducing Populace",
+      "tags": [
+        "planet",
+        "observacao-da-terra",
+        "dados-geoespaciais",
+        "populacao",
+        "infraestrutura",
+        "logistica",
+        "licenciamento"
+      ],
+      "title": "Planet disponibiliza mapa global de população em grade de 40 metros",
+      "url": "https://www.planet.com/pulse/introducing-populace-mapping-humanity-in-unprecedented-detail/",
+      "why_it_matters": "o Populace combina imagens Planet, modelos da Microsoft e dados demográficos do IHME para estimar população global em grade de 40 m, com atualização trimestral. Pode enriquecer análises de traçados rodoviários, infraestrutura e exposição de comunidades; uso gratuito é restrito a pesquisa e organizações sem fins lucrativos, enquanto uso comercial requer outras condições."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-13T07:30:00-03:00",
+      "edition_date": "2026-10-13",
+      "id": "radar-56f4a468b57efddd",
+      "published": "2026-10-12 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "IMAC — Plataforma GIS",
+        "Itaminas — Monitoramento geotécnico"
+      ],
+      "source": "Esri — Countdown Instant App",
+      "tags": [
+        "esri",
+        "arcgis",
+        "instant-apps",
+        "ranking",
+        "visualizacao-geoespacial",
+        "ativos"
+      ],
+      "title": "Esri detalha Countdown para ranquear feições em mapas interativos",
+      "url": "https://www.esri.com/arcgis-blog/products/instant-apps/mapping/rank-compare-and-highlight-features-with-countdown-instant-app",
+      "why_it_matters": "o ArcGIS Instant Apps permite ordenar feições por atributo numérico, filtrar rankings e comparar itens no mapa com pop-ups fixados. Recurso pode criar painéis rápidos de priorização espacial de ativos e áreas sem desenvolver uma aplicação própria."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-13T07:30:00-03:00",
+      "edition_date": "2026-10-13",
+      "id": "radar-4204414603744d96",
+      "published": "2026-10-12 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "Anthropic — Strengthening our defenses against distillation attacks",
+      "tags": [
+        "anthropic",
+        "claude",
+        "agentes-ia",
+        "seguranca",
+        "api",
+        "integracao",
+        "raciocinio"
+      ],
+      "title": "Anthropic publica impacto técnico de novas defesas contra extração de raciocínio",
+      "url": "https://www.anthropic.com/research/distillation-defenses",
+      "why_it_matters": "a Anthropic relata queda de 90% a 99% na extração indevida de tokens de raciocínio após reforçar classificadores e controles de contexto. Integrações que manipulam histórico de raciocínio podem exigir ajuste; bloqueios preventivos podem gerar cobrança e falsos positivos, pontos a testar em agentes corporativos."
+    }
+  ],
+  "schema_version": "1.0"
+}

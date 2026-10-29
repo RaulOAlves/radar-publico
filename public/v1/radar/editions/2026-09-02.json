@@ -1,0 +1,31 @@
+{
+  "edition_date": "2026-09-02",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-02T07:32:00-03:00",
+      "edition_date": "2026-09-02",
+      "id": "radar-72d0b7bf5a5b2ed4",
+      "published": "2026-09-01 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "GeoFiscal-Sinter",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "bigquery",
+        "grafo-de-conhecimento",
+        "agentes-ia",
+        "codex",
+        "claude-code",
+        "governanca"
+      ],
+      "title": "BigQuery Graph atinge disponibilidade geral e ganha skill para agentes",
+      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-graph-connecting-data-and-ai-at-scale/",
+      "why_it_matters": "BigQuery Graph entra em GA com GQL nativo e sem ETL para um banco de grafos separado. A integração com Data Agent Kit leva uma skill de grafos a Codex e Claude Code, e o *context graph* registra decisões de agentes como trilhas consultáveis e auditáveis."
+    }
+  ],
+  "schema_version": "1.0"
+}

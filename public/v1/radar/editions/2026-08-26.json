@@ -1,0 +1,29 @@
+{
+  "edition_date": "2026-08-26",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-08-26T07:32:00-03:00",
+      "edition_date": "2026-08-26",
+      "id": "radar-093a1f9cb4da70b3",
+      "published": "2026-08-25 20:46 (fuso não informado na fonte)",
+      "relations": [
+        "IMAC — Plataforma GIS",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "anúncio da OpenAI Developer Community",
+      "tags": [
+        "openai",
+        "webmcp",
+        "mcp",
+        "agentes-ia",
+        "ferramentas-dev",
+        "plataformas-web"
+      ],
+      "title": "WebMCP Challenge: sites expõem ferramentas diretamente a agentes",
+      "url": "https://community.openai.com/t/the-webmcp-challenge-is-here/1392582",
+      "why_it_matters": "o WebMCP é um padrão aberto experimental para que aplicações web exponham ferramentas que agentes podem usar diretamente na página. É um sinal de arquitetura para portais e plataformas GIS tornarem ações geoespaciais invocáveis por agentes; ainda não é uma implantação validada nos projetos."
+    }
+  ],
+  "schema_version": "1.0"
+}

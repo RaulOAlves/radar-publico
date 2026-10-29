@@ -1,0 +1,33 @@
+{
+  "edition_date": "2026-09-30",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-30T07:31:00-03:00",
+      "edition_date": "2026-09-30",
+      "id": "radar-6f1d6b1199800100",
+      "published": "2026-09-29 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "AWS — Amazon Bedrock Managed Agents",
+      "tags": [
+        "aws",
+        "bedrock",
+        "openai",
+        "agentes-ia",
+        "mcp",
+        "iam",
+        "cloudtrail",
+        "governanca",
+        "preview"
+      ],
+      "title": "AWS e OpenAI lançam Bedrock Managed Agents em preview",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview/",
+      "why_it_matters": "o serviço, construído sobre versão customizada da Agents API da OpenAI, executa agentes com modelos OpenAI dentro da AWS, com sessões duráveis, skills reutilizáveis e conexão a ferramentas via MCP. Cada agente recebe papel IAM próprio, aprovações humanas para ações consequentes e trilha no CloudTrail — controles relevantes para automações empresariais auditáveis."
+    }
+  ],
+  "schema_version": "1.0"
+}

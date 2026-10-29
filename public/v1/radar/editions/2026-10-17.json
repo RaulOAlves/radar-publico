@@ -1,0 +1,79 @@
+{
+  "edition_date": "2026-10-17",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-17T09:09:00-03:00",
+      "edition_date": "2026-10-17",
+      "id": "radar-9951decf1ff354d0",
+      "published": "2026-10-16 20:53 (horário exibido pelo GitHub; fuso não informado)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro",
+        "Vale — GeoIA SAB.IA"
+      ],
+      "source": "Anthropic — Claude Code v2.1.302",
+      "tags": [
+        "anthropic",
+        "claude-code",
+        "mcp",
+        "agentes-ia",
+        "subagentes",
+        "release",
+        "automacao"
+      ],
+      "title": "Claude Code 2.1.302 corrige interoperabilidade MCP e altera execução de subagentes",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
+      "why_it_matters": "corrige servidores MCP que negociam o protocolo 2026-07-28 sem certos campos de resposta e muda o comportamento padrão de subagentes no desktop, VS Code e Agent SDK. Integrações e fluxos multiagente devem ser testados após atualização; também corrige uma rotina em nuvem que podia repetir trabalho depois de falhar."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-17T09:09:00-03:00",
+      "edition_date": "2026-10-17",
+      "id": "radar-9f5a868c8dff42fa",
+      "published": "mudança efetiva em 2026-10-16 (horário/fuso e data de publicação do aviso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "AWS — AgentCore Insights",
+      "tags": [
+        "aws",
+        "bedrock",
+        "agentcore",
+        "agentes-ia",
+        "observabilidade",
+        "ciclo-de-vida"
+      ],
+      "title": "AWS encerra criação de relatórios AgentCore Insights na prévia",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/insights.html",
+      "why_it_matters": "novos relatórios em lote ou recorrentes deixam de ser criados em 16/10; os recorrentes existentes param de gerar relatórios em 31/10. Equipes que usam essa prévia para avaliar falhas de agentes precisam preservar resultados e planejar outra observabilidade antes da descontinuação."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-17T09:09:00-03:00",
+      "edition_date": "2026-10-17",
+      "id": "radar-1386401dbae8c76c",
+      "published": "2026-10-16 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "Google Cloud — Agent Search release notes",
+      "tags": [
+        "google-cloud",
+        "agent-search",
+        "gemini",
+        "modelo",
+        "api",
+        "avaliacao",
+        "agentes-ia"
+      ],
+      "title": "Google muda modelo estável do Agent Search",
+      "url": "https://docs.cloud.google.com/generative-ai-app-builder/docs/release-notes",
+      "why_it_matters": "o alias `stable` de geração de respostas passa de Gemini 2.5 Flash para `gemini-3.5-flash/answer_gen/v1`. Aplicações de busca e resposta que dependem desse alias podem mudar qualidade, latência e comportamento sem alterar código; convém revalidar avaliações e respostas críticas."
+    }
+  ],
+  "schema_version": "1.0"
+}

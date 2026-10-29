@@ -1,0 +1,80 @@
+{
+  "edition_date": "2026-09-22",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-22T07:31:00-03:00",
+      "edition_date": "2026-09-22",
+      "id": "radar-ef586aec73083d1a",
+      "published": "2026-09-21 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "GeoFiscal-Sinter",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "OpenAI — estudo de caso V7",
+      "tags": [
+        "openai",
+        "codex",
+        "mcp",
+        "grafo-de-conhecimento",
+        "memoria-institucional",
+        "rastreabilidade",
+        "agentes-ia"
+      ],
+      "title": "V7 conecta memória institucional e workflows MCP ao Codex",
+      "url": "https://openai.com/index/v7/",
+      "why_it_matters": "V7 transforma arquivos em entidades de uma ontologia, preserva evidências citáveis e permite criar workflows do V7 Go via MCP no Codex. O caso mostra uma arquitetura concreta para “segundo cérebro” que combina extração estruturada, grafo de contexto e rastreabilidade de fonte."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-22T07:31:00-03:00",
+      "edition_date": "2026-09-22",
+      "id": "radar-d4efdc247bb27016",
+      "published": "2026-09-21 (horário/fuso não informado na fonte)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "AWS News Blog",
+      "tags": [
+        "aws",
+        "bedrock",
+        "agentcore",
+        "agentes-ia",
+        "runtime",
+        "custos",
+        "observabilidade"
+      ],
+      "title": "AWS atualiza AgentCore Runtime para sessões de agentes mais eficientes",
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-builder-center-mobile-apps-amazon-connect-talent-ga-amazon-corretto-27-and-more-september-14-2026/",
+      "why_it_matters": "a nova versão do runtime gerenciado libera memória conforme a sessão reduz uso e prepara/snapshota o ambiente para manter partidas a frio previsíveis. É melhoria de ciclo de vida e custo para agentes persistentes, especialmente em fluxos com ferramentas, arquivos e execuções intermitentes."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-22T07:31:00-03:00",
+      "edition_date": "2026-09-22",
+      "id": "radar-fdbbb3bbbb8abbff",
+      "published": "2026-09-21 (horário/fuso não informado na fonte)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "IMAC — Plataforma GIS"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "cicd",
+        "seguranca",
+        "supply-chain",
+        "devsecops",
+        "agentes-ia"
+      ],
+      "title": "Google libera novas capacidades de CI/CD seguro em GA",
+      "url": "https://cloud.google.com/blog/products/identity-security/strengthen-your-cicd-pipeline-with-new-secure-source-manager-capabilities",
+      "why_it_matters": "as capacidades de Secure Source Manager fortalecem autenticação e autorização unificadas para código e CI/CD. É base de segurança para agentes que alteram repositórios ou acionam automações de entrega, reduzindo o risco de transformar o pipeline em vetor de comprometimento."
+    }
+  ],
+  "schema_version": "1.0"
+}

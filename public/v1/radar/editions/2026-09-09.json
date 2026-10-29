@@ -1,0 +1,105 @@
+{
+  "edition_date": "2026-09-09",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-09T07:31:00-03:00",
+      "edition_date": "2026-09-09",
+      "id": "radar-1f112fc7530a72ce",
+      "published": "2026-09-08 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Itaminas — Monitoramento geotécnico",
+        "Vale — GeoIA SAB.IA",
+        "CTC — Centro de Tecnologia Canavieira"
+      ],
+      "source": "OpenAI — estudo de caso",
+      "tags": [
+        "openai",
+        "codex",
+        "gpt-5-6-sol",
+        "agentes-ia",
+        "automacao",
+        "dados-instrumentais",
+        "estudo-de-caso"
+      ],
+      "title": "Codex com GPT-5.6 Sol é aplicado a ciclo experimental em computação quântica",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments/",
+      "why_it_matters": "estudo aplicado descreve agentes Codex recebendo objetivos estreitos para escrever, modificar e testar código de controle, análise e simulação de medições laboratoriais. É evidência operacional de um padrão útil para ciclos de dados instrumentais: escopo restrito, execução verificável e humano concentrado no desenho do experimento."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-09T07:31:00-03:00",
+      "edition_date": "2026-09-09",
+      "id": "radar-72dfe79b3f8fddbe",
+      "published": "2026-09-08 (horário/fuso não informado na fonte)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "IMAC — Plataforma GIS"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "agentes-ia",
+        "sdk",
+        "observabilidade",
+        "governanca",
+        "automacao",
+        "sandbox"
+      ],
+      "title": "Google detalha control plane de agentes com Antigravity SDK",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/power-agent-hubs-or-custom-harnesses-with-the-antigravity-sdk",
+      "why_it_matters": "SDK expõe runtime para agentes com políticas declarativas, persistência de estado e telemetria de ações/ferramentas em tempo real. O desenho de *control plane* é aplicável a automações geoespaciais que precisam de trilha de execução, isolamento e supervisão — além do simples chat."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-09T07:31:00-03:00",
+      "edition_date": "2026-09-09",
+      "id": "radar-672e5f1a27ac6bdd",
+      "published": "2026-09-08 (horário/fuso não informado na fonte)",
+      "relations": [
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "Google Threat Intelligence",
+      "tags": [
+        "google-cloud",
+        "seguranca",
+        "agentes-ia",
+        "supply-chain",
+        "credenciais",
+        "governanca"
+      ],
+      "title": "Google registra evolução de ataques para fluxos autônomos com agentes",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai",
+      "why_it_matters": "relatório primário descreve campanhas que usaram fluxos multiagente para escaneamento, tratamento de erros e coleta de credenciais, comprimindo o tempo de resposta dos defensores. Reforça que agentes ligados a dados, repositórios e portais devem operar com identidade mínima, isolamento e revisão de ferramentas."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-09T07:31:00-03:00",
+      "edition_date": "2026-09-09",
+      "id": "radar-0eeb76fd2df8ca67",
+      "published": "2026-09-08 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "GeoFiscal-Sinter",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "data-agent-kit",
+        "mcp",
+        "agentes-ia",
+        "bigquery",
+        "analytics",
+        "governanca"
+      ],
+      "title": "Data Agent Kit demonstra investigação entre BigQuery, PostgreSQL e arquivos via MCP",
+      "url": "https://cloud.google.com/blog/products/data-analytics/agentic-analytics-with-the-data-agent-kit",
+      "why_it_matters": "demonstração usa o Data Agent Kit para investigar uma pergunta de negócio cruzando *warehouse*, banco operacional e arquivos, incluindo acesso ao Cloud Storage por servidor MCP. É padrão prático para conectar dados de projetos sem transformar o agente em acesso irrestrito ao ambiente."
+    }
+  ],
+  "schema_version": "1.0"
+}

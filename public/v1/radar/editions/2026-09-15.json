@@ -1,0 +1,81 @@
+{
+  "edition_date": "2026-09-15",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-15T07:30:00-03:00",
+      "edition_date": "2026-09-15",
+      "id": "radar-3f8bbb8c75abb419",
+      "published": "2026-09-14 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "GeoFiscal-Sinter",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "bigquery",
+        "analytics",
+        "agentes-ia",
+        "sql",
+        "causalidade",
+        "governanca"
+      ],
+      "title": "BigQuery adiciona funções de analytics aumentada prontas para agentes",
+      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-augmented-analytics-tvfs",
+      "why_it_matters": "seis funções TVF combinam IA, ML e estatística dentro do BigQuery para diagnóstico de mudanças, tendência, relação entre variáveis e efeito causal, retornando SQL estruturado que pode virar *skills* de agentes. Evita exportar dados para investigação exploratória e cria base mais auditável para perguntas operacionais."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-15T07:30:00-03:00",
+      "edition_date": "2026-09-15",
+      "id": "radar-54389dc731ce7100",
+      "published": "2026-09-14 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Bracell — POC RGB + LiDAR",
+        "GeoNext — LiDAR e rodovias",
+        "Eucatex — Monitoramento de vigor florestal"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "dataflow",
+        "gpu",
+        "mlops",
+        "dados-geoespaciais",
+        "lidar",
+        "automacao"
+      ],
+      "title": "Dataflow disponibiliza pause/resume em GA e GPUs RTX PRO 6000",
+      "url": "https://cloud.google.com/blog/products/data-analytics/new-dataflow-features-to-enable-large-scale-ai-workloads",
+      "why_it_matters": "pausa e retomada de jobs batch chegam a GA, e G4/RTX PRO 6000 amplia capacidade para preparação de dados e inferência pesada. Pode reduzir custo e tempo de operações descontínuas de imagem, LiDAR e séries temporais, desde que o dimensionamento de GPU seja justificado pelo pipeline."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-15T07:30:00-03:00",
+      "edition_date": "2026-09-15",
+      "id": "radar-1386401dbae8c76c",
+      "published": "2026-09-14 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "IMAC — Plataforma GIS",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "Google Cloud — release notes",
+      "tags": [
+        "google-cloud",
+        "agent-search",
+        "agentes-ia",
+        "api",
+        "precos",
+        "rag",
+        "governanca"
+      ],
+      "title": "Agent Search libera controle de preço por consulta em GA",
+      "url": "https://docs.cloud.google.com/generative-ai-app-builder/docs/release-notes",
+      "why_it_matters": "`searchAddonSpec` entra em GA na API v1, permitindo ligar ou desligar complementos por busca e controlar custo programaticamente. É mecanismo útil para equilibrar profundidade de recuperação e orçamento em agentes que consultam acervos técnicos e documentos de projeto."
+    }
+  ],
+  "schema_version": "1.0"
+}

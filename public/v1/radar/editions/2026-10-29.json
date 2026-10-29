@@ -1,0 +1,129 @@
+{
+  "edition_date": "2026-10-29",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-29T07:35:00-03:00",
+      "edition_date": "2026-10-29",
+      "id": "radar-ebc97573a6a94023",
+      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "OpenAI — expansão da parceria com ServiceNow",
+      "tags": [
+        "openai",
+        "servicenow",
+        "mcp",
+        "agentes-ia",
+        "codex",
+        "integracao",
+        "governanca"
+      ],
+      "title": "Plugin MCP do ServiceNow chega ao marketplace OpenAI",
+      "url": "https://openai.com/index/openai-servicenow-partnership-expansion/",
+      "why_it_matters": "plugin MCP já disponível conecta contexto e ações de instâncias ServiceNow ao ChatGPT, respeitando regras e permissões do cliente. É referência concreta para agentes corporativos que consultam incidentes e executam ações governadas; integração Codex no AI Workflow Factory é apenas planejada para 2027, não recurso atual."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-29T07:35:00-03:00",
+      "edition_date": "2026-10-29",
+      "id": "radar-d8651470f28270c3",
+      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "Vale — GeoIA SAB.IA",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "Google Cloud — release notes de 28/10",
+      "tags": [
+        "google-cloud",
+        "gemini-enterprise",
+        "brasil",
+        "residencia-de-dados",
+        "agentes-ia",
+        "governanca",
+        "release"
+      ],
+      "title": "Gemini Enterprise passa a oferecer região Brasil com residência local de dados",
+      "url": "https://docs.cloud.google.com/release-notes#October_28_2026",
+      "why_it_matters": "Google anuncia região brasileira para Gemini Enterprise, com dados em repouso e processamento de ML na região; disponibilidade geral condicionada a allowlist. Pode destravar avaliação de agentes sobre dados corporativos brasileiros sensíveis, mas requer acesso liberado e verificação contratual antes de qualquer arquitetura."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-29T07:35:00-03:00",
+      "edition_date": "2026-10-29",
+      "id": "radar-d8651470f28270c3",
+      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "NAVIS / GeoFramework",
+        "Vale — GeoIA SAB.IA"
+      ],
+      "source": "Google Cloud — release notes do AlloyDB AI",
+      "tags": [
+        "google-cloud",
+        "alloydb",
+        "busca-vetorial",
+        "embeddings",
+        "rag",
+        "postgresql",
+        "release"
+      ],
+      "title": "AlloyDB libera índice vetorial de quatro níveis para até 10 bilhões de linhas",
+      "url": "https://docs.cloud.google.com/release-notes#October_28_2026",
+      "why_it_matters": "índice ScaNN 4LT em PostgreSQL 17+ entra em disponibilidade geral, com manutenção automática e busca filtrada com melhor recuperação; `Vector assist` também passa a GA. Amplia opção de busca semântica em grandes acervos geoespaciais/documentais, sem implicar necessidade de escala bilionária nos projetos atuais."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-29T07:35:00-03:00",
+      "edition_date": "2026-10-29",
+      "id": "radar-96e37f1546c14c56",
+      "published": "2026-10-28 (data do release e da atualização da documentação; horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "Google Cloud — Application Integration agent skills",
+      "tags": [
+        "google-cloud",
+        "skills",
+        "agentes-ia",
+        "integracao",
+        "api",
+        "automacao",
+        "release"
+      ],
+      "title": "Google publica skills oficiais para agentes criarem integrações via API",
+      "url": "https://docs.cloud.google.com/application-integration/docs/agent-skills-overview",
+      "why_it_matters": "três skills abertas orientam agentes a configurar, criar/publicar e diagnosticar integrações do Google Cloud Application Integration via REST API. Fornecem referência operacional para automatizar fluxos entre sistemas corporativos com IAM e versionamento; uso nos projetos depende da adoção dessa plataforma."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-29T07:35:00-03:00",
+      "edition_date": "2026-10-29",
+      "id": "radar-d8651470f28270c3",
+      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "Google Cloud — release notes de 28/10, CodeMender 0.17.0",
+      "tags": [
+        "google-cloud",
+        "codemender",
+        "agentes-ia",
+        "seguranca",
+        "sandbox",
+        "desenvolvimento",
+        "release"
+      ],
+      "title": "CodeMender 0.17 reforça limites de sandbox e políticas de agentes de código",
+      "url": "https://docs.cloud.google.com/release-notes#October_28_2026",
+      "why_it_matters": "nova versão separa configuração de sandbox da política de comandos, protege `.git/hooks`, `.git/config` e `.codemender` contra alterações durante correções e fecha travessia por symlinks fora de `allowedRoots`. Medidas relevantes ao avaliar agentes que editam repositórios com acesso a dados ou infraestrutura corporativa."
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,79 @@
+{
+  "edition_date": "2026-09-18",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-18T22:09:00-03:00",
+      "edition_date": "2026-09-18",
+      "id": "radar-d6928df4cd298cfe",
+      "published": "2026-09-18 (horário/fuso não informado na fonte)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "IMAC — Plataforma GIS"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "agentes-ia",
+        "seguranca",
+        "devsecops",
+        "vulnerabilidades",
+        "automacao"
+      ],
+      "title": "Google descreve pipeline agêntico para corrigir vulnerabilidades no ciclo de desenvolvimento",
+      "url": "https://cloud.google.com/blog/topics/systems/using-ai-agents-to-secure-google-infrastructure",
+      "why_it_matters": "relato operacional mostra agentes inseridos no ciclo de desenvolvimento para varredura e correção de vulnerabilidades em cada mudança de código, com centenas de falhas bloqueadas por mês. Reforça padrão de alto sinal: agentes em escopo específico, integrados à revisão e *patching*, não com autonomia irrestrita sobre produção."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-18T22:09:00-03:00",
+      "edition_date": "2026-09-18",
+      "id": "radar-1abf0b4edfd9f530",
+      "published": "2026-09-18 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "bigquery",
+        "lakehouse",
+        "dados-geoespaciais",
+        "agentes-ia",
+        "iceberg",
+        "preview"
+      ],
+      "title": "BigQuery anuncia cache cross-cloud para Lakehouse em preview",
+      "url": "https://cloud.google.com/blog/products/data-analytics/borderless-lakehouse-cross-cloud-caching-and-connections",
+      "why_it_matters": "o recurso permite consultar dados governados onde residem em S3, ADLS, GCS e catálogos Iceberg, com cache que pode reduzir transferência entre nuvens. É relevante para agentes que cruzam telemetria, dados operacionais e acervos geoespaciais sem duplicação ampla; por estar em preview, não deve sustentar fluxo crítico ainda."
+    },
+    {
+      "confidence": "média",
+      "edition_at": "2026-09-18T22:09:00-03:00",
+      "edition_date": "2026-09-18",
+      "id": "radar-d576b039cf6bdaab",
+      "published": "2026-09-18 (horário/fuso não informado na fonte)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "OpenAI Developer Community",
+      "tags": [
+        "openai",
+        "codex",
+        "agentes-ia",
+        "subagentes",
+        "observabilidade",
+        "custos"
+      ],
+      "title": "Codex adiciona aba de analytics de consumo por tarefa e subagente",
+      "url": "https://community.openai.com/c/codex/37",
+      "why_it_matters": "a nova visualização discrimina quanto tarefas, subagentes e conversas consomem da cota. É controle operacional importante para orquestrações de longa duração, permitindo localizar fluxos caros antes de ampliar uso de agentes."
+    }
+  ],
+  "schema_version": "1.0"
+}

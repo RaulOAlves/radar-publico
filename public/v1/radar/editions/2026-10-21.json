@@ -1,0 +1,130 @@
+{
+  "edition_date": "2026-10-21",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-21T07:27:00-03:00",
+      "edition_date": "2026-10-21",
+      "id": "radar-11a9e9aebb65d4c7",
+      "published": "2026-10-20 20:46 (horário exibido pelo GitHub; fuso não informado)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro",
+        "Vale — GeoIA SAB.IA"
+      ],
+      "source": "Anthropic — Claude Code v2.1.305",
+      "tags": [
+        "anthropic",
+        "claude-code",
+        "mcp",
+        "agentes-ia",
+        "workflow",
+        "seguranca",
+        "release"
+      ],
+      "title": "Claude Code 2.1.305 corrige integração MCP, gateways e retomada de agentes",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
+      "why_it_matters": "corrige a substituição indevida de servidores MCP fornecidos pela sessão em nuvem/SDK e falhas de requisições via Vertex, Bedrock ou gateways sem ToolSearch. A retomada de workflows deixa de reexecutar agentes já concluídos. A nova opção de namespaces aninhados no Linux permite Chromium/Podman, mas pode contornar proteções de arquivos do sandbox; requer avaliação antes de habilitar."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-21T07:27:00-03:00",
+      "edition_date": "2026-10-21",
+      "id": "radar-e8db8c6284f507e2",
+      "published": "aviso original em 2026-10-05; publicado na base de advisories e atualizado em 2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "GitHub Advisory — GHSA-rvq5-wwqv-78pq / CVE-2026-111771",
+      "tags": [
+        "mcp",
+        "typescript",
+        "sdk",
+        "oauth",
+        "seguranca",
+        "cve",
+        "agentes-ia"
+      ],
+      "title": "Alerta de segurança no SDK TypeScript do MCP exige validação explícita de audiência",
+      "url": "https://github.com/advisories/GHSA-rvq5-wwqv-78pq",
+      "why_it_matters": "servidores MCP HTTP que usam `requireBearerAuth()`/`verifyBearerToken()` podem aceitar token emitido para outro serviço se o emissor atende múltiplos recursos e o verificador não checa `aud`. Versões corrigidas existem, mas só atualizar não ativa a proteção: é preciso configurar `expectedResource` e devolver `AuthInfo.resource`, ou validar `aud` no verificador."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-21T07:27:00-03:00",
+      "edition_date": "2026-10-21",
+      "id": "radar-f589d35077387a1a",
+      "published": "2026-10-21 (horário/fuso não informados; posição exata na janela de 24 horas não confirmada)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "Vale — GeoIA SAB.IA",
+        "NAVIS / GeoFramework"
+      ],
+      "source": "Google Cloud — Managed RAG search inside the sovereign perimeter",
+      "tags": [
+        "google-cloud",
+        "gemini",
+        "rag",
+        "air-gap",
+        "dados-sensiveis",
+        "agentes-ia",
+        "busca-empresarial"
+      ],
+      "title": "Gemini em Google Distributed Cloud ganha busca RAG isolada da internet",
+      "url": "https://cloud.google.com/blog/topics/hybrid-cloud/managed-rag-search-inside-the-sovereign-perimeter-gemini-on-gdc-enterprise-search",
+      "why_it_matters": "em *preview*, busca empresarial multimodal com citações roda em GDC air-gapped, com ingestão, embeddings, PostgreSQL e controles de identidade dentro do perímetro local. Arquitetura relevante para agentes sobre dados técnicos sigilosos de mineração e óleo e gás; ainda não é disponibilidade geral."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-21T07:27:00-03:00",
+      "edition_date": "2026-10-21",
+      "id": "radar-dc65e8821342889a",
+      "published": "2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Vale — GeoIA SAB.IA"
+      ],
+      "source": "Google Cloud — Announcing llm-d 1.0",
+      "tags": [
+        "google-cloud",
+        "llm-d",
+        "inferencia",
+        "kubernetes",
+        "agentes-ia",
+        "infraestrutura",
+        "open-source"
+      ],
+      "title": "llm-d 1.0 publica infraestrutura aberta para inferência de agentes em escala",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/llm-d-1-0-an-open-source-stack-for-distributed-inference",
+      "why_it_matters": "release Kubernetes-native reúne roteamento com afinidade de cache, QoS multitenant, cache KV em camadas, alta disponibilidade e atualização sem interromper sessões. É base técnica para avaliar custo e latência de agentes auto-hospedados com contexto longo e tráfego irregular, sem implicar ganho garantido nos projetos."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-21T07:27:00-03:00",
+      "edition_date": "2026-10-21",
+      "id": "radar-1228ecbc13bad748",
+      "published": "2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "TAG / TBG / NTS",
+        "Vale — GeoIA SAB.IA",
+        "Itaminas — Monitoramento geotécnico"
+      ],
+      "source": "Planet — First light from Tanager-2 and SuperDove Flock 4J",
+      "tags": [
+        "planet",
+        "tanager",
+        "hiperespectral",
+        "metano",
+        "oleo-e-gas",
+        "mineracao",
+        "observacao-da-terra"
+      ],
+      "title": "Tanager-2 demonstra detecção hiperespectral de metano na primeira imagem",
+      "url": "https://www.planet.com/pulse/sharing-first-light-images-from-tanager-2-and-superdove-flock-4j/",
+      "why_it_matters": "a Planet divulgou a primeira imagem do Tanager-2, capturada em 07/10, na qual a Carbon Mapper detectou pluma de metano na costa espanhola. Demonstra uma aplicação da nova constelação para emissões e prospecção mineral, mas os satélites ainda estão em comissionamento; não equivale a serviço operacional disponível."
+    }
+  ],
+  "schema_version": "1.0"
+}

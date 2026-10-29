@@ -1,0 +1,83 @@
+{
+  "edition_date": "2026-09-11",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-11T07:32:00-03:00",
+      "edition_date": "2026-09-11",
+      "id": "radar-8a71a2808988c5c7",
+      "published": "2026-09-10 (horário/fuso não informado na fonte)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "Petrobras — Segundo cérebro"
+      ],
+      "source": "OpenAI — Agents API",
+      "tags": [
+        "openai",
+        "agents-api",
+        "codex",
+        "agentes-ia",
+        "mcp",
+        "sandbox",
+        "automacao",
+        "beta"
+      ],
+      "title": "OpenAI lança Agents API em beta público, baseada no harness do Codex",
+      "url": "https://openai.com/index/introducing-the-agents-api/",
+      "why_it_matters": "API entrega o harness do Codex para agentes de longa duração, subagentes, ferramentas, MCP e escolha de sandbox gerenciado, infraestrutura própria ou parceiros. Reduz esforço para implantar automações governadas, mas ainda está em beta público e requer avaliação de permissões, custo e isolamento antes de produção."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-11T07:32:00-03:00",
+      "edition_date": "2026-09-11",
+      "id": "radar-5876c91d40c3dd69",
+      "published": "2026-09-10 (horário/fuso não informado na fonte)",
+      "relations": [
+        "Petrobras — Segundo cérebro",
+        "GeoFiscal-Sinter",
+        "IMAC — Plataforma GIS"
+      ],
+      "source": "OpenAI — Data agent",
+      "tags": [
+        "openai",
+        "codex",
+        "chatgpt-work",
+        "data-agent",
+        "analytics",
+        "dashboard",
+        "governanca"
+      ],
+      "title": "Data agent chega a ChatGPT Work e Codex para análise de dados conectados",
+      "url": "https://openai.com/index/put-data-to-work/",
+      "why_it_matters": "o agente conecta dados empresariais, investiga mudanças e produz relatórios e painéis interativos via conversa; consultas respeitam permissões da conta conectada. Abre caminho direto para análises exploratórias de operação, mas exige configurar fontes, autorização e definições de métricas antes de uso confiável."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-09-11T07:32:00-03:00",
+      "edition_date": "2026-09-11",
+      "id": "radar-322d0b843047f02e",
+      "published": "2026-09-10 (horário/fuso não informado na fonte)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter",
+        "IMAC — Plataforma GIS"
+      ],
+      "source": "Google Cloud Blog",
+      "tags": [
+        "google-cloud",
+        "codex",
+        "claude-code",
+        "mcp",
+        "skills",
+        "plugins",
+        "agentes-ia",
+        "governanca"
+      ],
+      "title": "Google publica plugin portátil para agentes de código, com skills e MCP",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents",
+      "why_it_matters": "o plugin `google-cloud-developer` empacota skills, documentação oficial e MCP de conhecimento em padrão aberto; há instruções de instalação para Claude Code e Codex CLI. É referência prática para distribuir capacidades de nuvem com autenticação e guardrails consistentes entre agentes."
+    }
+  ],
+  "schema_version": "1.0"
+}
