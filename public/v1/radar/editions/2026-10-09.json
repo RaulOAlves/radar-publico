@@ -13,6 +13,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — Gemini at Work 2026",
+      "summary": "o Gemini agent une execução persistente em nuvem, memória, skills, ferramentas e orquestração dinâmica de subagentes, inclusive por MCP. A plataforma traz identidade, políticas, permissões, sandbox, *gateways* de rede, *Smart Routing* e limites de gasto — referência concreta para agentes corporativos governados que cruzam dados e sistemas de registro.",
       "tags": [
         "google-cloud",
         "gemini",
@@ -39,6 +40,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Notas de versão do ChatGPT",
+      "summary": "mensagens de acompanhamento agora redirecionam mais cedo uma tarefa em execução no Codex. A configuração de comportamento de *follow-up* escolhe entre intervir na execução atual ou aguardar a próxima, reduzindo retrabalho em tarefas longas e preservando controle humano sobre agentes.",
       "tags": [
         "openai",
         "codex",
@@ -63,6 +65,7 @@
         "Itaminas — Monitoramento geotécnico"
       ],
       "source": "Esri — MassDOT drone imagery as infrastructure",
+      "summary": "implantação padronizou o pipeline de drones, transformando imagens em sistema de registro compartilhado; a equipe transmitiu 400 milhões de pontos LiDAR para iPad em campo via 5G. É evidência operacional de distribuição *edge* de nuvem de pontos em inspeções de infraestrutura e manutenção.",
       "tags": [
         "esri",
         "drones",

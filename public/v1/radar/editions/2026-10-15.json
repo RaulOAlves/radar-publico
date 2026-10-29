@@ -13,6 +13,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Esri — ArcGIS Server Security 2026 Update 3 Patch",
+      "summary": "patch cumulativo cobre ArcGIS Server 12.1, 12.0, 11.5, 11.3 e 11.1 em Windows e Linux, incluindo falha de injeção SQL com CVSS 9,8. Ambientes ArcGIS Enterprise devem verificar versão, planejar implantação e considerar que a instalação reinicia o serviço.",
       "tags": [
         "esri",
         "arcgis-server",
@@ -38,6 +39,7 @@
         "São Martinho — Planejamento agrícola"
       ],
       "source": "Planet Documentation — ARPS v1.2.0 Release Notes",
+      "summary": "ARPS 1.2 oferece produto opcional de cinco bandas com red-edge; o produto de quatro bandas chega cerca de 17 horas antes e recebeu correções radiométricas para vegetação densa e ciclos rápidos de crescimento, além de máscara de nuvens melhorada. Isso afeta séries de NDVI e detecção de vigor em florestas e lavouras; a quinta banda exige nova assinatura e o acervo anterior não será reprocessado.",
       "tags": [
         "planet",
         "arps",

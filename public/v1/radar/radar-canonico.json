@@ -12,6 +12,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "OpenAI — expansão da parceria com ServiceNow",
+      "summary": "plugin MCP já disponível conecta contexto e ações de instâncias ServiceNow ao ChatGPT, respeitando regras e permissões do cliente. É referência concreta para agentes corporativos que consultam incidentes e executam ações governadas; integração Codex no AI Workflow Factory é apenas planejada para 2027, não recurso atual.",
       "tags": [
         "openai",
         "servicenow",
@@ -37,6 +38,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — release notes de 28/10",
+      "summary": "Google anuncia região brasileira para Gemini Enterprise, com dados em repouso e processamento de ML na região; disponibilidade geral condicionada a allowlist. Pode destravar avaliação de agentes sobre dados corporativos brasileiros sensíveis, mas requer acesso liberado e verificação contratual antes de qualquer arquitetura.",
       "tags": [
         "google-cloud",
         "gemini-enterprise",
@@ -62,6 +64,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — release notes do AlloyDB AI",
+      "summary": "índice ScaNN 4LT em PostgreSQL 17+ entra em disponibilidade geral, com manutenção automática e busca filtrada com melhor recuperação; `Vector assist` também passa a GA. Amplia opção de busca semântica em grandes acervos geoespaciais/documentais, sem implicar necessidade de escala bilionária nos projetos atuais.",
       "tags": [
         "google-cloud",
         "alloydb",
@@ -86,6 +89,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Google Cloud — Application Integration agent skills",
+      "summary": "três skills abertas orientam agentes a configurar, criar/publicar e diagnosticar integrações do Google Cloud Application Integration via REST API. Fornecem referência operacional para automatizar fluxos entre sistemas corporativos com IAM e versionamento; uso nos projetos depende da adoção dessa plataforma.",
       "tags": [
         "google-cloud",
         "skills",
@@ -110,6 +114,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — release notes de 28/10, CodeMender 0.17.0",
+      "summary": "nova versão separa configuração de sandbox da política de comandos, protege `.git/hooks`, `.git/config` e `.codemender` contra alterações durante correções e fecha travessia por symlinks fora de `allowedRoots`. Medidas relevantes ao avaliar agentes que editam repositórios com acesso a dados ou infraestrutura corporativa.",
       "tags": [
         "google-cloud",
         "codemender",
@@ -135,6 +140,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Esri — Brotli Vulnerabilities (Broccoli2Shell)",
+      "summary": "Esri investiga o impacto de CVE-2026-111497 em seus produtos e recomenda atualizar o .NET Framework usado por ArcGIS Pro, Web Adaptor em IIS e extensões SOE/SOI; ArcGIS Online já recebeu medidas mitigadoras. Quem opera ArcGIS Enterprise deve verificar versões e acompanhar a avaliação, sem presumir que todo produto está vulnerável.",
       "tags": [
         "esri",
         "arcgis",
@@ -160,6 +166,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Esri — ArcGIS Server 11.5 Geocoding Capability Patch",
+      "summary": "serviços de geocodificação publicados do ArcGIS Pro 3.6 ou posterior no ArcGIS Server 11.5 podem devolver zero resultados, inclusive via `FindAddressCandidates` e `GeocodeAddresses`. Esri recomenda o patch para instalações afetadas; planejar reinício do serviço e rollback antes de aplicar.",
       "tags": [
         "esri",
         "arcgis-enterprise",
@@ -184,6 +191,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "EDGX — Sterna em órbita",
+      "summary": "empresa reporta que carga baseada em NVIDIA Jetson, lançada em março, já retornou dados operacionais em órbita; outra ainda está em comissionamento. Processar imagens a bordo pode reduzir volume transmitido e latência de alertas geoespaciais, mas a fonte não demonstra ainda serviço comercial ou desempenho dessas aplicações.",
       "tags": [
         "geoia",
         "edge-ai",
@@ -208,6 +216,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Ai2 — OlmoEarth v1.3",
+      "summary": "o Ai2 liberou modelo, dados e embeddings globais pré-computados (64/128 dimensões) e um explorador para encontrar áreas semelhantes e criar mapas com poucos exemplos. Reduz o esforço para testar classificação de culturas, vigor e mudança de cobertura em projetos GeoIA; desempenho local ainda precisa ser validado.",
       "tags": [
         "geoia",
         "olmoearth",
@@ -235,6 +244,7 @@
         "São Martinho — Planejamento agrícola"
       ],
       "source": "Ai2 — PLANTEUR: benchmark de culturas tropicais",
+      "summary": "novo conjunto aberto reúne séries Sentinel-1/2 e Landsat-8 de 4.506 km² de parcelas, sete classes de culturas (incluindo cana) e testes fora da região de treino. Nos testes dos autores, todos os métodos perderam cerca de metade da acurácia em uma ilha não vista: alerta concreto para validar modelos agrícolas fora da área de treinamento.",
       "tags": [
         "geoia",
         "paper",
@@ -261,6 +271,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Anthropic — Claude Code v2.1.309",
+      "summary": "o release corrige execução de arquivos de inicialização do shell fora do sandbox, falhas de regras de escrita via symlink, alteração indevida do arquivo `--mcp-config` e contornos de permissões Bash/worktree. É atualização prioritária para agentes com acesso a código, arquivos e servidores MCP; revisar políticas após atualizar.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -286,6 +297,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI — Decisions API",
+      "summary": "API agora em disponibilidade geral responde probabilidade, escolha ou escore a partir de texto, imagem ou JSON, com até 400 perguntas por requisição. Pode reduzir latência/custo de triagem e roteamento em agentes e eventos geoespaciais; o ganho de até 10 vezes é alegação da OpenAI, não garantia para estes projetos.",
       "tags": [
         "openai",
         "decisions-api",
@@ -310,6 +322,7 @@
         "Amaggi — Monitoramento de desmatamento"
       ],
       "source": "OroraTech — parceria com ICEYE",
+      "summary": "a parceria anuncia integração de detecção/avanço do fogo por satélites térmicos com observações SAR para avaliar impactos mesmo sob fumaça e nuvens. É combinação relevante para monitoramento florestal e resposta a incêndios; a fonte não traz validação independente de latência ou implantação em cliente.",
       "tags": [
         "sensoriamento-remoto",
         "sar",
@@ -335,6 +348,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Anthropic — Claude Code v2.1.307",
+      "summary": "se a conexão caía durante uma chamada MCP HTTP, ferramentas podiam ser acionadas duas vezes; agora só operações de leitura ou idempotentes são repetidas. Release também adiciona evento OpenTelemetry para decisões de segurança e corrige atualização de ferramentas de servidores MCP do SDK durante tarefas em segundo plano — pontos críticos para agentes que escrevem em sistemas corporativos.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -360,6 +374,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — OpenAI models in Model Garden",
+      "summary": "GPT-6 Astra, GPT-6.1 Sol e GPT-6 Luna começam a chegar ao Model Garden para clientes empresariais selecionados; Google informa que esses clientes já podem conectar Codex CLI/Desktop para inferência na plataforma. Isso cria opção de testar agentes e desenvolvimento com governança, auditoria e faturamento Google Cloud, mas ainda não é disponibilidade geral.",
       "tags": [
         "openai",
         "codex",
@@ -385,6 +400,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Esri — Recent PHP Vulnerabilities",
+      "summary": "PHP corrigiu CVE-2026-109618 e CVE-2026-109619, ambas com potencial de execução remota sem autenticação, nas versões 8.5.12, 8.4.27, 8.3.36 e 8.2.35. Esri informa que ArcGIS Online não usa PHP e ainda avalia demais produtos; não há impacto confirmado em ArcGIS Enterprise. Verificar componentes PHP próprios ou adjacentes e acompanhar conclusão da avaliação Esri.",
       "tags": [
         "esri",
         "arcgis",
@@ -410,6 +426,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Anthropic — Claude Code v2.1.305",
+      "summary": "corrige a substituição indevida de servidores MCP fornecidos pela sessão em nuvem/SDK e falhas de requisições via Vertex, Bedrock ou gateways sem ToolSearch. A retomada de workflows deixa de reexecutar agentes já concluídos. A nova opção de namespaces aninhados no Linux permite Chromium/Podman, mas pode contornar proteções de arquivos do sandbox; requer avaliação antes de habilitar.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -435,6 +452,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "GitHub Advisory — GHSA-rvq5-wwqv-78pq / CVE-2026-111771",
+      "summary": "servidores MCP HTTP que usam `requireBearerAuth()`/`verifyBearerToken()` podem aceitar token emitido para outro serviço se o emissor atende múltiplos recursos e o verificador não checa `aud`. Versões corrigidas existem, mas só atualizar não ativa a proteção: é preciso configurar `expectedResource` e devolver `AuthInfo.resource`, ou validar `aud` no verificador.",
       "tags": [
         "mcp",
         "typescript",
@@ -460,6 +478,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — Managed RAG search inside the sovereign perimeter",
+      "summary": "em *preview*, busca empresarial multimodal com citações roda em GDC air-gapped, com ingestão, embeddings, PostgreSQL e controles de identidade dentro do perímetro local. Arquitetura relevante para agentes sobre dados técnicos sigilosos de mineração e óleo e gás; ainda não é disponibilidade geral.",
       "tags": [
         "google-cloud",
         "gemini",
@@ -484,6 +503,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — Announcing llm-d 1.0",
+      "summary": "release Kubernetes-native reúne roteamento com afinidade de cache, QoS multitenant, cache KV em camadas, alta disponibilidade e atualização sem interromper sessões. É base técnica para avaliar custo e latência de agentes auto-hospedados com contexto longo e tráfego irregular, sem implicar ganho garantido nos projetos.",
       "tags": [
         "google-cloud",
         "llm-d",
@@ -509,6 +529,7 @@
         "Itaminas — Monitoramento geotécnico"
       ],
       "source": "Planet — First light from Tanager-2 and SuperDove Flock 4J",
+      "summary": "a Planet divulgou a primeira imagem do Tanager-2, capturada em 07/10, na qual a Carbon Mapper detectou pluma de metano na costa espanhola. Demonstra uma aplicação da nova constelação para emissões e prospecção mineral, mas os satélites ainda estão em comissionamento; não equivale a serviço operacional disponível.",
       "tags": [
         "planet",
         "tanager",
@@ -534,6 +555,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Model Context Protocol — servers v2.0.0",
+      "summary": "servidores oficiais de filesystem, memory, fetch, git e time passam a servir a revisão MCP 2026-07-28 mantendo clientes legados. Pacotes TypeScript exigem Node 24; Python exige `mcp>=2.3,<3`. A atualização altera respostas de erro e corrige condições de corrida na atualização de roots do filesystem, exigindo testes de compatibilidade e permissões.",
       "tags": [
         "mcp",
         "servidores",
@@ -560,6 +582,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — Developer’s guide to implementing MCP apps in Gemini",
+      "summary": "ferramentas MCP podem entregar interface interativa dentro do chat do Gemini Enterprise, hospedada em Cloud Run privado. O guia detalha dois níveis de autenticação, controles de acesso e aprovação humana; arquitetura útil para agentes que combinam mapas, inspeção espacial e ações corporativas sem recriar chat e identidade.",
       "tags": [
         "google-cloud",
         "gemini-enterprise",
@@ -585,6 +608,7 @@
         "Vale — Fechamento de minas"
       ],
       "source": "Exyn Technologies — MAP-POD/Mine of the Future",
+      "summary": "projeto MAP-POD combina robótica, sensores hiperespectrais e IA para mapear minas e localizar minerais em ambiente sem GPS. A Exyn prevê contribuir navegação autônoma para veículos terrestres; o financiamento ainda está em negociação, portanto não é implantação concluída.",
       "tags": [
         "mineracao",
         "geoia",
@@ -609,6 +633,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI — Advancing coding in low-resource programming languages",
+      "summary": "avaliação em 20 linguagens mede geração de software e migração com testes de comportamento; resultados e suíte são liberados para inspeção. Mostra ganhos em COBOL, Fortran e Visual Basic, mas a aplicação em sistemas críticos ainda requer validação humana e testes próprios — referência para modernização de código técnico legado.",
       "tags": [
         "openai",
         "modelos-de-codigo",
@@ -635,6 +660,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Anthropic — Claude Code v2.1.302",
+      "summary": "corrige servidores MCP que negociam o protocolo 2026-07-28 sem certos campos de resposta e muda o comportamento padrão de subagentes no desktop, VS Code e Agent SDK. Integrações e fluxos multiagente devem ser testados após atualização; também corrige uma rotina em nuvem que podia repetir trabalho depois de falhar.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -659,6 +685,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "AWS — AgentCore Insights",
+      "summary": "novos relatórios em lote ou recorrentes deixam de ser criados em 16/10; os recorrentes existentes param de gerar relatórios em 31/10. Equipes que usam essa prévia para avaliar falhas de agentes precisam preservar resultados e planejar outra observabilidade antes da descontinuação.",
       "tags": [
         "aws",
         "bedrock",
@@ -683,6 +710,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — Agent Search release notes",
+      "summary": "o alias `stable` de geração de respostas passa de Gemini 2.5 Flash para `gemini-3.5-flash/answer_gen/v1`. Aplicações de busca e resposta que dependem desse alias podem mudar qualidade, latência e comportamento sem alterar código; convém revalidar avaliações e respostas críticas.",
       "tags": [
         "google-cloud",
         "agent-search",
@@ -708,6 +736,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Esri — ArcGIS Server Security 2026 Update 3 Patch",
+      "summary": "patch cumulativo cobre ArcGIS Server 12.1, 12.0, 11.5, 11.3 e 11.1 em Windows e Linux, incluindo falha de injeção SQL com CVSS 9,8. Ambientes ArcGIS Enterprise devem verificar versão, planejar implantação e considerar que a instalação reinicia o serviço.",
       "tags": [
         "esri",
         "arcgis-server",
@@ -733,6 +762,7 @@
         "São Martinho — Planejamento agrícola"
       ],
       "source": "Planet Documentation — ARPS v1.2.0 Release Notes",
+      "summary": "ARPS 1.2 oferece produto opcional de cinco bandas com red-edge; o produto de quatro bandas chega cerca de 17 horas antes e recebeu correções radiométricas para vegetação densa e ciclos rápidos de crescimento, além de máscara de nuvens melhorada. Isso afeta séries de NDVI e detecção de vigor em florestas e lavouras; a quinta banda exige nova assinatura e o acervo anterior não será reprocessado.",
       "tags": [
         "planet",
         "arps",
@@ -759,6 +789,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — Gemini 4 Argon available on Google Cloud",
+      "summary": "modelo `gemini-4-argon` está disponível em GA na plataforma Gemini, com contexto combinado de 1.048.576 tokens. Preço introdutório até 30/11: US$ 2 por milhão de tokens de entrada e US$ 10 por milhão de saída; depois, US$ 4 e US$ 20. Mudança concreta para comparar custo e capacidade em agentes de análise e desenvolvimento.",
       "tags": [
         "google-cloud",
         "gemini",
@@ -784,6 +815,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Google Cloud — One Agent Development Kit, five languages",
+      "summary": "ADK cobre Python, Go, TypeScript, Java e Kotlin; cada versão inclui cliente MCP e suporte a comunicação A2A. O CLI gera projetos com endpoints A2A e configuração para Cloud Run, Gemini Enterprise Agent Runtime ou GKE, facilitando integração de agentes em stacks corporativas existentes.",
       "tags": [
         "google-cloud",
         "adk",
@@ -809,6 +841,7 @@
         "Bracell — GeoIA Estradas"
       ],
       "source": "Planet — Slovenia's Automated Space Resilience Infrastructure",
+      "summary": "Planet e Lucis desenvolverão, em 12 meses, plataforma financiada pela ESA para proteção civil da Eslovênia. O desenho liga detecção contínua por série temporal, alerta por limiar e solicitação automática de imagens VHR à entrega em mapa operacional — arquitetura aplicável ao monitoramento florestal; trata-se de projeto iniciado, não implantação concluída.",
       "tags": [
         "planet",
         "esa",
@@ -833,6 +866,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Planet — Introducing Populace",
+      "summary": "o Populace combina imagens Planet, modelos da Microsoft e dados demográficos do IHME para estimar população global em grade de 40 m, com atualização trimestral. Pode enriquecer análises de traçados rodoviários, infraestrutura e exposição de comunidades; uso gratuito é restrito a pesquisa e organizações sem fins lucrativos, enquanto uso comercial requer outras condições.",
       "tags": [
         "planet",
         "observacao-da-terra",
@@ -857,6 +891,7 @@
         "Itaminas — Monitoramento geotécnico"
       ],
       "source": "Esri — Countdown Instant App",
+      "summary": "o ArcGIS Instant Apps permite ordenar feições por atributo numérico, filtrar rankings e comparar itens no mapa com pop-ups fixados. Recurso pode criar painéis rápidos de priorização espacial de ativos e áreas sem desenvolver uma aplicação própria.",
       "tags": [
         "esri",
         "arcgis",
@@ -880,6 +915,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Anthropic — Strengthening our defenses against distillation attacks",
+      "summary": "a Anthropic relata queda de 90% a 99% na extração indevida de tokens de raciocínio após reforçar classificadores e controles de contexto. Integrações que manipulam histórico de raciocínio podem exigir ajuste; bloqueios preventivos podem gerar cobrança e falsos positivos, pontos a testar em agentes corporativos.",
       "tags": [
         "anthropic",
         "claude",
@@ -905,6 +941,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — Gemini at Work 2026",
+      "summary": "o Gemini agent une execução persistente em nuvem, memória, skills, ferramentas e orquestração dinâmica de subagentes, inclusive por MCP. A plataforma traz identidade, políticas, permissões, sandbox, *gateways* de rede, *Smart Routing* e limites de gasto — referência concreta para agentes corporativos governados que cruzam dados e sistemas de registro.",
       "tags": [
         "google-cloud",
         "gemini",
@@ -931,6 +968,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Notas de versão do ChatGPT",
+      "summary": "mensagens de acompanhamento agora redirecionam mais cedo uma tarefa em execução no Codex. A configuração de comportamento de *follow-up* escolhe entre intervir na execução atual ou aguardar a próxima, reduzindo retrabalho em tarefas longas e preservando controle humano sobre agentes.",
       "tags": [
         "openai",
         "codex",
@@ -955,6 +993,7 @@
         "Itaminas — Monitoramento geotécnico"
       ],
       "source": "Esri — MassDOT drone imagery as infrastructure",
+      "summary": "implantação padronizou o pipeline de drones, transformando imagens em sistema de registro compartilhado; a equipe transmitiu 400 milhões de pontos LiDAR para iPad em campo via 5G. É evidência operacional de distribuição *edge* de nuvem de pontos em inspeções de infraestrutura e manutenção.",
       "tags": [
         "esri",
         "drones",
@@ -980,6 +1019,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Anthropic — Claude Haiku 5.5",
+      "summary": "Haiku 5.5 é voltado a tarefas de alto volume — sumarização, compactação, consultas a banco, classificação e subagentes — com custo médio declarado 75% menor que Haiku 4.5. A Anthropic também reduz pela metade o preço de leitura de cache do Sonnet 5.5, tornando trabalho agentivo cerca de 20% mais barato, e adiciona crédito mensal de API para Max e Team.",
       "tags": [
         "anthropic",
         "claude",
@@ -1006,6 +1046,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — MCP Toolbox Java SDK 1.0",
+      "summary": "SDK Java 1.0 adiciona orquestração MCP tipada para agentes corporativos, com identidade via Application Default Credentials e tokens OIDC sem chaves fixas. A separação entre Toolbox e agente Spring Boot permite escalar acesso a dados e conversas com controles adequados a sistemas transacionais.",
       "tags": [
         "google-cloud",
         "mcp",
@@ -1032,6 +1073,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud — Modernize",
+      "summary": "o novo portfólio reúne avaliação, modernização de plataforma e aplicações; o Modernization Hub analisa código e dependências, enquanto o Agentic Quick Estimator está em GA para estimar TCO a partir de inventários VMware. Inclui a migração EKS→GKE protegida por guardrails, oferecendo trilha para atualizar plataformas que hospedam dados e agentes corporativos.",
       "tags": [
         "google-cloud",
         "modernizacao",
@@ -1058,6 +1100,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Notas de versão do ChatGPT",
+      "summary": "GPT-6.1 Sol melhora o desempenho de *agentic coding*, uso de computador e trabalho profissional sobre GPT-6 Sol. O rollout começa em Pro e se expande a Plus, Business, Enterprise e Edu; organizações podem governar o acesso via papéis e permissões do workspace.",
       "tags": [
         "openai",
         "codex",
@@ -1083,6 +1126,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Notas de versão do ChatGPT",
+      "summary": "os *dots* recebem um objetivo, apps conectados e limites de autonomia; continuam o trabalho entre conversas em computador próprio de nuvem, com resultados retornando para revisão. Estão em rollout para Pro e Business Premium, com beta Enterprise desligada por padrão — modelo de execução persistente relevante para rotinas operacionais.",
       "tags": [
         "openai",
         "agentes-ia",
@@ -1108,6 +1152,7 @@
         "Itaminas — Monitoramento geotécnico"
       ],
       "source": "Esri — ArcGIS Earth October 2026",
+      "summary": "ArcGIS Earth desktop passa a suportar cenas locais, camadas de edifícios 3D, *Gaussian splats* georreferenciados e projetos; mobile ganha cenas locais e camadas de edifícios. Isso preserva sistemas de coordenadas locais e leva captura de realidade, terreno e ativos para inspeção e operação de campo.",
       "tags": [
         "esri",
         "arcgis-earth",
@@ -1133,6 +1178,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI — Depreciações de API",
+      "summary": "`gpt-5.3-codex`, `gpt-5.1` e `gpt-5.4-nano` foram depreciados e deixam a API em 2027-04-01. A substituição indicada é GPT-6 Sol para Codex/5.1 e GPT-6 Luna para Nano; fluxos produtivos devem testar compatibilidade, custo e avaliações antes do desligamento.",
       "tags": [
         "openai",
         "codex",
@@ -1158,6 +1204,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — Data Agent Kit GA",
+      "summary": "conjunto gratuito de ferramentas MCP e *agent skills* passa a conectar Codex, Claude Code e outros agentes diretamente a produtos de dados do Google Cloud. A versão GA adiciona BigQuery Graph, Bigtable, Spark gerenciado e acesso federado ao Lakehouse, reduzindo a necessidade de criar pipelines de ingestão apenas para dar contexto aos agentes.",
       "tags": [
         "google-cloud",
         "mcp",
@@ -1184,6 +1231,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud — Cloud CLI remote MCP server",
+      "summary": "agentes passam a acessar centenas de comandos `gcloud` e `bq` por um único servidor MCP gerenciado. O controle é por API própria e papel IAM `roles/mcp.toolUser`, criando caminho auditável para operações de infraestrutura e dados sem expor credenciais estáticas ao agente.",
       "tags": [
         "google-cloud",
         "mcp",
@@ -1210,6 +1258,7 @@
         "Suzano — Rotas e logística"
       ],
       "source": "Esri — ArcGIS Solutions September 2026 Release",
+      "summary": "release adiciona configurações operacionais para permissões de uso conjunto elétrico, inspeção de painéis solares, análise costeira, planejamento de mercado e reporte virtual de danos com imagem e GeoAI. Também move cinco soluções para fase de ciclo de vida *Mature*, sinal relevante para governança de portfólio ArcGIS.",
       "tags": [
         "esri",
         "arcgis-solutions",
@@ -1235,6 +1284,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "AWS — Amazon Bedrock Managed Agents",
+      "summary": "o serviço, construído sobre versão customizada da Agents API da OpenAI, executa agentes com modelos OpenAI dentro da AWS, com sessões duráveis, skills reutilizáveis e conexão a ferramentas via MCP. Cada agente recebe papel IAM próprio, aprovações humanas para ações consequentes e trilha no CloudTrail — controles relevantes para automações empresariais auditáveis.",
       "tags": [
         "aws",
         "bedrock",
@@ -1262,6 +1312,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Anthropic — Claude Sonnet 5.5",
+      "summary": "novo modelo para tarefas bem delimitadas, correções e artefatos, com preço de US$ 2/US$ 10 por milhão de tokens de entrada/saída e geração 30%+ mais rápida que Sonnet 5. Introduz salvaguardas cibernéticas e *fallbacks*, além de estar disponível também em AWS, Google Cloud e Azure; opção prática para agentes de engenharia e automação de dados sob governança.",
       "tags": [
         "anthropic",
         "claude",
@@ -1288,6 +1339,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "summary": "em preview, AlloyDB passa a provisionar instâncias de banco isoladas para picos de agentes, com leitura atualizada e somente leitura dos dados de produção. A arquitetura usa IAM, VPC Service Controls, criptografia e auditoria, permitindo consultas espaciais, vetoriais e textuais sem competir com o sistema transacional.",
       "tags": [
         "google-cloud",
         "alloydb",
@@ -1314,6 +1366,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "summary": "a ferramenta open source combina skills de agentes e servidor MCP local para converter IaC e manifestos Kubernetes em *landing zones* GKE por Pull Requests. Os guardrails determinísticos e a revisão via Git preservam rastreabilidade e rollback, em vez de alterar clusters ativos diretamente.",
       "tags": [
         "google-cloud",
         "gke",
@@ -1340,6 +1393,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Notas de versão do ChatGPT",
+      "summary": "Voice agora usa plugins e apps conectados em web e mobile; no Work pode criar artefatos, usar apps e operar navegador, com tarefa inacabada continuando em texto. Amplia a interface para operações em campo, mas mantém permissões e limites das conexões já configuradas.",
       "tags": [
         "openai",
         "chatgpt-work",
@@ -1365,6 +1419,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Notas de versão do ChatGPT",
+      "summary": "novos modelos passam a estar disponíveis em Work e Codex, separados dos modelos do Chat, e o desktop preserva a seleção manual. Isso amplia opções de roteamento entre capacidade e volume para tarefas de código, dados e agentes; a combinação disponível depende de plano e políticas do workspace.",
       "tags": [
         "openai",
         "codex",
@@ -1390,6 +1445,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Anthropic — Claude Opus 5.5",
+      "summary": "Opus 5.5 entra como novo modelo de ponta da família, com alegação de 40% menos custo que Opus 5 e modo rápido de até 2,5× no Claude Code. A ênfase em delegação de subagentes, verificação e controles como *preserved thinking* torna a atualização relevante para workflows de desenvolvimento com governança.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -1415,6 +1471,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "OpenAI — estudo de caso V7",
+      "summary": "V7 transforma arquivos em entidades de uma ontologia, preserva evidências citáveis e permite criar workflows do V7 Go via MCP no Codex. O caso mostra uma arquitetura concreta para “segundo cérebro” que combina extração estruturada, grafo de contexto e rastreabilidade de fonte.",
       "tags": [
         "openai",
         "codex",
@@ -1440,6 +1497,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "AWS News Blog",
+      "summary": "a nova versão do runtime gerenciado libera memória conforme a sessão reduz uso e prepara/snapshota o ambiente para manter partidas a frio previsíveis. É melhoria de ciclo de vida e custo para agentes persistentes, especialmente em fluxos com ferramentas, arquivos e execuções intermitentes.",
       "tags": [
         "aws",
         "bedrock",
@@ -1465,6 +1523,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "summary": "as capacidades de Secure Source Manager fortalecem autenticação e autorização unificadas para código e CI/CD. É base de segurança para agentes que alteram repositórios ou acionam automações de entrega, reduzindo o risco de transformar o pipeline em vetor de comprometimento.",
       "tags": [
         "google-cloud",
         "cicd",
@@ -1489,6 +1548,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "summary": "relato operacional mostra agentes inseridos no ciclo de desenvolvimento para varredura e correção de vulnerabilidades em cada mudança de código, com centenas de falhas bloqueadas por mês. Reforça padrão de alto sinal: agentes em escopo específico, integrados à revisão e *patching*, não com autonomia irrestrita sobre produção.",
       "tags": [
         "google-cloud",
         "agentes-ia",
@@ -1513,6 +1573,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud Blog",
+      "summary": "o recurso permite consultar dados governados onde residem em S3, ADLS, GCS e catálogos Iceberg, com cache que pode reduzir transferência entre nuvens. É relevante para agentes que cruzam telemetria, dados operacionais e acervos geoespaciais sem duplicação ampla; por estar em preview, não deve sustentar fluxo crítico ainda.",
       "tags": [
         "google-cloud",
         "bigquery",
@@ -1538,6 +1599,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI Developer Community",
+      "summary": "a nova visualização discrimina quanto tarefas, subagentes e conversas consomem da cota. É controle operacional importante para orquestrações de longa duração, permitindo localizar fluxos caros antes de ampliar uso de agentes.",
       "tags": [
         "openai",
         "codex",
@@ -1562,6 +1624,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "summary": "seis funções TVF combinam IA, ML e estatística dentro do BigQuery para diagnóstico de mudanças, tendência, relação entre variáveis e efeito causal, retornando SQL estruturado que pode virar *skills* de agentes. Evita exportar dados para investigação exploratória e cria base mais auditável para perguntas operacionais.",
       "tags": [
         "google-cloud",
         "bigquery",
@@ -1587,6 +1650,7 @@
         "Eucatex — Monitoramento de vigor florestal"
       ],
       "source": "Google Cloud Blog",
+      "summary": "pausa e retomada de jobs batch chegam a GA, e G4/RTX PRO 6000 amplia capacidade para preparação de dados e inferência pesada. Pode reduzir custo e tempo de operações descontínuas de imagem, LiDAR e séries temporais, desde que o dimensionamento de GPU seja justificado pelo pipeline.",
       "tags": [
         "google-cloud",
         "dataflow",
@@ -1612,6 +1676,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — release notes",
+      "summary": "`searchAddonSpec` entra em GA na API v1, permitindo ligar ou desligar complementos por busca e controlar custo programaticamente. É mecanismo útil para equilibrar profundidade de recuperação e orçamento em agentes que consultam acervos técnicos e documentos de projeto.",
       "tags": [
         "google-cloud",
         "agent-search",
@@ -1637,6 +1702,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI — Agents API",
+      "summary": "API entrega o harness do Codex para agentes de longa duração, subagentes, ferramentas, MCP e escolha de sandbox gerenciado, infraestrutura própria ou parceiros. Reduz esforço para implantar automações governadas, mas ainda está em beta público e requer avaliação de permissões, custo e isolamento antes de produção.",
       "tags": [
         "openai",
         "agents-api",
@@ -1663,6 +1729,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "OpenAI — Data agent",
+      "summary": "o agente conecta dados empresariais, investiga mudanças e produz relatórios e painéis interativos via conversa; consultas respeitam permissões da conta conectada. Abre caminho direto para análises exploratórias de operação, mas exige configurar fontes, autorização e definições de métricas antes de uso confiável.",
       "tags": [
         "openai",
         "codex",
@@ -1688,6 +1755,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "summary": "o plugin `google-cloud-developer` empacota skills, documentação oficial e MCP de conhecimento em padrão aberto; há instruções de instalação para Claude Code e Codex CLI. É referência prática para distribuir capacidades de nuvem com autenticação e guardrails consistentes entre agentes.",
       "tags": [
         "google-cloud",
         "codex",
@@ -1714,6 +1782,7 @@
         "CTC — Centro de Tecnologia Canavieira"
       ],
       "source": "OpenAI — estudo de caso",
+      "summary": "estudo aplicado descreve agentes Codex recebendo objetivos estreitos para escrever, modificar e testar código de controle, análise e simulação de medições laboratoriais. É evidência operacional de um padrão útil para ciclos de dados instrumentais: escopo restrito, execução verificável e humano concentrado no desenho do experimento.",
       "tags": [
         "openai",
         "codex",
@@ -1739,6 +1808,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "summary": "SDK expõe runtime para agentes com políticas declarativas, persistência de estado e telemetria de ações/ferramentas em tempo real. O desenho de *control plane* é aplicável a automações geoespaciais que precisam de trilha de execução, isolamento e supervisão — além do simples chat.",
       "tags": [
         "google-cloud",
         "agentes-ia",
@@ -1764,6 +1834,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Threat Intelligence",
+      "summary": "relatório primário descreve campanhas que usaram fluxos multiagente para escaneamento, tratamento de erros e coleta de credenciais, comprimindo o tempo de resposta dos defensores. Reforça que agentes ligados a dados, repositórios e portais devem operar com identidade mínima, isolamento e revisão de ferramentas.",
       "tags": [
         "google-cloud",
         "seguranca",
@@ -1788,6 +1859,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "summary": "demonstração usa o Data Agent Kit para investigar uma pergunta de negócio cruzando *warehouse*, banco operacional e arquivos, incluindo acesso ao Cloud Storage por servidor MCP. É padrão prático para conectar dados de projetos sem transformar o agente em acesso irrestrito ao ambiente.",
       "tags": [
         "google-cloud",
         "data-agent-kit",
@@ -1813,6 +1885,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "OpenAI — GPT-6 Astra",
+      "summary": "o modelo entra em rollout controlado para tarefas longas de pesquisa, código, documentos e uso de computador, com API e contexto de até 1,05 milhão de tokens. É uma opção de maior capacidade para fluxos auditáveis que cruzam dados, regras e automação; disponibilidade ainda é limitada, portanto não deve ser assumida como padrão de produção.",
       "tags": [
         "openai",
         "gpt-6-astra",
@@ -1838,6 +1911,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Notas de versão do ChatGPT",
+      "summary": "sites compatíveis podem expor ferramentas diretamente ao navegador integrado do ChatGPT Work e do Codex via WebMCP. Isso reduz a necessidade de integrações ad hoc para operações web, mas depende de site, plano e modelo compatíveis; é relevante para avaliar portais GIS e dados que possam oferecer ações controladas.",
       "tags": [
         "openai",
         "codex",
@@ -1863,6 +1937,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "summary": "o framework open source orquestra agentes de crítica e revisão, análise de repositório e reprodução isolada de vulnerabilidades antes do *patch*. Oferece um padrão operacional de segurança para usar agentes de código com contexto, critérios de aceitação e evidência reprodutível — não apenas varredura baseada em LLM.",
       "tags": [
         "google-cloud",
         "seguranca",
@@ -1887,6 +1962,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "summary": "BigQuery Graph entra em GA com GQL nativo e sem ETL para um banco de grafos separado. A integração com Data Agent Kit leva uma skill de grafos a Codex e Claude Code, e o *context graph* registra decisões de agentes como trilhas consultáveis e auditáveis.",
       "tags": [
         "google-cloud",
         "bigquery",
@@ -1912,6 +1988,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Google Cloud Blog",
+      "summary": "o kit aberto integra IDEs e agentes de código, incluindo Codex e Claude Code, para consultar dados, criar pipelines, treinar modelos e operar ciclos de MLOps. O exemplo combina dados geográficos, BigQuery, Spark e inferência diária, oferecendo um caminho concreto para automatizar pipelines geoespaciais com governança de dados.",
       "tags": [
         "google-cloud",
         "codex",
@@ -1937,6 +2014,7 @@
         "GeoNext — LiDAR e rodovias"
       ],
       "source": "Esri ArcGIS Blog",
+      "summary": "o novo pacote `{arcgisrouting}` expõe no R rotas, áreas de serviço/isócronas, roteirização de frotas, *map matching* de GPS e alocação de localização — incluindo requisições assíncronas e de grande porte. Reduz atrito para colocar análise logística reprodutível sobre serviços ArcGIS.",
       "tags": [
         "arcgis",
         "r",
@@ -1960,6 +2038,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "summary": "a nova modalidade mantém uma instância Cloud Run ativa para cargas com estado e longa duração, que não se ajustam ao padrão *scale-to-zero*. É uma alternativa de implantação para agentes contínuos, com menos partidas a frio e sem operar infraestrutura própria.",
       "tags": [
         "google-cloud",
         "cloud-run",
@@ -1983,6 +2062,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "summary": "Gemini Enterprise ganhou opção pay-as-you-go, quotas compartilhadas entre agentes e ferramentas de desenvolvimento, limites mensais por projeto e detecção de anomalias. Isso torna custo, pausa automática e governança do uso de agentes parâmetros operacionais — não só estimativas de arquitetura.",
       "tags": [
         "google-cloud",
         "agentes-ia",
@@ -2007,6 +2087,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "summary": "o padrão Open Knowledge Format (OKF) pode ser publicado no Knowledge Catalog com proveniência, verificação, atualização, linhagem e IAM. É uma referência prática para transformar bases Markdown e dados corporativos em contexto pesquisável e governado por agentes.",
       "tags": [
         "google-cloud",
         "agentes-ia",
@@ -2030,6 +2111,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "anúncio da OpenAI Developer Community",
+      "summary": "o WebMCP é um padrão aberto experimental para que aplicações web exponham ferramentas que agentes podem usar diretamente na página. É um sinal de arquitetura para portais e plataformas GIS tornarem ações geoespaciais invocáveis por agentes; ainda não é uma implantação validada nos projetos.",
       "tags": [
         "openai",
         "webmcp",

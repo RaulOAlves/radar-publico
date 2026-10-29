@@ -13,6 +13,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Anthropic — Claude Code v2.1.302",
+      "summary": "corrige servidores MCP que negociam o protocolo 2026-07-28 sem certos campos de resposta e muda o comportamento padrão de subagentes no desktop, VS Code e Agent SDK. Integrações e fluxos multiagente devem ser testados após atualização; também corrige uma rotina em nuvem que podia repetir trabalho depois de falhar.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -37,6 +38,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "AWS — AgentCore Insights",
+      "summary": "novos relatórios em lote ou recorrentes deixam de ser criados em 16/10; os recorrentes existentes param de gerar relatórios em 31/10. Equipes que usam essa prévia para avaliar falhas de agentes precisam preservar resultados e planejar outra observabilidade antes da descontinuação.",
       "tags": [
         "aws",
         "bedrock",
@@ -61,6 +63,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — Agent Search release notes",
+      "summary": "o alias `stable` de geração de respostas passa de Gemini 2.5 Flash para `gemini-3.5-flash/answer_gen/v1`. Aplicações de busca e resposta que dependem desse alias podem mudar qualidade, latência e comportamento sem alterar código; convém revalidar avaliações e respostas críticas.",
       "tags": [
         "google-cloud",
         "agent-search",

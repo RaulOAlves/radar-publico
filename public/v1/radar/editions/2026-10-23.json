@@ -13,6 +13,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Ai2 — OlmoEarth v1.3",
+      "summary": "o Ai2 liberou modelo, dados e embeddings globais pré-computados (64/128 dimensões) e um explorador para encontrar áreas semelhantes e criar mapas com poucos exemplos. Reduz o esforço para testar classificação de culturas, vigor e mudança de cobertura em projetos GeoIA; desempenho local ainda precisa ser validado.",
       "tags": [
         "geoia",
         "olmoearth",
@@ -40,6 +41,7 @@
         "São Martinho — Planejamento agrícola"
       ],
       "source": "Ai2 — PLANTEUR: benchmark de culturas tropicais",
+      "summary": "novo conjunto aberto reúne séries Sentinel-1/2 e Landsat-8 de 4.506 km² de parcelas, sete classes de culturas (incluindo cana) e testes fora da região de treino. Nos testes dos autores, todos os métodos perderam cerca de metade da acurácia em uma ilha não vista: alerta concreto para validar modelos agrícolas fora da área de treinamento.",
       "tags": [
         "geoia",
         "paper",
@@ -66,6 +68,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Anthropic — Claude Code v2.1.309",
+      "summary": "o release corrige execução de arquivos de inicialização do shell fora do sandbox, falhas de regras de escrita via symlink, alteração indevida do arquivo `--mcp-config` e contornos de permissões Bash/worktree. É atualização prioritária para agentes com acesso a código, arquivos e servidores MCP; revisar políticas após atualizar.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -91,6 +94,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI — Decisions API",
+      "summary": "API agora em disponibilidade geral responde probabilidade, escolha ou escore a partir de texto, imagem ou JSON, com até 400 perguntas por requisição. Pode reduzir latência/custo de triagem e roteamento em agentes e eventos geoespaciais; o ganho de até 10 vezes é alegação da OpenAI, não garantia para estes projetos.",
       "tags": [
         "openai",
         "decisions-api",
@@ -115,6 +119,7 @@
         "Amaggi — Monitoramento de desmatamento"
       ],
       "source": "OroraTech — parceria com ICEYE",
+      "summary": "a parceria anuncia integração de detecção/avanço do fogo por satélites térmicos com observações SAR para avaliar impactos mesmo sob fumaça e nuvens. É combinação relevante para monitoramento florestal e resposta a incêndios; a fonte não traz validação independente de latência ou implantação em cliente.",
       "tags": [
         "sensoriamento-remoto",
         "sar",

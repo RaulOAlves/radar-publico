@@ -13,6 +13,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "OpenAI — expansão da parceria com ServiceNow",
+      "summary": "plugin MCP já disponível conecta contexto e ações de instâncias ServiceNow ao ChatGPT, respeitando regras e permissões do cliente. É referência concreta para agentes corporativos que consultam incidentes e executam ações governadas; integração Codex no AI Workflow Factory é apenas planejada para 2027, não recurso atual.",
       "tags": [
         "openai",
         "servicenow",
@@ -38,6 +39,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — release notes de 28/10",
+      "summary": "Google anuncia região brasileira para Gemini Enterprise, com dados em repouso e processamento de ML na região; disponibilidade geral condicionada a allowlist. Pode destravar avaliação de agentes sobre dados corporativos brasileiros sensíveis, mas requer acesso liberado e verificação contratual antes de qualquer arquitetura.",
       "tags": [
         "google-cloud",
         "gemini-enterprise",
@@ -63,6 +65,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — release notes do AlloyDB AI",
+      "summary": "índice ScaNN 4LT em PostgreSQL 17+ entra em disponibilidade geral, com manutenção automática e busca filtrada com melhor recuperação; `Vector assist` também passa a GA. Amplia opção de busca semântica em grandes acervos geoespaciais/documentais, sem implicar necessidade de escala bilionária nos projetos atuais.",
       "tags": [
         "google-cloud",
         "alloydb",
@@ -87,6 +90,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Google Cloud — Application Integration agent skills",
+      "summary": "três skills abertas orientam agentes a configurar, criar/publicar e diagnosticar integrações do Google Cloud Application Integration via REST API. Fornecem referência operacional para automatizar fluxos entre sistemas corporativos com IAM e versionamento; uso nos projetos depende da adoção dessa plataforma.",
       "tags": [
         "google-cloud",
         "skills",
@@ -111,6 +115,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — release notes de 28/10, CodeMender 0.17.0",
+      "summary": "nova versão separa configuração de sandbox da política de comandos, protege `.git/hooks`, `.git/config` e `.codemender` contra alterações durante correções e fecha travessia por symlinks fora de `allowedRoots`. Medidas relevantes ao avaliar agentes que editam repositórios com acesso a dados ou infraestrutura corporativa.",
       "tags": [
         "google-cloud",
         "codemender",

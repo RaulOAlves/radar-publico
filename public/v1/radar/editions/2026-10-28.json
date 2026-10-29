@@ -13,6 +13,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Esri — Brotli Vulnerabilities (Broccoli2Shell)",
+      "summary": "Esri investiga o impacto de CVE-2026-111497 em seus produtos e recomenda atualizar o .NET Framework usado por ArcGIS Pro, Web Adaptor em IIS e extensões SOE/SOI; ArcGIS Online já recebeu medidas mitigadoras. Quem opera ArcGIS Enterprise deve verificar versões e acompanhar a avaliação, sem presumir que todo produto está vulnerável.",
       "tags": [
         "esri",
         "arcgis",
@@ -38,6 +39,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Esri — ArcGIS Server 11.5 Geocoding Capability Patch",
+      "summary": "serviços de geocodificação publicados do ArcGIS Pro 3.6 ou posterior no ArcGIS Server 11.5 podem devolver zero resultados, inclusive via `FindAddressCandidates` e `GeocodeAddresses`. Esri recomenda o patch para instalações afetadas; planejar reinício do serviço e rollback antes de aplicar.",
       "tags": [
         "esri",
         "arcgis-enterprise",
@@ -62,6 +64,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "EDGX — Sterna em órbita",
+      "summary": "empresa reporta que carga baseada em NVIDIA Jetson, lançada em março, já retornou dados operacionais em órbita; outra ainda está em comissionamento. Processar imagens a bordo pode reduzir volume transmitido e latência de alertas geoespaciais, mas a fonte não demonstra ainda serviço comercial ou desempenho dessas aplicações.",
       "tags": [
         "geoia",
         "edge-ai",

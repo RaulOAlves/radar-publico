@@ -13,6 +13,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — Data Agent Kit GA",
+      "summary": "conjunto gratuito de ferramentas MCP e *agent skills* passa a conectar Codex, Claude Code e outros agentes diretamente a produtos de dados do Google Cloud. A versão GA adiciona BigQuery Graph, Bigtable, Spark gerenciado e acesso federado ao Lakehouse, reduzindo a necessidade de criar pipelines de ingestão apenas para dar contexto aos agentes.",
       "tags": [
         "google-cloud",
         "mcp",
@@ -39,6 +40,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud — Cloud CLI remote MCP server",
+      "summary": "agentes passam a acessar centenas de comandos `gcloud` e `bq` por um único servidor MCP gerenciado. O controle é por API própria e papel IAM `roles/mcp.toolUser`, criando caminho auditável para operações de infraestrutura e dados sem expor credenciais estáticas ao agente.",
       "tags": [
         "google-cloud",
         "mcp",
@@ -65,6 +67,7 @@
         "Suzano — Rotas e logística"
       ],
       "source": "Esri — ArcGIS Solutions September 2026 Release",
+      "summary": "release adiciona configurações operacionais para permissões de uso conjunto elétrico, inspeção de painéis solares, análise costeira, planejamento de mercado e reporte virtual de danos com imagem e GeoAI. Também move cinco soluções para fase de ciclo de vida *Mature*, sinal relevante para governança de portfólio ArcGIS.",
       "tags": [
         "esri",
         "arcgis-solutions",

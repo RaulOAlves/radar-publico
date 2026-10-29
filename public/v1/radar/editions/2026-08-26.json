@@ -12,6 +12,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "anúncio da OpenAI Developer Community",
+      "summary": "o WebMCP é um padrão aberto experimental para que aplicações web exponham ferramentas que agentes podem usar diretamente na página. É um sinal de arquitetura para portais e plataformas GIS tornarem ações geoespaciais invocáveis por agentes; ainda não é uma implantação validada nos projetos.",
       "tags": [
         "openai",
         "webmcp",

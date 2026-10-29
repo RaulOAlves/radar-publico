@@ -12,6 +12,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "summary": "Gemini Enterprise ganhou opção pay-as-you-go, quotas compartilhadas entre agentes e ferramentas de desenvolvimento, limites mensais por projeto e detecção de anomalias. Isso torna custo, pausa automática e governança do uso de agentes parâmetros operacionais — não só estimativas de arquitetura.",
       "tags": [
         "google-cloud",
         "agentes-ia",
@@ -36,6 +37,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "summary": "o padrão Open Knowledge Format (OKF) pode ser publicado no Knowledge Catalog com proveniência, verificação, atualização, linhagem e IAM. É uma referência prática para transformar bases Markdown e dados corporativos em contexto pesquisável e governado por agentes.",
       "tags": [
         "google-cloud",
         "agentes-ia",

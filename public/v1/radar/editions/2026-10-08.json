@@ -13,6 +13,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Anthropic — Claude Haiku 5.5",
+      "summary": "Haiku 5.5 é voltado a tarefas de alto volume — sumarização, compactação, consultas a banco, classificação e subagentes — com custo médio declarado 75% menor que Haiku 4.5. A Anthropic também reduz pela metade o preço de leitura de cache do Sonnet 5.5, tornando trabalho agentivo cerca de 20% mais barato, e adiciona crédito mensal de API para Max e Team.",
       "tags": [
         "anthropic",
         "claude",

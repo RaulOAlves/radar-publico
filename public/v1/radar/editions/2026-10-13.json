@@ -12,6 +12,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Planet — Introducing Populace",
+      "summary": "o Populace combina imagens Planet, modelos da Microsoft e dados demográficos do IHME para estimar população global em grade de 40 m, com atualização trimestral. Pode enriquecer análises de traçados rodoviários, infraestrutura e exposição de comunidades; uso gratuito é restrito a pesquisa e organizações sem fins lucrativos, enquanto uso comercial requer outras condições.",
       "tags": [
         "planet",
         "observacao-da-terra",
@@ -36,6 +37,7 @@
         "Itaminas — Monitoramento geotécnico"
       ],
       "source": "Esri — Countdown Instant App",
+      "summary": "o ArcGIS Instant Apps permite ordenar feições por atributo numérico, filtrar rankings e comparar itens no mapa com pop-ups fixados. Recurso pode criar painéis rápidos de priorização espacial de ativos e áreas sem desenvolver uma aplicação própria.",
       "tags": [
         "esri",
         "arcgis",
@@ -59,6 +61,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Anthropic — Strengthening our defenses against distillation attacks",
+      "summary": "a Anthropic relata queda de 90% a 99% na extração indevida de tokens de raciocínio após reforçar classificadores e controles de contexto. Integrações que manipulam histórico de raciocínio podem exigir ajuste; bloqueios preventivos podem gerar cobrança e falsos positivos, pontos a testar em agentes corporativos.",
       "tags": [
         "anthropic",
         "claude",

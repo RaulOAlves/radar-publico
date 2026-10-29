@@ -20,3 +20,6 @@ python3 scripts/build_radar.py source/radar-ia-geo.md --output public --fail-on-
 
 O Markdown de origem fica em `source/`. O gerador padrão usa somente biblioteca padrão do Python.
 Com `--fail-on-quarantine`, uma entrada inválida preserva a última publicação válida.
+
+Novos itens incluem `summary`, um resumo factual de um ou dois parágrafos. Registros históricos
+sem esse campo usam `why_it_matters` como compatibilidade temporária.

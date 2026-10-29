@@ -27,8 +27,18 @@ TAG = re.compile(r"#([\w-]+)")
 
 
 def _bullet_value(block: str, name: str) -> str | None:
-    match = re.search(rf"^- {re.escape(name)}:\s*(.+)$", block, re.MULTILINE)
-    return match.group(1).strip() if match else None
+    prefix = f"- {name}:"
+    lines = block.splitlines()
+    for index, line in enumerate(lines):
+        if not line.startswith(prefix):
+            continue
+        value = [line.removeprefix(prefix).strip()]
+        for continuation in lines[index + 1 :]:
+            if continuation.startswith("- "):
+                break
+            value.append(continuation.strip())
+        return "\n".join(value).strip()
+    return None
 
 
 def _item_id(url: str) -> str:
@@ -60,6 +70,7 @@ def parse_document(document: str) -> dict:
             continue
         tags = _bullet_value(block, "Tags") or ""
         relations = _bullet_value(block, "Relações") or ""
+        impact = _bullet_value(block, "Por que importa") or "não informado"
         items.append(
             {
                 "id": _item_id(source_link.group(2)),
@@ -69,7 +80,8 @@ def parse_document(document: str) -> dict:
                 "source": source_link.group(1),
                 "url": source_link.group(2),
                 "published": _bullet_value(block, "Publicado") or "não informado",
-                "why_it_matters": _bullet_value(block, "Por que importa") or "não informado",
+                "summary": _bullet_value(block, "Resumo") or impact,
+                "why_it_matters": impact,
                 "tags": TAG.findall(tags),
                 "relations": RELATION.findall(relations),
                 "confidence": _bullet_value(block, "Confiança") or "não informada",
@@ -98,7 +110,7 @@ def _rss(items: list[dict]) -> ET.Element:
         ET.SubElement(entry, "title").text = item["title"]
         ET.SubElement(entry, "link").text = item["url"]
         ET.SubElement(entry, "guid", isPermaLink="false").text = item["id"]
-        ET.SubElement(entry, "description").text = item["why_it_matters"]
+        ET.SubElement(entry, "description").text = item["summary"]
         ET.SubElement(entry, "pubDate").text = format_datetime(
             datetime.fromisoformat(item["edition_at"])
         )

@@ -13,6 +13,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Notas de versão do ChatGPT",
+      "summary": "novos modelos passam a estar disponíveis em Work e Codex, separados dos modelos do Chat, e o desktop preserva a seleção manual. Isso amplia opções de roteamento entre capacidade e volume para tarefas de código, dados e agentes; a combinação disponível depende de plano e políticas do workspace.",
       "tags": [
         "openai",
         "codex",
@@ -38,6 +39,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Anthropic — Claude Opus 5.5",
+      "summary": "Opus 5.5 entra como novo modelo de ponta da família, com alegação de 40% menos custo que Opus 5 e modo rápido de até 2,5× no Claude Code. A ênfase em delegação de subagentes, verificação e controles como *preserved thinking* torna a atualização relevante para workflows de desenvolvimento com governança.",
       "tags": [
         "anthropic",
         "claude-code",

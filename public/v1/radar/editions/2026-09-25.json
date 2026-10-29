@@ -13,6 +13,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "summary": "em preview, AlloyDB passa a provisionar instâncias de banco isoladas para picos de agentes, com leitura atualizada e somente leitura dos dados de produção. A arquitetura usa IAM, VPC Service Controls, criptografia e auditoria, permitindo consultas espaciais, vetoriais e textuais sem competir com o sistema transacional.",
       "tags": [
         "google-cloud",
         "alloydb",
@@ -39,6 +40,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "summary": "a ferramenta open source combina skills de agentes e servidor MCP local para converter IaC e manifestos Kubernetes em *landing zones* GKE por Pull Requests. Os guardrails determinísticos e a revisão via Git preservam rastreabilidade e rollback, em vez de alterar clusters ativos diretamente.",
       "tags": [
         "google-cloud",
         "gke",

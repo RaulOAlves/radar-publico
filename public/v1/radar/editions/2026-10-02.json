@@ -13,6 +13,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Notas de versão do ChatGPT",
+      "summary": "GPT-6.1 Sol melhora o desempenho de *agentic coding*, uso de computador e trabalho profissional sobre GPT-6 Sol. O rollout começa em Pro e se expande a Plus, Business, Enterprise e Edu; organizações podem governar o acesso via papéis e permissões do workspace.",
       "tags": [
         "openai",
         "codex",
@@ -38,6 +39,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Notas de versão do ChatGPT",
+      "summary": "os *dots* recebem um objetivo, apps conectados e limites de autonomia; continuam o trabalho entre conversas em computador próprio de nuvem, com resultados retornando para revisão. Estão em rollout para Pro e Business Premium, com beta Enterprise desligada por padrão — modelo de execução persistente relevante para rotinas operacionais.",
       "tags": [
         "openai",
         "agentes-ia",
@@ -63,6 +65,7 @@
         "Itaminas — Monitoramento geotécnico"
       ],
       "source": "Esri — ArcGIS Earth October 2026",
+      "summary": "ArcGIS Earth desktop passa a suportar cenas locais, camadas de edifícios 3D, *Gaussian splats* georreferenciados e projetos; mobile ganha cenas locais e camadas de edifícios. Isso preserva sistemas de coordenadas locais e leva captura de realidade, terreno e ativos para inspeção e operação de campo.",
       "tags": [
         "esri",
         "arcgis-earth",
@@ -88,6 +91,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI — Depreciações de API",
+      "summary": "`gpt-5.3-codex`, `gpt-5.1` e `gpt-5.4-nano` foram depreciados e deixam a API em 2027-04-01. A substituição indicada é GPT-6 Sol para Codex/5.1 e GPT-6 Luna para Nano; fluxos produtivos devem testar compatibilidade, custo e avaliações antes do desligamento.",
       "tags": [
         "openai",
         "codex",

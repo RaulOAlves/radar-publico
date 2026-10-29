@@ -21,6 +21,9 @@ DOCUMENT = """# Radar IA, GeoIA e Setores
 
 - Fonte: [Fonte Oficial](https://example.com/noticia?a=1&b=2)
 - Publicado: 2026-10-28 22:10 BRT
+- Resumo: Primeiro parágrafo factual sobre o lançamento.
+
+  Segundo parágrafo com contexto, sem copiar a fonte.
 - Por que importa: Uma mudança verificável para agentes e GIS.
 - Tags: #openai #geoia
 - Relações: [[Projeto Exemplo]], [[Outro Projeto]]
@@ -40,6 +43,10 @@ class RadarBuildTests(unittest.TestCase):
         self.assertEqual(["openai", "geoia"], item["tags"])
         self.assertEqual(["Projeto Exemplo", "Outro Projeto"], item["relations"])
         self.assertEqual("alta", item["confidence"])
+        self.assertEqual(
+            "Primeiro parágrafo factual sobre o lançamento.\n\nSegundo parágrafo com contexto, sem copiar a fonte.",
+            item["summary"],
+        )
         self.assertTrue(item["id"].startswith("radar-"))
 
     def test_malformed_record_is_quarantined_not_silently_dropped(self):
@@ -79,6 +86,10 @@ class RadarBuildTests(unittest.TestCase):
         self.assertEqual("rss", rss.getroot().tag)
         self.assertEqual("https://radar-publico-opal.vercel.app", rss.findtext("./channel/link"))
         self.assertTrue(rss.findtext("./channel/item/pubDate").endswith("-0300"))
+        self.assertEqual(
+            "Primeiro parágrafo factual sobre o lançamento.\n\nSegundo parágrafo com contexto, sem copiar a fonte.",
+            rss.findtext("./channel/item/description"),
+        )
         self.assertIn("v1/radar/quarantine.json", manifest["files"])
 
     def test_same_input_produces_same_item_id(self):
@@ -86,6 +97,16 @@ class RadarBuildTests(unittest.TestCase):
         second = parse_document(DOCUMENT)["items"][0]["id"]
 
         self.assertEqual(first, second)
+
+    def test_legacy_item_uses_impact_as_summary_fallback(self):
+        legacy = DOCUMENT.replace(
+            "- Resumo: Primeiro parágrafo factual sobre o lançamento.\n\n  Segundo parágrafo com contexto, sem copiar a fonte.\n",
+            "",
+        )
+
+        item = parse_document(legacy)["items"][0]
+
+        self.assertEqual(item["why_it_matters"], item["summary"])
 
     def test_newest_empty_edition_is_published_explicitly(self):
         report = parse_document(

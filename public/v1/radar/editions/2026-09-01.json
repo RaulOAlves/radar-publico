@@ -13,6 +13,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Google Cloud Blog",
+      "summary": "o kit aberto integra IDEs e agentes de código, incluindo Codex e Claude Code, para consultar dados, criar pipelines, treinar modelos e operar ciclos de MLOps. O exemplo combina dados geográficos, BigQuery, Spark e inferência diária, oferecendo um caminho concreto para automatizar pipelines geoespaciais com governança de dados.",
       "tags": [
         "google-cloud",
         "codex",

@@ -13,6 +13,7 @@
         "CTC — Centro de Tecnologia Canavieira"
       ],
       "source": "OpenAI — estudo de caso",
+      "summary": "estudo aplicado descreve agentes Codex recebendo objetivos estreitos para escrever, modificar e testar código de controle, análise e simulação de medições laboratoriais. É evidência operacional de um padrão útil para ciclos de dados instrumentais: escopo restrito, execução verificável e humano concentrado no desenho do experimento.",
       "tags": [
         "openai",
         "codex",
@@ -38,6 +39,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "summary": "SDK expõe runtime para agentes com políticas declarativas, persistência de estado e telemetria de ações/ferramentas em tempo real. O desenho de *control plane* é aplicável a automações geoespaciais que precisam de trilha de execução, isolamento e supervisão — além do simples chat.",
       "tags": [
         "google-cloud",
         "agentes-ia",
@@ -63,6 +65,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Threat Intelligence",
+      "summary": "relatório primário descreve campanhas que usaram fluxos multiagente para escaneamento, tratamento de erros e coleta de credenciais, comprimindo o tempo de resposta dos defensores. Reforça que agentes ligados a dados, repositórios e portais devem operar com identidade mínima, isolamento e revisão de ferramentas.",
       "tags": [
         "google-cloud",
         "seguranca",
@@ -87,6 +90,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "summary": "demonstração usa o Data Agent Kit para investigar uma pergunta de negócio cruzando *warehouse*, banco operacional e arquivos, incluindo acesso ao Cloud Storage por servidor MCP. É padrão prático para conectar dados de projetos sem transformar o agente em acesso irrestrito ao ambiente.",
       "tags": [
         "google-cloud",
         "data-agent-kit",

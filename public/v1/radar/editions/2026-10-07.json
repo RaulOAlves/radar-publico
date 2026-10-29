@@ -13,6 +13,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — MCP Toolbox Java SDK 1.0",
+      "summary": "SDK Java 1.0 adiciona orquestração MCP tipada para agentes corporativos, com identidade via Application Default Credentials e tokens OIDC sem chaves fixas. A separação entre Toolbox e agente Spring Boot permite escalar acesso a dados e conversas com controles adequados a sistemas transacionais.",
       "tags": [
         "google-cloud",
         "mcp",

@@ -13,6 +13,7 @@
         "GeoNext — LiDAR e rodovias"
       ],
       "source": "Esri ArcGIS Blog",
+      "summary": "o novo pacote `{arcgisrouting}` expõe no R rotas, áreas de serviço/isócronas, roteirização de frotas, *map matching* de GPS e alocação de localização — incluindo requisições assíncronas e de grande porte. Reduz atrito para colocar análise logística reprodutível sobre serviços ArcGIS.",
       "tags": [
         "arcgis",
         "r",
@@ -36,6 +37,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "summary": "a nova modalidade mantém uma instância Cloud Run ativa para cargas com estado e longa duração, que não se ajustam ao padrão *scale-to-zero*. É uma alternativa de implantação para agentes contínuos, com menos partidas a frio e sem operar infraestrutura própria.",
       "tags": [
         "google-cloud",
         "cloud-run",

@@ -13,6 +13,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "summary": "relato operacional mostra agentes inseridos no ciclo de desenvolvimento para varredura e correção de vulnerabilidades em cada mudança de código, com centenas de falhas bloqueadas por mês. Reforça padrão de alto sinal: agentes em escopo específico, integrados à revisão e *patching*, não com autonomia irrestrita sobre produção.",
       "tags": [
         "google-cloud",
         "agentes-ia",
@@ -37,6 +38,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud Blog",
+      "summary": "o recurso permite consultar dados governados onde residem em S3, ADLS, GCS e catálogos Iceberg, com cache que pode reduzir transferência entre nuvens. É relevante para agentes que cruzam telemetria, dados operacionais e acervos geoespaciais sem duplicação ampla; por estar em preview, não deve sustentar fluxo crítico ainda.",
       "tags": [
         "google-cloud",
         "bigquery",
@@ -62,6 +64,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI Developer Community",
+      "summary": "a nova visualização discrimina quanto tarefas, subagentes e conversas consomem da cota. É controle operacional importante para orquestrações de longa duração, permitindo localizar fluxos caros antes de ampliar uso de agentes.",
       "tags": [
         "openai",
         "codex",
