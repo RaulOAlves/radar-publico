@@ -12,7 +12,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "OpenAI — expansão da parceria com ServiceNow",
-      "summary": "plugin MCP já disponível conecta contexto e ações de instâncias ServiceNow ao ChatGPT, respeitando regras e permissões do cliente. É referência concreta para agentes corporativos que consultam incidentes e executam ações governadas; integração Codex no AI Workflow Factory é apenas planejada para 2027, não recurso atual.",
+      "summary": "A OpenAI e a ServiceNow anunciaram expansão da parceria para conectar fluxos da ServiceNow ao ChatGPT e ampliar o uso de modelos e agentes da OpenAI nos produtos da empresa. A integração permite conectar uma instância própria da ServiceNow ao ChatGPT para localizar incidentes semelhantes, avaliar riscos de mudanças e atualizar registros durante a conversa.\n\nAs capacidades dependem da configuração do cliente, enquanto o Action Fabric aplica regras de negócio e permissões existentes. O plugin MCP já está no marketplace da OpenAI; recursos adicionais são esperados até o fim de 2026. A integração do Codex ao AI Workflow Factory permanece planejada para 2027.",
       "tags": [
         "openai",
         "servicenow",
@@ -38,7 +38,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — release notes de 28/10",
-      "summary": "Google anuncia região brasileira para Gemini Enterprise, com dados em repouso e processamento de ML na região; disponibilidade geral condicionada a allowlist. Pode destravar avaliação de agentes sobre dados corporativos brasileiros sensíveis, mas requer acesso liberado e verificação contratual antes de qualquer arquitetura.",
+      "summary": "As notas do Google Cloud registram que o aplicativo Gemini Enterprise pode operar na região brasileira (`br`), com residência de dados em repouso e processamento de machine learning dentro do país. A oferta consta como disponibilidade geral, mas exige allowlist: clientes precisam solicitar acesso à equipe de conta do Google.\n\nO anúncio não significa que qualquer projeto possa habilitar a região imediatamente. Para avaliar uso com informações corporativas sensíveis, ainda é necessário confirmar elegibilidade, escopo dos dados e condições aplicáveis à conta e ao ambiente.",
       "tags": [
         "google-cloud",
         "gemini-enterprise",
@@ -64,7 +64,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — release notes do AlloyDB AI",
-      "summary": "índice ScaNN 4LT em PostgreSQL 17+ entra em disponibilidade geral, com manutenção automática e busca filtrada com melhor recuperação; `Vector assist` também passa a GA. Amplia opção de busca semântica em grandes acervos geoespaciais/documentais, sem implicar necessidade de escala bilionária nos projetos atuais.",
+      "summary": "O Google Cloud anunciou disponibilidade geral dos índices vetoriais ScaNN de árvore de quatro níveis na extensão `alloydb_scann`, para AlloyDB com PostgreSQL 17 ou posterior. A documentação informa suporte a tabelas com até 10 bilhões de linhas vetoriais e manutenção automática dos índices.\n\nEm buscas filtradas, a opção `scann.satisfy_limit=relaxed_order` permite continuar a varredura por partições até obter resultados suficientes para o `LIMIT`, o que pode melhorar o recall. A atualização também torna o Vector assist disponível para ajudar a configurar embeddings, consultas e índices; desempenho continua dependente da carga e da configuração concreta.",
       "tags": [
         "google-cloud",
         "alloydb",
@@ -89,7 +89,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Google Cloud — Application Integration agent skills",
-      "summary": "três skills abertas orientam agentes a configurar, criar/publicar e diagnosticar integrações do Google Cloud Application Integration via REST API. Fornecem referência operacional para automatizar fluxos entre sistemas corporativos com IAM e versionamento; uso nos projetos depende da adoção dessa plataforma.",
+      "summary": "A documentação do Google Cloud descreve três skills publicadas no repositório aberto `google/skills`: `application-integration-basics`, `application-integration-authoring` e `application-integration-troubleshooting`. Elas orientam agentes a configurar o Application Integration, criar, versionar, publicar e executar integrações pela REST API, além de investigar falhas ou execuções suspensas.\n\nOs materiais cobrem APIs, regiões, IAM, contas de serviço, promoção entre ambientes e análise de logs, métricas, conectores e cotas. As skills são recursos reutilizáveis para agentes; não substituem permissões, validações ou a operação governada da plataforma.",
       "tags": [
         "google-cloud",
         "skills",
@@ -114,7 +114,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — release notes de 28/10, CodeMender 0.17.0",
-      "summary": "nova versão separa configuração de sandbox da política de comandos, protege `.git/hooks`, `.git/config` e `.codemender` contra alterações durante correções e fecha travessia por symlinks fora de `allowedRoots`. Medidas relevantes ao avaliar agentes que editam repositórios com acesso a dados ou infraestrutura corporativa.",
+      "summary": "As notas de versão do Google Cloud descrevem mudanças no CodeMender 0.17.0 voltadas à configuração, diagnóstico e segurança. A versão separa o controle do sandbox das políticas de comandos, substituindo a opção abrangente `--unrestricted` por opções distintas. Durante `cm fix` e `cm verify`, `.git/hooks`, `.git/config` e `.codemender` passam a ser montados como somente leitura em sandboxes graváveis.\n\nA atualização também aplica os limites de `allowedRoots` a operações de descoberta e correção para impedir travessia por links simbólicos pendentes. Os controles disponíveis não eliminam a necessidade de configurar e revisar o ambiente de execução.",
       "tags": [
         "google-cloud",
         "codemender",
@@ -140,7 +140,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Esri — Brotli Vulnerabilities (Broccoli2Shell)",
-      "summary": "Esri investiga o impacto de CVE-2026-111497 em seus produtos e recomenda atualizar o .NET Framework usado por ArcGIS Pro, Web Adaptor em IIS e extensões SOE/SOI; ArcGIS Online já recebeu medidas mitigadoras. Quem opera ArcGIS Enterprise deve verificar versões e acompanhar a avaliação, sem presumir que todo produto está vulnerável.",
+      "summary": "A Esri informa que a vulnerabilidade crítica CVE-2026-111497 no decodificador Brotli foi divulgada por pesquisadores da OpenAI em 22 de outubro e entrou na lista KEV da CISA em 27 de outubro. A publicação, datada e atualizada em 29/10, classifica ArcGIS Enterprise 11.5, 12.0 e 12.1 e ArcGIS Pro 3.5 ou posteriores como afetados, com correções ainda pendentes.\n\nNo ArcGIS Online, medidas mitigadoras foram implantadas e atualizações estão em andamento. Para ArcGIS Pro, Web Adaptor em IIS e extensões SOE/SOI, a orientação inclui atualizar o runtime .NET da Microsoft; no ArcGIS Server, a recomendação é desativar feeds de dados personalizados do SDK até o patch, salvo orientação de suporte.",
       "tags": [
         "esri",
         "arcgis",
@@ -166,7 +166,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Esri — ArcGIS Server 11.5 Geocoding Capability Patch",
-      "summary": "serviços de geocodificação publicados do ArcGIS Pro 3.6 ou posterior no ArcGIS Server 11.5 podem devolver zero resultados, inclusive via `FindAddressCandidates` e `GeocodeAddresses`. Esri recomenda o patch para instalações afetadas; planejar reinício do serviço e rollback antes de aplicar.",
+      "summary": "A Esri disponibiliza um patch para um defeito em serviços de geocodificação publicados no ArcGIS Server 11.5 a partir do ArcGIS Pro 3.6. Sem a correção, os serviços não retornam candidatos no painel Locate nem pela API FindAddressCandidates; na geocodificação de tabelas, endereços podem ficar sem correspondência, inclusive via GeocodeAddresses.\n\nO problema BUG-000181366 ocorre porque a capacidade de geocodificação não é habilitada por padrão ao publicar do Pro 3.6 para o Enterprise. A instalação reinicia o serviço ArcGIS Server e pode levar alguns minutos; a Esri orienta preparar rollback e oferece pacotes separados para Windows e Linux.",
       "tags": [
         "esri",
         "arcgis-enterprise",
@@ -191,7 +191,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "EDGX — Sterna em órbita",
-      "summary": "empresa reporta que carga baseada em NVIDIA Jetson, lançada em março, já retornou dados operacionais em órbita; outra ainda está em comissionamento. Processar imagens a bordo pode reduzir volume transmitido e latência de alertas geoespaciais, mas a fonte não demonstra ainda serviço comercial ou desempenho dessas aplicações.",
+      "summary": "A EDGX, empresa belga de tecnologia espacial, relata que lançou duas cargas de demonstração na missão compartilhada SpaceX Transporter-16, em março de 2026. Segundo a empresa, uma carga baseada na plataforma Sterna com NVIDIA Jetson já retornou os primeiros dados operacionais em órbita em até duas semanas; a segunda aguardava comissionamento do satélite.\n\nA proposta é executar computação a bordo para reduzir dependência de infraestrutura terrestre e processar dados mais perto da coleta. A empresa relata primeiros clientes assinados e missões previstas para 2027, mas não apresenta métricas independentes de desempenho nem resultados comerciais verificáveis.",
       "tags": [
         "geoia",
         "edge-ai",
@@ -216,7 +216,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Ai2 — OlmoEarth v1.3",
-      "summary": "o Ai2 liberou modelo, dados e embeddings globais pré-computados (64/128 dimensões) e um explorador para encontrar áreas semelhantes e criar mapas com poucos exemplos. Reduz o esforço para testar classificação de culturas, vigor e mudança de cobertura em projetos GeoIA; desempenho local ainda precisa ser validado.",
+      "summary": "O Ai2 anunciou o OlmoEarth v1.3 junto com embeddings anuais pré-computados para todo o planeta, em resolução de 10 metros e dimensões de 64 ou 128, além de um explorador web para consultar e personalizar mapas. O modelo combina séries temporais de radar Sentinel-1 e imagens multiespectrais Sentinel-2 e Landsat para gerar vetores por pixel.\n\nA proposta permite que classificação de culturas, cobertura do solo e detecção de mudanças usem classificadores menores, sem repetir o processamento de imagens em cada projeto. Nos benchmarks divulgados pelo Ai2, os embeddings de 128 dimensões lideraram 20 de 27 avaliações; esses resultados não substituem validação em dados locais.",
       "tags": [
         "geoia",
         "olmoearth",
@@ -244,7 +244,7 @@
         "São Martinho — Planejamento agrícola"
       ],
       "source": "Ai2 — PLANTEUR: benchmark de culturas tropicais",
-      "summary": "novo conjunto aberto reúne séries Sentinel-1/2 e Landsat-8 de 4.506 km² de parcelas, sete classes de culturas (incluindo cana) e testes fora da região de treino. Nos testes dos autores, todos os métodos perderam cerca de metade da acurácia em uma ilha não vista: alerta concreto para validar modelos agrícolas fora da área de treinamento.",
+      "summary": "O Ai2 apresentou PLANTEUR, um benchmark aberto para classificação de culturas em seis territórios tropicais franceses. O conjunto reúne 2.750 séries temporais alinhadas de Sentinel-2, Sentinel-1 e Landsat-8, com rótulos derivados de parcelas agrícolas que cobrem 4.506 km² e sete classes, entre elas cana-de-açúcar, banana e abacaxi.\n\nOs autores incluem avaliações deixando uma ilha fora do treinamento e cenários com poucos exemplos. Nos experimentos divulgados, todos os métodos avaliados tiveram desempenho substancialmente inferior ao benchmark PASTIS e perderam cerca de metade da acurácia em ilha não vista; o resultado evidencia limites de transferência geográfica, sem medir diretamente desempenho em outros países.",
       "tags": [
         "geoia",
         "paper",
@@ -271,7 +271,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Anthropic — Claude Code v2.1.309",
-      "summary": "o release corrige execução de arquivos de inicialização do shell fora do sandbox, falhas de regras de escrita via symlink, alteração indevida do arquivo `--mcp-config` e contornos de permissões Bash/worktree. É atualização prioritária para agentes com acesso a código, arquivos e servidores MCP; revisar políticas após atualizar.",
+      "summary": "A versão 2.1.309 do Claude Code lista correções para problemas de isolamento e permissões. Entre elas, comandos Bash em sandbox no macOS e Linux executavam arquivos de inicialização do shell fora do sandbox; regras de escrita no macOS podiam falhar quando o caminho passava por symlink; e comandos aceitos automaticamente podiam alterar o arquivo MCP indicado por `--mcp-config`.\n\nO release também corrige verificações de permissão Bash para alguns comandos compostos, regras de bloqueio de edição contornáveis por redirecionamento e comandos que a proteção de worktree deveria recusar. São correções descritas pelo fornecedor; a publicação não quantifica exposição de instalações anteriores nem afirma exploração.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -297,7 +297,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI — Decisions API",
-      "summary": "API agora em disponibilidade geral responde probabilidade, escolha ou escore a partir de texto, imagem ou JSON, com até 400 perguntas por requisição. Pode reduzir latência/custo de triagem e roteamento em agentes e eventos geoespaciais; o ganho de até 10 vezes é alegação da OpenAI, não garantia para estes projetos.",
+      "summary": "A OpenAI anunciou disponibilidade geral da Decisions API, construída sobre GPT-6 Luna e voltada a respostas delimitadas, como classificação, roteamento ou seleção de próxima ação. A API aceita contexto em texto, imagens ou JSON e retorna probabilidade, uma opção predefinida ou uma pontuação.\n\nSegundo a empresa, pode operar até dez vezes mais rápido que GPT-6 Luna via Responses API; essa comparação é alegação da OpenAI, não garantia para qualquer tarefa. O anúncio também registra integração com GPT-Live, cache de prompt, residência de inferência nos EUA e União Europeia e até 400 perguntas por requisição.",
       "tags": [
         "openai",
         "decisions-api",
@@ -322,7 +322,7 @@
         "Amaggi — Monitoramento de desmatamento"
       ],
       "source": "OroraTech — parceria com ICEYE",
-      "summary": "a parceria anuncia integração de detecção/avanço do fogo por satélites térmicos com observações SAR para avaliar impactos mesmo sob fumaça e nuvens. É combinação relevante para monitoramento florestal e resposta a incêndios; a fonte não traz validação independente de latência ou implantação em cliente.",
+      "summary": "ICEYE e OroraTech anunciaram parceria para reunir dados térmicos de satélite da OroraTech com observações de radar de abertura sintética da ICEYE em uma solução de inteligência sobre incêndios. Os dados térmicos destinam-se à detecção de focos e ao acompanhamento da frente ativa; o SAR pode observar através de fumaça, nuvens e escuridão e ajudar a avaliar impactos em edifícios.\n\nA proposta cobre da detecção inicial ao monitoramento da progressão e à avaliação de danos perto de comunidades e infraestrutura. O anúncio descreve capacidade integrada e usos pretendidos por governos, seguradoras e concessionárias, mas não apresenta validação independente de latência, precisão ou implantação em clientes.",
       "tags": [
         "sensoriamento-remoto",
         "sar",
@@ -348,7 +348,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Anthropic — Claude Code v2.1.307",
-      "summary": "se a conexão caía durante uma chamada MCP HTTP, ferramentas podiam ser acionadas duas vezes; agora só operações de leitura ou idempotentes são repetidas. Release também adiciona evento OpenTelemetry para decisões de segurança e corrige atualização de ferramentas de servidores MCP do SDK durante tarefas em segundo plano — pontos críticos para agentes que escrevem em sistemas corporativos.",
+      "summary": "O release publicado em 21 de outubro corrige chamadas de ferramentas MCP via HTTP que podiam ser enviadas duas vezes quando a conexão era interrompida durante a operação. A partir desta versão, o Claude Code só repete chamadas de leitura ou operações idempotentes, reduzindo o risco de duplicar alterações em sistemas externos.\n\nA atualização acrescenta evento OpenTelemetry para registrar interrupções, pedidos de aprovação e devoluções de chamadas por regras de permissão, hooks ou sandbox. Outro ajuste corrige turnos iniciados sem ferramentas MCP recentes fornecidas pelo SDK quando havia tarefa em segundo plano; o release não detalha métricas de redução de duplicações.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -374,7 +374,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — OpenAI models in Model Garden",
-      "summary": "GPT-6 Astra, GPT-6.1 Sol e GPT-6 Luna começam a chegar ao Model Garden para clientes empresariais selecionados; Google informa que esses clientes já podem conectar Codex CLI/Desktop para inferência na plataforma. Isso cria opção de testar agentes e desenvolvimento com governança, auditoria e faturamento Google Cloud, mas ainda não é disponibilidade geral.",
+      "summary": "Os anúncios de 21 de outubro apresentam a chegada de modelos OpenAI ao Model Garden do Google Cloud, incluindo GPT-6 Astra, GPT-6.1 Sol e GPT-6 Luna. A OpenAI também informa que fluxos agênticos do Codex serão integrados à plataforma. O Google descreve controles de identidade, auditoria e perímetro de dados, além de cobrança pelo Marketplace e uso de compromissos de gasto existentes.\n\nA OpenAI diz que a disponibilidade geral estava planejada para as semanas seguintes; portanto, o anúncio não indicava acesso imediato e generalizado. As fontes não afirmam que todos os clientes já tivessem acesso nem que os fluxos do Codex já estivessem disponíveis.",
       "tags": [
         "openai",
         "codex",
@@ -400,7 +400,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Esri — Recent PHP Vulnerabilities",
-      "summary": "PHP corrigiu CVE-2026-109618 e CVE-2026-109619, ambas com potencial de execução remota sem autenticação, nas versões 8.5.12, 8.4.27, 8.3.36 e 8.2.35. Esri informa que ArcGIS Online não usa PHP e ainda avalia demais produtos; não há impacto confirmado em ArcGIS Enterprise. Verificar componentes PHP próprios ou adjacentes e acompanhar conclusão da avaliação Esri.",
+      "summary": "O PHP Project publicou em 21 de outubro correções para duas vulnerabilidades críticas, CVE-2026-109618 e CVE-2026-109619, que podem permitir execução remota de código sem autenticação. O projeto recomenda atualizar instalações que atendem requisições web para PHP 8.5.12, 8.4.27, 8.3.36 ou 8.2.35.\n\nA nota da Esri, atualizada em 22 de outubro, esclarece que ArcGIS Online e os produtos fundamentais ArcGIS Enterprise — Server, Portal e Data Store —, além do ArcGIS Pro, não são afetados. Produtos com exemplos em PHP exigiriam infraestrutura PHP própria do cliente; nesse caso, essa infraestrutura deve ser atualizada.",
       "tags": [
         "esri",
         "arcgis",
@@ -426,7 +426,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Anthropic — Claude Code v2.1.305",
-      "summary": "corrige a substituição indevida de servidores MCP fornecidos pela sessão em nuvem/SDK e falhas de requisições via Vertex, Bedrock ou gateways sem ToolSearch. A retomada de workflows deixa de reexecutar agentes já concluídos. A nova opção de namespaces aninhados no Linux permite Chromium/Podman, mas pode contornar proteções de arquivos do sandbox; requer avaliação antes de habilitar.",
+      "summary": "A versão 2.1.305 corrige falhas que faziam requisições falharem em Vertex, Bedrock e outros provedores ou gateways que rejeitam buscas de ferramentas. Também impede que servidores MCP definidos por sessão em nuvem ou SDK sejam substituídos por configurações locais de mesmo nome, e corrige retomada de workflows que podia executar novamente agentes já concluídos.\n\nNo Linux, a opção `sandbox.allowNestedUserNamespaces` permite namespaces aninhados para casos como Chromium e Podman sem privilégios. A própria release alerta que esse recurso pode contornar proteções de arquivos do sandbox, portanto sua habilitação requer avaliação do impacto de segurança.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -452,7 +452,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "GitHub Advisory — GHSA-rvq5-wwqv-78pq / CVE-2026-111771",
-      "summary": "servidores MCP HTTP que usam `requireBearerAuth()`/`verifyBearerToken()` podem aceitar token emitido para outro serviço se o emissor atende múltiplos recursos e o verificador não checa `aud`. Versões corrigidas existem, mas só atualizar não ativa a proteção: é preciso configurar `expectedResource` e devolver `AuthInfo.resource`, ou validar `aud` no verificador.",
+      "summary": "O aviso descreve versões do SDK TypeScript do MCP cuja autenticação bearer no servidor não verificava se o token havia sido emitido para aquele serviço. Se o mesmo servidor de autorização emite tokens para vários serviços e a aplicação não confere o campo `aud`, um token válido destinado a outro serviço pode ser aceito.\n\nO advisory lista versões afetadas de `@modelcontextprotocol/sdk`, `@modelcontextprotocol/server`, `@modelcontextprotocol/express` e `server-legacy`, além das versões corrigidas. Atualizar sozinho não ativa a checagem: é preciso configurar `expectedResource` e retornar a audiência como `AuthInfo.resource`, ou validar `aud` diretamente no verificador.",
       "tags": [
         "mcp",
         "typescript",
@@ -478,7 +478,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — Managed RAG search inside the sovereign perimeter",
-      "summary": "em *preview*, busca empresarial multimodal com citações roda em GDC air-gapped, com ingestão, embeddings, PostgreSQL e controles de identidade dentro do perímetro local. Arquitetura relevante para agentes sobre dados técnicos sigilosos de mineração e óleo e gás; ainda não é disponibilidade geral.",
+      "summary": "O Google anunciou em prévia uma experiência gerenciada de busca empresarial com Gemini no Google Distributed Cloud air-gapped. A empresa afirma que a solução executa busca RAG dentro do perímetro físico da organização, sem conexão com a internet pública ou infraestrutura global do Google Cloud. Usuários podem consultar arquivos, pedir sínteses, comparações ou traduções e receber respostas com citações.\n\nA publicação descreve suporte a documentos, planilhas, imagens, áudio e vídeo, com identidade e dados mantidos na implantação local. É uma oferta em prévia, não disponibilidade geral; arquitetura e segurança são declarações do fornecedor, sem resultados independentes de desempenho.",
       "tags": [
         "google-cloud",
         "gemini",
@@ -503,7 +503,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — Announcing llm-d 1.0",
-      "summary": "release Kubernetes-native reúne roteamento com afinidade de cache, QoS multitenant, cache KV em camadas, alta disponibilidade e atualização sem interromper sessões. É base técnica para avaliar custo e latência de agentes auto-hospedados com contexto longo e tráfego irregular, sem implicar ganho garantido nos projetos.",
+      "summary": "O Google anunciou a versão 1.0 do llm-d, infraestrutura aberta e nativa de Kubernetes para inferência distribuída de modelos de linguagem. O projeto, cofundado pelo Google com Red Hat, IBM e outros parceiros, combina servidores de modelos e componentes de orquestração para atender cargas com múltiplas etapas, prefixos longos compartilhados e picos de tráfego.\n\nA publicação destaca roteamento que considera cache e carga, cache KV em camadas, controle de fluxo multitenant e alta disponibilidade. O Google relata demonstração com mil agentes em GKE e frota mista de TPUs e GPUs, mas esse exemplo não é garantia de desempenho para qualquer implantação.",
       "tags": [
         "google-cloud",
         "llm-d",
@@ -529,7 +529,7 @@
         "Itaminas — Monitoramento geotécnico"
       ],
       "source": "Planet — First light from Tanager-2 and SuperDove Flock 4J",
-      "summary": "a Planet divulgou a primeira imagem do Tanager-2, capturada em 07/10, na qual a Carbon Mapper detectou pluma de metano na costa espanhola. Demonstra uma aplicação da nova constelação para emissões e prospecção mineral, mas os satélites ainda estão em comissionamento; não equivale a serviço operacional disponível.",
+      "summary": "A Planet publicou primeiras imagens dos satélites Tanager-2 e SuperDove Flock 4J, lançados no início de outubro de 2026. Segundo a empresa, o Tanager-2 capturou sua primeira imagem sobre a Espanha em 7 de outubro, seis dias após o lançamento; usando esses dados, a Carbon Mapper detectou uma pluma de metano na costa espanhola.\n\nUm SuperDove do novo grupo fotografou parte da Grande Barreira de Corais australiana no dia anterior. A Planet afirma que as imagens indicam satélites saudáveis e em comissionamento; elas não comprovam que a constelação já opere como serviço plenamente disponível.",
       "tags": [
         "planet",
         "tanager",

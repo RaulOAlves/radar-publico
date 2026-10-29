@@ -13,7 +13,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Ai2 — OlmoEarth v1.3",
-      "summary": "o Ai2 liberou modelo, dados e embeddings globais pré-computados (64/128 dimensões) e um explorador para encontrar áreas semelhantes e criar mapas com poucos exemplos. Reduz o esforço para testar classificação de culturas, vigor e mudança de cobertura em projetos GeoIA; desempenho local ainda precisa ser validado.",
+      "summary": "O Ai2 anunciou o OlmoEarth v1.3 junto com embeddings anuais pré-computados para todo o planeta, em resolução de 10 metros e dimensões de 64 ou 128, além de um explorador web para consultar e personalizar mapas. O modelo combina séries temporais de radar Sentinel-1 e imagens multiespectrais Sentinel-2 e Landsat para gerar vetores por pixel.\n\nA proposta permite que classificação de culturas, cobertura do solo e detecção de mudanças usem classificadores menores, sem repetir o processamento de imagens em cada projeto. Nos benchmarks divulgados pelo Ai2, os embeddings de 128 dimensões lideraram 20 de 27 avaliações; esses resultados não substituem validação em dados locais.",
       "tags": [
         "geoia",
         "olmoearth",
@@ -41,7 +41,7 @@
         "São Martinho — Planejamento agrícola"
       ],
       "source": "Ai2 — PLANTEUR: benchmark de culturas tropicais",
-      "summary": "novo conjunto aberto reúne séries Sentinel-1/2 e Landsat-8 de 4.506 km² de parcelas, sete classes de culturas (incluindo cana) e testes fora da região de treino. Nos testes dos autores, todos os métodos perderam cerca de metade da acurácia em uma ilha não vista: alerta concreto para validar modelos agrícolas fora da área de treinamento.",
+      "summary": "O Ai2 apresentou PLANTEUR, um benchmark aberto para classificação de culturas em seis territórios tropicais franceses. O conjunto reúne 2.750 séries temporais alinhadas de Sentinel-2, Sentinel-1 e Landsat-8, com rótulos derivados de parcelas agrícolas que cobrem 4.506 km² e sete classes, entre elas cana-de-açúcar, banana e abacaxi.\n\nOs autores incluem avaliações deixando uma ilha fora do treinamento e cenários com poucos exemplos. Nos experimentos divulgados, todos os métodos avaliados tiveram desempenho substancialmente inferior ao benchmark PASTIS e perderam cerca de metade da acurácia em ilha não vista; o resultado evidencia limites de transferência geográfica, sem medir diretamente desempenho em outros países.",
       "tags": [
         "geoia",
         "paper",
@@ -68,7 +68,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Anthropic — Claude Code v2.1.309",
-      "summary": "o release corrige execução de arquivos de inicialização do shell fora do sandbox, falhas de regras de escrita via symlink, alteração indevida do arquivo `--mcp-config` e contornos de permissões Bash/worktree. É atualização prioritária para agentes com acesso a código, arquivos e servidores MCP; revisar políticas após atualizar.",
+      "summary": "A versão 2.1.309 do Claude Code lista correções para problemas de isolamento e permissões. Entre elas, comandos Bash em sandbox no macOS e Linux executavam arquivos de inicialização do shell fora do sandbox; regras de escrita no macOS podiam falhar quando o caminho passava por symlink; e comandos aceitos automaticamente podiam alterar o arquivo MCP indicado por `--mcp-config`.\n\nO release também corrige verificações de permissão Bash para alguns comandos compostos, regras de bloqueio de edição contornáveis por redirecionamento e comandos que a proteção de worktree deveria recusar. São correções descritas pelo fornecedor; a publicação não quantifica exposição de instalações anteriores nem afirma exploração.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -94,7 +94,7 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI — Decisions API",
-      "summary": "API agora em disponibilidade geral responde probabilidade, escolha ou escore a partir de texto, imagem ou JSON, com até 400 perguntas por requisição. Pode reduzir latência/custo de triagem e roteamento em agentes e eventos geoespaciais; o ganho de até 10 vezes é alegação da OpenAI, não garantia para estes projetos.",
+      "summary": "A OpenAI anunciou disponibilidade geral da Decisions API, construída sobre GPT-6 Luna e voltada a respostas delimitadas, como classificação, roteamento ou seleção de próxima ação. A API aceita contexto em texto, imagens ou JSON e retorna probabilidade, uma opção predefinida ou uma pontuação.\n\nSegundo a empresa, pode operar até dez vezes mais rápido que GPT-6 Luna via Responses API; essa comparação é alegação da OpenAI, não garantia para qualquer tarefa. O anúncio também registra integração com GPT-Live, cache de prompt, residência de inferência nos EUA e União Europeia e até 400 perguntas por requisição.",
       "tags": [
         "openai",
         "decisions-api",
@@ -119,7 +119,7 @@
         "Amaggi — Monitoramento de desmatamento"
       ],
       "source": "OroraTech — parceria com ICEYE",
-      "summary": "a parceria anuncia integração de detecção/avanço do fogo por satélites térmicos com observações SAR para avaliar impactos mesmo sob fumaça e nuvens. É combinação relevante para monitoramento florestal e resposta a incêndios; a fonte não traz validação independente de latência ou implantação em cliente.",
+      "summary": "ICEYE e OroraTech anunciaram parceria para reunir dados térmicos de satélite da OroraTech com observações de radar de abertura sintética da ICEYE em uma solução de inteligência sobre incêndios. Os dados térmicos destinam-se à detecção de focos e ao acompanhamento da frente ativa; o SAR pode observar através de fumaça, nuvens e escuridão e ajudar a avaliar impactos em edifícios.\n\nA proposta cobre da detecção inicial ao monitoramento da progressão e à avaliação de danos perto de comunidades e infraestrutura. O anúncio descreve capacidade integrada e usos pretendidos por governos, seguradoras e concessionárias, mas não apresenta validação independente de latência, precisão ou implantação em clientes.",
       "tags": [
         "sensoriamento-remoto",
         "sar",

@@ -13,7 +13,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Esri — Brotli Vulnerabilities (Broccoli2Shell)",
-      "summary": "Esri investiga o impacto de CVE-2026-111497 em seus produtos e recomenda atualizar o .NET Framework usado por ArcGIS Pro, Web Adaptor em IIS e extensões SOE/SOI; ArcGIS Online já recebeu medidas mitigadoras. Quem opera ArcGIS Enterprise deve verificar versões e acompanhar a avaliação, sem presumir que todo produto está vulnerável.",
+      "summary": "A Esri informa que a vulnerabilidade crítica CVE-2026-111497 no decodificador Brotli foi divulgada por pesquisadores da OpenAI em 22 de outubro e entrou na lista KEV da CISA em 27 de outubro. A publicação, datada e atualizada em 29/10, classifica ArcGIS Enterprise 11.5, 12.0 e 12.1 e ArcGIS Pro 3.5 ou posteriores como afetados, com correções ainda pendentes.\n\nNo ArcGIS Online, medidas mitigadoras foram implantadas e atualizações estão em andamento. Para ArcGIS Pro, Web Adaptor em IIS e extensões SOE/SOI, a orientação inclui atualizar o runtime .NET da Microsoft; no ArcGIS Server, a recomendação é desativar feeds de dados personalizados do SDK até o patch, salvo orientação de suporte.",
       "tags": [
         "esri",
         "arcgis",
@@ -39,7 +39,7 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Esri — ArcGIS Server 11.5 Geocoding Capability Patch",
-      "summary": "serviços de geocodificação publicados do ArcGIS Pro 3.6 ou posterior no ArcGIS Server 11.5 podem devolver zero resultados, inclusive via `FindAddressCandidates` e `GeocodeAddresses`. Esri recomenda o patch para instalações afetadas; planejar reinício do serviço e rollback antes de aplicar.",
+      "summary": "A Esri disponibiliza um patch para um defeito em serviços de geocodificação publicados no ArcGIS Server 11.5 a partir do ArcGIS Pro 3.6. Sem a correção, os serviços não retornam candidatos no painel Locate nem pela API FindAddressCandidates; na geocodificação de tabelas, endereços podem ficar sem correspondência, inclusive via GeocodeAddresses.\n\nO problema BUG-000181366 ocorre porque a capacidade de geocodificação não é habilitada por padrão ao publicar do Pro 3.6 para o Enterprise. A instalação reinicia o serviço ArcGIS Server e pode levar alguns minutos; a Esri orienta preparar rollback e oferece pacotes separados para Windows e Linux.",
       "tags": [
         "esri",
         "arcgis-enterprise",
@@ -64,7 +64,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "EDGX — Sterna em órbita",
-      "summary": "empresa reporta que carga baseada em NVIDIA Jetson, lançada em março, já retornou dados operacionais em órbita; outra ainda está em comissionamento. Processar imagens a bordo pode reduzir volume transmitido e latência de alertas geoespaciais, mas a fonte não demonstra ainda serviço comercial ou desempenho dessas aplicações.",
+      "summary": "A EDGX, empresa belga de tecnologia espacial, relata que lançou duas cargas de demonstração na missão compartilhada SpaceX Transporter-16, em março de 2026. Segundo a empresa, uma carga baseada na plataforma Sterna com NVIDIA Jetson já retornou os primeiros dados operacionais em órbita em até duas semanas; a segunda aguardava comissionamento do satélite.\n\nA proposta é executar computação a bordo para reduzir dependência de infraestrutura terrestre e processar dados mais perto da coleta. A empresa relata primeiros clientes assinados e missões previstas para 2027, mas não apresenta métricas independentes de desempenho nem resultados comerciais verificáveis.",
       "tags": [
         "geoia",
         "edge-ai",

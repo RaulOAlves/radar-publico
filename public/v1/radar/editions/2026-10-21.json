@@ -13,7 +13,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Anthropic — Claude Code v2.1.305",
-      "summary": "corrige a substituição indevida de servidores MCP fornecidos pela sessão em nuvem/SDK e falhas de requisições via Vertex, Bedrock ou gateways sem ToolSearch. A retomada de workflows deixa de reexecutar agentes já concluídos. A nova opção de namespaces aninhados no Linux permite Chromium/Podman, mas pode contornar proteções de arquivos do sandbox; requer avaliação antes de habilitar.",
+      "summary": "A versão 2.1.305 corrige falhas que faziam requisições falharem em Vertex, Bedrock e outros provedores ou gateways que rejeitam buscas de ferramentas. Também impede que servidores MCP definidos por sessão em nuvem ou SDK sejam substituídos por configurações locais de mesmo nome, e corrige retomada de workflows que podia executar novamente agentes já concluídos.\n\nNo Linux, a opção `sandbox.allowNestedUserNamespaces` permite namespaces aninhados para casos como Chromium e Podman sem privilégios. A própria release alerta que esse recurso pode contornar proteções de arquivos do sandbox, portanto sua habilitação requer avaliação do impacto de segurança.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -39,7 +39,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "GitHub Advisory — GHSA-rvq5-wwqv-78pq / CVE-2026-111771",
-      "summary": "servidores MCP HTTP que usam `requireBearerAuth()`/`verifyBearerToken()` podem aceitar token emitido para outro serviço se o emissor atende múltiplos recursos e o verificador não checa `aud`. Versões corrigidas existem, mas só atualizar não ativa a proteção: é preciso configurar `expectedResource` e devolver `AuthInfo.resource`, ou validar `aud` no verificador.",
+      "summary": "O aviso descreve versões do SDK TypeScript do MCP cuja autenticação bearer no servidor não verificava se o token havia sido emitido para aquele serviço. Se o mesmo servidor de autorização emite tokens para vários serviços e a aplicação não confere o campo `aud`, um token válido destinado a outro serviço pode ser aceito.\n\nO advisory lista versões afetadas de `@modelcontextprotocol/sdk`, `@modelcontextprotocol/server`, `@modelcontextprotocol/express` e `server-legacy`, além das versões corrigidas. Atualizar sozinho não ativa a checagem: é preciso configurar `expectedResource` e retornar a audiência como `AuthInfo.resource`, ou validar `aud` diretamente no verificador.",
       "tags": [
         "mcp",
         "typescript",
@@ -65,7 +65,7 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — Managed RAG search inside the sovereign perimeter",
-      "summary": "em *preview*, busca empresarial multimodal com citações roda em GDC air-gapped, com ingestão, embeddings, PostgreSQL e controles de identidade dentro do perímetro local. Arquitetura relevante para agentes sobre dados técnicos sigilosos de mineração e óleo e gás; ainda não é disponibilidade geral.",
+      "summary": "O Google anunciou em prévia uma experiência gerenciada de busca empresarial com Gemini no Google Distributed Cloud air-gapped. A empresa afirma que a solução executa busca RAG dentro do perímetro físico da organização, sem conexão com a internet pública ou infraestrutura global do Google Cloud. Usuários podem consultar arquivos, pedir sínteses, comparações ou traduções e receber respostas com citações.\n\nA publicação descreve suporte a documentos, planilhas, imagens, áudio e vídeo, com identidade e dados mantidos na implantação local. É uma oferta em prévia, não disponibilidade geral; arquitetura e segurança são declarações do fornecedor, sem resultados independentes de desempenho.",
       "tags": [
         "google-cloud",
         "gemini",
@@ -90,7 +90,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — Announcing llm-d 1.0",
-      "summary": "release Kubernetes-native reúne roteamento com afinidade de cache, QoS multitenant, cache KV em camadas, alta disponibilidade e atualização sem interromper sessões. É base técnica para avaliar custo e latência de agentes auto-hospedados com contexto longo e tráfego irregular, sem implicar ganho garantido nos projetos.",
+      "summary": "O Google anunciou a versão 1.0 do llm-d, infraestrutura aberta e nativa de Kubernetes para inferência distribuída de modelos de linguagem. O projeto, cofundado pelo Google com Red Hat, IBM e outros parceiros, combina servidores de modelos e componentes de orquestração para atender cargas com múltiplas etapas, prefixos longos compartilhados e picos de tráfego.\n\nA publicação destaca roteamento que considera cache e carga, cache KV em camadas, controle de fluxo multitenant e alta disponibilidade. O Google relata demonstração com mil agentes em GKE e frota mista de TPUs e GPUs, mas esse exemplo não é garantia de desempenho para qualquer implantação.",
       "tags": [
         "google-cloud",
         "llm-d",
@@ -116,7 +116,7 @@
         "Itaminas — Monitoramento geotécnico"
       ],
       "source": "Planet — First light from Tanager-2 and SuperDove Flock 4J",
-      "summary": "a Planet divulgou a primeira imagem do Tanager-2, capturada em 07/10, na qual a Carbon Mapper detectou pluma de metano na costa espanhola. Demonstra uma aplicação da nova constelação para emissões e prospecção mineral, mas os satélites ainda estão em comissionamento; não equivale a serviço operacional disponível.",
+      "summary": "A Planet publicou primeiras imagens dos satélites Tanager-2 e SuperDove Flock 4J, lançados no início de outubro de 2026. Segundo a empresa, o Tanager-2 capturou sua primeira imagem sobre a Espanha em 7 de outubro, seis dias após o lançamento; usando esses dados, a Carbon Mapper detectou uma pluma de metano na costa espanhola.\n\nUm SuperDove do novo grupo fotografou parte da Grande Barreira de Corais australiana no dia anterior. A Planet afirma que as imagens indicam satélites saudáveis e em comissionamento; elas não comprovam que a constelação já opere como serviço plenamente disponível.",
       "tags": [
         "planet",
         "tanager",
