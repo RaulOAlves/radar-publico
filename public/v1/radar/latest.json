@@ -125,5 +125,6 @@
       "why_it_matters": "nova versão separa configuração de sandbox da política de comandos, protege `.git/hooks`, `.git/config` e `.codemender` contra alterações durante correções e fecha travessia por symlinks fora de `allowedRoots`. Medidas relevantes ao avaliar agentes que editam repositórios com acesso a dados ou infraestrutura corporativa."
     }
   ],
-  "schema_version": "1.0"
+  "schema_version": "1.0",
+  "status": "publicado"
 }

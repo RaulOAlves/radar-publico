@@ -77,5 +77,6 @@
       "why_it_matters": "PHP corrigiu CVE-2026-109618 e CVE-2026-109619, ambas com potencial de execução remota sem autenticação, nas versões 8.5.12, 8.4.27, 8.3.36 e 8.2.35. Esri informa que ArcGIS Online não usa PHP e ainda avalia demais produtos; não há impacto confirmado em ArcGIS Enterprise. Verificar componentes PHP próprios ou adjacentes e acompanhar conclusão da avaliação Esri."
     }
   ],
-  "schema_version": "1.0"
+  "schema_version": "1.0",
+  "status": "publicado"
 }

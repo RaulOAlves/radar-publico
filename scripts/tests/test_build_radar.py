@@ -74,14 +74,46 @@ class RadarBuildTests(unittest.TestCase):
         self.assertEqual("1.0", latest["schema_version"])
         self.assertEqual(["Lançamento do Radar"], [item["title"] for item in latest["items"]])
         self.assertEqual(latest["items"], archive["items"])
+        self.assertEqual("publicado", latest["status"])
         self.assertEqual(1, manifest["item_count"])
         self.assertEqual("rss", rss.getroot().tag)
+        self.assertEqual("https://radar-publico-opal.vercel.app", rss.findtext("./channel/link"))
+        self.assertTrue(rss.findtext("./channel/item/pubDate").endswith("-0300"))
+        self.assertIn("v1/radar/quarantine.json", manifest["files"])
 
     def test_same_input_produces_same_item_id(self):
         first = parse_document(DOCUMENT)["items"][0]["id"]
         second = parse_document(DOCUMENT)["items"][0]["id"]
 
         self.assertEqual(first, second)
+
+    def test_newest_empty_edition_is_published_explicitly(self):
+        report = parse_document(
+            DOCUMENT
+            + "\n### 2026-10-30 07:35 BRT — Nenhuma novidade de alto sinal\n"
+        )
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output_dir = Path(temporary_directory)
+            build_artifacts(report, output_dir)
+            latest = json.loads((output_dir / "v1/radar/latest.json").read_text())
+
+        self.assertEqual("2026-10-30", latest["edition_date"])
+        self.assertEqual("sem_novidade", latest["status"])
+        self.assertEqual([], latest["items"])
+
+    def test_strict_build_keeps_last_good_artifacts_on_quarantine(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output_dir = Path(temporary_directory)
+            build_artifacts(parse_document(DOCUMENT), output_dir)
+            previous = (output_dir / "v1/radar/latest.json").read_bytes()
+
+            invalid = parse_document(
+                "## Registros\n\n### 2026-10-30 07:35 BRT — Sem URL\n\n- Fonte: sem link\n"
+            )
+            with self.assertRaisesRegex(ValueError, "quarentena"):
+                build_artifacts(invalid, output_dir, fail_on_quarantine=True)
+
+            self.assertEqual(previous, (output_dir / "v1/radar/latest.json").read_bytes())
 
 
 if __name__ == "__main__":

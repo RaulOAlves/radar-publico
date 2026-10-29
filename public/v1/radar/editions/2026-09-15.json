@@ -77,5 +77,6 @@
       "why_it_matters": "`searchAddonSpec` entra em GA na API v1, permitindo ligar ou desligar complementos por busca e controlar custo programaticamente. É mecanismo útil para equilibrar profundidade de recuperação e orçamento em agentes que consultam acervos técnicos e documentos de projeto."
     }
   ],
-  "schema_version": "1.0"
+  "schema_version": "1.0",
+  "status": "publicado"
 }

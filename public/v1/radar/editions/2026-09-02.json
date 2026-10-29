@@ -27,5 +27,6 @@
       "why_it_matters": "BigQuery Graph entra em GA com GQL nativo e sem ETL para um banco de grafos separado. A integração com Data Agent Kit leva uma skill de grafos a Codex e Claude Code, e o *context graph* registra decisões de agentes como trilhas consultáveis e auditáveis."
     }
   ],
-  "schema_version": "1.0"
+  "schema_version": "1.0",
+  "status": "publicado"
 }

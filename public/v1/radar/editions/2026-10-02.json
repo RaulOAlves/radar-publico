@@ -102,5 +102,6 @@
       "why_it_matters": "`gpt-5.3-codex`, `gpt-5.1` e `gpt-5.4-nano` foram depreciados e deixam a API em 2027-04-01. A substituição indicada é GPT-6 Sol para Codex/5.1 e GPT-6 Luna para Nano; fluxos produtivos devem testar compatibilidade, custo e avaliações antes do desligamento."
     }
   ],
-  "schema_version": "1.0"
+  "schema_version": "1.0",
+  "status": "publicado"
 }

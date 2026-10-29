@@ -79,5 +79,6 @@
       "why_it_matters": "release adiciona configurações operacionais para permissões de uso conjunto elétrico, inspeção de painéis solares, análise costeira, planejamento de mercado e reporte virtual de danos com imagem e GeoAI. Também move cinco soluções para fase de ciclo de vida *Mature*, sinal relevante para governança de portfólio ArcGIS."
     }
   ],
-  "schema_version": "1.0"
+  "schema_version": "1.0",
+  "status": "publicado"
 }

@@ -77,5 +77,6 @@
       "why_it_matters": "Planet e Lucis desenvolverão, em 12 meses, plataforma financiada pela ESA para proteção civil da Eslovênia. O desenho liga detecção contínua por série temporal, alerta por limiar e solicitação automática de imagens VHR à entrega em mapa operacional — arquitetura aplicável ao monitoramento florestal; trata-se de projeto iniciado, não implantação concluída."
     }
   ],
-  "schema_version": "1.0"
+  "schema_version": "1.0",
+  "status": "publicado"
 }

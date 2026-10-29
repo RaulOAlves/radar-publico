@@ -6,7 +6,7 @@ Histórico público do Radar de IA, GeoIA e Setores, publicado como arquivos est
 
 ```sh
 python3 -m unittest discover -s scripts/tests -v
-python3 scripts/build_radar.py source/radar-ia-geo.md --output public
+python3 scripts/build_radar.py source/radar-ia-geo.md --output public --fail-on-quarantine
 ```
 
 ## Endpoints
@@ -19,3 +19,4 @@ python3 scripts/build_radar.py source/radar-ia-geo.md --output public
 - `v1/radar/quarantine.json`: itens que exigem revisão manual.
 
 O Markdown de origem fica em `source/`. O gerador padrão usa somente biblioteca padrão do Python.
+Com `--fail-on-quarantine`, uma entrada inválida preserva a última publicação válida.
