@@ -6,11 +6,6 @@
       "edition_date": "2026-10-30",
       "id": "radar-10be109ee0bd01c4",
       "published": "2026-10-29 19:47 (horário exibido pelo GitHub; fuso não informado)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "OpenAI — Codex CLI 0.166.0",
       "source_meta": {
         "domain": "github.com"
@@ -35,11 +30,6 @@
       "edition_date": "2026-10-30",
       "id": "radar-09b9bd644d688ff9",
       "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Google Cloud — suporte ampliado a modelos semânticos no Knowledge Catalog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -64,11 +54,6 @@
       "edition_date": "2026-10-30",
       "id": "radar-d6a5b43b8fe9d9fd",
       "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Esri — novidades do Calcite Design System 5.2",
       "source_meta": {
         "domain": "www.esri.com"
@@ -93,10 +78,6 @@
       "edition_date": "2026-10-30",
       "id": "radar-ad7611751baac45b",
       "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Eucatex — Monitoramento de vigor florestal",
-        "Klabin — IA"
-      ],
       "source": "Purdue University — protótipo MATRIX Peru",
       "source_meta": {
         "domain": "ag.purdue.edu"
@@ -121,11 +102,6 @@
       "edition_date": "2026-10-29",
       "id": "radar-ebc97573a6a94023",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
-      ],
       "source": "OpenAI — expansão da parceria com ServiceNow",
       "source_meta": {
         "domain": "openai.com"
@@ -148,13 +124,8 @@
       "confidence": "alta",
       "edition_at": "2026-10-29T07:35:00-03:00",
       "edition_date": "2026-10-29",
-      "id": "radar-d8651470f28270c3",
+      "id": "radar-9d6fea0b42eb9f3c",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud — release notes de 28/10",
       "source_meta": {
         "domain": "docs.cloud.google.com"
@@ -179,11 +150,6 @@
       "edition_date": "2026-10-29",
       "id": "radar-d8651470f28270c3",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Google Cloud — release notes do AlloyDB AI",
       "source_meta": {
         "domain": "docs.cloud.google.com"
@@ -208,10 +174,6 @@
       "edition_date": "2026-10-29",
       "id": "radar-96e37f1546c14c56",
       "published": "2026-10-28 (data do release e da atualização da documentação; horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Google Cloud — Application Integration agent skills",
       "source_meta": {
         "domain": "docs.cloud.google.com"
@@ -234,12 +196,8 @@
       "confidence": "alta",
       "edition_at": "2026-10-29T07:35:00-03:00",
       "edition_date": "2026-10-29",
-      "id": "radar-d8651470f28270c3",
+      "id": "radar-f0881e2805c75550",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Google Cloud — release notes de 28/10, CodeMender 0.17.0",
       "source_meta": {
         "domain": "docs.cloud.google.com"
@@ -264,11 +222,6 @@
       "edition_date": "2026-10-28",
       "id": "radar-6040bc289689cdfd",
       "published": "2026-10-27 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Esri — Brotli Vulnerabilities (Broccoli2Shell)",
       "source_meta": {
         "domain": "www.esri.com"
@@ -293,11 +246,6 @@
       "edition_date": "2026-10-28",
       "id": "radar-3514aff3e3d93b8d",
       "published": "2026-10-27 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Suzano — Rotas e logística",
-        "GeoNext — LiDAR e rodovias",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Esri — ArcGIS Server 11.5 Geocoding Capability Patch",
       "source_meta": {
         "domain": "support.esri.com"
@@ -322,10 +270,6 @@
       "edition_date": "2026-10-28",
       "id": "radar-7562f82019fb942b",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Amaggi — Monitoramento de desmatamento",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "EDGX — Sterna em órbita",
       "source_meta": {
         "domain": "www.edgx.space"
@@ -349,11 +293,6 @@
       "edition_date": "2026-10-23",
       "id": "radar-2f70043cc1819c04",
       "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Amaggi — Monitoramento de desmatamento",
-        "Eucatex — Monitoramento de vigor florestal",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Ai2 — OlmoEarth v1.3",
       "source_meta": {
         "domain": "allenai.org"
@@ -380,11 +319,6 @@
       "edition_date": "2026-10-23",
       "id": "radar-47abee776e53ac9f",
       "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "CTC — Centro de Tecnologia Canavieira",
-        "Atvos — Visão computacional",
-        "São Martinho — Planejamento agrícola"
-      ],
       "source": "Ai2 — PLANTEUR: benchmark de culturas tropicais",
       "source_meta": {
         "domain": "allenai.org"
@@ -410,11 +344,6 @@
       "edition_date": "2026-10-23",
       "id": "radar-0307ec1244417a61",
       "published": "2026-10-22 22:18 (horário exibido pelo GitHub; fuso não informado)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Anthropic — Claude Code v2.1.309",
       "source_meta": {
         "domain": "github.com"
@@ -439,11 +368,6 @@
       "edition_date": "2026-10-23",
       "id": "radar-42dc5172617fe2e4",
       "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Atvos — Visão computacional",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "OpenAI — Decisions API",
       "source_meta": {
         "domain": "openai.com"
@@ -468,10 +392,6 @@
       "edition_date": "2026-10-23",
       "id": "radar-e992952e7eee2742",
       "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Eucatex — Monitoramento de vigor florestal",
-        "Amaggi — Monitoramento de desmatamento"
-      ],
       "source": "OroraTech — parceria com ICEYE",
       "source_meta": {
         "domain": "ororatech.com"
@@ -496,11 +416,6 @@
       "edition_date": "2026-10-22",
       "id": "radar-1f4559e41bf13b35",
       "published": "2026-10-21 22:17 (horário exibido pelo GitHub; fuso não informado)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Anthropic — Claude Code v2.1.307",
       "source_meta": {
         "domain": "github.com"
@@ -525,11 +440,6 @@
       "edition_date": "2026-10-22",
       "id": "radar-3634ecbbbb3a5eca",
       "published": "2026-10-21 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Google Cloud — OpenAI models in Model Garden",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -554,11 +464,6 @@
       "edition_date": "2026-10-22",
       "id": "radar-c063fbad0dd44a03",
       "published": "2026-10-21 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Esri — Recent PHP Vulnerabilities",
       "source_meta": {
         "domain": "www.esri.com"
@@ -583,11 +488,6 @@
       "edition_date": "2026-10-21",
       "id": "radar-11a9e9aebb65d4c7",
       "published": "2026-10-20 20:46 (horário exibido pelo GitHub; fuso não informado)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Anthropic — Claude Code v2.1.305",
       "source_meta": {
         "domain": "github.com"
@@ -612,11 +512,6 @@
       "edition_date": "2026-10-21",
       "id": "radar-e8db8c6284f507e2",
       "published": "aviso original em 2026-10-05; publicado na base de advisories e atualizado em 2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
-      ],
       "source": "GitHub Advisory — GHSA-rvq5-wwqv-78pq / CVE-2026-111771",
       "source_meta": {
         "domain": "github.com"
@@ -641,11 +536,6 @@
       "edition_date": "2026-10-21",
       "id": "radar-f589d35077387a1a",
       "published": "2026-10-21 (horário/fuso não informados; posição exata na janela de 24 horas não confirmada)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud — Managed RAG search inside the sovereign perimeter",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -670,10 +560,6 @@
       "edition_date": "2026-10-21",
       "id": "radar-dc65e8821342889a",
       "published": "2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Google Cloud — Announcing llm-d 1.0",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -698,11 +584,6 @@
       "edition_date": "2026-10-21",
       "id": "radar-1228ecbc13bad748",
       "published": "2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "TAG / TBG / NTS",
-        "Vale — GeoIA SAB.IA",
-        "Itaminas — Monitoramento geotécnico"
-      ],
       "source": "Planet — First light from Tanager-2 and SuperDove Flock 4J",
       "source_meta": {
         "domain": "www.planet.com"
@@ -727,11 +608,6 @@
       "edition_date": "2026-10-20",
       "id": "radar-5af1102112d0a75b",
       "published": "2026-10-19 06:46 (horário exibido pelo GitHub; fuso não informado; posição exata na janela de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Model Context Protocol — servers v2.0.0",
       "source_meta": {
         "domain": "github.com"
@@ -757,11 +633,6 @@
       "edition_date": "2026-10-20",
       "id": "radar-8c981e335f6cfd88",
       "published": "2026-10-19 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "IMAC — Plataforma GIS",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Google Cloud — Developer’s guide to implementing MCP apps in Gemini",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -786,11 +657,6 @@
       "edition_date": "2026-10-20",
       "id": "radar-72e6ec30e3634b63",
       "published": "2026-10-19 09:00 ET (comunicado da Exyn); seleção do DOE anunciada em 2026-09-30",
-      "relations": [
-        "Itaminas — Monitoramento geotécnico",
-        "Vale — GeoIA SAB.IA",
-        "Vale — Fechamento de minas"
-      ],
       "source": "Exyn Technologies — MAP-POD/Mine of the Future",
       "source_meta": {
         "domain": "www.globenewswire.com"
@@ -815,10 +681,6 @@
       "edition_date": "2026-10-20",
       "id": "radar-9f6c1d6cd55f3820",
       "published": "2026-10-19 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "OpenAI — Advancing coding in low-resource programming languages",
       "source_meta": {
         "domain": "openai.com"
@@ -844,11 +706,6 @@
       "edition_date": "2026-10-17",
       "id": "radar-9951decf1ff354d0",
       "published": "2026-10-16 20:53 (horário exibido pelo GitHub; fuso não informado)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Anthropic — Claude Code v2.1.302",
       "source_meta": {
         "domain": "github.com"
@@ -873,10 +730,6 @@
       "edition_date": "2026-10-17",
       "id": "radar-9f5a868c8dff42fa",
       "published": "mudança efetiva em 2026-10-16 (horário/fuso e data de publicação do aviso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "AWS — AgentCore Insights",
       "source_meta": {
         "domain": "docs.aws.amazon.com"
@@ -898,13 +751,8 @@
       "confidence": "alta",
       "edition_at": "2026-10-17T09:09:00-03:00",
       "edition_date": "2026-10-17",
-      "id": "radar-1386401dbae8c76c",
+      "id": "radar-f9166f29e7067e8e",
       "published": "2026-10-16 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Google Cloud — Agent Search release notes",
       "source_meta": {
         "domain": "docs.cloud.google.com"
@@ -929,11 +777,6 @@
       "edition_date": "2026-10-15",
       "id": "radar-137bd70caf345667",
       "published": "patch em 2026-10-13; boletim em 2026-10-14 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Esri — ArcGIS Server Security 2026 Update 3 Patch",
       "source_meta": {
         "domain": "support.esri.com"
@@ -958,11 +801,6 @@
       "edition_date": "2026-10-15",
       "id": "radar-5b8961a811158e57",
       "published": "2026-10-14 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Eucatex — Monitoramento de vigor florestal",
-        "BP — Nutrição de plantas",
-        "São Martinho — Planejamento agrícola"
-      ],
       "source": "Planet Documentation — ARPS v1.2.0 Release Notes",
       "source_meta": {
         "domain": "docs.planet.com"
@@ -988,11 +826,6 @@
       "edition_date": "2026-10-14",
       "id": "radar-d141466fb9da2b0a",
       "published": "2026-10-13 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Google Cloud — Gemini 4 Argon available on Google Cloud",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1017,11 +850,6 @@
       "edition_date": "2026-10-14",
       "id": "radar-f37c6be44973d3e4",
       "published": "2026-10-13 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Google Cloud — One Agent Development Kit, five languages",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1046,11 +874,6 @@
       "edition_date": "2026-10-14",
       "id": "radar-9ba1fe6858400596",
       "published": "2026-10-13 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Amaggi — Monitoramento de desmatamento",
-        "Eucatex — Monitoramento de vigor florestal",
-        "Bracell — GeoIA Estradas"
-      ],
       "source": "Planet — Slovenia's Automated Space Resilience Infrastructure",
       "source_meta": {
         "domain": "www.planet.com"
@@ -1075,10 +898,6 @@
       "edition_date": "2026-10-13",
       "id": "radar-106bf0512d9e37c8",
       "published": "2026-10-12 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "GeoNext — LiDAR e rodovias",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Planet — Introducing Populace",
       "source_meta": {
         "domain": "www.planet.com"
@@ -1103,10 +922,6 @@
       "edition_date": "2026-10-13",
       "id": "radar-56f4a468b57efddd",
       "published": "2026-10-12 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "Itaminas — Monitoramento geotécnico"
-      ],
       "source": "Esri — Countdown Instant App",
       "source_meta": {
         "domain": "www.esri.com"
@@ -1130,10 +945,6 @@
       "edition_date": "2026-10-13",
       "id": "radar-4204414603744d96",
       "published": "2026-10-12 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Anthropic — Strengthening our defenses against distillation attacks",
       "source_meta": {
         "domain": "www.anthropic.com"
@@ -1158,11 +969,6 @@
       "edition_date": "2026-10-09",
       "id": "radar-d23b22ea89341409",
       "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Google Cloud — Gemini at Work 2026",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1186,13 +992,8 @@
       "confidence": "alta",
       "edition_at": "2026-10-09T07:31:00-03:00",
       "edition_date": "2026-10-09",
-      "id": "radar-3930e8dede7666d8",
+      "id": "radar-e00b44704f5ffbcc",
       "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Notas de versão do ChatGPT",
       "source_meta": {
         "domain": "help.openai.com"
@@ -1216,11 +1017,6 @@
       "edition_date": "2026-10-09",
       "id": "radar-29b989b34f8f02c3",
       "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "GeoNext — LiDAR e rodovias",
-        "Bracell — POC RGB + LiDAR",
-        "Itaminas — Monitoramento geotécnico"
-      ],
       "source": "Esri — MassDOT drone imagery as infrastructure",
       "source_meta": {
         "domain": "www.esri.com"
@@ -1245,11 +1041,6 @@
       "edition_date": "2026-10-08",
       "id": "radar-cdb1d51fae043110",
       "published": "2026-10-07 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Anthropic — Claude Haiku 5.5",
       "source_meta": {
         "domain": "www.anthropic.com"
@@ -1275,11 +1066,6 @@
       "edition_date": "2026-10-07",
       "id": "radar-b6158a7625215fb5",
       "published": "2026-10-06 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud — MCP Toolbox Java SDK 1.0",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1305,11 +1091,6 @@
       "edition_date": "2026-10-06",
       "id": "radar-73aa706342e6e53b",
       "published": "2026-10-05 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Google Cloud — Modernize",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1333,13 +1114,8 @@
       "confidence": "alta",
       "edition_at": "2026-10-02T07:30:00-03:00",
       "edition_date": "2026-10-02",
-      "id": "radar-3930e8dede7666d8",
+      "id": "radar-1d506ff014b6c7bd",
       "published": "2026-10-01 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Notas de versão do ChatGPT",
       "source_meta": {
         "domain": "help.openai.com"
@@ -1362,13 +1138,8 @@
       "confidence": "alta",
       "edition_at": "2026-10-02T07:30:00-03:00",
       "edition_date": "2026-10-02",
-      "id": "radar-3930e8dede7666d8",
+      "id": "radar-d5445f4a1988c3c6",
       "published": "2026-10-01 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Notas de versão do ChatGPT",
       "source_meta": {
         "domain": "help.openai.com"
@@ -1393,11 +1164,6 @@
       "edition_date": "2026-10-02",
       "id": "radar-525597bd51105bb0",
       "published": "2026-10-01 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "GeoNext — LiDAR e rodovias",
-        "Bracell — POC RGB + LiDAR",
-        "Itaminas — Monitoramento geotécnico"
-      ],
       "source": "Esri — ArcGIS Earth October 2026",
       "source_meta": {
         "domain": "www.esri.com"
@@ -1422,11 +1188,6 @@
       "edition_date": "2026-10-02",
       "id": "radar-bab0e18b2802152d",
       "published": "2026-10-01",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "OpenAI — Depreciações de API",
       "source_meta": {
         "domain": "developers.openai.com"
@@ -1451,11 +1212,6 @@
       "edition_date": "2026-10-01",
       "id": "radar-294333117691a99b",
       "published": "2026-09-30 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud — Data Agent Kit GA",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1481,11 +1237,6 @@
       "edition_date": "2026-10-01",
       "id": "radar-826485d50653229c",
       "published": "2026-09-30 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Google Cloud — Cloud CLI remote MCP server",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1511,11 +1262,6 @@
       "edition_date": "2026-10-01",
       "id": "radar-b48e0385d637ba2d",
       "published": "2026-09-29 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "TAG / TBG / NTS",
-        "Suzano — Rotas e logística"
-      ],
       "source": "Esri — ArcGIS Solutions September 2026 Release",
       "source_meta": {
         "domain": "www.esri.com"
@@ -1540,11 +1286,6 @@
       "edition_date": "2026-09-30",
       "id": "radar-6f1d6b1199800100",
       "published": "2026-09-29 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "AWS — Amazon Bedrock Managed Agents",
       "source_meta": {
         "domain": "aws.amazon.com"
@@ -1571,11 +1312,6 @@
       "edition_date": "2026-09-29",
       "id": "radar-4e3ca8a95d366330",
       "published": "2026-09-28 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Anthropic — Claude Sonnet 5.5",
       "source_meta": {
         "domain": "www.anthropic.com"
@@ -1601,11 +1337,6 @@
       "edition_date": "2026-09-25",
       "id": "radar-d45b7494905ab202",
       "published": "2026-09-24 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1631,11 +1362,6 @@
       "edition_date": "2026-09-25",
       "id": "radar-ba5a58e9c2c65164",
       "published": "2026-09-24 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1661,11 +1387,6 @@
       "edition_date": "2026-09-24",
       "id": "radar-3930e8dede7666d8",
       "published": "2026-09-23 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "IMAC — Plataforma GIS",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Notas de versão do ChatGPT",
       "source_meta": {
         "domain": "help.openai.com"
@@ -1690,11 +1411,6 @@
       "edition_date": "2026-09-23",
       "id": "radar-8ec78290dff2f7ab",
       "published": "2026-09-22 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Notas de versão do ChatGPT",
       "source_meta": {
         "domain": "help.openai.com"
@@ -1719,11 +1435,6 @@
       "edition_date": "2026-09-23",
       "id": "radar-0dd3bed5c7dd1c27",
       "published": "2026-09-22 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Anthropic — Claude Opus 5.5",
       "source_meta": {
         "domain": "www.anthropic.com"
@@ -1748,11 +1459,6 @@
       "edition_date": "2026-09-22",
       "id": "radar-ef586aec73083d1a",
       "published": "2026-09-21 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter",
-        "NAVIS / GeoFramework"
-      ],
       "source": "OpenAI — estudo de caso V7",
       "source_meta": {
         "domain": "openai.com"
@@ -1777,11 +1483,6 @@
       "edition_date": "2026-09-22",
       "id": "radar-d4efdc247bb27016",
       "published": "2026-09-21 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "AWS News Blog",
       "source_meta": {
         "domain": "aws.amazon.com"
@@ -1806,11 +1507,6 @@
       "edition_date": "2026-09-22",
       "id": "radar-fdbbb3bbbb8abbff",
       "published": "2026-09-21 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1834,11 +1530,6 @@
       "edition_date": "2026-09-18",
       "id": "radar-d6928df4cd298cfe",
       "published": "2026-09-18 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1862,11 +1553,6 @@
       "edition_date": "2026-09-18",
       "id": "radar-1abf0b4edfd9f530",
       "published": "2026-09-18 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1891,11 +1577,6 @@
       "edition_date": "2026-09-18",
       "id": "radar-d576b039cf6bdaab",
       "published": "2026-09-18 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "OpenAI Developer Community",
       "source_meta": {
         "domain": "community.openai.com"
@@ -1919,11 +1600,6 @@
       "edition_date": "2026-09-15",
       "id": "radar-3f8bbb8c75abb419",
       "published": "2026-09-14 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1948,11 +1624,6 @@
       "edition_date": "2026-09-15",
       "id": "radar-54389dc731ce7100",
       "published": "2026-09-14 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Bracell — POC RGB + LiDAR",
-        "GeoNext — LiDAR e rodovias",
-        "Eucatex — Monitoramento de vigor florestal"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -1977,11 +1648,6 @@
       "edition_date": "2026-09-15",
       "id": "radar-1386401dbae8c76c",
       "published": "2026-09-14 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "IMAC — Plataforma GIS",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Google Cloud — release notes",
       "source_meta": {
         "domain": "docs.cloud.google.com"
@@ -2006,11 +1672,6 @@
       "edition_date": "2026-09-11",
       "id": "radar-8a71a2808988c5c7",
       "published": "2026-09-10 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "OpenAI — Agents API",
       "source_meta": {
         "domain": "openai.com"
@@ -2036,11 +1697,6 @@
       "edition_date": "2026-09-11",
       "id": "radar-5876c91d40c3dd69",
       "published": "2026-09-10 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "OpenAI — Data agent",
       "source_meta": {
         "domain": "openai.com"
@@ -2065,11 +1721,6 @@
       "edition_date": "2026-09-11",
       "id": "radar-322d0b843047f02e",
       "published": "2026-09-10 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -2095,11 +1746,6 @@
       "edition_date": "2026-09-09",
       "id": "radar-1f112fc7530a72ce",
       "published": "2026-09-08 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Itaminas — Monitoramento geotécnico",
-        "Vale — GeoIA SAB.IA",
-        "CTC — Centro de Tecnologia Canavieira"
-      ],
       "source": "OpenAI — estudo de caso",
       "source_meta": {
         "domain": "openai.com"
@@ -2124,11 +1770,6 @@
       "edition_date": "2026-09-09",
       "id": "radar-72dfe79b3f8fddbe",
       "published": "2026-09-08 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -2153,11 +1794,6 @@
       "edition_date": "2026-09-09",
       "id": "radar-672e5f1a27ac6bdd",
       "published": "2026-09-08 (horário/fuso não informado na fonte)",
-      "relations": [
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Threat Intelligence",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -2181,11 +1817,6 @@
       "edition_date": "2026-09-09",
       "id": "radar-0eeb76fd2df8ca67",
       "published": "2026-09-08 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -2210,11 +1841,6 @@
       "edition_date": "2026-09-04",
       "id": "radar-ea74e2fffbc50210",
       "published": "2026-09-03 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "OpenAI — GPT-6 Astra",
       "source_meta": {
         "domain": "openai.com"
@@ -2239,11 +1865,6 @@
       "edition_date": "2026-09-04",
       "id": "radar-99e525dfe2cd9d3b",
       "published": "2026-09-03 (horário/fuso não informado na fonte)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Notas de versão do ChatGPT",
       "source_meta": {
         "domain": "help.openai.com"
@@ -2268,11 +1889,6 @@
       "edition_date": "2026-09-03",
       "id": "radar-8a8e02e5f6e7e368",
       "published": "2026-09-02 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -2296,11 +1912,6 @@
       "edition_date": "2026-09-02",
       "id": "radar-72d0b7bf5a5b2ed4",
       "published": "2026-09-01 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -2325,11 +1936,6 @@
       "edition_date": "2026-09-01",
       "id": "radar-fbb8d7fddb582132",
       "published": "2026-08-31 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -2354,11 +1960,6 @@
       "edition_date": "2026-08-28",
       "id": "radar-8c9708217f756b87",
       "published": "2026-08-27 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Suzano — Rotas e logística",
-        "Bracell — GeoIA Estradas",
-        "GeoNext — LiDAR e rodovias"
-      ],
       "source": "Esri ArcGIS Blog",
       "source_meta": {
         "domain": "www.esri.com"
@@ -2382,10 +1983,6 @@
       "edition_date": "2026-08-28",
       "id": "radar-c5c55e89eae81ad9",
       "published": "2026-08-27 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -2409,10 +2006,6 @@
       "edition_date": "2026-08-27",
       "id": "radar-136f83bb402008db",
       "published": "2026-08-26 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -2436,11 +2029,6 @@
       "edition_date": "2026-08-27",
       "id": "radar-5591308255047f01",
       "published": "2026-08-26 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -2464,10 +2052,6 @@
       "edition_date": "2026-08-26",
       "id": "radar-093a1f9cb4da70b3",
       "published": "2026-08-25 20:46 (fuso não informado na fonte)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "NAVIS / GeoFramework"
-      ],
       "source": "anúncio da OpenAI Developer Community",
       "source_meta": {
         "domain": "community.openai.com"

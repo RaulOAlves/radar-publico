@@ -9,11 +9,6 @@
       "edition_date": "2026-10-30",
       "id": "radar-10be109ee0bd01c4",
       "published": "2026-10-29 19:47 (horário exibido pelo GitHub; fuso não informado)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "OpenAI — Codex CLI 0.166.0",
       "source_meta": {
         "domain": "github.com"
@@ -38,11 +33,6 @@
       "edition_date": "2026-10-30",
       "id": "radar-09b9bd644d688ff9",
       "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Google Cloud — suporte ampliado a modelos semânticos no Knowledge Catalog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -67,11 +57,6 @@
       "edition_date": "2026-10-30",
       "id": "radar-d6a5b43b8fe9d9fd",
       "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Esri — novidades do Calcite Design System 5.2",
       "source_meta": {
         "domain": "www.esri.com"
@@ -96,10 +81,6 @@
       "edition_date": "2026-10-30",
       "id": "radar-ad7611751baac45b",
       "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Eucatex — Monitoramento de vigor florestal",
-        "Klabin — IA"
-      ],
       "source": "Purdue University — protótipo MATRIX Peru",
       "source_meta": {
         "domain": "ag.purdue.edu"

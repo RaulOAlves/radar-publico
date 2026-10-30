@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import html
 import json
 import re
 import shutil
@@ -18,6 +19,11 @@ from urllib.parse import urlparse
 
 SCHEMA_VERSION = "1.0"
 SITE_URL = "https://radar-publico-opal.vercel.app"
+FEED_URL = f"{SITE_URL}/v1/radar/feed.xml"
+ATOM_NS = "http://www.w3.org/2005/Atom"
+CONTENT_NS = "http://purl.org/rss/1.0/modules/content/"
+ET.register_namespace("atom", ATOM_NS)
+ET.register_namespace("content", CONTENT_NS)
 METHODOLOGY = {
     "version": "1",
     "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
@@ -48,6 +54,31 @@ def _bullet_value(block: str, name: str) -> str | None:
 
 def _item_id(url: str) -> str:
     return "radar-" + hashlib.sha256(url.encode("utf-8")).hexdigest()[:16]
+
+
+def _suffix_id(url: str, discriminator: str) -> str:
+    return "radar-" + hashlib.sha256(f"{url}\n{discriminator}".encode("utf-8")).hexdigest()[:16]
+
+
+def _unique_ids(items: list[dict]) -> list[dict]:
+    """Garante ids únicos. A matéria mais antiga de cada URL mantém o id original (guid estável)."""
+    seen: set[str] = set()
+    ids: dict[int, str] = {}
+    for position in sorted(range(len(items)), key=lambda i: (items[i]["edition_at"], items[i]["title"])):
+        item = items[position]
+        candidate = item["id"]
+        if candidate in seen:
+            candidate = _suffix_id(item["url"], item["title"])
+        if candidate in seen:
+            candidate = _suffix_id(item["url"], f"{item['title']}\n{item['edition_at']}")
+        seen.add(candidate)
+        ids[position] = candidate
+    return [{**item, "id": ids[position]} for position, item in enumerate(items)]
+
+
+def _public_item(item: dict) -> dict:
+    """Remove campos internos (relações com projetos) dos arquivos públicos."""
+    return {key: value for key, value in item.items() if key != "relations"}
 
 
 def parse_document(document: str) -> dict:
@@ -93,7 +124,7 @@ def parse_document(document: str) -> dict:
                 "confidence": _bullet_value(block, "Confiança") or "não informada",
             }
         )
-    return {"items": items, "quarantine": quarantine, "empty_editions": empty_editions}
+    return {"items": _unique_ids(items), "quarantine": quarantine, "empty_editions": empty_editions}
 
 
 def _write_json(path: Path, value: dict) -> None:
@@ -105,22 +136,53 @@ def _file_hash(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+INLINE_CODE = re.compile(r"`([^`]+)`")
+
+
+def _plain_text(value: str) -> str:
+    return value.replace("`", "")
+
+
+def _html_text(value: str) -> str:
+    return INLINE_CODE.sub(r"<code>\1</code>", html.escape(value, quote=False))
+
+
+def _content_html(item: dict) -> str:
+    parts = [f"<p>{_html_text(paragraph)}</p>" for paragraph in item["summary"].split("\n\n") if paragraph.strip()]
+    if item.get("why_it_matters"):
+        parts.append(f"<p><strong>Por que importa:</strong> {_html_text(item['why_it_matters'])}</p>")
+    link = html.escape(item["url"], quote=True)
+    parts.append(f'<p>Fonte: <a href="{link}">{html.escape(item["source"], quote=False)}</a></p>')
+    return "\n".join(parts)
+
+
+def _rfc822(edition_at: str) -> str:
+    return format_datetime(datetime.fromisoformat(edition_at))
+
+
 def _rss(items: list[dict]) -> ET.Element:
     root = ET.Element("rss", version="2.0")
     channel = ET.SubElement(root, "channel")
     ET.SubElement(channel, "title").text = "Radar IA, GeoIA e Setores"
-    ET.SubElement(channel, "description").text = "Radar técnico público"
+    ET.SubElement(channel, "description").text = (
+        "Radar técnico público de IA, GeoIA e setores, com seleção editorial diária e fontes rastreáveis."
+    )
     ET.SubElement(channel, "link").text = SITE_URL
+    ET.SubElement(channel, f"{{{ATOM_NS}}}link", href=FEED_URL, rel="self", type="application/rss+xml")
+    ET.SubElement(channel, "language").text = "pt-BR"
+    if items:
+        newest = max(items, key=lambda item: datetime.fromisoformat(item["edition_at"]))
+        ET.SubElement(channel, "lastBuildDate").text = _rfc822(newest["edition_at"])
     for item in items:
         entry = ET.SubElement(channel, "item")
         ET.SubElement(entry, "title").text = item["title"]
         ET.SubElement(entry, "link").text = item["url"]
         ET.SubElement(entry, "guid", isPermaLink="false").text = item["id"]
-        ET.SubElement(entry, "description").text = item["summary"]
-        ET.SubElement(entry, "pubDate").text = format_datetime(
-            datetime.fromisoformat(item["edition_at"])
-        )
-        ET.SubElement(entry, "category").text = ", ".join(item["tags"])
+        ET.SubElement(entry, "description").text = _plain_text(item["summary"])
+        ET.SubElement(entry, f"{{{CONTENT_NS}}}encoded").text = _content_html(item)
+        ET.SubElement(entry, "pubDate").text = _rfc822(item["edition_at"])
+        for tag in item["tags"]:
+            ET.SubElement(entry, "category").text = tag
     return root
 
 
@@ -146,7 +208,11 @@ def _edition_payload(edition_date: str | None, items: list[dict], generated_at: 
 
 
 def _build_radar_dir(report: dict, radar_dir: Path) -> None:
-    items = sorted(report["items"], key=lambda item: item["edition_at"], reverse=True)
+    items = sorted(
+        (_public_item(item) for item in report["items"]),
+        key=lambda item: item["edition_at"],
+        reverse=True,
+    )
     grouped = defaultdict(list)
     for item in items:
         grouped[item["edition_date"]].append(item)

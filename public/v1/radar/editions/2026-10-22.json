@@ -9,11 +9,6 @@
       "edition_date": "2026-10-22",
       "id": "radar-1f4559e41bf13b35",
       "published": "2026-10-21 22:17 (horário exibido pelo GitHub; fuso não informado)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Anthropic — Claude Code v2.1.307",
       "source_meta": {
         "domain": "github.com"
@@ -38,11 +33,6 @@
       "edition_date": "2026-10-22",
       "id": "radar-3634ecbbbb3a5eca",
       "published": "2026-10-21 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Google Cloud — OpenAI models in Model Garden",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -67,11 +57,6 @@
       "edition_date": "2026-10-22",
       "id": "radar-c063fbad0dd44a03",
       "published": "2026-10-21 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Esri — Recent PHP Vulnerabilities",
       "source_meta": {
         "domain": "www.esri.com"

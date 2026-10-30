@@ -9,11 +9,6 @@
       "edition_date": "2026-10-01",
       "id": "radar-294333117691a99b",
       "published": "2026-09-30 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud — Data Agent Kit GA",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -39,11 +34,6 @@
       "edition_date": "2026-10-01",
       "id": "radar-826485d50653229c",
       "published": "2026-09-30 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Google Cloud — Cloud CLI remote MCP server",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -69,11 +59,6 @@
       "edition_date": "2026-10-01",
       "id": "radar-b48e0385d637ba2d",
       "published": "2026-09-29 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "TAG / TBG / NTS",
-        "Suzano — Rotas e logística"
-      ],
       "source": "Esri — ArcGIS Solutions September 2026 Release",
       "source_meta": {
         "domain": "www.esri.com"

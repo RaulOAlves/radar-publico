@@ -9,11 +9,6 @@
       "edition_date": "2026-10-29",
       "id": "radar-ebc97573a6a94023",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
-      ],
       "source": "OpenAI — expansão da parceria com ServiceNow",
       "source_meta": {
         "domain": "openai.com"
@@ -36,13 +31,8 @@
       "confidence": "alta",
       "edition_at": "2026-10-29T07:35:00-03:00",
       "edition_date": "2026-10-29",
-      "id": "radar-d8651470f28270c3",
+      "id": "radar-9d6fea0b42eb9f3c",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud — release notes de 28/10",
       "source_meta": {
         "domain": "docs.cloud.google.com"
@@ -67,11 +57,6 @@
       "edition_date": "2026-10-29",
       "id": "radar-d8651470f28270c3",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Google Cloud — release notes do AlloyDB AI",
       "source_meta": {
         "domain": "docs.cloud.google.com"
@@ -96,10 +81,6 @@
       "edition_date": "2026-10-29",
       "id": "radar-96e37f1546c14c56",
       "published": "2026-10-28 (data do release e da atualização da documentação; horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Google Cloud — Application Integration agent skills",
       "source_meta": {
         "domain": "docs.cloud.google.com"
@@ -122,12 +103,8 @@
       "confidence": "alta",
       "edition_at": "2026-10-29T07:35:00-03:00",
       "edition_date": "2026-10-29",
-      "id": "radar-d8651470f28270c3",
+      "id": "radar-f0881e2805c75550",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Google Cloud — release notes de 28/10, CodeMender 0.17.0",
       "source_meta": {
         "domain": "docs.cloud.google.com"

@@ -9,11 +9,6 @@
       "edition_date": "2026-09-29",
       "id": "radar-4e3ca8a95d366330",
       "published": "2026-09-28 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Anthropic — Claude Sonnet 5.5",
       "source_meta": {
         "domain": "www.anthropic.com"

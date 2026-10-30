@@ -9,11 +9,6 @@
       "edition_date": "2026-09-25",
       "id": "radar-d45b7494905ab202",
       "published": "2026-09-24 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -39,11 +34,6 @@
       "edition_date": "2026-09-25",
       "id": "radar-ba5a58e9c2c65164",
       "published": "2026-09-24 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"

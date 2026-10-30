@@ -9,11 +9,6 @@
       "edition_date": "2026-10-14",
       "id": "radar-d141466fb9da2b0a",
       "published": "2026-10-13 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Google Cloud — Gemini 4 Argon available on Google Cloud",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -38,11 +33,6 @@
       "edition_date": "2026-10-14",
       "id": "radar-f37c6be44973d3e4",
       "published": "2026-10-13 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Google Cloud — One Agent Development Kit, five languages",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -67,11 +57,6 @@
       "edition_date": "2026-10-14",
       "id": "radar-9ba1fe6858400596",
       "published": "2026-10-13 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Amaggi — Monitoramento de desmatamento",
-        "Eucatex — Monitoramento de vigor florestal",
-        "Bracell — GeoIA Estradas"
-      ],
       "source": "Planet — Slovenia's Automated Space Resilience Infrastructure",
       "source_meta": {
         "domain": "www.planet.com"

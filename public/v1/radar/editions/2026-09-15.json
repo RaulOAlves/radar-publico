@@ -9,11 +9,6 @@
       "edition_date": "2026-09-15",
       "id": "radar-3f8bbb8c75abb419",
       "published": "2026-09-14 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -38,11 +33,6 @@
       "edition_date": "2026-09-15",
       "id": "radar-54389dc731ce7100",
       "published": "2026-09-14 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Bracell — POC RGB + LiDAR",
-        "GeoNext — LiDAR e rodovias",
-        "Eucatex — Monitoramento de vigor florestal"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -67,11 +57,6 @@
       "edition_date": "2026-09-15",
       "id": "radar-1386401dbae8c76c",
       "published": "2026-09-14 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "IMAC — Plataforma GIS",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Google Cloud — release notes",
       "source_meta": {
         "domain": "docs.cloud.google.com"

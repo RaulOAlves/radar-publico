@@ -9,11 +9,6 @@
       "edition_date": "2026-10-17",
       "id": "radar-9951decf1ff354d0",
       "published": "2026-10-16 20:53 (horário exibido pelo GitHub; fuso não informado)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Anthropic — Claude Code v2.1.302",
       "source_meta": {
         "domain": "github.com"
@@ -38,10 +33,6 @@
       "edition_date": "2026-10-17",
       "id": "radar-9f5a868c8dff42fa",
       "published": "mudança efetiva em 2026-10-16 (horário/fuso e data de publicação do aviso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "AWS — AgentCore Insights",
       "source_meta": {
         "domain": "docs.aws.amazon.com"
@@ -63,13 +54,8 @@
       "confidence": "alta",
       "edition_at": "2026-10-17T09:09:00-03:00",
       "edition_date": "2026-10-17",
-      "id": "radar-1386401dbae8c76c",
+      "id": "radar-f9166f29e7067e8e",
       "published": "2026-10-16 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Google Cloud — Agent Search release notes",
       "source_meta": {
         "domain": "docs.cloud.google.com"

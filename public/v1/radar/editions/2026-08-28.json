@@ -9,11 +9,6 @@
       "edition_date": "2026-08-28",
       "id": "radar-8c9708217f756b87",
       "published": "2026-08-27 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Suzano — Rotas e logística",
-        "Bracell — GeoIA Estradas",
-        "GeoNext — LiDAR e rodovias"
-      ],
       "source": "Esri ArcGIS Blog",
       "source_meta": {
         "domain": "www.esri.com"
@@ -37,10 +32,6 @@
       "edition_date": "2026-08-28",
       "id": "radar-c5c55e89eae81ad9",
       "published": "2026-08-27 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"

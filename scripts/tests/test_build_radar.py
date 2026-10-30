@@ -98,6 +98,106 @@ class RadarBuildTests(unittest.TestCase):
         )
         self.assertIn("v1/radar/quarantine.json", manifest["files"])
 
+    def _feed(self, document: str = DOCUMENT):
+        report = parse_document(document)
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output_dir = Path(temporary_directory)
+            build_artifacts(report, output_dir)
+            path = output_dir / "v1/radar/feed.xml"
+            return ET.parse(path).getroot(), path.read_text(encoding="utf-8")
+
+    def test_feed_declares_correct_namespaces_and_channel_metadata(self):
+        root, raw = self._feed()
+
+        self.assertIn('xmlns:atom="http://www.w3.org/2005/Atom"', raw)
+        self.assertIn('xmlns:content="http://purl.org/rss/1.0/modules/content/"', raw)
+        self.assertEqual("pt-BR", root.findtext("./channel/language"))
+        self.assertTrue(root.findtext("./channel/lastBuildDate").endswith("-0300"))
+        self_link = root.find("./channel/{http://www.w3.org/2005/Atom}link")
+        self.assertEqual("self", self_link.get("rel"))
+        self.assertEqual("application/rss+xml", self_link.get("type"))
+        self.assertEqual(
+            "https://radar-publico-opal.vercel.app/v1/radar/feed.xml", self_link.get("href")
+        )
+
+    def test_feed_emits_one_category_per_tag(self):
+        root, _ = self._feed()
+
+        categories = [c.text for c in root.findall("./channel/item/category")]
+        self.assertEqual(["openai", "geoia"], categories)
+
+    def test_feed_description_is_plain_text_without_markdown_backticks(self):
+        document = DOCUMENT.replace(
+            "Primeiro parágrafo factual sobre o lançamento.",
+            "Lança `codex queue --resume` & `doctor`.",
+        )
+        root, _ = self._feed(document)
+
+        description = root.findtext("./channel/item/description")
+        self.assertNotIn("`", description)
+        self.assertIn("codex queue --resume", description)
+
+    def test_feed_content_encoded_has_html_summary_impact_and_source(self):
+        document = DOCUMENT.replace(
+            "Primeiro parágrafo factual sobre o lançamento.",
+            "Lança `codex doctor` & <b>cru</b>.",
+        )
+        root, _ = self._feed(document)
+
+        html = root.findtext("./channel/item/{http://purl.org/rss/1.0/modules/content/}encoded")
+        self.assertIn("<p>Lança <code>codex doctor</code> &amp; &lt;b&gt;cru&lt;/b&gt;.</p>", html)
+        self.assertIn("<p>Segundo parágrafo com contexto, sem copiar a fonte.</p>", html)
+        self.assertIn("Por que importa", html)
+        self.assertIn("Uma mudança verificável para agentes e GIS.", html)
+        self.assertIn('<a href="https://example.com/noticia?a=1&amp;b=2">', html)
+
+    def test_feed_does_not_expose_internal_relations(self):
+        _, raw = self._feed()
+
+        self.assertNotIn("Projeto Exemplo", raw)
+        self.assertNotIn("Outro Projeto", raw)
+
+    def _two_records_same_url(self, newest_first: bool) -> str:
+        old = DOCUMENT.replace("2026-10-29 07:35", "2026-10-28 07:35").replace(
+            "Lançamento do Radar", "Primeira matéria da página"
+        )
+        new = DOCUMENT.replace("Lançamento do Radar", "Segunda matéria da página")
+        records = [new, old] if newest_first else [old, new]
+        return records[0] + "\n" + records[1].split("## Registros\n", 1)[1]
+
+    def test_items_sharing_a_url_get_distinct_ids_and_oldest_keeps_original(self):
+        single = parse_document(DOCUMENT)["items"][0]["id"]
+
+        for newest_first in (True, False):
+            items = parse_document(self._two_records_same_url(newest_first))["items"]
+            by_title = {item["title"]: item["id"] for item in items}
+
+            self.assertEqual(2, len(set(by_title.values())), "ids devem ser únicos")
+            self.assertEqual(single, by_title["Primeira matéria da página"])
+            self.assertNotEqual(single, by_title["Segunda matéria da página"])
+
+    def test_distinct_ids_do_not_depend_on_document_order(self):
+        a = {i["title"]: i["id"] for i in parse_document(self._two_records_same_url(True))["items"]}
+        b = {i["title"]: i["id"] for i in parse_document(self._two_records_same_url(False))["items"]}
+
+        self.assertEqual(a, b)
+
+    def test_feed_guids_are_unique_when_urls_repeat(self):
+        root, _ = self._feed(self._two_records_same_url(True))
+
+        guids = [g.text for g in root.findall("./channel/item/guid")]
+        self.assertEqual(len(guids), len(set(guids)))
+
+    def test_public_json_files_do_not_expose_relations(self):
+        report = parse_document(DOCUMENT)
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output_dir = Path(temporary_directory)
+            build_artifacts(report, output_dir)
+            for path in (output_dir / "v1/radar").rglob("*.json"):
+                text = path.read_text(encoding="utf-8")
+                self.assertNotIn("Projeto Exemplo", text, path.name)
+                self.assertNotIn('"relations"', text, path.name)
+
     def test_same_input_produces_same_item_id(self):
         first = parse_document(DOCUMENT)["items"][0]["id"]
         second = parse_document(DOCUMENT)["items"][0]["id"]

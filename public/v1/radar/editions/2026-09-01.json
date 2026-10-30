@@ -9,11 +9,6 @@
       "edition_date": "2026-09-01",
       "id": "radar-fbb8d7fddb582132",
       "published": "2026-08-31 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"

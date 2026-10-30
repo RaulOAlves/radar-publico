@@ -9,11 +9,6 @@
       "edition_date": "2026-10-23",
       "id": "radar-2f70043cc1819c04",
       "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Amaggi — Monitoramento de desmatamento",
-        "Eucatex — Monitoramento de vigor florestal",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Ai2 — OlmoEarth v1.3",
       "source_meta": {
         "domain": "allenai.org"
@@ -40,11 +35,6 @@
       "edition_date": "2026-10-23",
       "id": "radar-47abee776e53ac9f",
       "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "CTC — Centro de Tecnologia Canavieira",
-        "Atvos — Visão computacional",
-        "São Martinho — Planejamento agrícola"
-      ],
       "source": "Ai2 — PLANTEUR: benchmark de culturas tropicais",
       "source_meta": {
         "domain": "allenai.org"
@@ -70,11 +60,6 @@
       "edition_date": "2026-10-23",
       "id": "radar-0307ec1244417a61",
       "published": "2026-10-22 22:18 (horário exibido pelo GitHub; fuso não informado)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Anthropic — Claude Code v2.1.309",
       "source_meta": {
         "domain": "github.com"
@@ -99,11 +84,6 @@
       "edition_date": "2026-10-23",
       "id": "radar-42dc5172617fe2e4",
       "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Atvos — Visão computacional",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "OpenAI — Decisions API",
       "source_meta": {
         "domain": "openai.com"
@@ -128,10 +108,6 @@
       "edition_date": "2026-10-23",
       "id": "radar-e992952e7eee2742",
       "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Eucatex — Monitoramento de vigor florestal",
-        "Amaggi — Monitoramento de desmatamento"
-      ],
       "source": "OroraTech — parceria com ICEYE",
       "source_meta": {
         "domain": "ororatech.com"

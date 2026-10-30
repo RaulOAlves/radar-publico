@@ -9,11 +9,6 @@
       "edition_date": "2026-09-30",
       "id": "radar-6f1d6b1199800100",
       "published": "2026-09-29 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "AWS — Amazon Bedrock Managed Agents",
       "source_meta": {
         "domain": "aws.amazon.com"

@@ -9,11 +9,6 @@
       "edition_date": "2026-10-21",
       "id": "radar-11a9e9aebb65d4c7",
       "published": "2026-10-20 20:46 (horário exibido pelo GitHub; fuso não informado)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Anthropic — Claude Code v2.1.305",
       "source_meta": {
         "domain": "github.com"
@@ -38,11 +33,6 @@
       "edition_date": "2026-10-21",
       "id": "radar-e8db8c6284f507e2",
       "published": "aviso original em 2026-10-05; publicado na base de advisories e atualizado em 2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
-      ],
       "source": "GitHub Advisory — GHSA-rvq5-wwqv-78pq / CVE-2026-111771",
       "source_meta": {
         "domain": "github.com"
@@ -67,11 +57,6 @@
       "edition_date": "2026-10-21",
       "id": "radar-f589d35077387a1a",
       "published": "2026-10-21 (horário/fuso não informados; posição exata na janela de 24 horas não confirmada)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud — Managed RAG search inside the sovereign perimeter",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -96,10 +81,6 @@
       "edition_date": "2026-10-21",
       "id": "radar-dc65e8821342889a",
       "published": "2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Vale — GeoIA SAB.IA"
-      ],
       "source": "Google Cloud — Announcing llm-d 1.0",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -124,11 +105,6 @@
       "edition_date": "2026-10-21",
       "id": "radar-1228ecbc13bad748",
       "published": "2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "TAG / TBG / NTS",
-        "Vale — GeoIA SAB.IA",
-        "Itaminas — Monitoramento geotécnico"
-      ],
       "source": "Planet — First light from Tanager-2 and SuperDove Flock 4J",
       "source_meta": {
         "domain": "www.planet.com"

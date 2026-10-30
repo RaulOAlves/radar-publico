@@ -9,10 +9,6 @@
       "edition_date": "2026-10-13",
       "id": "radar-106bf0512d9e37c8",
       "published": "2026-10-12 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "GeoNext — LiDAR e rodovias",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Planet — Introducing Populace",
       "source_meta": {
         "domain": "www.planet.com"
@@ -37,10 +33,6 @@
       "edition_date": "2026-10-13",
       "id": "radar-56f4a468b57efddd",
       "published": "2026-10-12 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "Itaminas — Monitoramento geotécnico"
-      ],
       "source": "Esri — Countdown Instant App",
       "source_meta": {
         "domain": "www.esri.com"
@@ -64,10 +56,6 @@
       "edition_date": "2026-10-13",
       "id": "radar-4204414603744d96",
       "published": "2026-10-12 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Anthropic — Strengthening our defenses against distillation attacks",
       "source_meta": {
         "domain": "www.anthropic.com"

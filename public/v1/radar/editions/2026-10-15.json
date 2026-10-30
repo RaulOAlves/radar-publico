@@ -9,11 +9,6 @@
       "edition_date": "2026-10-15",
       "id": "radar-137bd70caf345667",
       "published": "patch em 2026-10-13; boletim em 2026-10-14 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "IMAC — Plataforma GIS",
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Esri — ArcGIS Server Security 2026 Update 3 Patch",
       "source_meta": {
         "domain": "support.esri.com"
@@ -38,11 +33,6 @@
       "edition_date": "2026-10-15",
       "id": "radar-5b8961a811158e57",
       "published": "2026-10-14 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "Eucatex — Monitoramento de vigor florestal",
-        "BP — Nutrição de plantas",
-        "São Martinho — Planejamento agrícola"
-      ],
       "source": "Planet Documentation — ARPS v1.2.0 Release Notes",
       "source_meta": {
         "domain": "docs.planet.com"

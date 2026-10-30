@@ -9,11 +9,6 @@
       "edition_date": "2026-10-09",
       "id": "radar-d23b22ea89341409",
       "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Google Cloud — Gemini at Work 2026",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -37,13 +32,8 @@
       "confidence": "alta",
       "edition_at": "2026-10-09T07:31:00-03:00",
       "edition_date": "2026-10-09",
-      "id": "radar-3930e8dede7666d8",
+      "id": "radar-e00b44704f5ffbcc",
       "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "Notas de versão do ChatGPT",
       "source_meta": {
         "domain": "help.openai.com"
@@ -67,11 +57,6 @@
       "edition_date": "2026-10-09",
       "id": "radar-29b989b34f8f02c3",
       "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "GeoNext — LiDAR e rodovias",
-        "Bracell — POC RGB + LiDAR",
-        "Itaminas — Monitoramento geotécnico"
-      ],
       "source": "Esri — MassDOT drone imagery as infrastructure",
       "source_meta": {
         "domain": "www.esri.com"

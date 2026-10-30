@@ -9,11 +9,6 @@
       "edition_date": "2026-09-18",
       "id": "radar-d6928df4cd298cfe",
       "published": "2026-09-18 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -37,11 +32,6 @@
       "edition_date": "2026-09-18",
       "id": "radar-1abf0b4edfd9f530",
       "published": "2026-09-18 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -66,11 +56,6 @@
       "edition_date": "2026-09-18",
       "id": "radar-d576b039cf6bdaab",
       "published": "2026-09-18 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro"
-      ],
       "source": "OpenAI Developer Community",
       "source_meta": {
         "domain": "community.openai.com"

@@ -9,11 +9,6 @@
       "edition_date": "2026-10-07",
       "id": "radar-b6158a7625215fb5",
       "published": "2026-10-06 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "relations": [
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud — MCP Toolbox Java SDK 1.0",
       "source_meta": {
         "domain": "cloud.google.com"

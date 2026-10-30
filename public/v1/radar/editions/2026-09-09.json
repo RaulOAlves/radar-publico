@@ -9,11 +9,6 @@
       "edition_date": "2026-09-09",
       "id": "radar-1f112fc7530a72ce",
       "published": "2026-09-08 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Itaminas — Monitoramento geotécnico",
-        "Vale — GeoIA SAB.IA",
-        "CTC — Centro de Tecnologia Canavieira"
-      ],
       "source": "OpenAI — estudo de caso",
       "source_meta": {
         "domain": "openai.com"
@@ -38,11 +33,6 @@
       "edition_date": "2026-09-09",
       "id": "radar-72dfe79b3f8fddbe",
       "published": "2026-09-08 (horário/fuso não informado na fonte)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "GeoFiscal-Sinter",
-        "IMAC — Plataforma GIS"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -67,11 +57,6 @@
       "edition_date": "2026-09-09",
       "id": "radar-672e5f1a27ac6bdd",
       "published": "2026-09-08 (horário/fuso não informado na fonte)",
-      "relations": [
-        "GeoFiscal-Sinter",
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Threat Intelligence",
       "source_meta": {
         "domain": "cloud.google.com"
@@ -95,11 +80,6 @@
       "edition_date": "2026-09-09",
       "id": "radar-0eeb76fd2df8ca67",
       "published": "2026-09-08 (horário/fuso não informado na fonte)",
-      "relations": [
-        "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter",
-        "NAVIS / GeoFramework"
-      ],
       "source": "Google Cloud Blog",
       "source_meta": {
         "domain": "cloud.google.com"
