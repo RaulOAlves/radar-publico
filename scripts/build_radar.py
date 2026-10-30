@@ -11,7 +11,7 @@ import shutil
 import tempfile
 import xml.etree.ElementTree as ET
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timedelta
 from email.utils import format_datetime
 from pathlib import Path
 from urllib.parse import urlparse
@@ -20,6 +20,7 @@ from urllib.parse import urlparse
 SCHEMA_VERSION = "1.0"
 SITE_URL = "https://radar-publico-opal.vercel.app"
 FEED_URL = f"{SITE_URL}/v1/radar/feed.xml"
+FEED_TITLE = "Radar IA, GeoIA e Setores"
 ATOM_NS = "http://www.w3.org/2005/Atom"
 CONTENT_NS = "http://purl.org/rss/1.0/modules/content/"
 ET.register_namespace("atom", ATOM_NS)
@@ -147,13 +148,58 @@ def _html_text(value: str) -> str:
     return INLINE_CODE.sub(r"<code>\1</code>", html.escape(value, quote=False))
 
 
+PUBLISHED = re.compile(r"^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}:\d{2}))?")
+UNKNOWN_VALUES = {"não informado", "não informada"}
+
+
+def _published_label(text: str) -> str | None:
+    """Data (e hora, quando existe) de Publicado, sem as ressalvas em texto livre."""
+    match = PUBLISHED.match(text.strip())
+    if not match:
+        return None
+    year, month, day, time = match.groups()
+    return f"{day}/{month}/{year}" + (f" {time}" if time else "")
+
+
+def _metadata_line(item: dict) -> str | None:
+    parts = []
+    confidence = item.get("confidence", "")
+    if confidence and confidence not in UNKNOWN_VALUES:
+        parts.append(f"Confiança: {confidence}")
+    published = _published_label(item.get("published", ""))
+    if published:
+        parts.append(f"Publicado: {published}")
+    if item.get("tags"):
+        parts.append("Tags: " + ", ".join(item["tags"]))
+    if not parts:
+        return None
+    return "<p><small>" + html.escape(" · ".join(parts), quote=False) + "</small></p>"
+
+
 def _content_html(item: dict) -> str:
     parts = [f"<p>{_html_text(paragraph)}</p>" for paragraph in item["summary"].split("\n\n") if paragraph.strip()]
     if item.get("why_it_matters"):
         parts.append(f"<p><strong>Por que importa:</strong> {_html_text(item['why_it_matters'])}</p>")
     link = html.escape(item["url"], quote=True)
     parts.append(f'<p>Fonte: <a href="{link}">{html.escape(item["source"], quote=False)}</a></p>')
+    metadata = _metadata_line(item)
+    if metadata:
+        parts.append(metadata)
     return "\n".join(parts)
+
+
+def _staggered_dates(items: list[dict]) -> list[str]:
+    """pubDate por item: horário da edição + segundos que preservam a ordem editorial (1º = mais recente)."""
+    sizes = defaultdict(int)
+    for item in items:
+        sizes[item["edition_at"]] += 1
+    seen = defaultdict(int)
+    dates = []
+    for item in items:
+        seen[item["edition_at"]] += 1
+        offset = sizes[item["edition_at"]] - seen[item["edition_at"]]
+        dates.append(format_datetime(datetime.fromisoformat(item["edition_at"]) + timedelta(seconds=offset)))
+    return dates
 
 
 def _rfc822(edition_at: str) -> str:
@@ -163,7 +209,7 @@ def _rfc822(edition_at: str) -> str:
 def _rss(items: list[dict]) -> ET.Element:
     root = ET.Element("rss", version="2.0")
     channel = ET.SubElement(root, "channel")
-    ET.SubElement(channel, "title").text = "Radar IA, GeoIA e Setores"
+    ET.SubElement(channel, "title").text = FEED_TITLE
     ET.SubElement(channel, "description").text = (
         "Radar técnico público de IA, GeoIA e setores, com seleção editorial diária e fontes rastreáveis."
     )
@@ -173,14 +219,18 @@ def _rss(items: list[dict]) -> ET.Element:
     if items:
         newest = max(items, key=lambda item: datetime.fromisoformat(item["edition_at"]))
         ET.SubElement(channel, "lastBuildDate").text = _rfc822(newest["edition_at"])
-    for item in items:
+    image = ET.SubElement(channel, "image")
+    ET.SubElement(image, "url").text = f"{SITE_URL}/icon.png"
+    ET.SubElement(image, "title").text = FEED_TITLE
+    ET.SubElement(image, "link").text = SITE_URL
+    for item, pub_date in zip(items, _staggered_dates(items)):
         entry = ET.SubElement(channel, "item")
         ET.SubElement(entry, "title").text = item["title"]
         ET.SubElement(entry, "link").text = item["url"]
         ET.SubElement(entry, "guid", isPermaLink="false").text = item["id"]
         ET.SubElement(entry, "description").text = _plain_text(item["summary"])
         ET.SubElement(entry, f"{{{CONTENT_NS}}}encoded").text = _content_html(item)
-        ET.SubElement(entry, "pubDate").text = _rfc822(item["edition_at"])
+        ET.SubElement(entry, "pubDate").text = pub_date
         for tag in item["tags"]:
             ET.SubElement(entry, "category").text = tag
     return root

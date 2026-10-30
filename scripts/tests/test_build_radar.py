@@ -198,6 +198,89 @@ class RadarBuildTests(unittest.TestCase):
                 self.assertNotIn("Projeto Exemplo", text, path.name)
                 self.assertNotIn('"relations"', text, path.name)
 
+    def _same_edition_document(self, count: int) -> str:
+        records = []
+        for number in range(1, count + 1):
+            records.append(
+                DOCUMENT.split("## Registros\n", 1)[1]
+                .replace("Lançamento do Radar", f"Matéria {number}")
+                .replace("https://example.com/noticia?a=1&b=2", f"https://example.com/{number}")
+            )
+        return DOCUMENT.split("## Registros\n", 1)[0] + "## Registros\n" + "\n".join(records)
+
+    def test_feed_pubdates_keep_editorial_order_within_an_edition(self):
+        from email.utils import parsedate_to_datetime
+
+        root, _ = self._feed(self._same_edition_document(3))
+
+        items = root.findall("./channel/item")
+        dates = [parsedate_to_datetime(i.findtext("pubDate")) for i in items]
+        self.assertEqual(3, len(set(dates)), "pubDate deve ser distinto dentro da edição")
+        self.assertEqual(sorted(dates, reverse=True), dates, "1º item do documento = mais recente")
+        self.assertEqual(1, len({(d.hour, d.minute) for d in dates}), "continua no minuto da edição")
+
+    def test_feed_pubdate_is_stable_across_builds(self):
+        first, _ = self._feed(self._same_edition_document(3))
+        second, _ = self._feed(self._same_edition_document(3))
+
+        self.assertEqual(
+            [i.findtext("pubDate") for i in first.findall("./channel/item")],
+            [i.findtext("pubDate") for i in second.findall("./channel/item")],
+        )
+
+    def _metadata(self, document: str) -> str:
+        root, _ = self._feed(document)
+        html = root.findtext("./channel/item/{http://purl.org/rss/1.0/modules/content/}encoded")
+        return html.splitlines()[-1]
+
+    def test_feed_metadata_line_has_confidence_published_and_tags(self):
+        line = self._metadata(DOCUMENT)
+
+        self.assertIn("Confiança: alta", line)
+        self.assertIn("Publicado: 28/10/2026 22:10", line)
+        self.assertIn("Tags: openai, geoia", line)
+
+    def test_feed_metadata_drops_free_text_caveats_and_unknown_values(self):
+        dated = DOCUMENT.replace(
+            "2026-10-28 22:10 BRT", "2026-10-28 (horário/fuso não informados; janela não confirmada)"
+        )
+        unknown = DOCUMENT.replace("- Publicado: 2026-10-28 22:10 BRT\n", "").replace(
+            "- Confiança: alta\n", ""
+        )
+
+        date_only = self._metadata(dated)
+        self.assertIn("Publicado: 28/10/2026", date_only)
+        self.assertNotIn("horário", date_only)
+        self.assertNotIn("22:10", date_only)
+
+        missing = self._metadata(unknown)
+        self.assertNotIn("Publicado", missing)
+        self.assertNotIn("não informad", missing)
+
+    def test_feed_channel_declares_icon_image(self):
+        root, _ = self._feed()
+
+        image = root.find("./channel/image")
+        self.assertEqual("https://radar-publico-opal.vercel.app/icon.png", image.findtext("url"))
+        self.assertEqual("Radar IA, GeoIA e Setores", image.findtext("title"))
+        self.assertEqual("https://radar-publico-opal.vercel.app", image.findtext("link"))
+
+    def test_public_icon_is_a_square_png(self):
+        icon = Path(__file__).resolve().parents[2] / "public/icon.png"
+
+        data = icon.read_bytes()
+        self.assertEqual(b"\x89PNG\r\n\x1a\n", data[:8])
+        width, height = int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
+        self.assertEqual(width, height)
+        self.assertGreaterEqual(width, 144)
+
+    def test_index_links_to_feed_for_autodiscovery_and_icon(self):
+        index = (Path(__file__).resolve().parents[2] / "public/index.html").read_text(encoding="utf-8")
+
+        self.assertIn('rel="alternate" type="application/rss+xml"', index)
+        self.assertIn('href="/v1/radar/feed.xml"', index)
+        self.assertIn('rel="icon"', index)
+
     def test_same_input_produces_same_item_id(self):
         first = parse_document(DOCUMENT)["items"][0]["id"]
         second = parse_document(DOCUMENT)["items"][0]["id"]
