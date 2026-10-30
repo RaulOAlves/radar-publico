@@ -1,0 +1,110 @@
+{
+  "edition_date": "2026-10-30",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-30T07:33:00-03:00",
+      "edition_date": "2026-10-30",
+      "id": "radar-10be109ee0bd01c4",
+      "published": "2026-10-29 19:47 (horário exibido pelo GitHub; fuso não informado)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro",
+        "Vale — GeoIA SAB.IA"
+      ],
+      "source": "OpenAI — Codex CLI 0.166.0",
+      "summary": "A OpenAI lançou o Codex CLI 0.166.0 com `codex queue --resume`, que retoma uma conversa não carregada após enfileirar uma mensagem, e `codex doctor --network-only`, voltado a diagnósticos de configuração, conexão e WebSocket. O release também adiciona GPT-6.1 Terra aos catálogos de modelos locais, Vertex AI e Amazon Bedrock, além de melhorar a explicação de bloqueios de segurança e a preservação de permissões ao retomar ou bifurcar conversas.",
+      "tags": [
+        "openai",
+        "codex",
+        "agentes-ia",
+        "cli",
+        "automacao",
+        "diagnostico",
+        "release"
+      ],
+      "title": "Codex CLI 0.166.0 amplia retomada de tarefas e diagnóstico de rede",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.166.0",
+      "why_it_matters": "Retomada mais confiável e diagnóstico isolado ajudam a operar agentes de desenvolvimento em fluxos longos e ambientes corporativos. A disponibilidade de modelos em cada provedor ainda depende da conta e da região."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-30T07:33:00-03:00",
+      "edition_date": "2026-10-30",
+      "id": "radar-09b9bd644d688ff9",
+      "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "NAVIS / GeoFramework",
+        "Petrobras — Segundo cérebro",
+        "Vale — GeoIA SAB.IA"
+      ],
+      "source": "Google Cloud — suporte ampliado a modelos semânticos no Knowledge Catalog",
+      "summary": "O Google Cloud anunciou disponibilidade geral do suporte ampliado a modelos semânticos no Knowledge Catalog. A plataforma indexa definições de métricas e relações de LookML, BigQuery Graph, dbt MetricFlow, Snowflake Semantic Views, Databricks Metric Views e SAP CSN em um grafo de contexto, associando-as a metadados como linhagem, qualidade e glossário. Definições divergentes são mantidas com proveniência para revisão, sem exigir migração dos dados ou reescrita da lógica de negócio.",
+      "tags": [
+        "google-cloud",
+        "knowledge-catalog",
+        "agentes-ia",
+        "modelo-semantico",
+        "grafo-de-contexto",
+        "governanca",
+        "release"
+      ],
+      "title": "Google Knowledge Catalog passa a reunir modelos semânticos para agentes",
+      "url": "https://cloud.google.com/blog/products/data-analytics/expanded-semantic-model-support-in-knowledge-catalog/",
+      "why_it_matters": "Agentes analíticos podem consultar conceitos e métricas governados em vez de inferir junções e fórmulas a cada pergunta. É referência de arquitetura para ligar dados corporativos e projetos, não evidência de implantação nesses projetos."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-30T07:33:00-03:00",
+      "edition_date": "2026-10-30",
+      "id": "radar-d6a5b43b8fe9d9fd",
+      "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "IMAC — Plataforma GIS",
+        "NAVIS / GeoFramework",
+        "GeoFiscal-Sinter"
+      ],
+      "source": "Esri — novidades do Calcite Design System 5.2",
+      "summary": "A Esri detalhou o Calcite Design System 5.2, biblioteca de componentes usada em aplicações da plataforma ArcGIS. A versão acrescenta edição inline em campos de entrada, cabeçalho fixo em tabelas, novos comportamentos de barra de ações e grupos, suporte ao esquema de cores do navegador e melhorias de acessibilidade e internacionalização. O componente Inline Editable foi descontinuado e está previsto para remoção em uma futura versão com mudanças incompatíveis.",
+      "tags": [
+        "esri",
+        "arcgis",
+        "calcite",
+        "interface-gis",
+        "acessibilidade",
+        "ciclo-de-vida",
+        "release"
+      ],
+      "title": "Esri Calcite 5.2 melhora componentes de interfaces ArcGIS",
+      "url": "https://www.esri.com/arcgis-blog/products/developers/announcements/calcite-design-system-whats-new-in-5-2",
+      "why_it_matters": "Equipes que mantêm interfaces GIS customizadas podem aproveitar os componentes novos e planejar a substituição do componente descontinuado antes da próxima quebra de compatibilidade."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-30T07:33:00-03:00",
+      "edition_date": "2026-10-30",
+      "id": "radar-ad7611751baac45b",
+      "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "Eucatex — Monitoramento de vigor florestal",
+        "Klabin — IA"
+      ],
+      "source": "Purdue University — protótipo MATRIX Peru",
+      "summary": "Pesquisadores da Purdue University, com a FAO e o serviço florestal peruano SERFOR, relataram a demonstração de um protótipo do Global Forest MATRIX adaptado ao Peru durante oficina realizada em agosto. O trabalho busca usar inventários florestais locais para projetar mudanças sob cenários de ambiente e manejo; um harmonizador de dados foi apresentado para converter registros coletados por protocolos distintos a um formato comum.",
+      "tags": [
+        "florestal",
+        "geoia",
+        "ia",
+        "inventario-florestal",
+        "modelagem",
+        "peru",
+        "prototipo"
+      ],
+      "title": "Purdue demonstra protótipo de modelo de crescimento florestal para o Peru",
+      "url": "https://ag.purdue.edu/news/2026/10/prototype-forest-growth-model-demonstrated-for-peru-application.html",
+      "why_it_matters": "A adaptação ilustra um caminho prático para conectar inventários heterogêneos a modelos de dinâmica florestal. Ainda é protótipo em desenvolvimento, sem validação publicada para florestas brasileiras."
+    }
+  ],
+  "schema_version": "1.0",
+  "status": "publicado"
+}

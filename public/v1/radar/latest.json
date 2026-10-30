@@ -1,133 +1,108 @@
 {
-  "edition_date": "2026-10-29",
+  "edition_date": "2026-10-30",
   "items": [
     {
       "confidence": "alta",
-      "edition_at": "2026-10-29T07:35:00-03:00",
-      "edition_date": "2026-10-29",
-      "id": "radar-ebc97573a6a94023",
-      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "edition_at": "2026-10-30T07:33:00-03:00",
+      "edition_date": "2026-10-30",
+      "id": "radar-10be109ee0bd01c4",
+      "published": "2026-10-29 19:47 (horário exibido pelo GitHub; fuso não informado)",
       "relations": [
         "NAVIS / GeoFramework",
         "Petrobras — Segundo cérebro",
-        "GeoFiscal-Sinter"
+        "Vale — GeoIA SAB.IA"
       ],
-      "source": "OpenAI — expansão da parceria com ServiceNow",
-      "summary": "A OpenAI e a ServiceNow anunciaram expansão da parceria para conectar fluxos da ServiceNow ao ChatGPT e ampliar o uso de modelos e agentes da OpenAI nos produtos da empresa. A integração permite conectar uma instância própria da ServiceNow ao ChatGPT para localizar incidentes semelhantes, avaliar riscos de mudanças e atualizar registros durante a conversa.\n\nAs capacidades dependem da configuração do cliente, enquanto o Action Fabric aplica regras de negócio e permissões existentes. O plugin MCP já está no marketplace da OpenAI; recursos adicionais são esperados até o fim de 2026. A integração do Codex ao AI Workflow Factory permanece planejada para 2027.",
+      "source": "OpenAI — Codex CLI 0.166.0",
+      "summary": "A OpenAI lançou o Codex CLI 0.166.0 com `codex queue --resume`, que retoma uma conversa não carregada após enfileirar uma mensagem, e `codex doctor --network-only`, voltado a diagnósticos de configuração, conexão e WebSocket. O release também adiciona GPT-6.1 Terra aos catálogos de modelos locais, Vertex AI e Amazon Bedrock, além de melhorar a explicação de bloqueios de segurança e a preservação de permissões ao retomar ou bifurcar conversas.",
       "tags": [
         "openai",
-        "servicenow",
-        "mcp",
-        "agentes-ia",
         "codex",
-        "integracao",
-        "governanca"
+        "agentes-ia",
+        "cli",
+        "automacao",
+        "diagnostico",
+        "release"
       ],
-      "title": "Plugin MCP do ServiceNow chega ao marketplace OpenAI",
-      "url": "https://openai.com/index/openai-servicenow-partnership-expansion/",
-      "why_it_matters": "plugin MCP já disponível conecta contexto e ações de instâncias ServiceNow ao ChatGPT, respeitando regras e permissões do cliente. É referência concreta para agentes corporativos que consultam incidentes e executam ações governadas; integração Codex no AI Workflow Factory é apenas planejada para 2027, não recurso atual."
+      "title": "Codex CLI 0.166.0 amplia retomada de tarefas e diagnóstico de rede",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.166.0",
+      "why_it_matters": "Retomada mais confiável e diagnóstico isolado ajudam a operar agentes de desenvolvimento em fluxos longos e ambientes corporativos. A disponibilidade de modelos em cada provedor ainda depende da conta e da região."
     },
     {
       "confidence": "alta",
-      "edition_at": "2026-10-29T07:35:00-03:00",
-      "edition_date": "2026-10-29",
-      "id": "radar-d8651470f28270c3",
-      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "edition_at": "2026-10-30T07:33:00-03:00",
+      "edition_date": "2026-10-30",
+      "id": "radar-09b9bd644d688ff9",
+      "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "relations": [
+        "NAVIS / GeoFramework",
         "Petrobras — Segundo cérebro",
-        "Vale — GeoIA SAB.IA",
-        "NAVIS / GeoFramework"
+        "Vale — GeoIA SAB.IA"
       ],
-      "source": "Google Cloud — release notes de 28/10",
-      "summary": "As notas do Google Cloud registram que o aplicativo Gemini Enterprise pode operar na região brasileira (`br`), com residência de dados em repouso e processamento de machine learning dentro do país. A oferta consta como disponibilidade geral, mas exige allowlist: clientes precisam solicitar acesso à equipe de conta do Google.\n\nO anúncio não significa que qualquer projeto possa habilitar a região imediatamente. Para avaliar uso com informações corporativas sensíveis, ainda é necessário confirmar elegibilidade, escopo dos dados e condições aplicáveis à conta e ao ambiente.",
+      "source": "Google Cloud — suporte ampliado a modelos semânticos no Knowledge Catalog",
+      "summary": "O Google Cloud anunciou disponibilidade geral do suporte ampliado a modelos semânticos no Knowledge Catalog. A plataforma indexa definições de métricas e relações de LookML, BigQuery Graph, dbt MetricFlow, Snowflake Semantic Views, Databricks Metric Views e SAP CSN em um grafo de contexto, associando-as a metadados como linhagem, qualidade e glossário. Definições divergentes são mantidas com proveniência para revisão, sem exigir migração dos dados ou reescrita da lógica de negócio.",
       "tags": [
         "google-cloud",
-        "gemini-enterprise",
-        "brasil",
-        "residencia-de-dados",
+        "knowledge-catalog",
         "agentes-ia",
+        "modelo-semantico",
+        "grafo-de-contexto",
         "governanca",
         "release"
       ],
-      "title": "Gemini Enterprise passa a oferecer região Brasil com residência local de dados",
-      "url": "https://docs.cloud.google.com/release-notes#October_28_2026",
-      "why_it_matters": "Google anuncia região brasileira para Gemini Enterprise, com dados em repouso e processamento de ML na região; disponibilidade geral condicionada a allowlist. Pode destravar avaliação de agentes sobre dados corporativos brasileiros sensíveis, mas requer acesso liberado e verificação contratual antes de qualquer arquitetura."
+      "title": "Google Knowledge Catalog passa a reunir modelos semânticos para agentes",
+      "url": "https://cloud.google.com/blog/products/data-analytics/expanded-semantic-model-support-in-knowledge-catalog/",
+      "why_it_matters": "Agentes analíticos podem consultar conceitos e métricas governados em vez de inferir junções e fórmulas a cada pergunta. É referência de arquitetura para ligar dados corporativos e projetos, não evidência de implantação nesses projetos."
     },
     {
       "confidence": "alta",
-      "edition_at": "2026-10-29T07:35:00-03:00",
-      "edition_date": "2026-10-29",
-      "id": "radar-d8651470f28270c3",
-      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "edition_at": "2026-10-30T07:33:00-03:00",
+      "edition_date": "2026-10-30",
+      "id": "radar-d6a5b43b8fe9d9fd",
+      "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "relations": [
-        "Petrobras — Segundo cérebro",
-        "NAVIS / GeoFramework",
-        "Vale — GeoIA SAB.IA"
-      ],
-      "source": "Google Cloud — release notes do AlloyDB AI",
-      "summary": "O Google Cloud anunciou disponibilidade geral dos índices vetoriais ScaNN de árvore de quatro níveis na extensão `alloydb_scann`, para AlloyDB com PostgreSQL 17 ou posterior. A documentação informa suporte a tabelas com até 10 bilhões de linhas vetoriais e manutenção automática dos índices.\n\nEm buscas filtradas, a opção `scann.satisfy_limit=relaxed_order` permite continuar a varredura por partições até obter resultados suficientes para o `LIMIT`, o que pode melhorar o recall. A atualização também torna o Vector assist disponível para ajudar a configurar embeddings, consultas e índices; desempenho continua dependente da carga e da configuração concreta.",
-      "tags": [
-        "google-cloud",
-        "alloydb",
-        "busca-vetorial",
-        "embeddings",
-        "rag",
-        "postgresql",
-        "release"
-      ],
-      "title": "AlloyDB libera índice vetorial de quatro níveis para até 10 bilhões de linhas",
-      "url": "https://docs.cloud.google.com/release-notes#October_28_2026",
-      "why_it_matters": "índice ScaNN 4LT em PostgreSQL 17+ entra em disponibilidade geral, com manutenção automática e busca filtrada com melhor recuperação; `Vector assist` também passa a GA. Amplia opção de busca semântica em grandes acervos geoespaciais/documentais, sem implicar necessidade de escala bilionária nos projetos atuais."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-29T07:35:00-03:00",
-      "edition_date": "2026-10-29",
-      "id": "radar-96e37f1546c14c56",
-      "published": "2026-10-28 (data do release e da atualização da documentação; horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
-        "NAVIS / GeoFramework",
-        "Petrobras — Segundo cérebro"
-      ],
-      "source": "Google Cloud — Application Integration agent skills",
-      "summary": "A documentação do Google Cloud descreve três skills publicadas no repositório aberto `google/skills`: `application-integration-basics`, `application-integration-authoring` e `application-integration-troubleshooting`. Elas orientam agentes a configurar o Application Integration, criar, versionar, publicar e executar integrações pela REST API, além de investigar falhas ou execuções suspensas.\n\nOs materiais cobrem APIs, regiões, IAM, contas de serviço, promoção entre ambientes e análise de logs, métricas, conectores e cotas. As skills são recursos reutilizáveis para agentes; não substituem permissões, validações ou a operação governada da plataforma.",
-      "tags": [
-        "google-cloud",
-        "skills",
-        "agentes-ia",
-        "integracao",
-        "api",
-        "automacao",
-        "release"
-      ],
-      "title": "Google publica skills oficiais para agentes criarem integrações via API",
-      "url": "https://docs.cloud.google.com/application-integration/docs/agent-skills-overview",
-      "why_it_matters": "três skills abertas orientam agentes a configurar, criar/publicar e diagnosticar integrações do Google Cloud Application Integration via REST API. Fornecem referência operacional para automatizar fluxos entre sistemas corporativos com IAM e versionamento; uso nos projetos depende da adoção dessa plataforma."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-29T07:35:00-03:00",
-      "edition_date": "2026-10-29",
-      "id": "radar-d8651470f28270c3",
-      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "relations": [
+        "IMAC — Plataforma GIS",
         "NAVIS / GeoFramework",
         "GeoFiscal-Sinter"
       ],
-      "source": "Google Cloud — release notes de 28/10, CodeMender 0.17.0",
-      "summary": "As notas de versão do Google Cloud descrevem mudanças no CodeMender 0.17.0 voltadas à configuração, diagnóstico e segurança. A versão separa o controle do sandbox das políticas de comandos, substituindo a opção abrangente `--unrestricted` por opções distintas. Durante `cm fix` e `cm verify`, `.git/hooks`, `.git/config` e `.codemender` passam a ser montados como somente leitura em sandboxes graváveis.\n\nA atualização também aplica os limites de `allowedRoots` a operações de descoberta e correção para impedir travessia por links simbólicos pendentes. Os controles disponíveis não eliminam a necessidade de configurar e revisar o ambiente de execução.",
+      "source": "Esri — novidades do Calcite Design System 5.2",
+      "summary": "A Esri detalhou o Calcite Design System 5.2, biblioteca de componentes usada em aplicações da plataforma ArcGIS. A versão acrescenta edição inline em campos de entrada, cabeçalho fixo em tabelas, novos comportamentos de barra de ações e grupos, suporte ao esquema de cores do navegador e melhorias de acessibilidade e internacionalização. O componente Inline Editable foi descontinuado e está previsto para remoção em uma futura versão com mudanças incompatíveis.",
       "tags": [
-        "google-cloud",
-        "codemender",
-        "agentes-ia",
-        "seguranca",
-        "sandbox",
-        "desenvolvimento",
+        "esri",
+        "arcgis",
+        "calcite",
+        "interface-gis",
+        "acessibilidade",
+        "ciclo-de-vida",
         "release"
       ],
-      "title": "CodeMender 0.17 reforça limites de sandbox e políticas de agentes de código",
-      "url": "https://docs.cloud.google.com/release-notes#October_28_2026",
-      "why_it_matters": "nova versão separa configuração de sandbox da política de comandos, protege `.git/hooks`, `.git/config` e `.codemender` contra alterações durante correções e fecha travessia por symlinks fora de `allowedRoots`. Medidas relevantes ao avaliar agentes que editam repositórios com acesso a dados ou infraestrutura corporativa."
+      "title": "Esri Calcite 5.2 melhora componentes de interfaces ArcGIS",
+      "url": "https://www.esri.com/arcgis-blog/products/developers/announcements/calcite-design-system-whats-new-in-5-2",
+      "why_it_matters": "Equipes que mantêm interfaces GIS customizadas podem aproveitar os componentes novos e planejar a substituição do componente descontinuado antes da próxima quebra de compatibilidade."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-10-30T07:33:00-03:00",
+      "edition_date": "2026-10-30",
+      "id": "radar-ad7611751baac45b",
+      "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "relations": [
+        "Eucatex — Monitoramento de vigor florestal",
+        "Klabin — IA"
+      ],
+      "source": "Purdue University — protótipo MATRIX Peru",
+      "summary": "Pesquisadores da Purdue University, com a FAO e o serviço florestal peruano SERFOR, relataram a demonstração de um protótipo do Global Forest MATRIX adaptado ao Peru durante oficina realizada em agosto. O trabalho busca usar inventários florestais locais para projetar mudanças sob cenários de ambiente e manejo; um harmonizador de dados foi apresentado para converter registros coletados por protocolos distintos a um formato comum.",
+      "tags": [
+        "florestal",
+        "geoia",
+        "ia",
+        "inventario-florestal",
+        "modelagem",
+        "peru",
+        "prototipo"
+      ],
+      "title": "Purdue demonstra protótipo de modelo de crescimento florestal para o Peru",
+      "url": "https://ag.purdue.edu/news/2026/10/prototype-forest-growth-model-demonstrated-for-peru-application.html",
+      "why_it_matters": "A adaptação ilustra um caminho prático para conectar inventários heterogêneos a modelos de dinâmica florestal. Ainda é protótipo em desenvolvimento, sem validação publicada para florestas brasileiras."
     }
   ],
   "schema_version": "1.0",

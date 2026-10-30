@@ -13,7 +13,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Anthropic — Claude Code v2.1.307",
-      "summary": "O release publicado em 21 de outubro corrige chamadas de ferramentas MCP via HTTP que podiam ser enviadas duas vezes quando a conexão era interrompida durante a operação. A partir desta versão, o Claude Code só repete chamadas de leitura ou operações idempotentes, reduzindo o risco de duplicar alterações em sistemas externos.\n\nA atualização acrescenta evento OpenTelemetry para registrar interrupções, pedidos de aprovação e devoluções de chamadas por regras de permissão, hooks ou sandbox. Outro ajuste corrige turnos iniciados sem ferramentas MCP recentes fornecidas pelo SDK quando havia tarefa em segundo plano; o release não detalha métricas de redução de duplicações.",
+      "summary": "se a conexão caía durante uma chamada MCP HTTP, ferramentas podiam ser acionadas duas vezes; agora só operações de leitura ou idempotentes são repetidas. Release também adiciona evento OpenTelemetry para decisões de segurança e corrige atualização de ferramentas de servidores MCP do SDK durante tarefas em segundo plano — pontos críticos para agentes que escrevem em sistemas corporativos.",
       "tags": [
         "anthropic",
         "claude-code",
@@ -39,7 +39,7 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — OpenAI models in Model Garden",
-      "summary": "Os anúncios de 21 de outubro apresentam a chegada de modelos OpenAI ao Model Garden do Google Cloud, incluindo GPT-6 Astra, GPT-6.1 Sol e GPT-6 Luna. A OpenAI também informa que fluxos agênticos do Codex serão integrados à plataforma. O Google descreve controles de identidade, auditoria e perímetro de dados, além de cobrança pelo Marketplace e uso de compromissos de gasto existentes.\n\nA OpenAI diz que a disponibilidade geral estava planejada para as semanas seguintes; portanto, o anúncio não indicava acesso imediato e generalizado. As fontes não afirmam que todos os clientes já tivessem acesso nem que os fluxos do Codex já estivessem disponíveis.",
+      "summary": "GPT-6 Astra, GPT-6.1 Sol e GPT-6 Luna começam a chegar ao Model Garden para clientes empresariais selecionados; Google informa que esses clientes já podem conectar Codex CLI/Desktop para inferência na plataforma. Isso cria opção de testar agentes e desenvolvimento com governança, auditoria e faturamento Google Cloud, mas ainda não é disponibilidade geral.",
       "tags": [
         "openai",
         "codex",
@@ -65,7 +65,7 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Esri — Recent PHP Vulnerabilities",
-      "summary": "O PHP Project publicou em 21 de outubro correções para duas vulnerabilidades críticas, CVE-2026-109618 e CVE-2026-109619, que podem permitir execução remota de código sem autenticação. O projeto recomenda atualizar instalações que atendem requisições web para PHP 8.5.12, 8.4.27, 8.3.36 ou 8.2.35.\n\nA nota da Esri, atualizada em 22 de outubro, esclarece que ArcGIS Online e os produtos fundamentais ArcGIS Enterprise — Server, Portal e Data Store —, além do ArcGIS Pro, não são afetados. Produtos com exemplos em PHP exigiriam infraestrutura PHP própria do cliente; nesse caso, essa infraestrutura deve ser atualizada.",
+      "summary": "PHP corrigiu CVE-2026-109618 e CVE-2026-109619, ambas com potencial de execução remota sem autenticação, nas versões 8.5.12, 8.4.27, 8.3.36 e 8.2.35. Esri informa que ArcGIS Online não usa PHP e ainda avalia demais produtos; não há impacto confirmado em ArcGIS Enterprise. Verificar componentes PHP próprios ou adjacentes e acompanhar conclusão da avaliação Esri.",
       "tags": [
         "esri",
         "arcgis",
