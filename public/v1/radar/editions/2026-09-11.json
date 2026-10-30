@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-09-11",
+  "edition_id": "radar-2026-09-11T07:32:00-03:00",
+  "generated_at": "2026-09-11T07:32:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI — Agents API",
+      "source_meta": {
+        "domain": "openai.com"
+      },
       "summary": "API entrega o harness do Codex para agentes de longa duração, subagentes, ferramentas, MCP e escolha de sandbox gerenciado, infraestrutura própria ou parceiros. Reduz esforço para implantar automações governadas, mas ainda está em beta público e requer avaliação de permissões, custo e isolamento antes de produção.",
       "tags": [
         "openai",
@@ -40,6 +45,9 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "OpenAI — Data agent",
+      "source_meta": {
+        "domain": "openai.com"
+      },
       "summary": "o agente conecta dados empresariais, investiga mudanças e produz relatórios e painéis interativos via conversa; consultas respeitam permissões da conta conectada. Abre caminho direto para análises exploratórias de operação, mas exige configurar fontes, autorização e definições de métricas antes de uso confiável.",
       "tags": [
         "openai",
@@ -66,6 +74,9 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "o plugin `google-cloud-developer` empacota skills, documentação oficial e MCP de conhecimento em padrão aberto; há instruções de instalação para Claude Code e Codex CLI. É referência prática para distribuir capacidades de nuvem com autenticação e guardrails consistentes entre agentes.",
       "tags": [
         "google-cloud",
@@ -82,6 +93,15 @@
       "why_it_matters": "o plugin `google-cloud-developer` empacota skills, documentação oficial e MCP de conhecimento em padrão aberto; há instruções de instalação para Claude Code e Codex CLI. É referência prática para distribuir capacidades de nuvem com autenticação e guardrails consistentes entre agentes."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 3,
+    "signals": 3,
+    "sources": 2
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

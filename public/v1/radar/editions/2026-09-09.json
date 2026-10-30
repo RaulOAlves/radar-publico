@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-09-09",
+  "edition_id": "radar-2026-09-09T07:31:00-03:00",
+  "generated_at": "2026-09-09T07:31:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "CTC — Centro de Tecnologia Canavieira"
       ],
       "source": "OpenAI — estudo de caso",
+      "source_meta": {
+        "domain": "openai.com"
+      },
       "summary": "estudo aplicado descreve agentes Codex recebendo objetivos estreitos para escrever, modificar e testar código de controle, análise e simulação de medições laboratoriais. É evidência operacional de um padrão útil para ciclos de dados instrumentais: escopo restrito, execução verificável e humano concentrado no desenho do experimento.",
       "tags": [
         "openai",
@@ -39,6 +44,9 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "SDK expõe runtime para agentes com políticas declarativas, persistência de estado e telemetria de ações/ferramentas em tempo real. O desenho de *control plane* é aplicável a automações geoespaciais que precisam de trilha de execução, isolamento e supervisão — além do simples chat.",
       "tags": [
         "google-cloud",
@@ -65,6 +73,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Threat Intelligence",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "relatório primário descreve campanhas que usaram fluxos multiagente para escaneamento, tratamento de erros e coleta de credenciais, comprimindo o tempo de resposta dos defensores. Reforça que agentes ligados a dados, repositórios e portais devem operar com identidade mínima, isolamento e revisão de ferramentas.",
       "tags": [
         "google-cloud",
@@ -90,6 +101,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "demonstração usa o Data Agent Kit para investigar uma pergunta de negócio cruzando *warehouse*, banco operacional e arquivos, incluindo acesso ao Cloud Storage por servidor MCP. É padrão prático para conectar dados de projetos sem transformar o agente em acesso irrestrito ao ambiente.",
       "tags": [
         "google-cloud",
@@ -105,6 +119,15 @@
       "why_it_matters": "demonstração usa o Data Agent Kit para investigar uma pergunta de negócio cruzando *warehouse*, banco operacional e arquivos, incluindo acesso ao Cloud Storage por servidor MCP. É padrão prático para conectar dados de projetos sem transformar o agente em acesso irrestrito ao ambiente."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 4,
+    "signals": 4,
+    "sources": 2
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-10-21",
+  "edition_id": "radar-2026-10-21T07:27:00-03:00",
+  "generated_at": "2026-10-21T07:27:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Anthropic — Claude Code v2.1.305",
+      "source_meta": {
+        "domain": "github.com"
+      },
       "summary": "corrige a substituição indevida de servidores MCP fornecidos pela sessão em nuvem/SDK e falhas de requisições via Vertex, Bedrock ou gateways sem ToolSearch. A retomada de workflows deixa de reexecutar agentes já concluídos. A nova opção de namespaces aninhados no Linux permite Chromium/Podman, mas pode contornar proteções de arquivos do sandbox; requer avaliação antes de habilitar.",
       "tags": [
         "anthropic",
@@ -39,6 +44,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "GitHub Advisory — GHSA-rvq5-wwqv-78pq / CVE-2026-111771",
+      "source_meta": {
+        "domain": "github.com"
+      },
       "summary": "servidores MCP HTTP que usam `requireBearerAuth()`/`verifyBearerToken()` podem aceitar token emitido para outro serviço se o emissor atende múltiplos recursos e o verificador não checa `aud`. Versões corrigidas existem, mas só atualizar não ativa a proteção: é preciso configurar `expectedResource` e devolver `AuthInfo.resource`, ou validar `aud` no verificador.",
       "tags": [
         "mcp",
@@ -65,6 +73,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — Managed RAG search inside the sovereign perimeter",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "em *preview*, busca empresarial multimodal com citações roda em GDC air-gapped, com ingestão, embeddings, PostgreSQL e controles de identidade dentro do perímetro local. Arquitetura relevante para agentes sobre dados técnicos sigilosos de mineração e óleo e gás; ainda não é disponibilidade geral.",
       "tags": [
         "google-cloud",
@@ -90,6 +101,9 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — Announcing llm-d 1.0",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "release Kubernetes-native reúne roteamento com afinidade de cache, QoS multitenant, cache KV em camadas, alta disponibilidade e atualização sem interromper sessões. É base técnica para avaliar custo e latência de agentes auto-hospedados com contexto longo e tráfego irregular, sem implicar ganho garantido nos projetos.",
       "tags": [
         "google-cloud",
@@ -116,6 +130,9 @@
         "Itaminas — Monitoramento geotécnico"
       ],
       "source": "Planet — First light from Tanager-2 and SuperDove Flock 4J",
+      "source_meta": {
+        "domain": "www.planet.com"
+      },
       "summary": "a Planet divulgou a primeira imagem do Tanager-2, capturada em 07/10, na qual a Carbon Mapper detectou pluma de metano na costa espanhola. Demonstra uma aplicação da nova constelação para emissões e prospecção mineral, mas os satélites ainda estão em comissionamento; não equivale a serviço operacional disponível.",
       "tags": [
         "planet",
@@ -131,6 +148,15 @@
       "why_it_matters": "a Planet divulgou a primeira imagem do Tanager-2, capturada em 07/10, na qual a Carbon Mapper detectou pluma de metano na costa espanhola. Demonstra uma aplicação da nova constelação para emissões e prospecção mineral, mas os satélites ainda estão em comissionamento; não equivale a serviço operacional disponível."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 5,
+    "signals": 5,
+    "sources": 3
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

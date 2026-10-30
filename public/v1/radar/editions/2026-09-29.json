@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-09-29",
+  "edition_id": "radar-2026-09-29T08:02:00-03:00",
+  "generated_at": "2026-09-29T08:02:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Anthropic — Claude Sonnet 5.5",
+      "source_meta": {
+        "domain": "www.anthropic.com"
+      },
       "summary": "novo modelo para tarefas bem delimitadas, correções e artefatos, com preço de US$ 2/US$ 10 por milhão de tokens de entrada/saída e geração 30%+ mais rápida que Sonnet 5. Introduz salvaguardas cibernéticas e *fallbacks*, além de estar disponível também em AWS, Google Cloud e Azure; opção prática para agentes de engenharia e automação de dados sob governança.",
       "tags": [
         "anthropic",
@@ -29,6 +34,15 @@
       "why_it_matters": "novo modelo para tarefas bem delimitadas, correções e artefatos, com preço de US$ 2/US$ 10 por milhão de tokens de entrada/saída e geração 30%+ mais rápida que Sonnet 5. Introduz salvaguardas cibernéticas e *fallbacks*, além de estar disponível também em AWS, Google Cloud e Azure; opção prática para agentes de engenharia e automação de dados sob governança."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 1,
+    "signals": 1,
+    "sources": 1
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

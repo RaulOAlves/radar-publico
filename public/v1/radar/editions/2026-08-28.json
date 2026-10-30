@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-08-28",
+  "edition_id": "radar-2026-08-28T07:30:00-03:00",
+  "generated_at": "2026-08-28T07:30:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "GeoNext — LiDAR e rodovias"
       ],
       "source": "Esri ArcGIS Blog",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
       "summary": "o novo pacote `{arcgisrouting}` expõe no R rotas, áreas de serviço/isócronas, roteirização de frotas, *map matching* de GPS e alocação de localização — incluindo requisições assíncronas e de grande porte. Reduz atrito para colocar análise logística reprodutível sobre serviços ArcGIS.",
       "tags": [
         "arcgis",
@@ -37,6 +42,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "a nova modalidade mantém uma instância Cloud Run ativa para cargas com estado e longa duração, que não se ajustam ao padrão *scale-to-zero*. É uma alternativa de implantação para agentes contínuos, com menos partidas a frio e sem operar infraestrutura própria.",
       "tags": [
         "google-cloud",
@@ -51,6 +59,15 @@
       "why_it_matters": "a nova modalidade mantém uma instância Cloud Run ativa para cargas com estado e longa duração, que não se ajustam ao padrão *scale-to-zero*. É uma alternativa de implantação para agentes contínuos, com menos partidas a frio e sem operar infraestrutura própria."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 2,
+    "signals": 2,
+    "sources": 2
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

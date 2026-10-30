@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-10-20",
+  "edition_id": "radar-2026-10-20T07:28:00-03:00",
+  "generated_at": "2026-10-20T07:28:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Model Context Protocol — servers v2.0.0",
+      "source_meta": {
+        "domain": "github.com"
+      },
       "summary": "servidores oficiais de filesystem, memory, fetch, git e time passam a servir a revisão MCP 2026-07-28 mantendo clientes legados. Pacotes TypeScript exigem Node 24; Python exige `mcp>=2.3,<3`. A atualização altera respostas de erro e corrige condições de corrida na atualização de roots do filesystem, exigindo testes de compatibilidade e permissões.",
       "tags": [
         "mcp",
@@ -40,6 +45,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — Developer’s guide to implementing MCP apps in Gemini",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "ferramentas MCP podem entregar interface interativa dentro do chat do Gemini Enterprise, hospedada em Cloud Run privado. O guia detalha dois níveis de autenticação, controles de acesso e aprovação humana; arquitetura útil para agentes que combinam mapas, inspeção espacial e ações corporativas sem recriar chat e identidade.",
       "tags": [
         "google-cloud",
@@ -66,6 +74,9 @@
         "Vale — Fechamento de minas"
       ],
       "source": "Exyn Technologies — MAP-POD/Mine of the Future",
+      "source_meta": {
+        "domain": "www.globenewswire.com"
+      },
       "summary": "projeto MAP-POD combina robótica, sensores hiperespectrais e IA para mapear minas e localizar minerais em ambiente sem GPS. A Exyn prevê contribuir navegação autônoma para veículos terrestres; o financiamento ainda está em negociação, portanto não é implantação concluída.",
       "tags": [
         "mineracao",
@@ -91,6 +102,9 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI — Advancing coding in low-resource programming languages",
+      "source_meta": {
+        "domain": "openai.com"
+      },
       "summary": "avaliação em 20 linguagens mede geração de software e migração com testes de comportamento; resultados e suíte são liberados para inspeção. Mostra ganhos em COBOL, Fortran e Visual Basic, mas a aplicação em sistemas críticos ainda requer validação humana e testes próprios — referência para modernização de código técnico legado.",
       "tags": [
         "openai",
@@ -107,6 +121,15 @@
       "why_it_matters": "avaliação em 20 linguagens mede geração de software e migração com testes de comportamento; resultados e suíte são liberados para inspeção. Mostra ganhos em COBOL, Fortran e Visual Basic, mas a aplicação em sistemas críticos ainda requer validação humana e testes próprios — referência para modernização de código técnico legado."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 4,
+    "signals": 4,
+    "sources": 4
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

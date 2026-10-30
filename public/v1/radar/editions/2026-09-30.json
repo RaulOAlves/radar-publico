@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-09-30",
+  "edition_id": "radar-2026-09-30T07:31:00-03:00",
+  "generated_at": "2026-09-30T07:31:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "AWS — Amazon Bedrock Managed Agents",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
       "summary": "o serviço, construído sobre versão customizada da Agents API da OpenAI, executa agentes com modelos OpenAI dentro da AWS, com sessões duráveis, skills reutilizáveis e conexão a ferramentas via MCP. Cada agente recebe papel IAM próprio, aprovações humanas para ações consequentes e trilha no CloudTrail — controles relevantes para automações empresariais auditáveis.",
       "tags": [
         "aws",
@@ -30,6 +35,15 @@
       "why_it_matters": "o serviço, construído sobre versão customizada da Agents API da OpenAI, executa agentes com modelos OpenAI dentro da AWS, com sessões duráveis, skills reutilizáveis e conexão a ferramentas via MCP. Cada agente recebe papel IAM próprio, aprovações humanas para ações consequentes e trilha no CloudTrail — controles relevantes para automações empresariais auditáveis."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 1,
+    "signals": 1,
+    "sources": 1
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

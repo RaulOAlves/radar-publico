@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-09-03",
+  "edition_id": "radar-2026-09-03T07:30:00-03:00",
+  "generated_at": "2026-09-03T07:30:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "o framework open source orquestra agentes de crítica e revisão, análise de repositório e reprodução isolada de vulnerabilidades antes do *patch*. Oferece um padrão operacional de segurança para usar agentes de código com contexto, critérios de aceitação e evidência reprodutível — não apenas varredura baseada em LLM.",
       "tags": [
         "google-cloud",
@@ -27,6 +32,15 @@
       "why_it_matters": "o framework open source orquestra agentes de crítica e revisão, análise de repositório e reprodução isolada de vulnerabilidades antes do *patch*. Oferece um padrão operacional de segurança para usar agentes de código com contexto, critérios de aceitação e evidência reprodutível — não apenas varredura baseada em LLM."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 1,
+    "signals": 1,
+    "sources": 1
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

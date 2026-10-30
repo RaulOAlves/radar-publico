@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-09-18",
+  "edition_id": "radar-2026-09-18T22:09:00-03:00",
+  "generated_at": "2026-09-18T22:09:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "relato operacional mostra agentes inseridos no ciclo de desenvolvimento para varredura e correção de vulnerabilidades em cada mudança de código, com centenas de falhas bloqueadas por mês. Reforça padrão de alto sinal: agentes em escopo específico, integrados à revisão e *patching*, não com autonomia irrestrita sobre produção.",
       "tags": [
         "google-cloud",
@@ -38,6 +43,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "o recurso permite consultar dados governados onde residem em S3, ADLS, GCS e catálogos Iceberg, com cache que pode reduzir transferência entre nuvens. É relevante para agentes que cruzam telemetria, dados operacionais e acervos geoespaciais sem duplicação ampla; por estar em preview, não deve sustentar fluxo crítico ainda.",
       "tags": [
         "google-cloud",
@@ -64,6 +72,9 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "OpenAI Developer Community",
+      "source_meta": {
+        "domain": "community.openai.com"
+      },
       "summary": "a nova visualização discrimina quanto tarefas, subagentes e conversas consomem da cota. É controle operacional importante para orquestrações de longa duração, permitindo localizar fluxos caros antes de ampliar uso de agentes.",
       "tags": [
         "openai",
@@ -78,6 +89,15 @@
       "why_it_matters": "a nova visualização discrimina quanto tarefas, subagentes e conversas consomem da cota. É controle operacional importante para orquestrações de longa duração, permitindo localizar fluxos caros antes de ampliar uso de agentes."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 2,
+    "signals": 3,
+    "sources": 2
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

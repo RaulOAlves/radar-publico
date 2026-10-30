@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-10-22",
+  "edition_id": "radar-2026-10-22T07:27:00-03:00",
+  "generated_at": "2026-10-22T07:27:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Anthropic — Claude Code v2.1.307",
+      "source_meta": {
+        "domain": "github.com"
+      },
       "summary": "se a conexão caía durante uma chamada MCP HTTP, ferramentas podiam ser acionadas duas vezes; agora só operações de leitura ou idempotentes são repetidas. Release também adiciona evento OpenTelemetry para decisões de segurança e corrige atualização de ferramentas de servidores MCP do SDK durante tarefas em segundo plano — pontos críticos para agentes que escrevem em sistemas corporativos.",
       "tags": [
         "anthropic",
@@ -39,6 +44,9 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — OpenAI models in Model Garden",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "GPT-6 Astra, GPT-6.1 Sol e GPT-6 Luna começam a chegar ao Model Garden para clientes empresariais selecionados; Google informa que esses clientes já podem conectar Codex CLI/Desktop para inferência na plataforma. Isso cria opção de testar agentes e desenvolvimento com governança, auditoria e faturamento Google Cloud, mas ainda não é disponibilidade geral.",
       "tags": [
         "openai",
@@ -65,6 +73,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Esri — Recent PHP Vulnerabilities",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
       "summary": "PHP corrigiu CVE-2026-109618 e CVE-2026-109619, ambas com potencial de execução remota sem autenticação, nas versões 8.5.12, 8.4.27, 8.3.36 e 8.2.35. Esri informa que ArcGIS Online não usa PHP e ainda avalia demais produtos; não há impacto confirmado em ArcGIS Enterprise. Verificar componentes PHP próprios ou adjacentes e acompanhar conclusão da avaliação Esri.",
       "tags": [
         "esri",
@@ -80,6 +91,15 @@
       "why_it_matters": "PHP corrigiu CVE-2026-109618 e CVE-2026-109619, ambas com potencial de execução remota sem autenticação, nas versões 8.5.12, 8.4.27, 8.3.36 e 8.2.35. Esri informa que ArcGIS Online não usa PHP e ainda avalia demais produtos; não há impacto confirmado em ArcGIS Enterprise. Verificar componentes PHP próprios ou adjacentes e acompanhar conclusão da avaliação Esri."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 3,
+    "signals": 3,
+    "sources": 3
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

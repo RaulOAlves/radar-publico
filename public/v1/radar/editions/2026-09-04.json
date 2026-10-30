@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-09-04",
+  "edition_id": "radar-2026-09-04T07:31:00-03:00",
+  "generated_at": "2026-09-04T07:31:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "OpenAI — GPT-6 Astra",
+      "source_meta": {
+        "domain": "openai.com"
+      },
       "summary": "o modelo entra em rollout controlado para tarefas longas de pesquisa, código, documentos e uso de computador, com API e contexto de até 1,05 milhão de tokens. É uma opção de maior capacidade para fluxos auditáveis que cruzam dados, regras e automação; disponibilidade ainda é limitada, portanto não deve ser assumida como padrão de produção.",
       "tags": [
         "openai",
@@ -39,6 +44,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Notas de versão do ChatGPT",
+      "source_meta": {
+        "domain": "help.openai.com"
+      },
       "summary": "sites compatíveis podem expor ferramentas diretamente ao navegador integrado do ChatGPT Work e do Codex via WebMCP. Isso reduz a necessidade de integrações ad hoc para operações web, mas depende de site, plano e modelo compatíveis; é relevante para avaliar portais GIS e dados que possam oferecer ações controladas.",
       "tags": [
         "openai",
@@ -54,6 +62,15 @@
       "why_it_matters": "sites compatíveis podem expor ferramentas diretamente ao navegador integrado do ChatGPT Work e do Codex via WebMCP. Isso reduz a necessidade de integrações ad hoc para operações web, mas depende de site, plano e modelo compatíveis; é relevante para avaliar portais GIS e dados que possam oferecer ações controladas."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 2,
+    "signals": 2,
+    "sources": 2
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

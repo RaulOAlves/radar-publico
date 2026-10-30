@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-10-29",
+  "edition_id": "radar-2026-10-29T07:35:00-03:00",
+  "generated_at": "2026-10-29T07:35:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "OpenAI — expansão da parceria com ServiceNow",
+      "source_meta": {
+        "domain": "openai.com"
+      },
       "summary": "plugin MCP já disponível conecta contexto e ações de instâncias ServiceNow ao ChatGPT, respeitando regras e permissões do cliente. É referência concreta para agentes corporativos que consultam incidentes e executam ações governadas; integração Codex no AI Workflow Factory é apenas planejada para 2027, não recurso atual.",
       "tags": [
         "openai",
@@ -39,6 +44,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — release notes de 28/10",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
       "summary": "Google anuncia região brasileira para Gemini Enterprise, com dados em repouso e processamento de ML na região; disponibilidade geral condicionada a allowlist. Pode destravar avaliação de agentes sobre dados corporativos brasileiros sensíveis, mas requer acesso liberado e verificação contratual antes de qualquer arquitetura.",
       "tags": [
         "google-cloud",
@@ -65,6 +73,9 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — release notes do AlloyDB AI",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
       "summary": "índice ScaNN 4LT em PostgreSQL 17+ entra em disponibilidade geral, com manutenção automática e busca filtrada com melhor recuperação; `Vector assist` também passa a GA. Amplia opção de busca semântica em grandes acervos geoespaciais/documentais, sem implicar necessidade de escala bilionária nos projetos atuais.",
       "tags": [
         "google-cloud",
@@ -90,6 +101,9 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Google Cloud — Application Integration agent skills",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
       "summary": "três skills abertas orientam agentes a configurar, criar/publicar e diagnosticar integrações do Google Cloud Application Integration via REST API. Fornecem referência operacional para automatizar fluxos entre sistemas corporativos com IAM e versionamento; uso nos projetos depende da adoção dessa plataforma.",
       "tags": [
         "google-cloud",
@@ -115,6 +129,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — release notes de 28/10, CodeMender 0.17.0",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
       "summary": "nova versão separa configuração de sandbox da política de comandos, protege `.git/hooks`, `.git/config` e `.codemender` contra alterações durante correções e fecha travessia por symlinks fora de `allowedRoots`. Medidas relevantes ao avaliar agentes que editam repositórios com acesso a dados ou infraestrutura corporativa.",
       "tags": [
         "google-cloud",
@@ -130,6 +147,15 @@
       "why_it_matters": "nova versão separa configuração de sandbox da política de comandos, protege `.git/hooks`, `.git/config` e `.codemender` contra alterações durante correções e fecha travessia por symlinks fora de `allowedRoots`. Medidas relevantes ao avaliar agentes que editam repositórios com acesso a dados ou infraestrutura corporativa."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 5,
+    "signals": 5,
+    "sources": 2
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

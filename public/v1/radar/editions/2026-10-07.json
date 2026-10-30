@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-10-07",
+  "edition_id": "radar-2026-10-07T07:31:00-03:00",
+  "generated_at": "2026-10-07T07:31:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud — MCP Toolbox Java SDK 1.0",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "SDK Java 1.0 adiciona orquestração MCP tipada para agentes corporativos, com identidade via Application Default Credentials e tokens OIDC sem chaves fixas. A separação entre Toolbox e agente Spring Boot permite escalar acesso a dados e conversas com controles adequados a sistemas transacionais.",
       "tags": [
         "google-cloud",
@@ -29,6 +34,15 @@
       "why_it_matters": "SDK Java 1.0 adiciona orquestração MCP tipada para agentes corporativos, com identidade via Application Default Credentials e tokens OIDC sem chaves fixas. A separação entre Toolbox e agente Spring Boot permite escalar acesso a dados e conversas com controles adequados a sistemas transacionais."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 1,
+    "signals": 1,
+    "sources": 1
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

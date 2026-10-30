@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-10-08",
+  "edition_id": "radar-2026-10-08T07:32:00-03:00",
+  "generated_at": "2026-10-08T07:32:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Anthropic — Claude Haiku 5.5",
+      "source_meta": {
+        "domain": "www.anthropic.com"
+      },
       "summary": "Haiku 5.5 é voltado a tarefas de alto volume — sumarização, compactação, consultas a banco, classificação e subagentes — com custo médio declarado 75% menor que Haiku 4.5. A Anthropic também reduz pela metade o preço de leitura de cache do Sonnet 5.5, tornando trabalho agentivo cerca de 20% mais barato, e adiciona crédito mensal de API para Max e Team.",
       "tags": [
         "anthropic",
@@ -29,6 +34,15 @@
       "why_it_matters": "Haiku 5.5 é voltado a tarefas de alto volume — sumarização, compactação, consultas a banco, classificação e subagentes — com custo médio declarado 75% menor que Haiku 4.5. A Anthropic também reduz pela metade o preço de leitura de cache do Sonnet 5.5, tornando trabalho agentivo cerca de 20% mais barato, e adiciona crédito mensal de API para Max e Team."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 1,
+    "signals": 1,
+    "sources": 1
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

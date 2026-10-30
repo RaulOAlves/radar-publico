@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-10-17",
+  "edition_id": "radar-2026-10-17T09:09:00-03:00",
+  "generated_at": "2026-10-17T09:09:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Anthropic — Claude Code v2.1.302",
+      "source_meta": {
+        "domain": "github.com"
+      },
       "summary": "corrige servidores MCP que negociam o protocolo 2026-07-28 sem certos campos de resposta e muda o comportamento padrão de subagentes no desktop, VS Code e Agent SDK. Integrações e fluxos multiagente devem ser testados após atualização; também corrige uma rotina em nuvem que podia repetir trabalho depois de falhar.",
       "tags": [
         "anthropic",
@@ -38,6 +43,9 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "AWS — AgentCore Insights",
+      "source_meta": {
+        "domain": "docs.aws.amazon.com"
+      },
       "summary": "novos relatórios em lote ou recorrentes deixam de ser criados em 16/10; os recorrentes existentes param de gerar relatórios em 31/10. Equipes que usam essa prévia para avaliar falhas de agentes precisam preservar resultados e planejar outra observabilidade antes da descontinuação.",
       "tags": [
         "aws",
@@ -63,6 +71,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — Agent Search release notes",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
       "summary": "o alias `stable` de geração de respostas passa de Gemini 2.5 Flash para `gemini-3.5-flash/answer_gen/v1`. Aplicações de busca e resposta que dependem desse alias podem mudar qualidade, latência e comportamento sem alterar código; convém revalidar avaliações e respostas críticas.",
       "tags": [
         "google-cloud",
@@ -78,6 +89,15 @@
       "why_it_matters": "o alias `stable` de geração de respostas passa de Gemini 2.5 Flash para `gemini-3.5-flash/answer_gen/v1`. Aplicações de busca e resposta que dependem desse alias podem mudar qualidade, latência e comportamento sem alterar código; convém revalidar avaliações e respostas críticas."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 3,
+    "signals": 3,
+    "sources": 3
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

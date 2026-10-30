@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-08-26",
+  "edition_id": "radar-2026-08-26T07:32:00-03:00",
+  "generated_at": "2026-08-26T07:32:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -12,6 +14,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "anúncio da OpenAI Developer Community",
+      "source_meta": {
+        "domain": "community.openai.com"
+      },
       "summary": "o WebMCP é um padrão aberto experimental para que aplicações web exponham ferramentas que agentes podem usar diretamente na página. É um sinal de arquitetura para portais e plataformas GIS tornarem ações geoespaciais invocáveis por agentes; ainda não é uma implantação validada nos projetos.",
       "tags": [
         "openai",
@@ -26,6 +31,15 @@
       "why_it_matters": "o WebMCP é um padrão aberto experimental para que aplicações web exponham ferramentas que agentes podem usar diretamente na página. É um sinal de arquitetura para portais e plataformas GIS tornarem ações geoespaciais invocáveis por agentes; ainda não é uma implantação validada nos projetos."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 1,
+    "signals": 1,
+    "sources": 1
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

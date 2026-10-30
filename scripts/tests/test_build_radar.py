@@ -79,6 +79,12 @@ class RadarBuildTests(unittest.TestCase):
             rss = ET.parse(output_dir / "v1/radar/feed.xml")
 
         self.assertEqual("1.0", latest["schema_version"])
+        self.assertEqual("radar-2026-10-29T07:35:00-03:00", latest["edition_id"])
+        self.assertEqual("2026-10-29T07:35:00-03:00", latest["generated_at"])
+        self.assertEqual({"signals": 1, "sources": 1, "high_confidence": 1}, latest["metrics"])
+        self.assertEqual("1", latest["methodology"]["version"])
+        self.assertIn("alto sinal", latest["methodology"]["summary"])
+        self.assertEqual("example.com", latest["items"][0]["source_meta"]["domain"])
         self.assertEqual(["Lançamento do Radar"], [item["title"] for item in latest["items"]])
         self.assertEqual(latest["items"], archive["items"])
         self.assertEqual("publicado", latest["status"])
@@ -121,6 +127,48 @@ class RadarBuildTests(unittest.TestCase):
         self.assertEqual("2026-10-30", latest["edition_date"])
         self.assertEqual("sem_novidade", latest["status"])
         self.assertEqual([], latest["items"])
+        self.assertEqual("radar-2026-10-30T07:35:00-03:00", latest["edition_id"])
+        self.assertEqual("2026-10-30T07:35:00-03:00", latest["generated_at"])
+        self.assertEqual({"signals": 0, "sources": 0, "high_confidence": 0}, latest["metrics"])
+
+    def test_metrics_count_unique_domains_and_high_confidence_items(self):
+        report = parse_document(
+            DOCUMENT
+            + """
+### 2026-10-29 07:35 BRT — Segundo sinal
+
+- Fonte: [Outra página oficial](https://example.com/segundo)
+- Publicado: 2026-10-28
+- Por que importa: Segundo sinal da edição.
+- Tags: #geoia
+- Confiança: média
+
+### 2026-10-29 07:35 BRT — Terceiro sinal
+
+- Fonte: [Nova fonte](https://news.example.org/terceiro)
+- Publicado: 2026-10-28
+- Por que importa: Terceiro sinal da edição.
+- Tags: #geoia
+- Confiança: alta
+"""
+        )
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output_dir = Path(temporary_directory)
+            build_artifacts(report, output_dir)
+            latest = json.loads((output_dir / "v1/radar/latest.json").read_text())
+
+        self.assertEqual({"signals": 3, "sources": 2, "high_confidence": 2}, latest["metrics"])
+
+    def test_empty_document_keeps_latest_contract(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output_dir = Path(temporary_directory)
+            build_artifacts(parse_document("# Radar sem registros\n"), output_dir)
+            latest = json.loads((output_dir / "v1/radar/latest.json").read_text())
+
+        self.assertIsNone(latest["edition_id"])
+        self.assertIsNone(latest["generated_at"])
+        self.assertEqual({"signals": 0, "sources": 0, "high_confidence": 0}, latest["metrics"])
+        self.assertEqual("1", latest["methodology"]["version"])
 
     def test_strict_build_keeps_last_good_artifacts_on_quarantine(self):
         with tempfile.TemporaryDirectory() as temporary_directory:

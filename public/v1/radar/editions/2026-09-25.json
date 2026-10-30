@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-09-25",
+  "edition_id": "radar-2026-09-25T07:30:00-03:00",
+  "generated_at": "2026-09-25T07:30:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "em preview, AlloyDB passa a provisionar instâncias de banco isoladas para picos de agentes, com leitura atualizada e somente leitura dos dados de produção. A arquitetura usa IAM, VPC Service Controls, criptografia e auditoria, permitindo consultas espaciais, vetoriais e textuais sem competir com o sistema transacional.",
       "tags": [
         "google-cloud",
@@ -40,6 +45,9 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "a ferramenta open source combina skills de agentes e servidor MCP local para converter IaC e manifestos Kubernetes em *landing zones* GKE por Pull Requests. Os guardrails determinísticos e a revisão via Git preservam rastreabilidade e rollback, em vez de alterar clusters ativos diretamente.",
       "tags": [
         "google-cloud",
@@ -56,6 +64,15 @@
       "why_it_matters": "a ferramenta open source combina skills de agentes e servidor MCP local para converter IaC e manifestos Kubernetes em *landing zones* GKE por Pull Requests. Os guardrails determinísticos e a revisão via Git preservam rastreabilidade e rollback, em vez de alterar clusters ativos diretamente."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 2,
+    "signals": 2,
+    "sources": 1
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

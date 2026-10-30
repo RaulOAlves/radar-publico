@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-09-22",
+  "edition_id": "radar-2026-09-22T07:31:00-03:00",
+  "generated_at": "2026-09-22T07:31:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "OpenAI — estudo de caso V7",
+      "source_meta": {
+        "domain": "openai.com"
+      },
       "summary": "V7 transforma arquivos em entidades de uma ontologia, preserva evidências citáveis e permite criar workflows do V7 Go via MCP no Codex. O caso mostra uma arquitetura concreta para “segundo cérebro” que combina extração estruturada, grafo de contexto e rastreabilidade de fonte.",
       "tags": [
         "openai",
@@ -39,6 +44,9 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "AWS News Blog",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
       "summary": "a nova versão do runtime gerenciado libera memória conforme a sessão reduz uso e prepara/snapshota o ambiente para manter partidas a frio previsíveis. É melhoria de ciclo de vida e custo para agentes persistentes, especialmente em fluxos com ferramentas, arquivos e execuções intermitentes.",
       "tags": [
         "aws",
@@ -65,6 +73,9 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "as capacidades de Secure Source Manager fortalecem autenticação e autorização unificadas para código e CI/CD. É base de segurança para agentes que alteram repositórios ou acionam automações de entrega, reduzindo o risco de transformar o pipeline em vetor de comprometimento.",
       "tags": [
         "google-cloud",
@@ -79,6 +90,15 @@
       "why_it_matters": "as capacidades de Secure Source Manager fortalecem autenticação e autorização unificadas para código e CI/CD. É base de segurança para agentes que alteram repositórios ou acionam automações de entrega, reduzindo o risco de transformar o pipeline em vetor de comprometimento."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 3,
+    "signals": 3,
+    "sources": 3
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

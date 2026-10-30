@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-08-27",
+  "edition_id": "radar-2026-08-27T09:33:00-03:00",
+  "generated_at": "2026-08-27T09:33:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -12,6 +14,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "Gemini Enterprise ganhou opção pay-as-you-go, quotas compartilhadas entre agentes e ferramentas de desenvolvimento, limites mensais por projeto e detecção de anomalias. Isso torna custo, pausa automática e governança do uso de agentes parâmetros operacionais — não só estimativas de arquitetura.",
       "tags": [
         "google-cloud",
@@ -37,6 +42,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "o padrão Open Knowledge Format (OKF) pode ser publicado no Knowledge Catalog com proveniência, verificação, atualização, linhagem e IAM. É uma referência prática para transformar bases Markdown e dados corporativos em contexto pesquisável e governado por agentes.",
       "tags": [
         "google-cloud",
@@ -51,6 +59,15 @@
       "why_it_matters": "o padrão Open Knowledge Format (OKF) pode ser publicado no Knowledge Catalog com proveniência, verificação, atualização, linhagem e IAM. É uma referência prática para transformar bases Markdown e dados corporativos em contexto pesquisável e governado por agentes."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 1,
+    "signals": 2,
+    "sources": 1
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-10-28",
+  "edition_id": "radar-2026-10-28T12:35:00-03:00",
+  "generated_at": "2026-10-28T12:35:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Esri — Brotli Vulnerabilities (Broccoli2Shell)",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
       "summary": "Esri investiga o impacto de CVE-2026-111497 em seus produtos e recomenda atualizar o .NET Framework usado por ArcGIS Pro, Web Adaptor em IIS e extensões SOE/SOI; ArcGIS Online já recebeu medidas mitigadoras. Quem opera ArcGIS Enterprise deve verificar versões e acompanhar a avaliação, sem presumir que todo produto está vulnerável.",
       "tags": [
         "esri",
@@ -39,6 +44,9 @@
         "IMAC — Plataforma GIS"
       ],
       "source": "Esri — ArcGIS Server 11.5 Geocoding Capability Patch",
+      "source_meta": {
+        "domain": "support.esri.com"
+      },
       "summary": "serviços de geocodificação publicados do ArcGIS Pro 3.6 ou posterior no ArcGIS Server 11.5 podem devolver zero resultados, inclusive via `FindAddressCandidates` e `GeocodeAddresses`. Esri recomenda o patch para instalações afetadas; planejar reinício do serviço e rollback antes de aplicar.",
       "tags": [
         "esri",
@@ -64,6 +72,9 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "EDGX — Sterna em órbita",
+      "source_meta": {
+        "domain": "www.edgx.space"
+      },
       "summary": "empresa reporta que carga baseada em NVIDIA Jetson, lançada em março, já retornou dados operacionais em órbita; outra ainda está em comissionamento. Processar imagens a bordo pode reduzir volume transmitido e latência de alertas geoespaciais, mas a fonte não demonstra ainda serviço comercial ou desempenho dessas aplicações.",
       "tags": [
         "geoia",
@@ -78,6 +89,15 @@
       "why_it_matters": "empresa reporta que carga baseada em NVIDIA Jetson, lançada em março, já retornou dados operacionais em órbita; outra ainda está em comissionamento. Processar imagens a bordo pode reduzir volume transmitido e latência de alertas geoespaciais, mas a fonte não demonstra ainda serviço comercial ou desempenho dessas aplicações."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 2,
+    "signals": 3,
+    "sources": 3
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

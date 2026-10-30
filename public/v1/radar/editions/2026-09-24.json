@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-09-24",
+  "edition_id": "radar-2026-09-24T07:31:00-03:00",
+  "generated_at": "2026-09-24T07:31:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Notas de versão do ChatGPT",
+      "source_meta": {
+        "domain": "help.openai.com"
+      },
       "summary": "Voice agora usa plugins e apps conectados em web e mobile; no Work pode criar artefatos, usar apps e operar navegador, com tarefa inacabada continuando em texto. Amplia a interface para operações em campo, mas mantém permissões e limites das conexões já configuradas.",
       "tags": [
         "openai",
@@ -28,6 +33,15 @@
       "why_it_matters": "Voice agora usa plugins e apps conectados em web e mobile; no Work pode criar artefatos, usar apps e operar navegador, com tarefa inacabada continuando em texto. Amplia a interface para operações em campo, mas mantém permissões e limites das conexões já configuradas."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 1,
+    "signals": 1,
+    "sources": 1
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

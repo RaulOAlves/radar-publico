@@ -13,10 +13,15 @@ from collections import defaultdict
 from datetime import datetime
 from email.utils import format_datetime
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 SCHEMA_VERSION = "1.0"
 SITE_URL = "https://radar-publico-opal.vercel.app"
+METHODOLOGY = {
+    "version": "1",
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+}
 RECORD = re.compile(
     r"^### (?P<date>\d{4}-\d{2}-\d{2}) (?P<time>\d{2}:\d{2}) BRT — (?P<title>.+)$",
     re.MULTILINE,
@@ -78,6 +83,7 @@ def parse_document(document: str) -> dict:
                 "edition_date": match.group("date"),
                 "title": title,
                 "source": source_link.group(1),
+                "source_meta": {"domain": urlparse(source_link.group(2)).hostname or ""},
                 "url": source_link.group(2),
                 "published": _bullet_value(block, "Publicado") or "não informado",
                 "summary": _bullet_value(block, "Resumo") or impact,
@@ -118,6 +124,27 @@ def _rss(items: list[dict]) -> ET.Element:
     return root
 
 
+def _metrics(items: list[dict]) -> dict:
+    return {
+        "signals": len(items),
+        "sources": len({item["source_meta"]["domain"] for item in items}),
+        "high_confidence": sum(item["confidence"] == "alta" for item in items),
+    }
+
+
+def _edition_payload(edition_date: str | None, items: list[dict], generated_at: str | None) -> dict:
+    return {
+        "schema_version": SCHEMA_VERSION,
+        "edition_id": f"radar-{generated_at}" if generated_at else None,
+        "edition_date": edition_date,
+        "generated_at": generated_at,
+        "status": "publicado" if items else "sem_novidade",
+        "metrics": _metrics(items),
+        "methodology": METHODOLOGY,
+        "items": items,
+    }
+
+
 def _build_radar_dir(report: dict, radar_dir: Path) -> None:
     items = sorted(report["items"], key=lambda item: item["edition_at"], reverse=True)
     grouped = defaultdict(list)
@@ -125,33 +152,36 @@ def _build_radar_dir(report: dict, radar_dir: Path) -> None:
         grouped[item["edition_date"]].append(item)
 
     edition_dates = set(grouped)
-    empty_dates = {edition["edition_date"] for edition in report["empty_editions"]}
+    empty_editions = {
+        edition["edition_date"]: edition["edition_at"] for edition in report["empty_editions"]
+    }
+    empty_dates = set(empty_editions)
     edition_dates.update(empty_dates)
 
     canonical = {"schema_version": SCHEMA_VERSION, "items": items}
     _write_json(radar_dir / "radar-canonico.json", canonical)
     for edition_date in sorted(edition_dates):
         edition_items = grouped[edition_date]
+        generated_at = max(
+            [item["edition_at"] for item in edition_items]
+            + ([empty_editions[edition_date]] if edition_date in empty_editions else [])
+        )
         _write_json(
             radar_dir / "editions" / f"{edition_date}.json",
-            {
-                "schema_version": SCHEMA_VERSION,
-                "edition_date": edition_date,
-                "status": "publicado" if edition_items else "sem_novidade",
-                "items": edition_items,
-            },
+            _edition_payload(edition_date, edition_items, generated_at),
         )
 
     latest_date = max(edition_dates, default=None)
     latest_items = grouped[latest_date] if latest_date else []
+    latest_generated_at = None
+    if latest_date:
+        latest_generated_at = max(
+            [item["edition_at"] for item in latest_items]
+            + ([empty_editions[latest_date]] if latest_date in empty_editions else [])
+        )
     _write_json(
         radar_dir / "latest.json",
-        {
-            "schema_version": SCHEMA_VERSION,
-            "edition_date": latest_date,
-            "status": "publicado" if latest_items else "sem_novidade",
-            "items": latest_items,
-        },
+        _edition_payload(latest_date, latest_items, latest_generated_at),
     )
     rss_path = radar_dir / "feed.xml"
     ET.ElementTree(_rss(items[:50])).write(rss_path, encoding="utf-8", xml_declaration=True)

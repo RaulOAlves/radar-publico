@@ -23,3 +23,7 @@ Com `--fail-on-quarantine`, uma entrada inválida preserva a última publicaçã
 
 Novos itens incluem `summary`, um resumo factual de um ou dois parágrafos. Registros históricos
 sem esse campo usam `why_it_matters` como compatibilidade temporária.
+
+Cada edição e `latest.json` também publicam `edition_id`, `generated_at`, `metrics`
+(`signals`, `sources`, `high_confidence`) e `methodology`. Esses campos permitem que
+leitores como o painel Kindle exibam o pulso da edição sem recalcular ou coletar dados.

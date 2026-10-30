@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-10-30",
+  "edition_id": "radar-2026-10-30T07:33:00-03:00",
+  "generated_at": "2026-10-30T07:33:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "OpenAI — Codex CLI 0.166.0",
+      "source_meta": {
+        "domain": "github.com"
+      },
       "summary": "A OpenAI lançou o Codex CLI 0.166.0 com `codex queue --resume`, que retoma uma conversa não carregada após enfileirar uma mensagem, e `codex doctor --network-only`, voltado a diagnósticos de configuração, conexão e WebSocket. O release também adiciona GPT-6.1 Terra aos catálogos de modelos locais, Vertex AI e Amazon Bedrock, além de melhorar a explicação de bloqueios de segurança e a preservação de permissões ao retomar ou bifurcar conversas.",
       "tags": [
         "openai",
@@ -39,6 +44,9 @@
         "Vale — GeoIA SAB.IA"
       ],
       "source": "Google Cloud — suporte ampliado a modelos semânticos no Knowledge Catalog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "O Google Cloud anunciou disponibilidade geral do suporte ampliado a modelos semânticos no Knowledge Catalog. A plataforma indexa definições de métricas e relações de LookML, BigQuery Graph, dbt MetricFlow, Snowflake Semantic Views, Databricks Metric Views e SAP CSN em um grafo de contexto, associando-as a metadados como linhagem, qualidade e glossário. Definições divergentes são mantidas com proveniência para revisão, sem exigir migração dos dados ou reescrita da lógica de negócio.",
       "tags": [
         "google-cloud",
@@ -65,6 +73,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Esri — novidades do Calcite Design System 5.2",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
       "summary": "A Esri detalhou o Calcite Design System 5.2, biblioteca de componentes usada em aplicações da plataforma ArcGIS. A versão acrescenta edição inline em campos de entrada, cabeçalho fixo em tabelas, novos comportamentos de barra de ações e grupos, suporte ao esquema de cores do navegador e melhorias de acessibilidade e internacionalização. O componente Inline Editable foi descontinuado e está previsto para remoção em uma futura versão com mudanças incompatíveis.",
       "tags": [
         "esri",
@@ -90,6 +101,9 @@
         "Klabin — IA"
       ],
       "source": "Purdue University — protótipo MATRIX Peru",
+      "source_meta": {
+        "domain": "ag.purdue.edu"
+      },
       "summary": "Pesquisadores da Purdue University, com a FAO e o serviço florestal peruano SERFOR, relataram a demonstração de um protótipo do Global Forest MATRIX adaptado ao Peru durante oficina realizada em agosto. O trabalho busca usar inventários florestais locais para projetar mudanças sob cenários de ambiente e manejo; um harmonizador de dados foi apresentado para converter registros coletados por protocolos distintos a um formato comum.",
       "tags": [
         "florestal",
@@ -105,6 +119,15 @@
       "why_it_matters": "A adaptação ilustra um caminho prático para conectar inventários heterogêneos a modelos de dinâmica florestal. Ainda é protótipo em desenvolvimento, sem validação publicada para florestas brasileiras."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 4,
+    "signals": 4,
+    "sources": 4
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

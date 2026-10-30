@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-10-09",
+  "edition_id": "radar-2026-10-09T07:31:00-03:00",
+  "generated_at": "2026-10-09T07:31:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — Gemini at Work 2026",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "o Gemini agent une execução persistente em nuvem, memória, skills, ferramentas e orquestração dinâmica de subagentes, inclusive por MCP. A plataforma traz identidade, políticas, permissões, sandbox, *gateways* de rede, *Smart Routing* e limites de gasto — referência concreta para agentes corporativos governados que cruzam dados e sistemas de registro.",
       "tags": [
         "google-cloud",
@@ -40,6 +45,9 @@
         "Petrobras — Segundo cérebro"
       ],
       "source": "Notas de versão do ChatGPT",
+      "source_meta": {
+        "domain": "help.openai.com"
+      },
       "summary": "mensagens de acompanhamento agora redirecionam mais cedo uma tarefa em execução no Codex. A configuração de comportamento de *follow-up* escolhe entre intervir na execução atual ou aguardar a próxima, reduzindo retrabalho em tarefas longas e preservando controle humano sobre agentes.",
       "tags": [
         "openai",
@@ -65,6 +73,9 @@
         "Itaminas — Monitoramento geotécnico"
       ],
       "source": "Esri — MassDOT drone imagery as infrastructure",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
       "summary": "implantação padronizou o pipeline de drones, transformando imagens em sistema de registro compartilhado; a equipe transmitiu 400 milhões de pontos LiDAR para iPad em campo via 5G. É evidência operacional de distribuição *edge* de nuvem de pontos em inspeções de infraestrutura e manutenção.",
       "tags": [
         "esri",
@@ -80,6 +91,15 @@
       "why_it_matters": "implantação padronizou o pipeline de drones, transformando imagens em sistema de registro compartilhado; a equipe transmitiu 400 milhões de pontos LiDAR para iPad em campo via 5G. É evidência operacional de distribuição *edge* de nuvem de pontos em inspeções de infraestrutura e manutenção."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 3,
+    "signals": 3,
+    "sources": 3
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }

@@ -1,5 +1,7 @@
 {
   "edition_date": "2026-09-15",
+  "edition_id": "radar-2026-09-15T07:30:00-03:00",
+  "generated_at": "2026-09-15T07:30:00-03:00",
   "items": [
     {
       "confidence": "alta",
@@ -13,6 +15,9 @@
         "NAVIS / GeoFramework"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "seis funções TVF combinam IA, ML e estatística dentro do BigQuery para diagnóstico de mudanças, tendência, relação entre variáveis e efeito causal, retornando SQL estruturado que pode virar *skills* de agentes. Evita exportar dados para investigação exploratória e cria base mais auditável para perguntas operacionais.",
       "tags": [
         "google-cloud",
@@ -39,6 +44,9 @@
         "Eucatex — Monitoramento de vigor florestal"
       ],
       "source": "Google Cloud Blog",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
       "summary": "pausa e retomada de jobs batch chegam a GA, e G4/RTX PRO 6000 amplia capacidade para preparação de dados e inferência pesada. Pode reduzir custo e tempo de operações descontínuas de imagem, LiDAR e séries temporais, desde que o dimensionamento de GPU seja justificado pelo pipeline.",
       "tags": [
         "google-cloud",
@@ -65,6 +73,9 @@
         "GeoFiscal-Sinter"
       ],
       "source": "Google Cloud — release notes",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
       "summary": "`searchAddonSpec` entra em GA na API v1, permitindo ligar ou desligar complementos por busca e controlar custo programaticamente. É mecanismo útil para equilibrar profundidade de recuperação e orçamento em agentes que consultam acervos técnicos e documentos de projeto.",
       "tags": [
         "google-cloud",
@@ -80,6 +91,15 @@
       "why_it_matters": "`searchAddonSpec` entra em GA na API v1, permitindo ligar ou desligar complementos por busca e controlar custo programaticamente. É mecanismo útil para equilibrar profundidade de recuperação e orçamento em agentes que consultam acervos técnicos e documentos de projeto."
     }
   ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 3,
+    "signals": 3,
+    "sources": 2
+  },
   "schema_version": "1.0",
   "status": "publicado"
 }
