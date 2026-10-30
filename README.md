@@ -12,6 +12,7 @@ python3 scripts/build_radar.py source/radar-ia-geo.md --output public --fail-on-
 ## Endpoints
 
 - `v1/radar/latest.json`: edição mais recente.
+- `v1/radar/kindle.json`: as 50 matérias mais recentes, no contrato otimizado para o Kindle.
 - `v1/radar/feed.xml`: RSS com até 50 itens.
 - `v1/radar/radar-canonico.json`: todos os itens canônicos.
 - `v1/radar/editions/AAAA-MM-DD.json`: arquivo diário.

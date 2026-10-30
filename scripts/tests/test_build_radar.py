@@ -170,6 +170,34 @@ class RadarBuildTests(unittest.TestCase):
         self.assertEqual({"signals": 0, "sources": 0, "high_confidence": 0}, latest["metrics"])
         self.assertEqual("1", latest["methodology"]["version"])
 
+    def test_kindle_feed_keeps_only_the_50_most_recent_items(self):
+        records = []
+        for index in range(51):
+            records.append(
+                f"""### 2026-10-30 07:{index:02d} BRT — Sinal {index}
+
+- Fonte: [Fonte {index}](https://example.com/{index})
+- Publicado: 2026-10-30
+- Por que importa: Contexto {index}.
+- Tags: #radar
+- Confiança: alta
+"""
+            )
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output_dir = Path(temporary_directory)
+            build_artifacts(parse_document("\n".join(records)), output_dir)
+            kindle = json.loads((output_dir / "v1/radar/kindle.json").read_text())
+            canonical = json.loads((output_dir / "v1/radar/radar-canonico.json").read_text())
+            manifest = json.loads((output_dir / "v1/radar/manifest.json").read_text())
+
+        self.assertEqual("1.0", kindle["schema_version"])
+        self.assertEqual(50, len(kindle["items"]))
+        self.assertEqual(50, kindle["metrics"]["signals"])
+        self.assertEqual("Sinal 50", kindle["items"][0]["title"])
+        self.assertEqual("Sinal 1", kindle["items"][-1]["title"])
+        self.assertEqual(canonical["items"][:50], kindle["items"])
+        self.assertIn("v1/radar/kindle.json", manifest["files"])
+
     def test_strict_build_keeps_last_good_artifacts_on_quarantine(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
             output_dir = Path(temporary_directory)

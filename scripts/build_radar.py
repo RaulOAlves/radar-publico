@@ -183,6 +183,12 @@ def _build_radar_dir(report: dict, radar_dir: Path) -> None:
         radar_dir / "latest.json",
         _edition_payload(latest_date, latest_items, latest_generated_at),
     )
+    kindle_items = items[:50]
+    kindle_date = kindle_items[0]["edition_date"] if kindle_items else latest_date
+    kindle_generated_at = kindle_items[0]["edition_at"] if kindle_items else latest_generated_at
+    kindle = _edition_payload(kindle_date, kindle_items, kindle_generated_at)
+    kindle["scope"] = "ultimas_50_publicacoes"
+    _write_json(radar_dir / "kindle.json", kindle)
     rss_path = radar_dir / "feed.xml"
     ET.ElementTree(_rss(items[:50])).write(rss_path, encoding="utf-8", xml_declaration=True)
 
