@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 
-import { getOriginalArticle } from "./article-service.mjs";
+import { getOriginalArticle } from "../../lib/radar/article-service.mjs";
 
 const CANONICAL = new URL("../../public/v1/radar/radar-canonico.json", import.meta.url);
 

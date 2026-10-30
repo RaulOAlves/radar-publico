@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { extractArticle } from "../api/radar/article-extractor.mjs";
+import { extractArticle } from "../lib/radar/article-extractor.mjs";
 
 test("extrai corpo editorial e remove navegação", () => {
   const result = extractArticle(`<!doctype html><html><head><title>Título</title></head><body>

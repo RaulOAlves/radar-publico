@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { resolveArticle } from "../api/radar/article-core.mjs";
+import { resolveArticle } from "../lib/radar/article-core.mjs";
 
 const canonical = {
   items: [

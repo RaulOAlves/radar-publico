@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { getOriginalArticle } from "../api/radar/article-service.mjs";
+import { getOriginalArticle } from "../lib/radar/article-service.mjs";
 
 const canonical = {
   items: [{ id: "radar-0123456789abcdef", url: "https://example.com/original", title: "Radar" }],
