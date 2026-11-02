@@ -8,6 +8,7 @@
       "edition_at": "2026-10-02T07:30:00-03:00",
       "edition_date": "2026-10-02",
       "id": "radar-1d506ff014b6c7bd",
+      "image": "https://help.openai.com/og-image.png",
       "published": "2026-10-01 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
       "source": "Notas de versão do ChatGPT",
       "source_meta": {
@@ -32,6 +33,7 @@
       "edition_at": "2026-10-02T07:30:00-03:00",
       "edition_date": "2026-10-02",
       "id": "radar-d5445f4a1988c3c6",
+      "image": "https://help.openai.com/og-image.png",
       "published": "2026-10-01 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
       "source": "Notas de versão do ChatGPT",
       "source_meta": {
@@ -80,6 +82,7 @@
       "edition_at": "2026-10-02T07:30:00-03:00",
       "edition_date": "2026-10-02",
       "id": "radar-bab0e18b2802152d",
+      "image": "https://developers.openai.com/og/api/docs/deprecations.png",
       "published": "2026-10-01",
       "source": "OpenAI — Depreciações de API",
       "source_meta": {

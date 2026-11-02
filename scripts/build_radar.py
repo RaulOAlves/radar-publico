@@ -16,6 +16,8 @@ from email.utils import format_datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
+from og_image import apply_images, load_cache, resolve_images, save_cache
+
 
 SCHEMA_VERSION = "1.0"
 SITE_URL = "https://radar-publico-opal.vercel.app"
@@ -25,6 +27,9 @@ ATOM_NS = "http://www.w3.org/2005/Atom"
 CONTENT_NS = "http://purl.org/rss/1.0/modules/content/"
 ET.register_namespace("atom", ATOM_NS)
 ET.register_namespace("content", CONTENT_NS)
+MEDIA_NS = "http://search.yahoo.com/mrss/"
+ET.register_namespace("media", MEDIA_NS)
+FEED_ITEM_LIMIT = 100
 METHODOLOGY = {
     "version": "1",
     "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
@@ -176,8 +181,19 @@ def _metadata_line(item: dict) -> str | None:
     return "<p><small>" + html.escape(" · ".join(parts), quote=False) + "</small></p>"
 
 
+def _image_url(item: dict) -> str | None:
+    image = item.get("image")
+    return image if isinstance(image, str) and image.startswith("https://") else None
+
+
 def _content_html(item: dict) -> str:
-    parts = [f"<p>{_html_text(paragraph)}</p>" for paragraph in item["summary"].split("\n\n") if paragraph.strip()]
+    parts = []
+    image = _image_url(item)
+    if image:
+        parts.append(
+            f'<p><img src="{html.escape(image, quote=True)}" alt="{html.escape(item["title"], quote=True)}"></p>'
+        )
+    parts += [f"<p>{_html_text(paragraph)}</p>" for paragraph in item["summary"].split("\n\n") if paragraph.strip()]
     if item.get("why_it_matters"):
         parts.append(f"<p><strong>Por que importa:</strong> {_html_text(item['why_it_matters'])}</p>")
     link = html.escape(item["url"], quote=True)
@@ -233,6 +249,9 @@ def _rss(items: list[dict]) -> ET.Element:
         ET.SubElement(entry, "pubDate").text = pub_date
         for tag in item["tags"]:
             ET.SubElement(entry, "category").text = tag
+        image = _image_url(item)
+        if image:
+            ET.SubElement(entry, f"{{{MEDIA_NS}}}thumbnail", url=image)
     return root
 
 
@@ -306,7 +325,7 @@ def _build_radar_dir(report: dict, radar_dir: Path) -> None:
     kindle["scope"] = "ultimas_50_publicacoes"
     _write_json(radar_dir / "kindle.json", kindle)
     rss_path = radar_dir / "feed.xml"
-    ET.ElementTree(_rss(items[:50])).write(rss_path, encoding="utf-8", xml_declaration=True)
+    ET.ElementTree(_rss(items[:FEED_ITEM_LIMIT])).write(rss_path, encoding="utf-8", xml_declaration=True)
 
     _write_json(radar_dir / "quarantine.json", {"items": report["quarantine"]})
     files = sorted(path for path in radar_dir.rglob("*") if path.is_file())
@@ -354,8 +373,16 @@ def main() -> None:
     parser.add_argument("source", type=Path)
     parser.add_argument("--output", type=Path, default=Path("public"))
     parser.add_argument("--fail-on-quarantine", action="store_true")
+    parser.add_argument("--images-cache", type=Path, default=Path("source/imagens.json"))
+    parser.add_argument("--no-fetch-images", action="store_true", help="usa só o cache de imagens, sem rede")
     args = parser.parse_args()
     report = parse_document(args.source.read_text())
+    recent = sorted(report["items"], key=lambda item: item["edition_at"], reverse=True)[:FEED_ITEM_LIMIT]
+    cache = load_cache(args.images_cache)
+    if not args.no_fetch_images:
+        cache = resolve_images(recent, cache)
+        save_cache(args.images_cache, cache)
+    report = {**report, "items": apply_images(report["items"], cache)}
     build_artifacts(report, args.output, args.fail_on_quarantine)
     print(f"{len(report['items'])} itens; {len(report['quarantine'])} em quarentena")
 

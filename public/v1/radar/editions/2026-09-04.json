@@ -8,6 +8,7 @@
       "edition_at": "2026-09-04T07:31:00-03:00",
       "edition_date": "2026-09-04",
       "id": "radar-ea74e2fffbc50210",
+      "image": "https://images.ctfassets.net/kftzwdyauwt9/6ibCaqsoO7F6XCNCIO8zaZ/9475cdebc1f0af100414f1c85860fc4c/Hero_16x9.png?w=1600&h=900&fit=fill",
       "published": "2026-09-03 (horário/fuso não informado na fonte)",
       "source": "OpenAI — GPT-6 Astra",
       "source_meta": {
@@ -32,6 +33,7 @@
       "edition_at": "2026-09-04T07:31:00-03:00",
       "edition_date": "2026-09-04",
       "id": "radar-99e525dfe2cd9d3b",
+      "image": "https://help.openai.com/og-image.png",
       "published": "2026-09-03 (horário/fuso não informado na fonte)",
       "source": "Notas de versão do ChatGPT",
       "source_meta": {

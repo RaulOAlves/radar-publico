@@ -281,6 +281,48 @@ class RadarBuildTests(unittest.TestCase):
         self.assertIn('href="/v1/radar/feed.xml"', index)
         self.assertIn('rel="icon"', index)
 
+    def _feed_with_image(self, image, title=None):
+        report = parse_document(DOCUMENT)
+        item = {**report["items"][0], "image": image}
+        if title:
+            item["title"] = title
+        report = {**report, "items": [item]}
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output_dir = Path(temporary_directory)
+            build_artifacts(report, output_dir)
+            root = ET.parse(output_dir / "v1/radar/feed.xml").getroot()
+            latest = json.loads((output_dir / "v1/radar/latest.json").read_text())
+        return root, latest
+
+    def test_feed_uses_source_image_as_thumbnail_and_inline_image(self):
+        image = "https://cdn.example.com/a.jpg?x=1&y=2"
+        root, latest = self._feed_with_image(image)
+
+        item = root.find("./channel/item")
+        self.assertEqual(image, item.find("{http://search.yahoo.com/mrss/}thumbnail").get("url"))
+        html = item.findtext("{http://purl.org/rss/1.0/modules/content/}encoded")
+        self.assertTrue(html.splitlines()[0].startswith('<p><img src="https://cdn.example.com/a.jpg?x=1&amp;y=2"'))
+        self.assertEqual(image, latest["items"][0]["image"])
+
+    def test_feed_image_alt_is_escaped(self):
+        root, _ = self._feed_with_image("https://cdn.example.com/a.jpg", 'Título "com" & <tags>')
+
+        html = root.findtext("./channel/item/{http://purl.org/rss/1.0/modules/content/}encoded")
+        self.assertIn('alt="Título &quot;com&quot; &amp; &lt;tags&gt;"', html.splitlines()[0])
+
+    def test_feed_without_image_has_no_thumbnail_or_img(self):
+        root, latest = self._feed_with_image(None)
+
+        item = root.find("./channel/item")
+        self.assertIsNone(item.find("{http://search.yahoo.com/mrss/}thumbnail"))
+        self.assertNotIn("<img", item.findtext("{http://purl.org/rss/1.0/modules/content/}encoded"))
+
+    def test_feed_ignores_non_https_image(self):
+        root, _ = self._feed_with_image("http://cdn.example.com/a.jpg")
+
+        item = root.find("./channel/item")
+        self.assertIsNone(item.find("{http://search.yahoo.com/mrss/}thumbnail"))
+
     def test_same_input_produces_same_item_id(self):
         first = parse_document(DOCUMENT)["items"][0]["id"]
         second = parse_document(DOCUMENT)["items"][0]["id"]
@@ -352,6 +394,27 @@ class RadarBuildTests(unittest.TestCase):
         self.assertIsNone(latest["generated_at"])
         self.assertEqual({"signals": 0, "sources": 0, "high_confidence": 0}, latest["metrics"])
         self.assertEqual("1", latest["methodology"]["version"])
+
+    def test_rss_keeps_the_100_most_recent_items(self):
+        records = []
+        for index in range(101):
+            records.append(
+                f"""### 2026-10-30 07:{index % 60:02d} BRT — Sinal {index}
+
+- Fonte: [Fonte {index}](https://example.com/{index})
+- Publicado: 2026-10-30
+- Por que importa: Contexto {index}.
+- Tags: #radar
+- Confiança: alta
+"""
+            )
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            output_dir = Path(temporary_directory)
+            build_artifacts(parse_document("\n".join(records)), output_dir)
+            root = ET.parse(output_dir / "v1/radar/feed.xml").getroot()
+        titles = [item.findtext("title") for item in root.iter("item")]
+        self.assertEqual(100, len(titles), "histórico do feed cobre edições antigas por inteiro")
+        self.assertEqual(len(titles), len(set(titles)))
 
     def test_kindle_feed_keeps_only_the_50_most_recent_items(self):
         records = []

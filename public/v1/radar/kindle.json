@@ -8,6 +8,7 @@
       "edition_at": "2026-10-30T07:33:00-03:00",
       "edition_date": "2026-10-30",
       "id": "radar-10be109ee0bd01c4",
+      "image": "https://opengraph.githubassets.com/85a7e5fa54c0b28bde06588dae3003e8544d58795b2c562c7132d22d88415450/openai/codex/releases/tag/rust-v0.166.0",
       "published": "2026-10-29 19:47 (horário exibido pelo GitHub; fuso não informado)",
       "source": "OpenAI — Codex CLI 0.166.0",
       "source_meta": {
@@ -32,6 +33,7 @@
       "edition_at": "2026-10-30T07:33:00-03:00",
       "edition_date": "2026-10-30",
       "id": "radar-09b9bd644d688ff9",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Data_Analytics_JooYPJr.max-2500x2500.jpg",
       "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Google Cloud — suporte ampliado a modelos semânticos no Knowledge Catalog",
       "source_meta": {
@@ -80,6 +82,7 @@
       "edition_at": "2026-10-30T07:33:00-03:00",
       "edition_date": "2026-10-30",
       "id": "radar-ad7611751baac45b",
+      "image": "https://ag.purdue.edu/news/2026/10/_media/jingjing-liang-social.jpg",
       "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Purdue University — protótipo MATRIX Peru",
       "source_meta": {
@@ -104,6 +107,7 @@
       "edition_at": "2026-10-29T07:35:00-03:00",
       "edition_date": "2026-10-29",
       "id": "radar-ebc97573a6a94023",
+      "image": "https://images.ctfassets.net/kftzwdyauwt9/Gp8jNpLlW9YG0p7vG3UfM/c73fa4b5caa4ad978b022dc0123b801b/openai-servicenow-partnership-expansion-social.png?w=1600&h=900&fit=fill",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "OpenAI — expansão da parceria com ServiceNow",
       "source_meta": {
@@ -128,6 +132,7 @@
       "edition_at": "2026-10-29T07:35:00-03:00",
       "edition_date": "2026-10-29",
       "id": "radar-9d6fea0b42eb9f3c",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Google Cloud — release notes de 28/10",
       "source_meta": {
@@ -152,6 +157,7 @@
       "edition_at": "2026-10-29T07:35:00-03:00",
       "edition_date": "2026-10-29",
       "id": "radar-d8651470f28270c3",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Google Cloud — release notes do AlloyDB AI",
       "source_meta": {
@@ -176,6 +182,7 @@
       "edition_at": "2026-10-29T07:35:00-03:00",
       "edition_date": "2026-10-29",
       "id": "radar-96e37f1546c14c56",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
       "published": "2026-10-28 (data do release e da atualização da documentação; horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Google Cloud — Application Integration agent skills",
       "source_meta": {
@@ -200,6 +207,7 @@
       "edition_at": "2026-10-29T07:35:00-03:00",
       "edition_date": "2026-10-29",
       "id": "radar-f0881e2805c75550",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Google Cloud — release notes de 28/10, CodeMender 0.17.0",
       "source_meta": {
@@ -248,6 +256,7 @@
       "edition_at": "2026-10-28T12:35:00-03:00",
       "edition_date": "2026-10-28",
       "id": "radar-3514aff3e3d93b8d",
+      "image": "https://support.esri.com/content/dam/esrisites/en-us/support/technical-support",
       "published": "2026-10-27 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Esri — ArcGIS Server 11.5 Geocoding Capability Patch",
       "source_meta": {
@@ -272,6 +281,7 @@
       "edition_at": "2026-10-28T12:35:00-03:00",
       "edition_date": "2026-10-28",
       "id": "radar-7562f82019fb942b",
+      "image": "https://cdn.prod.website-files.com/686d188831c929aef2a06fdf/6ae1aa1188d29a2dd6bfb1f6_6ae1a9e0726f7411cc1df641_edgx-transporter-16-sky-high-intelligence.jpeg",
       "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "EDGX — Sterna em órbita",
       "source_meta": {
@@ -295,6 +305,7 @@
       "edition_at": "2026-10-23T07:29:00-03:00",
       "edition_date": "2026-10-23",
       "id": "radar-2f70043cc1819c04",
+      "image": "https://www.datocms-assets.com/64837/1792613095-olmoearth-v1-3-blog-thumbnail.png",
       "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Ai2 — OlmoEarth v1.3",
       "source_meta": {
@@ -321,6 +332,7 @@
       "edition_at": "2026-10-23T07:29:00-03:00",
       "edition_date": "2026-10-23",
       "id": "radar-47abee776e53ac9f",
+      "image": "https://www.datocms-assets.com/64837/1792681400-planteur-tropical-regions-tan.png",
       "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Ai2 — PLANTEUR: benchmark de culturas tropicais",
       "source_meta": {
@@ -346,6 +358,7 @@
       "edition_at": "2026-10-23T07:29:00-03:00",
       "edition_date": "2026-10-23",
       "id": "radar-0307ec1244417a61",
+      "image": "https://opengraph.githubassets.com/bee1aa92e21b63812e9b480ed18e7dbb603f613bea9fb7b974de0575a4b41bd2/anthropics/claude-code/releases/tag/v2.1.309",
       "published": "2026-10-22 22:18 (horário exibido pelo GitHub; fuso não informado)",
       "source": "Anthropic — Claude Code v2.1.309",
       "source_meta": {
@@ -370,6 +383,7 @@
       "edition_at": "2026-10-23T07:29:00-03:00",
       "edition_date": "2026-10-23",
       "id": "radar-42dc5172617fe2e4",
+      "image": "https://images.ctfassets.net/kftzwdyauwt9/2oP82PTDAPhlalF1TRNt8Q/af6bb8e886e29d6e0880c75a0de781f8/build-more-responsive-apps-with-the-decisions-api-social.png?w=1600&h=900&fit=fill",
       "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "OpenAI — Decisions API",
       "source_meta": {
@@ -394,6 +408,7 @@
       "edition_at": "2026-10-23T07:29:00-03:00",
       "edition_date": "2026-10-23",
       "id": "radar-e992952e7eee2742",
+      "image": "https://ororatech.com/storage/files/iceye-x-ororatech-pr.png",
       "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "OroraTech — parceria com ICEYE",
       "source_meta": {
@@ -418,6 +433,7 @@
       "edition_at": "2026-10-22T07:27:00-03:00",
       "edition_date": "2026-10-22",
       "id": "radar-1f4559e41bf13b35",
+      "image": "https://opengraph.githubassets.com/5883b35b28246294c2eeef6473aaa5d8511eae7fd80ff51d91cec12e4362dac8/anthropics/claude-code/releases/tag/v2.1.307",
       "published": "2026-10-21 22:17 (horário exibido pelo GitHub; fuso não informado)",
       "source": "Anthropic — Claude Code v2.1.307",
       "source_meta": {
@@ -442,6 +458,7 @@
       "edition_at": "2026-10-22T07:27:00-03:00",
       "edition_date": "2026-10-22",
       "id": "radar-3634ecbbbb3a5eca",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Open-ai-google-models-hero.max-2500x2500.png",
       "published": "2026-10-21 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Google Cloud — OpenAI models in Model Garden",
       "source_meta": {
@@ -490,6 +507,7 @@
       "edition_at": "2026-10-21T07:27:00-03:00",
       "edition_date": "2026-10-21",
       "id": "radar-11a9e9aebb65d4c7",
+      "image": "https://opengraph.githubassets.com/79fdcda20289413eb426b78042ede9f05bf82c27582a34f32ab82690c364ecf9/anthropics/claude-code/releases/tag/v2.1.305",
       "published": "2026-10-20 20:46 (horário exibido pelo GitHub; fuso não informado)",
       "source": "Anthropic — Claude Code v2.1.305",
       "source_meta": {
@@ -514,6 +532,7 @@
       "edition_at": "2026-10-21T07:27:00-03:00",
       "edition_date": "2026-10-21",
       "id": "radar-e8db8c6284f507e2",
+      "image": "https://github.githubassets.com/assets/advisory-database-show-f32c8207dfb2.png",
       "published": "aviso original em 2026-10-05; publicado na base de advisories e atualizado em 2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "GitHub Advisory — GHSA-rvq5-wwqv-78pq / CVE-2026-111771",
       "source_meta": {
@@ -538,6 +557,7 @@
       "edition_at": "2026-10-21T07:27:00-03:00",
       "edition_date": "2026-10-21",
       "id": "radar-f589d35077387a1a",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/41_-_Hybrid__Multicloud_qokHBFC.max-2600x2600.jpg",
       "published": "2026-10-21 (horário/fuso não informados; posição exata na janela de 24 horas não confirmada)",
       "source": "Google Cloud — Managed RAG search inside the sovereign perimeter",
       "source_meta": {
@@ -562,6 +582,7 @@
       "edition_at": "2026-10-21T07:27:00-03:00",
       "edition_date": "2026-10-21",
       "id": "radar-dc65e8821342889a",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Ai_infrastructure.max-2500x2500.jpg",
       "published": "2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Google Cloud — Announcing llm-d 1.0",
       "source_meta": {
@@ -586,6 +607,7 @@
       "edition_at": "2026-10-21T07:27:00-03:00",
       "edition_date": "2026-10-21",
       "id": "radar-1228ecbc13bad748",
+      "image": "https://cdn.sanity.io/images/hvd5n54p/blog/a2b15977657232821c46a4a56919e8de4d8e2810-5120x3024.jpg",
       "published": "2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Planet — First light from Tanager-2 and SuperDove Flock 4J",
       "source_meta": {
@@ -610,6 +632,7 @@
       "edition_at": "2026-10-20T07:28:00-03:00",
       "edition_date": "2026-10-20",
       "id": "radar-5af1102112d0a75b",
+      "image": "https://opengraph.githubassets.com/efeeac26f537bce26b9a9ae97d4ed19b2b5f2e5398060e96b5fcf8ff62faafdb/modelcontextprotocol/servers/releases/tag/v2.0.0",
       "published": "2026-10-19 06:46 (horário exibido pelo GitHub; fuso não informado; posição exata na janela de 24 horas não confirmada)",
       "source": "Model Context Protocol — servers v2.0.0",
       "source_meta": {
@@ -635,6 +658,7 @@
       "edition_at": "2026-10-20T07:28:00-03:00",
       "edition_date": "2026-10-20",
       "id": "radar-8c981e335f6cfd88",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/11_-_Developers__Practitioners_a4Y5EGr.max-2600x2600.jpg",
       "published": "2026-10-19 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Google Cloud — Developer’s guide to implementing MCP apps in Gemini",
       "source_meta": {
@@ -683,6 +707,7 @@
       "edition_at": "2026-10-20T07:28:00-03:00",
       "edition_date": "2026-10-20",
       "id": "radar-9f6c1d6cd55f3820",
+      "image": "https://images.ctfassets.net/kftzwdyauwt9/1wQpFFie9sKfVWvApPYyn5/db28adb6a2dfdfdef39fb548fca8913d/low_resource_programming__SEO_Card__3_.png?w=1600&h=900&fit=fill",
       "published": "2026-10-19 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "OpenAI — Advancing coding in low-resource programming languages",
       "source_meta": {
@@ -708,6 +733,7 @@
       "edition_at": "2026-10-17T09:09:00-03:00",
       "edition_date": "2026-10-17",
       "id": "radar-9951decf1ff354d0",
+      "image": "https://opengraph.githubassets.com/641b684b9ce7bce5b2dfe5e170f4946863eec5c5feecd047d2bb35fc8858c8e1/anthropics/claude-code/releases/tag/v2.1.302",
       "published": "2026-10-16 20:53 (horário exibido pelo GitHub; fuso não informado)",
       "source": "Anthropic — Claude Code v2.1.302",
       "source_meta": {
@@ -755,6 +781,7 @@
       "edition_at": "2026-10-17T09:09:00-03:00",
       "edition_date": "2026-10-17",
       "id": "radar-f9166f29e7067e8e",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
       "published": "2026-10-16 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
       "source": "Google Cloud — Agent Search release notes",
       "source_meta": {
@@ -779,6 +806,7 @@
       "edition_at": "2026-10-15T07:29:00-03:00",
       "edition_date": "2026-10-15",
       "id": "radar-137bd70caf345667",
+      "image": "https://support.esri.com/content/dam/esrisites/en-us/support/technical-support",
       "published": "patch em 2026-10-13; boletim em 2026-10-14 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
       "source": "Esri — ArcGIS Server Security 2026 Update 3 Patch",
       "source_meta": {
@@ -803,6 +831,7 @@
       "edition_at": "2026-10-15T07:29:00-03:00",
       "edition_date": "2026-10-15",
       "id": "radar-5b8961a811158e57",
+      "image": "https://docs.planet.com/img/logo.svg",
       "published": "2026-10-14 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
       "source": "Planet Documentation — ARPS v1.2.0 Release Notes",
       "source_meta": {
@@ -828,6 +857,7 @@
       "edition_at": "2026-10-14T07:27:00-03:00",
       "edition_date": "2026-10-14",
       "id": "radar-d141466fb9da2b0a",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Gemini_4_argon.max-2500x2500.jpg",
       "published": "2026-10-13 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
       "source": "Google Cloud — Gemini 4 Argon available on Google Cloud",
       "source_meta": {
@@ -852,6 +882,7 @@
       "edition_at": "2026-10-14T07:27:00-03:00",
       "edition_date": "2026-10-14",
       "id": "radar-f37c6be44973d3e4",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/one-agent-development-kit-five-languages-h.max-2500x2500.jpg",
       "published": "2026-10-13 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
       "source": "Google Cloud — One Agent Development Kit, five languages",
       "source_meta": {
@@ -876,6 +907,7 @@
       "edition_at": "2026-10-14T07:27:00-03:00",
       "edition_date": "2026-10-14",
       "id": "radar-9ba1fe6858400596",
+      "image": "https://cdn.sanity.io/images/hvd5n54p/blog/cbbfb870f1b76a2b07fff8c1933cb915a19496eb-5120x2022.jpg",
       "published": "2026-10-13 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
       "source": "Planet — Slovenia's Automated Space Resilience Infrastructure",
       "source_meta": {
@@ -900,6 +932,7 @@
       "edition_at": "2026-10-13T07:30:00-03:00",
       "edition_date": "2026-10-13",
       "id": "radar-106bf0512d9e37c8",
+      "image": "https://cdn.sanity.io/images/hvd5n54p/blog/e28fd0020eedd08cbc59ae32d8a344f6e30551af-5120x2021.jpg",
       "published": "2026-10-12 (horário/fuso não informado; janela exata de 24 horas não confirmada)",
       "source": "Planet — Introducing Populace",
       "source_meta": {
@@ -971,6 +1004,7 @@
       "edition_at": "2026-10-09T07:31:00-03:00",
       "edition_date": "2026-10-09",
       "id": "radar-d23b22ea89341409",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/image_3.max-2100x2100_0CYZWqn.jpg",
       "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
       "source": "Google Cloud — Gemini at Work 2026",
       "source_meta": {
@@ -996,6 +1030,7 @@
       "edition_at": "2026-10-09T07:31:00-03:00",
       "edition_date": "2026-10-09",
       "id": "radar-e00b44704f5ffbcc",
+      "image": "https://help.openai.com/og-image.png",
       "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
       "source": "Notas de versão do ChatGPT",
       "source_meta": {
@@ -1043,6 +1078,7 @@
       "edition_at": "2026-10-08T07:32:00-03:00",
       "edition_date": "2026-10-08",
       "id": "radar-cdb1d51fae043110",
+      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/89e9b0fbfe0181f6ca565d913686ce8e49b5e9c2-1200x630.jpg",
       "published": "2026-10-07 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
       "source": "Anthropic — Claude Haiku 5.5",
       "source_meta": {
@@ -1068,6 +1104,7 @@
       "edition_at": "2026-10-07T07:31:00-03:00",
       "edition_date": "2026-10-07",
       "id": "radar-b6158a7625215fb5",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/announcing-mcp-toolbox-java-sdk-v10-agenti.max-1300x1300.png",
       "published": "2026-10-06 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
       "source": "Google Cloud — MCP Toolbox Java SDK 1.0",
       "source_meta": {
@@ -1093,6 +1130,7 @@
       "edition_at": "2026-10-06T07:32:00-03:00",
       "edition_date": "2026-10-06",
       "id": "radar-73aa706342e6e53b",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/infra_mod.max-2500x2500.jpg",
       "published": "2026-10-05 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
       "source": "Google Cloud — Modernize",
       "source_meta": {
@@ -1118,6 +1156,7 @@
       "edition_at": "2026-10-02T07:30:00-03:00",
       "edition_date": "2026-10-02",
       "id": "radar-1d506ff014b6c7bd",
+      "image": "https://help.openai.com/og-image.png",
       "published": "2026-10-01 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
       "source": "Notas de versão do ChatGPT",
       "source_meta": {
@@ -1142,6 +1181,7 @@
       "edition_at": "2026-10-02T07:30:00-03:00",
       "edition_date": "2026-10-02",
       "id": "radar-d5445f4a1988c3c6",
+      "image": "https://help.openai.com/og-image.png",
       "published": "2026-10-01 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
       "source": "Notas de versão do ChatGPT",
       "source_meta": {
@@ -1190,6 +1230,7 @@
       "edition_at": "2026-10-02T07:30:00-03:00",
       "edition_date": "2026-10-02",
       "id": "radar-bab0e18b2802152d",
+      "image": "https://developers.openai.com/og/api/docs/deprecations.png",
       "published": "2026-10-01",
       "source": "OpenAI — Depreciações de API",
       "source_meta": {
