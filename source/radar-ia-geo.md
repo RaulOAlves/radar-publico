@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-10-30 07:33 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-02 07:28 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,8 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-02 07:28 BRT — sem_novidade
 
 ### 2026-10-30 07:33 BRT — Codex CLI 0.166.0 amplia retomada de tarefas e diagnóstico de rede
 
