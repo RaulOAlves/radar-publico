@@ -222,7 +222,7 @@ def _rfc822(edition_at: str) -> str:
     return format_datetime(datetime.fromisoformat(edition_at))
 
 
-def _rss(items: list[dict]) -> ET.Element:
+def _rss(items: list[dict], last_updated_at: str | None = None) -> ET.Element:
     root = ET.Element("rss", version="2.0")
     channel = ET.SubElement(root, "channel")
     ET.SubElement(channel, "title").text = FEED_TITLE
@@ -232,9 +232,10 @@ def _rss(items: list[dict]) -> ET.Element:
     ET.SubElement(channel, "link").text = SITE_URL
     ET.SubElement(channel, f"{{{ATOM_NS}}}link", href=FEED_URL, rel="self", type="application/rss+xml")
     ET.SubElement(channel, "language").text = "pt-BR"
-    if items:
-        newest = max(items, key=lambda item: datetime.fromisoformat(item["edition_at"]))
-        ET.SubElement(channel, "lastBuildDate").text = _rfc822(newest["edition_at"])
+    newest_item_at = max((item["edition_at"] for item in items), default=None)
+    newest_at = max((value for value in (newest_item_at, last_updated_at) if value), default=None)
+    if newest_at:
+        ET.SubElement(channel, "lastBuildDate").text = _rfc822(newest_at)
     image = ET.SubElement(channel, "image")
     ET.SubElement(image, "url").text = f"{SITE_URL}/icon.png"
     ET.SubElement(image, "title").text = FEED_TITLE
@@ -325,7 +326,9 @@ def _build_radar_dir(report: dict, radar_dir: Path) -> None:
     kindle["scope"] = "ultimas_50_publicacoes"
     _write_json(radar_dir / "kindle.json", kindle)
     rss_path = radar_dir / "feed.xml"
-    ET.ElementTree(_rss(items[:FEED_ITEM_LIMIT])).write(rss_path, encoding="utf-8", xml_declaration=True)
+    ET.ElementTree(_rss(items[:FEED_ITEM_LIMIT], latest_generated_at)).write(
+        rss_path, encoding="utf-8", xml_declaration=True
+    )
 
     _write_json(radar_dir / "quarantine.json", {"items": report["quarantine"]})
     files = sorted(path for path in radar_dir.rglob("*") if path.is_file())

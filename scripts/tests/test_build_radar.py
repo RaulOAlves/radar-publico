@@ -348,6 +348,7 @@ class RadarBuildTests(unittest.TestCase):
             output_dir = Path(temporary_directory)
             build_artifacts(report, output_dir)
             latest = json.loads((output_dir / "v1/radar/latest.json").read_text())
+            feed = ET.parse(output_dir / "v1/radar/feed.xml").getroot()
 
         self.assertEqual("2026-10-30", latest["edition_date"])
         self.assertEqual("sem_novidade", latest["status"])
@@ -355,6 +356,7 @@ class RadarBuildTests(unittest.TestCase):
         self.assertEqual("radar-2026-10-30T07:35:00-03:00", latest["edition_id"])
         self.assertEqual("2026-10-30T07:35:00-03:00", latest["generated_at"])
         self.assertEqual({"signals": 0, "sources": 0, "high_confidence": 0}, latest["metrics"])
+        self.assertEqual("Fri, 30 Oct 2026 07:35:00 -0300", feed.findtext("./channel/lastBuildDate"))
 
     def test_metrics_count_unique_domains_and_high_confidence_items(self):
         report = parse_document(
