@@ -1,17 +1,164 @@
 {
-  "edition_date": "2026-11-02",
-  "edition_id": "radar-2026-11-02T07:28:00-03:00",
-  "generated_at": "2026-11-02T07:28:00-03:00",
-  "items": [],
+  "edition_date": "2026-11-03",
+  "edition_id": "radar-2026-11-03T07:31:00-03:00",
+  "generated_at": "2026-11-03T07:31:00-03:00",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-03T07:31:00-03:00",
+      "edition_date": "2026-11-03",
+      "id": "radar-b7d448737fd24ec2",
+      "image": "https://www.nesdis.noaa.gov/s3/2023-05/NOAA-logo_16x9_NoBorder.png",
+      "published": "2026-11-02 18:00 UTC; interrupção efetiva em 2026-11-02 15:40 UTC (ambos dentro da janela pesquisada)",
+      "source": "NOAA/NESDIS — aviso operacional de encerramento do S-NPP",
+      "source_meta": {
+        "domain": "www.nesdis.noaa.gov"
+      },
+      "summary": "A NOAA confirmou o fim permanente da distribuição de produtos científicos do satélite Suomi NPP às 15:40 UTC de 2 de novembro. A transmissão direta HRD também foi desligada. A mudança afeta, entre outros instrumentos, o VIIRS; a agência indica NOAA-21 como fonte principal e NOAA-20 como secundária para produtos científicos semelhantes.",
+      "tags": [
+        "noaa",
+        "snpp",
+        "viirs",
+        "sensoriamento-remoto",
+        "florestal",
+        "ciclo-de-vida",
+        "dados"
+      ],
+      "title": "NOAA encerra distribuição de dados do satélite S-NPP",
+      "url": "https://www.nesdis.noaa.gov/news/update-4-cessation-of-suomi-national-polar-orbiting-partnership-s-npp-data-users-november-02-2026-1540-utc-and-decommissioning-issued-november-2-2026-1800-utc",
+      "why_it_matters": "Fluxos de monitoramento florestal, queimadas ou ambiente que dependam especificamente de S-NPP/VIIRS precisam verificar fonte substituta e continuidade da série. Não implica fim de todos os produtos VIIRS."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-03T07:31:00-03:00",
+      "edition_date": "2026-11-03",
+      "id": "radar-bdcfdcaee06557e5",
+      "published": "2026-11-03 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "source": "Halliburton — Agile Asset Management",
+      "source_meta": {
+        "domain": "ir.halliburton.com"
+      },
+      "summary": "A Halliburton anunciou o Agile Asset Management (AAM), solução em nuvem da Landmark que integra dados e fluxos de subsuperfície, poços, instalações e economia para comparar alternativas de desenvolvimento de campos. Segundo a empresa, agentes de IA apoiam recuperação de dados, checagens de qualidade e orientação ao usuário. Aker BP participou do codesenvolvimento e descreve uso para avaliar alternativas com trilha auditável de premissas e decisões.",
+      "tags": [
+        "oleo-e-gas",
+        "halliburton",
+        "landmark",
+        "agentes-ia",
+        "planejamento",
+        "dados",
+        "lancamento"
+      ],
+      "title": "Halliburton lança plataforma para decisões de desenvolvimento de campos de óleo e gás",
+      "url": "https://ir.halliburton.com/node/36696/pdf",
+      "why_it_matters": "Integração multidisciplinar e rastreabilidade são referência técnica para projetos de conhecimento e planejamento no setor de óleo e gás. Ganhos de tempo anunciados ainda não constituem validação independente."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-03T07:31:00-03:00",
+      "edition_date": "2026-11-03",
+      "id": "radar-00dac1f51d8cbffb",
+      "published": "2026-11-02 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "source": "ADNOC — parceria com OpenAI e G42",
+      "source_meta": {
+        "domain": "www.adnoc.ae"
+      },
+      "summary": "A ADNOC anunciou parceria plurianual com OpenAI e G42 para desenvolver e implantar capacidade de decisão baseada em agentes, usando modelos da OpenAI e infraestrutura de IA nos Emirados Árabes Unidos. O primeiro foco é planejamento integrado de campos, conectando dados de poços, reservatórios, instalações e custos; o segundo é análise de decisões ao longo da cadeia de produção, refino, logística e comercialização. A empresa afirma que especialistas manterão supervisão das decisões consequenciais.",
+      "tags": [
+        "oleo-e-gas",
+        "adnoc",
+        "openai",
+        "g42",
+        "agentes-ia",
+        "planejamento",
+        "parceria"
+      ],
+      "title": "ADNOC, OpenAI e G42 firmam parceria para decisões integradas em energia",
+      "url": "https://www.adnoc.ae/media-center/news/2026/11/ADNOC-Signs-Landmark-Partnership-Agreement-with-OpenAI",
+      "why_it_matters": "Caso setorial de arquitetura que conecta dados técnicos e comerciais em vez de otimizar cada etapa isoladamente. Trata-se de parceria e plano de implantação; resultados operacionais das duas aplicações ainda não foram demonstrados publicamente."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-03T07:31:00-03:00",
+      "edition_date": "2026-11-03",
+      "id": "radar-044e6de4ffbcb9d2",
+      "published": "2026-11-02 conforme página do periódico (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "source": "Turkish Journal of Forestry — sistema espacial para acessibilidade de estradas florestais",
+      "source_meta": {
+        "domain": "dergipark.org.tr"
+      },
+      "summary": "Taha Yasin Hatay apresentou um sistema web de apoio à decisão que automatiza análise de acesso em redes de estradas florestais com GeoPandas, Shapely e Leaflet. Em estudo com 245,9 km de estradas e 11.463,4 ha, a área considerada acessível variou de 18,33% a 66,00% conforme cenário de buffer de 50 a 250 m, apesar de a densidade nominal da rede ser 26,23 m/ha. O artigo mostra que densidade de estradas, sozinha, não descreve a cobertura operacional.",
+      "tags": [
+        "florestal",
+        "estradas-florestais",
+        "gis",
+        "logistica",
+        "paper",
+        "acessibilidade",
+        "planejamento"
+      ],
+      "title": "Artigo testa indicadores espaciais de acesso em estradas florestais",
+      "url": "https://dergipark.org.tr/en/pub/tjf/article/1946209",
+      "why_it_matters": "Métrica espacial e análise por cenários são transferíveis como hipótese de avaliação para malhas florestais; percentuais do estudo turco não devem ser aplicados diretamente a operações brasileiras."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-03T07:31:00-03:00",
+      "edition_date": "2026-11-03",
+      "id": "radar-8e5cbef2e724f76f",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "published": "recurso adicionado em 2026-11-02; documentação atualizada em 2026-11-03 UTC (horário de lançamento não informado; janela exata de 24 horas não confirmada)",
+      "source": "Google Cloud — Agent Anomaly Detection",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
+      "summary": "O Google Cloud adicionou à prévia de Agent Anomaly Detection a inscrição automática de agentes elegíveis encontrados em um projeto. O serviço analisa logs e rastros OpenTelemetry de forma assíncrona para detectar uso indevido de ferramentas, abuso de privilégios, falhas em cascata e consumo anormal de recursos. A ativação depende de requisitos como ADK Python 2.1.0+, telemetria configurada e acesso aprovado ao produto; agentes descobertos não geram análise ou custo até serem habilitados.",
+      "tags": [
+        "google-cloud",
+        "agentes-ia",
+        "observabilidade",
+        "seguranca",
+        "opentelemetry",
+        "preview"
+      ],
+      "title": "Google amplia detecção de anomalias em agentes com inscrição automática",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agent-anomalies-overview",
+      "why_it_matters": "Governança de agentes pode ganhar cobertura automática, mas exige instrumentação e política explícita de coleta de prompts e respostas. É referência para arquiteturas corporativas, não recurso disponível universalmente."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-03T07:31:00-03:00",
+      "edition_date": "2026-11-03",
+      "id": "radar-098ee6ddbe901d2f",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/03_ThreatIntelligenceWebsiteBannerIdeas_BA.max-2600x2600.png",
+      "published": "2026-11-02 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "source": "Google Threat Intelligence/Mandiant — LLMJacking",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
+      "summary": "A Mandiant relatou incidentes reais de 2026 em que invasores usaram chaves de API válidas ou endpoints de modelos expostos para consumir recursos de IA de empresas sem autorização. A investigação cobre múltiplos provedores e organizações de vários continentes, inclusive transporte; em casos observados, as cobranças fraudulentas ultrapassaram US$ 100 mil em um único dia. O relatório descreve também intermediários que revendem o acesso desviado.",
+      "tags": [
+        "agentes-ia",
+        "seguranca",
+        "api",
+        "credenciais",
+        "custos",
+        "mandiant",
+        "incidente"
+      ],
+      "title": "Mandiant documenta abuso de credenciais e endpoints de modelos de IA",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/",
+      "why_it_matters": "Projetos com agentes e modelos em nuvem precisam controlar credenciais, exposição de endpoints, limites de uso e alertas de custo. Valores relatados são dos incidentes investigados, não previsão de risco para estes projetos."
+    }
+  ],
   "methodology": {
     "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
     "version": "1"
   },
   "metrics": {
-    "high_confidence": 0,
-    "signals": 0,
-    "sources": 0
+    "high_confidence": 6,
+    "signals": 6,
+    "sources": 6
   },
   "schema_version": "1.0",
-  "status": "sem_novidade"
+  "status": "publicado"
 }

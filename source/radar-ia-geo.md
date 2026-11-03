@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-02 07:28 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-03 07:31 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,66 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-03 07:31 BRT — NOAA encerra distribuição de dados do satélite S-NPP
+
+- Fonte: [NOAA/NESDIS — aviso operacional de encerramento do S-NPP](https://www.nesdis.noaa.gov/news/update-4-cessation-of-suomi-national-polar-orbiting-partnership-s-npp-data-users-november-02-2026-1540-utc-and-decommissioning-issued-november-2-2026-1800-utc)
+- Publicado: 2026-11-02 18:00 UTC; interrupção efetiva em 2026-11-02 15:40 UTC (ambos dentro da janela pesquisada)
+- Resumo: A NOAA confirmou o fim permanente da distribuição de produtos científicos do satélite Suomi NPP às 15:40 UTC de 2 de novembro. A transmissão direta HRD também foi desligada. A mudança afeta, entre outros instrumentos, o VIIRS; a agência indica NOAA-21 como fonte principal e NOAA-20 como secundária para produtos científicos semelhantes.
+- Por que importa: Fluxos de monitoramento florestal, queimadas ou ambiente que dependam especificamente de S-NPP/VIIRS precisam verificar fonte substituta e continuidade da série. Não implica fim de todos os produtos VIIRS.
+- Tags: #noaa #snpp #viirs #sensoriamento-remoto #florestal #ciclo-de-vida #dados
+- Relações: [[Amaggi — Monitoramento de desmatamento]], [[Eucatex — Monitoramento de vigor florestal]], [[Klabin — IA]]
+- Confiança: alta
+
+### 2026-11-03 07:31 BRT — Halliburton lança plataforma para decisões de desenvolvimento de campos de óleo e gás
+
+- Fonte: [Halliburton — Agile Asset Management](https://ir.halliburton.com/node/36696/pdf)
+- Publicado: 2026-11-03 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: A Halliburton anunciou o Agile Asset Management (AAM), solução em nuvem da Landmark que integra dados e fluxos de subsuperfície, poços, instalações e economia para comparar alternativas de desenvolvimento de campos. Segundo a empresa, agentes de IA apoiam recuperação de dados, checagens de qualidade e orientação ao usuário. Aker BP participou do codesenvolvimento e descreve uso para avaliar alternativas com trilha auditável de premissas e decisões.
+- Por que importa: Integração multidisciplinar e rastreabilidade são referência técnica para projetos de conhecimento e planejamento no setor de óleo e gás. Ganhos de tempo anunciados ainda não constituem validação independente.
+- Tags: #oleo-e-gas #halliburton #landmark #agentes-ia #planejamento #dados #lancamento
+- Relações: [[Petrobras — Segundo cérebro]], [[TAG / TBG / NTS]]
+- Confiança: alta
+
+### 2026-11-03 07:31 BRT — ADNOC, OpenAI e G42 firmam parceria para decisões integradas em energia
+
+- Fonte: [ADNOC — parceria com OpenAI e G42](https://www.adnoc.ae/media-center/news/2026/11/ADNOC-Signs-Landmark-Partnership-Agreement-with-OpenAI)
+- Publicado: 2026-11-02 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: A ADNOC anunciou parceria plurianual com OpenAI e G42 para desenvolver e implantar capacidade de decisão baseada em agentes, usando modelos da OpenAI e infraestrutura de IA nos Emirados Árabes Unidos. O primeiro foco é planejamento integrado de campos, conectando dados de poços, reservatórios, instalações e custos; o segundo é análise de decisões ao longo da cadeia de produção, refino, logística e comercialização. A empresa afirma que especialistas manterão supervisão das decisões consequenciais.
+- Por que importa: Caso setorial de arquitetura que conecta dados técnicos e comerciais em vez de otimizar cada etapa isoladamente. Trata-se de parceria e plano de implantação; resultados operacionais das duas aplicações ainda não foram demonstrados publicamente.
+- Tags: #oleo-e-gas #adnoc #openai #g42 #agentes-ia #planejamento #parceria
+- Relações: [[Petrobras — Segundo cérebro]], [[TAG / TBG / NTS]]
+- Confiança: alta
+
+### 2026-11-03 07:31 BRT — Artigo testa indicadores espaciais de acesso em estradas florestais
+
+- Fonte: [Turkish Journal of Forestry — sistema espacial para acessibilidade de estradas florestais](https://dergipark.org.tr/en/pub/tjf/article/1946209)
+- Publicado: 2026-11-02 conforme página do periódico (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: Taha Yasin Hatay apresentou um sistema web de apoio à decisão que automatiza análise de acesso em redes de estradas florestais com GeoPandas, Shapely e Leaflet. Em estudo com 245,9 km de estradas e 11.463,4 ha, a área considerada acessível variou de 18,33% a 66,00% conforme cenário de buffer de 50 a 250 m, apesar de a densidade nominal da rede ser 26,23 m/ha. O artigo mostra que densidade de estradas, sozinha, não descreve a cobertura operacional.
+- Por que importa: Métrica espacial e análise por cenários são transferíveis como hipótese de avaliação para malhas florestais; percentuais do estudo turco não devem ser aplicados diretamente a operações brasileiras.
+- Tags: #florestal #estradas-florestais #gis #logistica #paper #acessibilidade #planejamento
+- Relações: [[Bracell — GeoIA Estradas]], [[Suzano — Rotas e logística]]
+- Confiança: alta
+
+### 2026-11-03 07:31 BRT — Google amplia detecção de anomalias em agentes com inscrição automática
+
+- Fonte: [Google Cloud — Agent Anomaly Detection](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agent-anomalies-overview)
+- Publicado: recurso adicionado em 2026-11-02; documentação atualizada em 2026-11-03 UTC (horário de lançamento não informado; janela exata de 24 horas não confirmada)
+- Resumo: O Google Cloud adicionou à prévia de Agent Anomaly Detection a inscrição automática de agentes elegíveis encontrados em um projeto. O serviço analisa logs e rastros OpenTelemetry de forma assíncrona para detectar uso indevido de ferramentas, abuso de privilégios, falhas em cascata e consumo anormal de recursos. A ativação depende de requisitos como ADK Python 2.1.0+, telemetria configurada e acesso aprovado ao produto; agentes descobertos não geram análise ou custo até serem habilitados.
+- Por que importa: Governança de agentes pode ganhar cobertura automática, mas exige instrumentação e política explícita de coleta de prompts e respostas. É referência para arquiteturas corporativas, não recurso disponível universalmente.
+- Tags: #google-cloud #agentes-ia #observabilidade #seguranca #opentelemetry #preview
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]], [[GeoFiscal-Sinter]]
+- Confiança: alta
+
+### 2026-11-03 07:31 BRT — Mandiant documenta abuso de credenciais e endpoints de modelos de IA
+
+- Fonte: [Google Threat Intelligence/Mandiant — LLMJacking](https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/)
+- Publicado: 2026-11-02 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: A Mandiant relatou incidentes reais de 2026 em que invasores usaram chaves de API válidas ou endpoints de modelos expostos para consumir recursos de IA de empresas sem autorização. A investigação cobre múltiplos provedores e organizações de vários continentes, inclusive transporte; em casos observados, as cobranças fraudulentas ultrapassaram US$ 100 mil em um único dia. O relatório descreve também intermediários que revendem o acesso desviado.
+- Por que importa: Projetos com agentes e modelos em nuvem precisam controlar credenciais, exposição de endpoints, limites de uso e alertas de custo. Valores relatados são dos incidentes investigados, não previsão de risco para estes projetos.
+- Tags: #agentes-ia #seguranca #api #credenciais #custos #mandiant #incidente
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
 
 ### 2026-11-02 07:28 BRT — sem_novidade
 
