@@ -1,8 +1,82 @@
 {
-  "edition_date": "2026-11-03",
-  "edition_id": "radar-2026-11-03T07:31:00-03:00",
-  "generated_at": "2026-11-03T07:31:00-03:00",
+  "edition_date": "2026-11-07",
+  "edition_id": "radar-2026-11-07T12:33:00-03:00",
+  "generated_at": "2026-11-07T12:33:00-03:00",
   "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-07T12:33:00-03:00",
+      "edition_date": "2026-11-07",
+      "id": "radar-199af8aea5b61129",
+      "image": "https://opengraph.githubassets.com/a4785344a9cc2f82dd8c3d0aa62fa761536deeb3a3f70d05986705305ae54af5/anthropics/claude-code/issues/107757",
+      "published": "2026-11-06 (horário/fuso da resposta não informados; janela exata de 24 horas não confirmada)",
+      "source": "Anthropic — discussão técnica e resposta da equipe no repositório Claude Code",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "Usuários relataram que o Claude Code incluiu o e-mail da conta em cabeçalhos `User-Agent` de requisições geradas pelo agente. Integrantes da equipe Anthropic confirmaram que o endereço foi colocado no contexto do modelo e informaram que a versão 2.1.317 ou posterior traz uma proteção integrada, ativada por padrão, para barrar ou pedir confirmação em determinadas chamadas web e comandos `curl` que contenham o e-mail. A equipe também declarou que pretende retirar o endereço do contexto do modelo em um próximo release; essa remoção ainda não foi confirmada como entregue. A proteção atual não cobre todos os caminhos, como scripts escritos e executados pelo agente.",
+      "tags": [
+        "anthropic",
+        "claude-code",
+        "agentes-ia",
+        "seguranca",
+        "privacidade",
+        "release"
+      ],
+      "title": "Claude Code adiciona proteção provisória contra exposição de e-mail em chamadas web",
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "why_it_matters": "Agentes com acesso à rede e dados corporativos precisam de controles de saída independentes do modelo. Equipes que usam Claude Code devem conferir versão/canal e evitar tratar a mitigação provisória como correção completa."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-07T12:33:00-03:00",
+      "edition_date": "2026-11-07",
+      "id": "radar-2d1e4a70a5c9991c",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Data_Analytics_JooYPJr.max-2500x2500.jpg",
+      "published": "2026-11-06 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "source": "Google Cloud — Data Cloud connectors no Gemini",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
+      "summary": "O Google Cloud apresentou, em prévia, conectores do Data Cloud que permitem consultar dados empresariais diretamente no Gemini por linguagem natural. A integração usa Knowledge Catalog para localizar fontes e interpretar termos, gera consultas sob a identidade do usuário e respeita permissões por linha e coluna. A cobertura descrita inclui BigQuery, Spanner, AlloyDB, Cloud SQL e Looker, com estados de disponibilidade distintos; administradores configuram conexões de leitura. Agentes analíticos configurados pela equipe de dados permanecem opção separada para fluxos mais controlados.",
+      "tags": [
+        "google-cloud",
+        "gemini",
+        "agentes-ia",
+        "bigquery",
+        "governanca",
+        "dados",
+        "preview"
+      ],
+      "title": "Gemini ganha conectores para consulta governada de dados corporativos",
+      "url": "https://cloud.google.com/blog/products/data-analytics/query-enterprise-data-in-gemini-with-data-cloud-connectors/",
+      "why_it_matters": "Arquitetura concreta para perguntas sobre bases heterogêneas sem conceder privilégios globais ao agente. Relevância para sistemas corporativos e acervos geoespaciais é inferência de aplicação, não implantação nos projetos."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-07T12:33:00-03:00",
+      "edition_date": "2026-11-07",
+      "id": "radar-4323de8fac7bc032",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Data_Analytics_JooYPJr.max-2500x2500.jpg",
+      "published": "2026-11-06 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "source": "Google Cloud — BigQuery AI Functions in Pandas",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
+      "summary": "O Google Cloud documentou um novo acessor `.bigquery` do BigQuery DataFrames para chamar funções de IA a partir de DataFrames pandas. No exemplo, `ai.predict()` traduz a operação para GoogleSQL e executa o modelo TabFM na infraestrutura do BigQuery, devolvendo resultados em pandas. A proposta abrange previsão, classificação e embeddings sem transferir a computação principal para o notebook local; uso requer projeto Google Cloud autorizado e configuração da biblioteca.",
+      "tags": [
+        "google-cloud",
+        "bigquery",
+        "pandas",
+        "ia",
+        "api",
+        "analise-de-dados",
+        "release"
+      ],
+      "title": "BigQuery DataFrames expõe funções de IA em objetos pandas",
+      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-ai-functions-in-pandas",
+      "why_it_matters": "Pode reduzir código de integração entre notebooks e análise escalável de tabelas operacionais. Aplicação a séries agrícolas, florestais ou logísticas é possibilidade técnica, não resultado já validado."
+    },
     {
       "confidence": "alta",
       "edition_at": "2026-11-03T07:31:00-03:00",
@@ -1170,80 +1244,6 @@
       "title": "Google lança Gemini agent para trabalho empresarial persistente e multiagente",
       "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026/",
       "why_it_matters": "o Gemini agent une execução persistente em nuvem, memória, skills, ferramentas e orquestração dinâmica de subagentes, inclusive por MCP. A plataforma traz identidade, políticas, permissões, sandbox, *gateways* de rede, *Smart Routing* e limites de gasto — referência concreta para agentes corporativos governados que cruzam dados e sistemas de registro."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-09T07:31:00-03:00",
-      "edition_date": "2026-10-09",
-      "id": "radar-e00b44704f5ffbcc",
-      "image": "https://help.openai.com/og-image.png",
-      "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "source": "Notas de versão do ChatGPT",
-      "source_meta": {
-        "domain": "help.openai.com"
-      },
-      "summary": "mensagens de acompanhamento agora redirecionam mais cedo uma tarefa em execução no Codex. A configuração de comportamento de *follow-up* escolhe entre intervir na execução atual ou aguardar a próxima, reduzindo retrabalho em tarefas longas e preservando controle humano sobre agentes.",
-      "tags": [
-        "openai",
-        "codex",
-        "steering",
-        "agentes-ia",
-        "desktop",
-        "controle-de-execucao"
-      ],
-      "title": "OpenAI acelera steering de tarefas em execução no Codex Desktop",
-      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-      "why_it_matters": "mensagens de acompanhamento agora redirecionam mais cedo uma tarefa em execução no Codex. A configuração de comportamento de *follow-up* escolhe entre intervir na execução atual ou aguardar a próxima, reduzindo retrabalho em tarefas longas e preservando controle humano sobre agentes."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-09T07:31:00-03:00",
-      "edition_date": "2026-10-09",
-      "id": "radar-29b989b34f8f02c3",
-      "published": "2026-10-08 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "source": "Esri — MassDOT drone imagery as infrastructure",
-      "source_meta": {
-        "domain": "www.esri.com"
-      },
-      "summary": "implantação padronizou o pipeline de drones, transformando imagens em sistema de registro compartilhado; a equipe transmitiu 400 milhões de pontos LiDAR para iPad em campo via 5G. É evidência operacional de distribuição *edge* de nuvem de pontos em inspeções de infraestrutura e manutenção.",
-      "tags": [
-        "esri",
-        "drones",
-        "lidar",
-        "infraestrutura",
-        "dados-geoespaciais",
-        "campo",
-        "5g"
-      ],
-      "title": "MassDOT operacionaliza drones e LiDAR como sistema de registro estadual",
-      "url": "https://www.esri.com/about/newsroom/blog/massdot-drone-imagery-as-infrastructure",
-      "why_it_matters": "implantação padronizou o pipeline de drones, transformando imagens em sistema de registro compartilhado; a equipe transmitiu 400 milhões de pontos LiDAR para iPad em campo via 5G. É evidência operacional de distribuição *edge* de nuvem de pontos em inspeções de infraestrutura e manutenção."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-08T07:32:00-03:00",
-      "edition_date": "2026-10-08",
-      "id": "radar-cdb1d51fae043110",
-      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/89e9b0fbfe0181f6ca565d913686ce8e49b5e9c2-1200x630.jpg",
-      "published": "2026-10-07 (horário/fuso não informado; não é possível confirmar a posição exata na janela móvel)",
-      "source": "Anthropic — Claude Haiku 5.5",
-      "source_meta": {
-        "domain": "www.anthropic.com"
-      },
-      "summary": "Haiku 5.5 é voltado a tarefas de alto volume — sumarização, compactação, consultas a banco, classificação e subagentes — com custo médio declarado 75% menor que Haiku 4.5. A Anthropic também reduz pela metade o preço de leitura de cache do Sonnet 5.5, tornando trabalho agentivo cerca de 20% mais barato, e adiciona crédito mensal de API para Max e Team.",
-      "tags": [
-        "anthropic",
-        "claude",
-        "haiku-5-5",
-        "subagentes",
-        "custos",
-        "cache",
-        "agentes-ia",
-        "api"
-      ],
-      "title": "Anthropic lança Claude Haiku 5.5 e reduz custo de agentes",
-      "url": "https://www.anthropic.com/claude-haiku-5-5",
-      "why_it_matters": "Haiku 5.5 é voltado a tarefas de alto volume — sumarização, compactação, consultas a banco, classificação e subagentes — com custo médio declarado 75% menor que Haiku 4.5. A Anthropic também reduz pela metade o preço de leitura de cache do Sonnet 5.5, tornando trabalho agentivo cerca de 20% mais barato, e adiciona crédito mensal de API para Max e Team."
     }
   ],
   "methodology": {
@@ -1253,7 +1253,7 @@
   "metrics": {
     "high_confidence": 49,
     "signals": 50,
-    "sources": 20
+    "sources": 19
   },
   "schema_version": "1.0",
   "scope": "ultimas_50_publicacoes",

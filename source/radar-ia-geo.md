@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-03 07:31 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-07 12:33 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,36 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-07 12:33 BRT — Claude Code adiciona proteção provisória contra exposição de e-mail em chamadas web
+
+- Fonte: [Anthropic — discussão técnica e resposta da equipe no repositório Claude Code](https://github.com/anthropics/claude-code/issues/107757)
+- Publicado: 2026-11-06 (horário/fuso da resposta não informados; janela exata de 24 horas não confirmada)
+- Resumo: Usuários relataram que o Claude Code incluiu o e-mail da conta em cabeçalhos `User-Agent` de requisições geradas pelo agente. Integrantes da equipe Anthropic confirmaram que o endereço foi colocado no contexto do modelo e informaram que a versão 2.1.317 ou posterior traz uma proteção integrada, ativada por padrão, para barrar ou pedir confirmação em determinadas chamadas web e comandos `curl` que contenham o e-mail. A equipe também declarou que pretende retirar o endereço do contexto do modelo em um próximo release; essa remoção ainda não foi confirmada como entregue. A proteção atual não cobre todos os caminhos, como scripts escritos e executados pelo agente.
+- Por que importa: Agentes com acesso à rede e dados corporativos precisam de controles de saída independentes do modelo. Equipes que usam Claude Code devem conferir versão/canal e evitar tratar a mitigação provisória como correção completa.
+- Tags: #anthropic #claude-code #agentes-ia #seguranca #privacidade #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-07 12:33 BRT — Gemini ganha conectores para consulta governada de dados corporativos
+
+- Fonte: [Google Cloud — Data Cloud connectors no Gemini](https://cloud.google.com/blog/products/data-analytics/query-enterprise-data-in-gemini-with-data-cloud-connectors/)
+- Publicado: 2026-11-06 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: O Google Cloud apresentou, em prévia, conectores do Data Cloud que permitem consultar dados empresariais diretamente no Gemini por linguagem natural. A integração usa Knowledge Catalog para localizar fontes e interpretar termos, gera consultas sob a identidade do usuário e respeita permissões por linha e coluna. A cobertura descrita inclui BigQuery, Spanner, AlloyDB, Cloud SQL e Looker, com estados de disponibilidade distintos; administradores configuram conexões de leitura. Agentes analíticos configurados pela equipe de dados permanecem opção separada para fluxos mais controlados.
+- Por que importa: Arquitetura concreta para perguntas sobre bases heterogêneas sem conceder privilégios globais ao agente. Relevância para sistemas corporativos e acervos geoespaciais é inferência de aplicação, não implantação nos projetos.
+- Tags: #google-cloud #gemini #agentes-ia #bigquery #governanca #dados #preview
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-07 12:33 BRT — BigQuery DataFrames expõe funções de IA em objetos pandas
+
+- Fonte: [Google Cloud — BigQuery AI Functions in Pandas](https://cloud.google.com/blog/products/data-analytics/bigquery-ai-functions-in-pandas)
+- Publicado: 2026-11-06 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: O Google Cloud documentou um novo acessor `.bigquery` do BigQuery DataFrames para chamar funções de IA a partir de DataFrames pandas. No exemplo, `ai.predict()` traduz a operação para GoogleSQL e executa o modelo TabFM na infraestrutura do BigQuery, devolvendo resultados em pandas. A proposta abrange previsão, classificação e embeddings sem transferir a computação principal para o notebook local; uso requer projeto Google Cloud autorizado e configuração da biblioteca.
+- Por que importa: Pode reduzir código de integração entre notebooks e análise escalável de tabelas operacionais. Aplicação a séries agrícolas, florestais ou logísticas é possibilidade técnica, não resultado já validado.
+- Tags: #google-cloud #bigquery #pandas #ia #api #analise-de-dados #release
+- Relações: [[São Martinho — Planejamento agrícola]], [[Eucatex — Monitoramento de vigor florestal]], [[Suzano — Rotas e logística]]
+- Confiança: alta
 
 ### 2026-11-03 07:31 BRT — NOAA encerra distribuição de dados do satélite S-NPP
 
