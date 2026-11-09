@@ -1,92 +1,17 @@
 {
-  "edition_date": "2026-11-07",
-  "edition_id": "radar-2026-11-07T12:33:00-03:00",
-  "generated_at": "2026-11-07T12:33:00-03:00",
-  "items": [
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-07T12:33:00-03:00",
-      "edition_date": "2026-11-07",
-      "id": "radar-199af8aea5b61129",
-      "image": "https://opengraph.githubassets.com/a4785344a9cc2f82dd8c3d0aa62fa761536deeb3a3f70d05986705305ae54af5/anthropics/claude-code/issues/107757",
-      "published": "2026-11-06 (horário/fuso da resposta não informados; janela exata de 24 horas não confirmada)",
-      "source": "Anthropic — discussão técnica e resposta da equipe no repositório Claude Code",
-      "source_meta": {
-        "domain": "github.com"
-      },
-      "summary": "Usuários relataram que o Claude Code incluiu o e-mail da conta em cabeçalhos `User-Agent` de requisições geradas pelo agente. Integrantes da equipe Anthropic confirmaram que o endereço foi colocado no contexto do modelo e informaram que a versão 2.1.317 ou posterior traz uma proteção integrada, ativada por padrão, para barrar ou pedir confirmação em determinadas chamadas web e comandos `curl` que contenham o e-mail. A equipe também declarou que pretende retirar o endereço do contexto do modelo em um próximo release; essa remoção ainda não foi confirmada como entregue. A proteção atual não cobre todos os caminhos, como scripts escritos e executados pelo agente.",
-      "tags": [
-        "anthropic",
-        "claude-code",
-        "agentes-ia",
-        "seguranca",
-        "privacidade",
-        "release"
-      ],
-      "title": "Claude Code adiciona proteção provisória contra exposição de e-mail em chamadas web",
-      "url": "https://github.com/anthropics/claude-code/issues/107757",
-      "why_it_matters": "Agentes com acesso à rede e dados corporativos precisam de controles de saída independentes do modelo. Equipes que usam Claude Code devem conferir versão/canal e evitar tratar a mitigação provisória como correção completa."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-07T12:33:00-03:00",
-      "edition_date": "2026-11-07",
-      "id": "radar-2d1e4a70a5c9991c",
-      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Data_Analytics_JooYPJr.max-2500x2500.jpg",
-      "published": "2026-11-06 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — Data Cloud connectors no Gemini",
-      "source_meta": {
-        "domain": "cloud.google.com"
-      },
-      "summary": "O Google Cloud apresentou, em prévia, conectores do Data Cloud que permitem consultar dados empresariais diretamente no Gemini por linguagem natural. A integração usa Knowledge Catalog para localizar fontes e interpretar termos, gera consultas sob a identidade do usuário e respeita permissões por linha e coluna. A cobertura descrita inclui BigQuery, Spanner, AlloyDB, Cloud SQL e Looker, com estados de disponibilidade distintos; administradores configuram conexões de leitura. Agentes analíticos configurados pela equipe de dados permanecem opção separada para fluxos mais controlados.",
-      "tags": [
-        "google-cloud",
-        "gemini",
-        "agentes-ia",
-        "bigquery",
-        "governanca",
-        "dados",
-        "preview"
-      ],
-      "title": "Gemini ganha conectores para consulta governada de dados corporativos",
-      "url": "https://cloud.google.com/blog/products/data-analytics/query-enterprise-data-in-gemini-with-data-cloud-connectors/",
-      "why_it_matters": "Arquitetura concreta para perguntas sobre bases heterogêneas sem conceder privilégios globais ao agente. Relevância para sistemas corporativos e acervos geoespaciais é inferência de aplicação, não implantação nos projetos."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-07T12:33:00-03:00",
-      "edition_date": "2026-11-07",
-      "id": "radar-4323de8fac7bc032",
-      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Data_Analytics_JooYPJr.max-2500x2500.jpg",
-      "published": "2026-11-06 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — BigQuery AI Functions in Pandas",
-      "source_meta": {
-        "domain": "cloud.google.com"
-      },
-      "summary": "O Google Cloud documentou um novo acessor `.bigquery` do BigQuery DataFrames para chamar funções de IA a partir de DataFrames pandas. No exemplo, `ai.predict()` traduz a operação para GoogleSQL e executa o modelo TabFM na infraestrutura do BigQuery, devolvendo resultados em pandas. A proposta abrange previsão, classificação e embeddings sem transferir a computação principal para o notebook local; uso requer projeto Google Cloud autorizado e configuração da biblioteca.",
-      "tags": [
-        "google-cloud",
-        "bigquery",
-        "pandas",
-        "ia",
-        "api",
-        "analise-de-dados",
-        "release"
-      ],
-      "title": "BigQuery DataFrames expõe funções de IA em objetos pandas",
-      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-ai-functions-in-pandas",
-      "why_it_matters": "Pode reduzir código de integração entre notebooks e análise escalável de tabelas operacionais. Aplicação a séries agrícolas, florestais ou logísticas é possibilidade técnica, não resultado já validado."
-    }
-  ],
+  "edition_date": "2026-11-09",
+  "edition_id": "radar-2026-11-09T07:25:00-03:00",
+  "generated_at": "2026-11-09T07:25:00-03:00",
+  "items": [],
   "methodology": {
     "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
     "version": "1"
   },
   "metrics": {
-    "high_confidence": 3,
-    "signals": 3,
-    "sources": 2
+    "high_confidence": 0,
+    "signals": 0,
+    "sources": 0
   },
   "schema_version": "1.0",
-  "status": "publicado"
+  "status": "sem_novidade"
 }

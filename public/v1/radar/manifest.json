@@ -1,5 +1,5 @@
 {
-  "edition_count": 54,
+  "edition_count": 55,
   "files": {
     "v1/radar/editions/2026-08-16.json": "67cf8294c2caee5f733ce8804e1ff3040040886d24590ec9c8d1f1985b0eb097",
     "v1/radar/editions/2026-08-17.json": "05b50fd29c469f3b3c9777d97895770eec06669aae0ed3813813ed9227d641cd",
@@ -55,9 +55,10 @@
     "v1/radar/editions/2026-11-02.json": "4ca1ec6fcf429fe7a64896dd17c8ad8c4d17ac320d9ad957ef808d1af655b9db",
     "v1/radar/editions/2026-11-03.json": "e7ca82d182e9f42950dbc5da72a37eba44a74e309e2abcbda5f8f5dcaf2ab3ea",
     "v1/radar/editions/2026-11-07.json": "80080dfb96afd99c405824132906d74d1926d7b192e3eb89e7d1c0202ee4d693",
-    "v1/radar/feed.xml": "142a26fe4affd62d010c00b1104b056e977ed84d567c8d9dde2fc87293b04191",
+    "v1/radar/editions/2026-11-09.json": "5f40f1c6e3b3c516c5de5385d4368a2d006978052ca77b153c9fd749a6ec79e6",
+    "v1/radar/feed.xml": "71c504cc87758acab813a836f8e701f626b44ebebe0bee953be93d3dff9c9838",
     "v1/radar/kindle.json": "ac73b515b60ca6402e7ede35d943559676039cd062580849ce0c12e23fa7af4c",
-    "v1/radar/latest.json": "80080dfb96afd99c405824132906d74d1926d7b192e3eb89e7d1c0202ee4d693",
+    "v1/radar/latest.json": "5f40f1c6e3b3c516c5de5385d4368a2d006978052ca77b153c9fd749a6ec79e6",
     "v1/radar/quarantine.json": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97",
     "v1/radar/radar-canonico.json": "2130d0131ecfde6f2e3479d33b1e4e2f4a0b182ebda81969eec1060d740ac4fc"
   },

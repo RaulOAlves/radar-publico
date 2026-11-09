@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-07 12:33 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-09 07:25 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,8 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-09 07:25 BRT — sem_novidade
 
 ### 2026-11-07 12:33 BRT — Claude Code adiciona proteção provisória contra exposição de e-mail em chamadas web
 
