@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-09 07:25 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-10 07:34 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,86 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-10 07:34 BRT — Esri amplia GeoAI com MCP, agentes cartográficos e modelo multissensor
+
+- Fonte: [Esri — novidades em IA geoespacial de novembro de 2026](https://www.esri.com/arcgis-blog/products/arcgis/geoai/whats-new-in-geospatial-ai-november-2026)
+- Publicado: 2026-11-09 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: A Esri informou que o suporte a MCP para conectar agentes externos ao ArcGIS está em beta no ArcGIS Location Platform e no ArcGIS Enterprise. O ArcGIS Maps SDK for JavaScript também oferece componentes de IA em beta para aplicativos cartográficos conversacionais, inclusive um agente de conhecimento que consulta serviços de grafo. No ArcGIS Pro 3.8, a empresa apresentou o modelo de observação da Terra EO-DINO, treinado com imagens RGB, multiespectrais e SAR, além de ferramentas de busca e detecção de mudanças por embeddings. Serviços de análise de texto, imagem e tradução estão disponíveis em geral no ArcGIS Online, com consumo de créditos.
+- Por que importa: Há caminhos concretos para integrar agentes a dados espaciais e testar detecção semântica de mudanças. MCP e componentes conversacionais ainda são beta; adoção em projetos exige avaliar permissões, custos e desempenho local.
+- Tags: #esri #arcgis #geoai #mcp #agentes-ia #eo-dino #embeddings #release
+- Relações: [[NAVIS / GeoFramework]], [[Vale — GeoIA SAB.IA]], [[Amaggi — Monitoramento de desmatamento]]
+- Confiança: alta
+
+### 2026-11-10 07:34 BRT — ArcGIS Velocity adiciona feeds de frota, análise contínua e suporte operacional no Enterprise
+
+- Fonte: [Esri — novidades do ArcGIS Velocity em novembro de 2026](https://www.esri.com/arcgis-blog/products/arcgis-velocity/real-time/whats-new-in-arcgis-velocity-november-2026)
+- Publicado: 2026-11-09 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: O release de novembro acrescenta feeds para AIS marítimo, eventos de segurança e condições de vias da Samsara, inteligência de frota/estradas de outros fornecedores e entradas TCP/UDP no ArcGIS Enterprise. Novas análises incluem estatísticas móveis e extração por expressão regular; o Velocity também preserva valores M para referência linear. Na implantação Enterprise, há suporte a ArcGIS Monitor, federação de múltiplos sites e proxy reverso. A disponibilidade de cada feed ou recurso difere entre ArcGIS Online e Enterprise.
+- Por que importa: Integração de telemetria, vias e eventos em tempo real pode apoiar rotas, logística e redes lineares. A edição demanda checar licença, fonte dos feeds e modalidade de implantação antes de desenhar o fluxo.
+- Tags: #esri #arcgis-velocity #gis-tempo-real #logistica #frotas #telemetria #release
+- Relações: [[Suzano — Rotas e logística]], [[Bracell — GeoIA Estradas]], [[TAG / TBG / NTS]]
+- Confiança: alta
+
+### 2026-11-10 07:34 BRT — ModelBuilder do Map Viewer passa a combinar análise raster e vetorial em beta
+
+- Fonte: [Esri — análise raster no ModelBuilder do Map Viewer](https://www.esri.com/arcgis-blog/products/arcgis-online/announcements/raster-analysis-comes-to-modelbuilder-in-map-viewer-beta)
+- Publicado: 2026-11-09 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: O ArcGIS Online adicionou ao ModelBuilder do Map Viewer, em beta, 14 ferramentas raster, entradas de imagem hospedada e ambientes de análise configuráveis. Os modelos podem encadear operações raster e vetoriais, incluindo hidrologia, estatística zonal e conversão raster-vetor. Uma sessão Raster Optimized atende cargas maiores; durante o beta, usa a tarifa de créditos já aplicada às sessões do ModelBuilder. O uso requer tipo de usuário Professional ou superior e privilégio de análise de imagens.
+- Por que importa: Permite prototipar processos reproduzíveis de terreno, vegetação e imagem sem separar modelos raster e vetoriais. A restrição a serviços de imagem hospedados e o consumo de créditos precisam entrar na avaliação.
+- Tags: #esri #arcgis-online #modelbuilder #raster #automacao-geoespacial #beta
+- Relações: [[Eucatex — Monitoramento de vigor florestal]], [[Itaminas — Monitoramento geotécnico]], [[São Martinho — Planejamento agrícola]]
+- Confiança: alta
+
+### 2026-11-10 07:34 BRT — Busca semântica chega em beta ao ArcGIS Online e ao Enterprise 12.2
+
+- Fonte: [Esri — Semantic search (beta) no ArcGIS](https://www.esri.com/arcgis-blog/products/arcgis-online/announcements/semantic-search)
+- Publicado: 2026-11-09 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: A Esri lançou busca semântica em beta no ArcGIS Online, com chegada anunciada ao ArcGIS Enterprise 12.2 ainda em novembro. O recurso usa embeddings de título, resumo e descrição dos itens para recuperar conteúdo por significado, além da correspondência literal de palavras-chave. No Online, um administrador precisa permitir recursos beta e a distribuição ocorre gradualmente; no Enterprise, a configuração requer credenciais de uma organização ArcGIS Online para o serviço de embeddings. A função retorna itens relacionados, não respostas gerais de um chatbot.
+- Por que importa: Pode melhorar descoberta de camadas e mapas em catálogos grandes, desde que metadados estejam bem descritos. A dependência do serviço de embeddings e o status beta exigem revisão de governança.
+- Tags: #esri #arcgis-online #arcgis-enterprise #busca-semantica #embeddings #metadados #beta
+- Relações: [[IMAC — Plataforma GIS]], [[NAVIS / GeoFramework]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-10 07:34 BRT — ArcGIS Workforce é aposentado; tarefas migram para Field Maps
+
+- Fonte: [Esri — ArcGIS Workforce is retired](https://www.esri.com/arcgis-blog/products/field-maps/field-mobility/arcgis-workforce-is-retired)
+- Publicado: 2026-11-09 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: A Esri confirmou a aposentadoria do ArcGIS Workforce com a atualização de novembro do ArcGIS Online e o ArcGIS Enterprise 12.2; o produto não recebe mais suporte. A função de coordenação de trabalho passa a Tasks no ArcGIS Field Maps, compatível com ArcGIS Online e Enterprise 11.5 ou posterior. O aplicativo móvel Workforce permanecerá nas lojas até outubro de 2027 para transição, mas sem atualizações, correções ou garantia de funcionamento contínuo.
+- Por que importa: Operações de campo que ainda usem Workforce precisam planejar migração de projetos e treinamento para Tasks. A relação com os projetos citados é condicional ao uso desse produto.
+- Tags: #esri #arcgis-workforce #field-maps #tarefas #campo #ciclo-de-vida
+- Relações: [[IMAC — Plataforma GIS]], [[GeoFiscal-Sinter]], [[NAVIS / GeoFramework]]
+- Confiança: alta
+
+### 2026-11-10 07:34 BRT — Anthropic lança Claude Fable 5.2 e Mythos 5.2 para trabalho técnico complexo
+
+- Fonte: [Anthropic — Claude Fable 5.2 and Mythos 5.2](https://www.anthropic.com/claude-fable-and-mythos-5-2)
+- Publicado: 2026-11-09 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: A Anthropic lançou Fable 5.2 e Mythos 5.2, variantes do mesmo modelo com salvaguardas de segurança diferentes. Fable é disponibilizado amplamente para tarefas técnicas, inclusive Claude Code; Mythos exige verificação para aplicações sensíveis em segurança cibernética ou biomedicina. A empresa informa preço de US$ 8 por milhão de tokens de entrada e US$ 40 por milhão de saída, com modo rápido opcional a US$ 16/US$ 80. Ganhos de desempenho e velocidade apresentados no anúncio são avaliações da própria Anthropic, não validação de resultados nos projetos.
+- Por que importa: Muda a opção de modelo e custo para agentes de programação e pesquisa. Vale testar em tarefas próprias antes de adotar métricas de benchmark como ganho operacional.
+- Tags: #anthropic #claude-code #agentes-ia #modelos #api #preco #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]], [[Klabin — IA]]
+- Confiança: alta
+
+### 2026-11-10 07:34 BRT — Copernicus avisa possível interrupção de APIs de processamento entre 10 e 13 de novembro
+
+- Fonte: [Copernicus Data Space Ecosystem — atualização programada do Browser e Sentinel Hub](https://dataspace.copernicus.eu/news/2026-11-9-upgrade-copernicus-browser-and-sentinel-hub-services)
+- Publicado: 2026-11-09 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: O Copernicus Data Space Ecosystem anunciou uma atualização de seus serviços Copernicus Browser e Sentinel Hub, prevista entre 10 e 13 de novembro de 2026. O aviso informa possibilidade de breves interrupções nas APIs Batch Processing, Asynchronous Processing e Batch Statistical, além de pequenos atrasos em visualizações de novos produtos de observação da Terra e na ingestão de tiles BYOC ou criação de coleções e configurações OGC. O comunicado não afirma indisponibilidade contínua durante todo o período.
+- Por que importa: Pipelines de imagens e estatísticas que dependem dessas APIs devem prever tentativas de repetição, monitoramento e tolerância a atraso. Impacto nos projetos citados é condicional ao uso efetivo do serviço.
+- Tags: #copernicus #sentinel-hub #api #sensoriamento-remoto #disponibilidade #operacao
+- Relações: [[Amaggi — Monitoramento de desmatamento]], [[Eucatex — Monitoramento de vigor florestal]], [[NAVIS / GeoFramework]]
+- Confiança: alta
+
+### 2026-11-10 07:34 BRT — DALTEX anuncia implantação da plataforma agronômica ORTH em suas operações
+
+- Fonte: [Aydi Technologies/DALTEX — anúncio da implantação do ORTH](https://www.globenewswire.com/news-release/2026/11/09/3398825/0/en/daltex-one-of-the-world-s-largest-fresh-potato-exporters-deploys-ai-at-scale-with-orth.html)
+- Publicado: 2026-11-09 12:04 ET (17:04 UTC; dentro da janela pesquisada)
+- Resumo: A DALTEX, grupo agrícola egípcio, anunciou implantação da plataforma ORTH, da Aydi Technologies, em suas operações. Segundo as empresas, a solução reúne registros de campo, histórico de culturas, irrigação, previsões meteorológicas e imagens de satélite para fornecer respostas e alertas contextualizados a agrônomos e equipes de campo. O anúncio descreve uso operacional, mas não fornece avaliação independente dos alegados ganhos de produtividade ou redução de perdas.
+- Por que importa: Exemplo verificável de integração de dados agronômicos e sensoriamento remoto em assistência à decisão no campo. Transferência a cana ou grãos exige validação própria; resultados anunciados não são prova de desempenho nesses cultivos.
+- Tags: #agronegocio #agentes-ia #sensoriamento-remoto #irrigacao #agronomia #implantacao
+- Relações: [[BP — Nutrição de plantas]], [[São Martinho — Planejamento agrícola]], [[CTC — Centro de Tecnologia Canavieira]]
+- Confiança: média
 
 ### 2026-11-09 07:25 BRT — sem_novidade
 
