@@ -2,6 +2,204 @@
   "items": [
     {
       "confidence": "alta",
+      "edition_at": "2026-11-11T07:32:00-03:00",
+      "edition_date": "2026-11-11",
+      "id": "radar-31f6df0e7235d5b7",
+      "published": "2026-11-10 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "source": "Esri — novidades do ArcGIS Maps SDK for JavaScript 5.2",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
+      "summary": "A versão 5.2 do ArcGIS Maps SDK for JavaScript atualiza componentes de IA em beta: agentes podem compartilhar recursos no mesmo espaço de trabalho e ser definidos com habilidades reutilizáveis carregadas de arquivos Markdown. O ArcGIS Enterprise 12.2 passa a aceitar aplicativos agentes que consultam mapas do portal, desde que a organização habilite agentes de IA e forneça credenciais de uma organização ArcGIS Online para os modelos. A Esri também informa que 5.2 é a última versão com widgets e APIs de interface legadas; a versão 6.0, planejada para o primeiro trimestre de 2027, deve removê-las.",
+      "tags": [
+        "esri",
+        "arcgis",
+        "javascript",
+        "agentes-ia",
+        "skills",
+        "arcgis-enterprise",
+        "api",
+        "ciclo-de-vida"
+      ],
+      "title": "ArcGIS Maps SDK for JavaScript 5.2 amplia agentes e anuncia migração de APIs de interface",
+      "url": "https://www.esri.com/arcgis-blog/products/js-api-arcgis/announcements/arcgis-maps-sdk-for-javascript-whats-new-in-5-2",
+      "why_it_matters": "Oferece base concreta para aplicativos geoespaciais com agentes e cria prazo de migração para interfaces que ainda dependem de widgets. Recursos de IA seguem em beta e exigem revisão de identidade e permissões."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-11T07:32:00-03:00",
+      "edition_date": "2026-11-11",
+      "id": "radar-9ee4f662661b4c37",
+      "published": "2026-11-10 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "source": "Esri — atualização de novembro do ArcGIS Field Maps",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
+      "summary": "O release de novembro do ArcGIS Field Maps adiciona listas de escolhas em formulários geradas por expressões Arcade a partir de campos, camadas ou tabelas. Elas funcionam offline quando os dados referenciados estão incluídos na área de mapa baixada. A atualização também integra localizadores de redes subterrâneas com RTK e permite envio de última posição e histórico de trilha por redes satelitais oferecidas por operadoras, em aparelhos compatíveis; mapas offline continuam recomendados em campo remoto.",
+      "tags": [
+        "esri",
+        "field-maps",
+        "campo",
+        "offline",
+        "arcade",
+        "rtk",
+        "satelite",
+        "release"
+      ],
+      "title": "Field Maps ganha escolhas dinâmicas offline e localização por conexão satelital",
+      "url": "https://www.esri.com/arcgis-blog/products/field-maps/field-mobility/whats-new-in-arcgis-field-maps-november-2026",
+      "why_it_matters": "Reduz manutenção de formulários e amplia coleta/localização em áreas de pouca conectividade, relevantes para ativos lineares e operações florestais. Uso depende de dispositivo, operadora e preparo correto dos dados offline."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-11T07:32:00-03:00",
+      "edition_date": "2026-11-11",
+      "id": "radar-a1aa56fd9df62fee",
+      "published": "2026-11-10 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "source": "Esri — novidades do ArcGIS Survey123 em novembro de 2026",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
+      "summary": "A Esri tornou a análise de imagem e texto por IA geralmente disponível no Survey123 Mobile e na versão web. Autores podem configurar extração de atributos de fotos ou respostas textuais, mas o processamento requer conexão, permissões administrativas para IA e serviços premium e consome créditos do ArcGIS Online. A atualização também traz autosend: registros na caixa de saída podem ser transmitidos automaticamente quando a conexão retorna. A Esri alerta para uma falha conhecida de login pelo endereço padrão do ArcGIS Online em parte dos aplicativos Mobile e Studio e indica, provisoriamente, o URL específico da organização.",
+      "tags": [
+        "esri",
+        "survey123",
+        "ia",
+        "visao-computacional",
+        "coleta-de-campo",
+        "offline",
+        "creditos",
+        "release"
+      ],
+      "title": "Survey123 libera análise de imagem/texto com IA e envio automático ao reconectar",
+      "url": "https://www.esri.com/arcgis-blog/products/survey123/announcements/whats-new-in-arcgis-survey123-november-2026",
+      "why_it_matters": "Possibilita transformar registros de campo em dados estruturados e acelerar sincronização após trabalho offline. Antes de ampliar uso, equipes devem testar custo por formulário, conexão e o problema de login comunicado."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-11T07:32:00-03:00",
+      "edition_date": "2026-11-11",
+      "id": "radar-2247e78ae753b2d8",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "published": "2026-11-10 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "source": "Google Cloud — notas de versão de 10 de novembro do Gemini Enterprise Agent Platform",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
+      "summary": "O Google Cloud documentou políticas de governança semântica entre projetos para agentes no Gemini Enterprise Agent Platform. Em arquitetura com projeto central e projetos membros, uma fronteira de gestão com capacidade `AGENT_MANAGEMENT` permite ao Agent Registry descobrir agentes preservando suas identidades de execução. Um Agent Gateway e um mecanismo de políticas no projeto central aplicam regras aos agentes vinculados. A documentação classifica a política semântica como pré-GA/preview, exige configuração de identidade e gateway e alerta que decisões baseadas em LLM podem falhar.",
+      "tags": [
+        "google-cloud",
+        "agent-platform",
+        "agentes-ia",
+        "governanca",
+        "seguranca",
+        "identidade",
+        "preview"
+      ],
+      "title": "Google Cloud permite governança semântica central de agentes em vários projetos",
+      "url": "https://docs.cloud.google.com/release-notes/#November_10_2026",
+      "why_it_matters": "Oferece arquitetura para controlar agentes corporativos sem centralizar todas as cargas em um único projeto. A adoção requer desenho de identidades, regiões e políticas, além de validação humana dos veredictos."
+    },
+    {
+      "confidence": "média",
+      "edition_at": "2026-11-11T07:32:00-03:00",
+      "edition_date": "2026-11-11",
+      "id": "radar-d722115a0cd0e722",
+      "image": "https://mmx.prnewswire.com/media/MS2030423/20261109035744EST_image_1.jpg?id=OA3065940&p=facebook",
+      "published": "2026-11-10 11:15 ET (16:15 UTC; dentro da janela pesquisada)",
+      "source": "Fleet Space Technologies — lançamento do Tau 3.8 e teste no projeto Valeriano",
+      "source_meta": {
+        "domain": "www.prnewswire.com"
+      },
+      "summary": "A Fleet Space Technologies lançou o Tau 3.8 nos Estados Unidos e no Canadá para modelar sistemas minerais com dados sísmicos 3D, sondagens, geologia, geofísica e mineralogia. Segundo a empresa, o modelo foi treinado em dez milhões de cenários geológicos sintéticos e estima continuidade do depósito, classifica alvos e sugere medições que reduzam incerteza. No projeto de cobre e ouro Valeriano, no Chile, a Fleet relata que testou a previsão em furos de sondagem retidos do treinamento e obteve erro de teor de cobre 38% menor que uma estimativa por krigagem feita com as mesmas sondagens. A comparação foi divulgada pela própria empresa e não equivale a validação independente em outros depósitos.",
+      "tags": [
+        "mineracao",
+        "geofisica",
+        "ia",
+        "modelagem-3d",
+        "sondagem",
+        "incerteza",
+        "lancamento"
+      ],
+      "title": "Fleet Space lança Tau 3.8 para modelagem de depósitos minerais",
+      "url": "https://www.prnewswire.com/news-releases/ai-trained-on-ten-million-synthetic-earths-outperforms-conventional-copper-estimates-at-tsxv-listed-atexs-valeriano-project-302934678.html",
+      "why_it_matters": "Caso técnico para avaliar fusão de geofísica e sondagens com incerteza explícita no planejamento de exploração mineral. Métrica do Valeriano não deve ser extrapolada a minas ou projetos brasileiros sem teste local."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-11T07:32:00-03:00",
+      "edition_date": "2026-11-11",
+      "id": "radar-5bc1ac094ed26ca7",
+      "published": "2026-11-10 10:25 EST, conforme índice de novas publicações do USGS (15:25 UTC; dentro da janela pesquisada)",
+      "source": "USGS — relatório de Stanley Mordensky, Erick Burns e John Lipor",
+      "source_meta": {
+        "domain": "pubs.usgs.gov"
+      },
+      "summary": "Pesquisadores do USGS e da Portland State University avaliaram quantas divisões aleatórias entre treino e teste são necessárias para estabilizar mapas de favorabilidade de recursos hidrotermais no Great Basin, nos Estados Unidos. O método gera várias realizações de aprendizado supervisionado por validação cruzada Monte Carlo e agrega previsões pela mediana de cada célula. No estudo, cerca de 600 realizações produziram previsão robusta; conjuntos de 100 a 200 podem servir à exploração preliminar. Os autores ressaltam que esses números variam com os dados e o modelo, enquanto as métricas de convergência podem ser reaplicadas.",
+      "tags": [
+        "usgs",
+        "paper",
+        "geoia",
+        "aprendizado-de-maquina",
+        "validacao-cruzada",
+        "incerteza",
+        "recursos-naturais"
+      ],
+      "title": "USGS testa convergência de mapas de favorabilidade geotérmica feitos com aprendizado de máquina",
+      "url": "https://pubs.usgs.gov/publication/sir20265071",
+      "why_it_matters": "Oferece critério operacional para medir estabilidade de mapas preditivos antes de orientar investimento em exploração. Aplicação a depósitos minerais ou risco geotécnico é hipótese metodológica, não resultado demonstrado pelo artigo."
+    },
+    {
+      "confidence": "média",
+      "edition_at": "2026-11-11T07:32:00-03:00",
+      "edition_date": "2026-11-11",
+      "id": "radar-7abf9bd2b8ac5099",
+      "image": "https://www.shipstationglobal.com/wp-content/uploads/2026/05/img-ss-corp-defaultPress.png",
+      "published": "2026-11-10 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "source": "ShipStation Global — automação de cotação a embarque no frete LTL",
+      "source_meta": {
+        "domain": "www.shipstationglobal.com"
+      },
+      "summary": "A ShipStation Global descreveu uma cadeia de agentes para ler solicitações de frete fracionado por e-mail, consultar tarifas contratadas e preferências do cliente, preparar a cotação, reservar a transportadora, emitir o conhecimento de embarque e agendar coleta. Casos incompletos ou incomuns são encaminhados a um especialista humano com o contexto reunido. A empresa informa que o fluxo está em produção em suas marcas Worldwide Express, GlobalTranz e Unishippers e que, desde o início do ano, processou mais de 340 mil solicitações e cotações e criou mais de 100 mil conhecimentos de embarque. Os volumes e ganhos de tempo são números da própria empresa.",
+      "tags": [
+        "logistica",
+        "frete",
+        "agentes-ia",
+        "automacao",
+        "implantacao",
+        "humano-no-circuito"
+      ],
+      "title": "ShipStation informa agentes de IA em produção para cotação e reserva de frete",
+      "url": "https://www.shipstationglobal.com/news/shipstation-global-puts-ai-agents-to-work-booking-freight-in-minutes-not-hours/",
+      "why_it_matters": "Exemplo concreto de agentes especializados com acesso a dados contratuais e transferência para humano em exceções, útil como referência de arquitetura para fluxos logísticos. Não demonstra desempenho em roteirização geoespacial."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-11T07:32:00-03:00",
+      "edition_date": "2026-11-11",
+      "id": "radar-8747774fc3ad30ce",
+      "image": "https://gomotive.com/wp-content/uploads/2026/11/hero_92.jpg",
+      "published": "2026-11-10 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
+      "source": "Motive — integração com Routeware SmartCity e Elements",
+      "source_meta": {
+        "domain": "gomotive.com"
+      },
+      "summary": "Motive e Routeware anunciaram integração disponível para clientes comuns nos Estados Unidos e no Canadá. Dados de câmeras, GPS ao vivo, eventos de segurança e telemetria de veículos aparecem junto ao progresso das rotas nas plataformas Routeware SmartCity e Elements, usadas por operações de coleta de resíduos e serviços públicos. Eventos de atendimento podem vincular vídeo à parada para verificação posterior. A futura integração de modelos de visão computacional para identificar excessos de coleta foi anunciada para 2027; não faz parte da capacidade atual descrita.",
+      "tags": [
+        "logistica",
+        "frotas",
+        "telematica",
+        "gps",
+        "visao-computacional",
+        "integracao",
+        "implantacao"
+      ],
+      "title": "Motive e Routeware integram vídeo e telemetria à execução de rotas de frota",
+      "url": "https://gomotive.com/motive-and-routeware-partner-to-bring-ai-powered-visual-proof-of-service-to-waste-and-public-works-fleets/",
+      "why_it_matters": "Referência operacional para unir evidência visual georreferenciada, segurança e status de rota em um mesmo fluxo. Transferência a operações florestais ou de transporte de grãos é possibilidade técnica, não implantação anunciada."
+    },
+    {
+      "confidence": "alta",
       "edition_at": "2026-11-10T07:34:00-03:00",
       "edition_date": "2026-11-10",
       "id": "radar-9d5621ca311e2eac",

@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-10 07:34 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-11 07:32 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,86 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-11 07:32 BRT — ArcGIS Maps SDK for JavaScript 5.2 amplia agentes e anuncia migração de APIs de interface
+
+- Fonte: [Esri — novidades do ArcGIS Maps SDK for JavaScript 5.2](https://www.esri.com/arcgis-blog/products/js-api-arcgis/announcements/arcgis-maps-sdk-for-javascript-whats-new-in-5-2)
+- Publicado: 2026-11-10 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: A versão 5.2 do ArcGIS Maps SDK for JavaScript atualiza componentes de IA em beta: agentes podem compartilhar recursos no mesmo espaço de trabalho e ser definidos com habilidades reutilizáveis carregadas de arquivos Markdown. O ArcGIS Enterprise 12.2 passa a aceitar aplicativos agentes que consultam mapas do portal, desde que a organização habilite agentes de IA e forneça credenciais de uma organização ArcGIS Online para os modelos. A Esri também informa que 5.2 é a última versão com widgets e APIs de interface legadas; a versão 6.0, planejada para o primeiro trimestre de 2027, deve removê-las.
+- Por que importa: Oferece base concreta para aplicativos geoespaciais com agentes e cria prazo de migração para interfaces que ainda dependem de widgets. Recursos de IA seguem em beta e exigem revisão de identidade e permissões.
+- Tags: #esri #arcgis #javascript #agentes-ia #skills #arcgis-enterprise #api #ciclo-de-vida
+- Relações: [[NAVIS / GeoFramework]], [[IMAC — Plataforma GIS]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-11 07:32 BRT — Field Maps ganha escolhas dinâmicas offline e localização por conexão satelital
+
+- Fonte: [Esri — atualização de novembro do ArcGIS Field Maps](https://www.esri.com/arcgis-blog/products/field-maps/field-mobility/whats-new-in-arcgis-field-maps-november-2026)
+- Publicado: 2026-11-10 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: O release de novembro do ArcGIS Field Maps adiciona listas de escolhas em formulários geradas por expressões Arcade a partir de campos, camadas ou tabelas. Elas funcionam offline quando os dados referenciados estão incluídos na área de mapa baixada. A atualização também integra localizadores de redes subterrâneas com RTK e permite envio de última posição e histórico de trilha por redes satelitais oferecidas por operadoras, em aparelhos compatíveis; mapas offline continuam recomendados em campo remoto.
+- Por que importa: Reduz manutenção de formulários e amplia coleta/localização em áreas de pouca conectividade, relevantes para ativos lineares e operações florestais. Uso depende de dispositivo, operadora e preparo correto dos dados offline.
+- Tags: #esri #field-maps #campo #offline #arcade #rtk #satelite #release
+- Relações: [[Bracell — GeoIA Estradas]], [[TAG / TBG / NTS]], [[GeoFiscal-Sinter]]
+- Confiança: alta
+
+### 2026-11-11 07:32 BRT — Survey123 libera análise de imagem/texto com IA e envio automático ao reconectar
+
+- Fonte: [Esri — novidades do ArcGIS Survey123 em novembro de 2026](https://www.esri.com/arcgis-blog/products/survey123/announcements/whats-new-in-arcgis-survey123-november-2026)
+- Publicado: 2026-11-10 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: A Esri tornou a análise de imagem e texto por IA geralmente disponível no Survey123 Mobile e na versão web. Autores podem configurar extração de atributos de fotos ou respostas textuais, mas o processamento requer conexão, permissões administrativas para IA e serviços premium e consome créditos do ArcGIS Online. A atualização também traz autosend: registros na caixa de saída podem ser transmitidos automaticamente quando a conexão retorna. A Esri alerta para uma falha conhecida de login pelo endereço padrão do ArcGIS Online em parte dos aplicativos Mobile e Studio e indica, provisoriamente, o URL específico da organização.
+- Por que importa: Possibilita transformar registros de campo em dados estruturados e acelerar sincronização após trabalho offline. Antes de ampliar uso, equipes devem testar custo por formulário, conexão e o problema de login comunicado.
+- Tags: #esri #survey123 #ia #visao-computacional #coleta-de-campo #offline #creditos #release
+- Relações: [[IMAC — Plataforma GIS]], [[Itaminas — Monitoramento geotécnico]], [[Bracell — POC RGB + LiDAR]]
+- Confiança: alta
+
+### 2026-11-11 07:32 BRT — Google Cloud permite governança semântica central de agentes em vários projetos
+
+- Fonte: [Google Cloud — notas de versão de 10 de novembro do Gemini Enterprise Agent Platform](https://docs.cloud.google.com/release-notes/#November_10_2026)
+- Publicado: 2026-11-10 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: O Google Cloud documentou políticas de governança semântica entre projetos para agentes no Gemini Enterprise Agent Platform. Em arquitetura com projeto central e projetos membros, uma fronteira de gestão com capacidade `AGENT_MANAGEMENT` permite ao Agent Registry descobrir agentes preservando suas identidades de execução. Um Agent Gateway e um mecanismo de políticas no projeto central aplicam regras aos agentes vinculados. A documentação classifica a política semântica como pré-GA/preview, exige configuração de identidade e gateway e alerta que decisões baseadas em LLM podem falhar.
+- Por que importa: Oferece arquitetura para controlar agentes corporativos sem centralizar todas as cargas em um único projeto. A adoção requer desenho de identidades, regiões e políticas, além de validação humana dos veredictos.
+- Tags: #google-cloud #agent-platform #agentes-ia #governanca #seguranca #identidade #preview
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-11 07:32 BRT — Fleet Space lança Tau 3.8 para modelagem de depósitos minerais
+
+- Fonte: [Fleet Space Technologies — lançamento do Tau 3.8 e teste no projeto Valeriano](https://www.prnewswire.com/news-releases/ai-trained-on-ten-million-synthetic-earths-outperforms-conventional-copper-estimates-at-tsxv-listed-atexs-valeriano-project-302934678.html)
+- Publicado: 2026-11-10 11:15 ET (16:15 UTC; dentro da janela pesquisada)
+- Resumo: A Fleet Space Technologies lançou o Tau 3.8 nos Estados Unidos e no Canadá para modelar sistemas minerais com dados sísmicos 3D, sondagens, geologia, geofísica e mineralogia. Segundo a empresa, o modelo foi treinado em dez milhões de cenários geológicos sintéticos e estima continuidade do depósito, classifica alvos e sugere medições que reduzam incerteza. No projeto de cobre e ouro Valeriano, no Chile, a Fleet relata que testou a previsão em furos de sondagem retidos do treinamento e obteve erro de teor de cobre 38% menor que uma estimativa por krigagem feita com as mesmas sondagens. A comparação foi divulgada pela própria empresa e não equivale a validação independente em outros depósitos.
+- Por que importa: Caso técnico para avaliar fusão de geofísica e sondagens com incerteza explícita no planejamento de exploração mineral. Métrica do Valeriano não deve ser extrapolada a minas ou projetos brasileiros sem teste local.
+- Tags: #mineracao #geofisica #ia #modelagem-3d #sondagem #incerteza #lancamento
+- Relações: [[Vale — GeoIA SAB.IA]], [[Itaminas — Monitoramento geotécnico]]
+- Confiança: média
+
+### 2026-11-11 07:32 BRT — USGS testa convergência de mapas de favorabilidade geotérmica feitos com aprendizado de máquina
+
+- Fonte: [USGS — relatório de Stanley Mordensky, Erick Burns e John Lipor](https://pubs.usgs.gov/publication/sir20265071)
+- Publicado: 2026-11-10 10:25 EST, conforme índice de novas publicações do USGS (15:25 UTC; dentro da janela pesquisada)
+- Resumo: Pesquisadores do USGS e da Portland State University avaliaram quantas divisões aleatórias entre treino e teste são necessárias para estabilizar mapas de favorabilidade de recursos hidrotermais no Great Basin, nos Estados Unidos. O método gera várias realizações de aprendizado supervisionado por validação cruzada Monte Carlo e agrega previsões pela mediana de cada célula. No estudo, cerca de 600 realizações produziram previsão robusta; conjuntos de 100 a 200 podem servir à exploração preliminar. Os autores ressaltam que esses números variam com os dados e o modelo, enquanto as métricas de convergência podem ser reaplicadas.
+- Por que importa: Oferece critério operacional para medir estabilidade de mapas preditivos antes de orientar investimento em exploração. Aplicação a depósitos minerais ou risco geotécnico é hipótese metodológica, não resultado demonstrado pelo artigo.
+- Tags: #usgs #paper #geoia #aprendizado-de-maquina #validacao-cruzada #incerteza #recursos-naturais
+- Relações: [[Vale — GeoIA SAB.IA]], [[Itaminas — Monitoramento geotécnico]]
+- Confiança: alta
+
+### 2026-11-11 07:32 BRT — ShipStation informa agentes de IA em produção para cotação e reserva de frete
+
+- Fonte: [ShipStation Global — automação de cotação a embarque no frete LTL](https://www.shipstationglobal.com/news/shipstation-global-puts-ai-agents-to-work-booking-freight-in-minutes-not-hours/)
+- Publicado: 2026-11-10 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: A ShipStation Global descreveu uma cadeia de agentes para ler solicitações de frete fracionado por e-mail, consultar tarifas contratadas e preferências do cliente, preparar a cotação, reservar a transportadora, emitir o conhecimento de embarque e agendar coleta. Casos incompletos ou incomuns são encaminhados a um especialista humano com o contexto reunido. A empresa informa que o fluxo está em produção em suas marcas Worldwide Express, GlobalTranz e Unishippers e que, desde o início do ano, processou mais de 340 mil solicitações e cotações e criou mais de 100 mil conhecimentos de embarque. Os volumes e ganhos de tempo são números da própria empresa.
+- Por que importa: Exemplo concreto de agentes especializados com acesso a dados contratuais e transferência para humano em exceções, útil como referência de arquitetura para fluxos logísticos. Não demonstra desempenho em roteirização geoespacial.
+- Tags: #logistica #frete #agentes-ia #automacao #implantacao #humano-no-circuito
+- Relações: [[Suzano — Rotas e logística]], [[NAVIS / GeoFramework]]
+- Confiança: média
+
+### 2026-11-11 07:32 BRT — Motive e Routeware integram vídeo e telemetria à execução de rotas de frota
+
+- Fonte: [Motive — integração com Routeware SmartCity e Elements](https://gomotive.com/motive-and-routeware-partner-to-bring-ai-powered-visual-proof-of-service-to-waste-and-public-works-fleets/)
+- Publicado: 2026-11-10 (horário/fuso não informados; janela exata de 24 horas não confirmada)
+- Resumo: Motive e Routeware anunciaram integração disponível para clientes comuns nos Estados Unidos e no Canadá. Dados de câmeras, GPS ao vivo, eventos de segurança e telemetria de veículos aparecem junto ao progresso das rotas nas plataformas Routeware SmartCity e Elements, usadas por operações de coleta de resíduos e serviços públicos. Eventos de atendimento podem vincular vídeo à parada para verificação posterior. A futura integração de modelos de visão computacional para identificar excessos de coleta foi anunciada para 2027; não faz parte da capacidade atual descrita.
+- Por que importa: Referência operacional para unir evidência visual georreferenciada, segurança e status de rota em um mesmo fluxo. Transferência a operações florestais ou de transporte de grãos é possibilidade técnica, não implantação anunciada.
+- Tags: #logistica #frotas #telematica #gps #visao-computacional #integracao #implantacao
+- Relações: [[Suzano — Rotas e logística]], [[Bracell — GeoIA Estradas]], [[GeoNext — LiDAR e rodovias]]
+- Confiança: alta
 
 ### 2026-11-10 07:34 BRT — Esri amplia GeoAI com MCP, agentes cartográficos e modelo multissensor
 
