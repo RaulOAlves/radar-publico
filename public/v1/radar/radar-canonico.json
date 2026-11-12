@@ -2,6 +2,55 @@
   "items": [
     {
       "confidence": "alta",
+      "edition_at": "2026-11-12T07:28:00-03:00",
+      "edition_date": "2026-11-12",
+      "id": "radar-0d526132418ac65a",
+      "image": "https://www.gstatic.com/devrel-devsite/prod/v0bdbebc1f01a38de21004f32be4e375582bd633675ce8e19f11ee677174d47b4/developers/images/opengraph/white.png",
+      "published": "2026-11-11 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Google Maps Platform — notas de versão das Maps Experience agent tools",
+      "source_meta": {
+        "domain": "developers.google.com"
+      },
+      "summary": "O Google tornou as opções Pro de `search_places` e `compute_routes` disponíveis para todos os projetos Google Cloud, sem lista de permissão, e adicionou um método REST para cada ferramenta. A nova `search_along_route` procura lugares ao longo de um trajeto descrito por pontos de origem e destino, polilinha codificada ou token de uma rota calculada antes. A resposta reúne lugares ranqueados e estimativas de distância e tempo de desvio; chamadas usam o SKU Maps Grounding Pro.",
+      "tags": [
+        "google-maps",
+        "agentes-ia",
+        "api",
+        "roteirizacao",
+        "logistica",
+        "preco",
+        "release"
+      ],
+      "title": "Google Maps libera ferramentas Pro para agentes e busca ao longo de rotas",
+      "url": "https://developers.google.com/maps/ai/maps-experience-agent-tools/release-notes#november_11_2026",
+      "why_it_matters": "Abre uma API concreta para agentes consultarem paradas e desvios em fluxos logísticos. Aplicação a rotas florestais ou de grãos ainda depende de testar cobertura, custo e restrições operacionais; não é uma implantação nesses projetos."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-12T07:28:00-03:00",
+      "edition_date": "2026-11-12",
+      "id": "radar-9819cb88c33e68c8",
+      "published": "2026-11-11 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "AWS — lançamento do AWS Emulator",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
+      "summary": "A AWS lançou o AWS Emulator para executar localmente chamadas existentes da AWS CLI e dos SDKs contra um endpoint HTTPS, sem conta AWS nem implantação em nuvem. Cada instância tem porta, credenciais e estado em memória próprios; operações ainda não implementadas retornam `501 Not Implemented`. A empresa publicou o código-fonte e informa que não há cobrança adicional pelo emulador.",
+      "tags": [
+        "aws",
+        "agentes-ia",
+        "automacao",
+        "desenvolvimento",
+        "testes",
+        "api",
+        "lancamento"
+      ],
+      "title": "AWS lança emulador local para testar APIs e agentes antes do deploy",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-emulator-now-available/",
+      "why_it_matters": "Permite que agentes de código e testes de integração exercitem automações AWS isoladamente antes de usar recursos reais. A fidelidade varia por API; respostas do emulador não substituem validação final na nuvem."
+    },
+    {
+      "confidence": "alta",
       "edition_at": "2026-11-11T07:32:00-03:00",
       "edition_date": "2026-11-11",
       "id": "radar-31f6df0e7235d5b7",

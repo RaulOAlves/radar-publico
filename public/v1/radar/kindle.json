@@ -1,8 +1,57 @@
 {
-  "edition_date": "2026-11-11",
-  "edition_id": "radar-2026-11-11T07:32:00-03:00",
-  "generated_at": "2026-11-11T07:32:00-03:00",
+  "edition_date": "2026-11-12",
+  "edition_id": "radar-2026-11-12T07:28:00-03:00",
+  "generated_at": "2026-11-12T07:28:00-03:00",
   "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-12T07:28:00-03:00",
+      "edition_date": "2026-11-12",
+      "id": "radar-0d526132418ac65a",
+      "image": "https://www.gstatic.com/devrel-devsite/prod/v0bdbebc1f01a38de21004f32be4e375582bd633675ce8e19f11ee677174d47b4/developers/images/opengraph/white.png",
+      "published": "2026-11-11 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Google Maps Platform — notas de versão das Maps Experience agent tools",
+      "source_meta": {
+        "domain": "developers.google.com"
+      },
+      "summary": "O Google tornou as opções Pro de `search_places` e `compute_routes` disponíveis para todos os projetos Google Cloud, sem lista de permissão, e adicionou um método REST para cada ferramenta. A nova `search_along_route` procura lugares ao longo de um trajeto descrito por pontos de origem e destino, polilinha codificada ou token de uma rota calculada antes. A resposta reúne lugares ranqueados e estimativas de distância e tempo de desvio; chamadas usam o SKU Maps Grounding Pro.",
+      "tags": [
+        "google-maps",
+        "agentes-ia",
+        "api",
+        "roteirizacao",
+        "logistica",
+        "preco",
+        "release"
+      ],
+      "title": "Google Maps libera ferramentas Pro para agentes e busca ao longo de rotas",
+      "url": "https://developers.google.com/maps/ai/maps-experience-agent-tools/release-notes#november_11_2026",
+      "why_it_matters": "Abre uma API concreta para agentes consultarem paradas e desvios em fluxos logísticos. Aplicação a rotas florestais ou de grãos ainda depende de testar cobertura, custo e restrições operacionais; não é uma implantação nesses projetos."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-12T07:28:00-03:00",
+      "edition_date": "2026-11-12",
+      "id": "radar-9819cb88c33e68c8",
+      "published": "2026-11-11 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "AWS — lançamento do AWS Emulator",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
+      "summary": "A AWS lançou o AWS Emulator para executar localmente chamadas existentes da AWS CLI e dos SDKs contra um endpoint HTTPS, sem conta AWS nem implantação em nuvem. Cada instância tem porta, credenciais e estado em memória próprios; operações ainda não implementadas retornam `501 Not Implemented`. A empresa publicou o código-fonte e informa que não há cobrança adicional pelo emulador.",
+      "tags": [
+        "aws",
+        "agentes-ia",
+        "automacao",
+        "desenvolvimento",
+        "testes",
+        "api",
+        "lancamento"
+      ],
+      "title": "AWS lança emulador local para testar APIs e agentes antes do deploy",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-emulator-now-available/",
+      "why_it_matters": "Permite que agentes de código e testes de integração exercitem automações AWS isoladamente antes de usar recursos reais. A fidelidade varia por API; respostas do emulador não substituem validação final na nuvem."
+    },
     {
       "confidence": "alta",
       "edition_at": "2026-11-11T07:32:00-03:00",
@@ -1185,56 +1234,6 @@
       "title": "Gemini em Google Distributed Cloud ganha busca RAG isolada da internet",
       "url": "https://cloud.google.com/blog/topics/hybrid-cloud/managed-rag-search-inside-the-sovereign-perimeter-gemini-on-gdc-enterprise-search",
       "why_it_matters": "em *preview*, busca empresarial multimodal com citações roda em GDC air-gapped, com ingestão, embeddings, PostgreSQL e controles de identidade dentro do perímetro local. Arquitetura relevante para agentes sobre dados técnicos sigilosos de mineração e óleo e gás; ainda não é disponibilidade geral."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-21T07:27:00-03:00",
-      "edition_date": "2026-10-21",
-      "id": "radar-dc65e8821342889a",
-      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Ai_infrastructure.max-2500x2500.jpg",
-      "published": "2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — Announcing llm-d 1.0",
-      "source_meta": {
-        "domain": "cloud.google.com"
-      },
-      "summary": "release Kubernetes-native reúne roteamento com afinidade de cache, QoS multitenant, cache KV em camadas, alta disponibilidade e atualização sem interromper sessões. É base técnica para avaliar custo e latência de agentes auto-hospedados com contexto longo e tráfego irregular, sem implicar ganho garantido nos projetos.",
-      "tags": [
-        "google-cloud",
-        "llm-d",
-        "inferencia",
-        "kubernetes",
-        "agentes-ia",
-        "infraestrutura",
-        "open-source"
-      ],
-      "title": "llm-d 1.0 publica infraestrutura aberta para inferência de agentes em escala",
-      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/llm-d-1-0-an-open-source-stack-for-distributed-inference",
-      "why_it_matters": "release Kubernetes-native reúne roteamento com afinidade de cache, QoS multitenant, cache KV em camadas, alta disponibilidade e atualização sem interromper sessões. É base técnica para avaliar custo e latência de agentes auto-hospedados com contexto longo e tráfego irregular, sem implicar ganho garantido nos projetos."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-21T07:27:00-03:00",
-      "edition_date": "2026-10-21",
-      "id": "radar-1228ecbc13bad748",
-      "image": "https://cdn.sanity.io/images/hvd5n54p/blog/a2b15977657232821c46a4a56919e8de4d8e2810-5120x3024.jpg",
-      "published": "2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Planet — First light from Tanager-2 and SuperDove Flock 4J",
-      "source_meta": {
-        "domain": "www.planet.com"
-      },
-      "summary": "a Planet divulgou a primeira imagem do Tanager-2, capturada em 07/10, na qual a Carbon Mapper detectou pluma de metano na costa espanhola. Demonstra uma aplicação da nova constelação para emissões e prospecção mineral, mas os satélites ainda estão em comissionamento; não equivale a serviço operacional disponível.",
-      "tags": [
-        "planet",
-        "tanager",
-        "hiperespectral",
-        "metano",
-        "oleo-e-gas",
-        "mineracao",
-        "observacao-da-terra"
-      ],
-      "title": "Tanager-2 demonstra detecção hiperespectral de metano na primeira imagem",
-      "url": "https://www.planet.com/pulse/sharing-first-light-images-from-tanager-2-and-superdove-flock-4j/",
-      "why_it_matters": "a Planet divulgou a primeira imagem do Tanager-2, capturada em 07/10, na qual a Carbon Mapper detectou pluma de metano na costa espanhola. Demonstra uma aplicação da nova constelação para emissões e prospecção mineral, mas os satélites ainda estão em comissionamento; não equivale a serviço operacional disponível."
     }
   ],
   "methodology": {
@@ -1244,7 +1243,7 @@
   "metrics": {
     "high_confidence": 46,
     "signals": 50,
-    "sources": 22
+    "sources": 23
   },
   "schema_version": "1.0",
   "scope": "ultimas_50_publicacoes",

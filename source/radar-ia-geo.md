@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-11 07:32 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-12 07:28 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,26 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-12 07:28 BRT — Google Maps libera ferramentas Pro para agentes e busca ao longo de rotas
+
+- Fonte: [Google Maps Platform — notas de versão das Maps Experience agent tools](https://developers.google.com/maps/ai/maps-experience-agent-tools/release-notes#november_11_2026)
+- Publicado: 2026-11-11 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: O Google tornou as opções Pro de `search_places` e `compute_routes` disponíveis para todos os projetos Google Cloud, sem lista de permissão, e adicionou um método REST para cada ferramenta. A nova `search_along_route` procura lugares ao longo de um trajeto descrito por pontos de origem e destino, polilinha codificada ou token de uma rota calculada antes. A resposta reúne lugares ranqueados e estimativas de distância e tempo de desvio; chamadas usam o SKU Maps Grounding Pro.
+- Por que importa: Abre uma API concreta para agentes consultarem paradas e desvios em fluxos logísticos. Aplicação a rotas florestais ou de grãos ainda depende de testar cobertura, custo e restrições operacionais; não é uma implantação nesses projetos.
+- Tags: #google-maps #agentes-ia #api #roteirizacao #logistica #preco #release
+- Relações: [[Suzano — Rotas e logística]], [[Bracell — GeoIA Estradas]], [[NAVIS / GeoFramework]]
+- Confiança: alta
+
+### 2026-11-12 07:28 BRT — AWS lança emulador local para testar APIs e agentes antes do deploy
+
+- Fonte: [AWS — lançamento do AWS Emulator](https://aws.amazon.com/about-aws/whats-new/2026/11/aws-emulator-now-available/)
+- Publicado: 2026-11-11 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: A AWS lançou o AWS Emulator para executar localmente chamadas existentes da AWS CLI e dos SDKs contra um endpoint HTTPS, sem conta AWS nem implantação em nuvem. Cada instância tem porta, credenciais e estado em memória próprios; operações ainda não implementadas retornam `501 Not Implemented`. A empresa publicou o código-fonte e informa que não há cobrança adicional pelo emulador.
+- Por que importa: Permite que agentes de código e testes de integração exercitem automações AWS isoladamente antes de usar recursos reais. A fidelidade varia por API; respostas do emulador não substituem validação final na nuvem.
+- Tags: #aws #agentes-ia #automacao #desenvolvimento #testes #api #lancamento
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
 
 ### 2026-11-11 07:32 BRT — ArcGIS Maps SDK for JavaScript 5.2 amplia agentes e anuncia migração de APIs de interface
 
