@@ -1,8 +1,185 @@
 {
-  "edition_date": "2026-11-12",
-  "edition_id": "radar-2026-11-12T07:28:00-03:00",
-  "generated_at": "2026-11-12T07:28:00-03:00",
+  "edition_date": "2026-11-13",
+  "edition_id": "radar-2026-11-13T07:36:00-03:00",
+  "generated_at": "2026-11-13T07:36:00-03:00",
   "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-13T07:36:00-03:00",
+      "edition_date": "2026-11-13",
+      "id": "radar-42b3dd248bd458bd",
+      "published": "2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Esri — novidades do ArcGIS Experience Builder em novembro de 2026",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
+      "summary": "A atualização de novembro do ArcGIS Experience Builder no ArcGIS Online acrescenta AI Chat em beta. Em aplicativos configurados, usuários podem consultar, filtrar, agrupar e resumir dados; navegar no mapa; e acionar operações de widgets compatíveis, como tabela, gráfico, rotas e impressão. A resposta pode mostrar mapas, tabelas ou detalhes de feições, e algumas alterações feitas pela conversa oferecem opção de desfazer. O autor habilita o recurso no painel geral do aplicativo, sem reconstruí-lo.",
+      "tags": [
+        "esri",
+        "arcgis-online",
+        "experience-builder",
+        "agentes-ia",
+        "mapas",
+        "widgets",
+        "beta",
+        "release"
+      ],
+      "title": "Experience Builder incorpora AI Chat para operar mapas, dados e widgets",
+      "url": "https://www.esri.com/arcgis-blog/products/experience-builder/announcements/whats-new-in-arcgis-experience-builder-november-2026",
+      "why_it_matters": "Permite testar interfaces conversacionais sobre aplicativos GIS existentes. Uso exige usuário autenticado e agentes de IA habilitados na organização; a Esri prevê cobrança de créditos após o beta. Cada ação precisa de revisão de permissões e resultado."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-13T07:36:00-03:00",
+      "edition_date": "2026-11-13",
+      "id": "radar-8427d4fee9a7d1b9",
+      "image": "https://opengraph.githubassets.com/a7057a66b0fb85c1be2633a3200c824cb71fe02f96225ae71f9c803e7c7f8934/anthropics/claude-code/releases/tag/v2.1.323",
+      "published": "2026-11-12 22:12 UTC, conforme API de releases do GitHub (dentro da janela pesquisada)",
+      "source": "Anthropic — release Claude Code v2.1.323",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "A versão 2.1.323 introduz Code Mode experimental, opt-in, no qual Claude escreve JavaScript para chamar ferramentas. Plugins agora podem declarar em `engines[\"claude-code\"]` as versões compatíveis; versões fora do intervalo não são instaladas nem carregadas. O comando `claude plugin validate` passa a verificar tipos de hooks TypeScript, com falha em modo `--strict`. A versão também ajusta proteções de sandbox e aprovação de servidores MCP, além de corrigir falhas de reconexão e histórico de ferramentas.",
+      "tags": [
+        "anthropic",
+        "claude-code",
+        "code-mode",
+        "plugins",
+        "mcp",
+        "seguranca",
+        "release"
+      ],
+      "title": "Claude Code 2.1.323 adiciona Code Mode e valida compatibilidade de plugins",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "why_it_matters": "Quem mantém automações com plugins ou MCP precisa testar compatibilidade e fluxo de autorização antes de atualizar. Code Mode pode mudar a forma de orquestrar ferramentas, mas ainda é experimental."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-13T07:36:00-03:00",
+      "edition_date": "2026-11-13",
+      "id": "radar-a0c08c461d827e1c",
+      "image": "https://opengraph.githubassets.com/02a97479389cf18d651dbdc5b23188e7801125d21dac1db75b043b35f474cf98/openai/codex/releases/tag/rust-v0.169.0",
+      "published": "2026-11-13 08:37 UTC, conforme API de releases do GitHub (dentro da janela pesquisada)",
+      "source": "OpenAI — release Codex 0.169.0",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "O Codex 0.169.0 adiciona múltiplos side chats no workspace de terminal opt-in, busca de tarefas antigas e configuração de provedores de modelos diretamente no terminal. Na segurança, `codex exec` mantém configurações de projeto e servidores MCP desabilitados em diretórios não confiáveis mesmo com sandbox `workspace-write`; confiar no projeto passa a exigir `--trust` explícito. A versão também corrige casos de sandbox no Windows.",
+      "tags": [
+        "openai",
+        "codex",
+        "mcp",
+        "seguranca",
+        "terminal",
+        "agentes-ia",
+        "release"
+      ],
+      "title": "Codex 0.169.0 reforça confiança de projetos e amplia trabalho no terminal",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0",
+      "why_it_matters": "Evita que um repositório ainda não confiável ative MCPs por efeito colateral da permissão de escrita. Equipes que automatizam execução e revisão devem testar o novo fluxo de confiança antes de atualizar."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-13T07:36:00-03:00",
+      "edition_date": "2026-11-13",
+      "id": "radar-0810bb8b12c05d8e",
+      "published": "2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "AWS — nova geração do Amazon Bedrock AgentCore Runtime",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
+      "summary": "Novos runtimes do Amazon Bedrock AgentCore passam a usar a geração V2 por padrão nas regiões indicadas pela AWS, incluindo São Paulo. Cada sessão continua isolada em microVM Firecracker, mas agora pode restaurar o agente de um snapshot, escalar até 8 vCPU e 32 GB de memória, usar imagem de até 10 GB e reduzir recursos ociosos a zero. Segundo a AWS, uma imagem de 2 GB inicia em menos de 2 segundos no percentil 75, ante 29,7 segundos na geração anterior. Runtimes existentes não migram automaticamente; `platformVersion=V2` faz a opção explícita.",
+      "tags": [
+        "aws",
+        "bedrock",
+        "agentcore",
+        "agentes-ia",
+        "runtime",
+        "escalabilidade",
+        "custo",
+        "release"
+      ],
+      "title": "AWS torna AgentCore Runtime V2 padrão para novos agentes",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/new-agentcore-runtime-default/",
+      "why_it_matters": "Afeta latência, custo e planejamento de implantação de agentes corporativos, inclusive na região brasileira. Números de desempenho são medições divulgadas pela AWS; validar com cargas próprias antes de migrar."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-13T07:36:00-03:00",
+      "edition_date": "2026-11-13",
+      "id": "radar-317db2d05b4bd26c",
+      "published": "2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "AWS — suporte a OAuth 2.0 token exchange no Amazon Cognito",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
+      "summary": "O Amazon Cognito passou a oferecer troca de tokens OAuth 2.0 conforme RFC 8693 pelo endpoint de token ou pela nova API `GetDerivedToken`. Um agente ou serviço que atua em nome do usuário pode receber um token restrito a escopo e destinatário específicos, sem refresh token. Com token de ator, a reivindicação `act` identifica o intermediário; a AWS cita servidores MCP como exemplo. A capacidade está nos planos Essentials e Plus nas regiões que oferecem Cognito.",
+      "tags": [
+        "aws",
+        "cognito",
+        "oauth",
+        "mcp",
+        "agentes-ia",
+        "identidade",
+        "seguranca",
+        "api"
+      ],
+      "title": "Cognito libera troca OAuth de tokens para agentes e servidores MCP",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-token-exchange/",
+      "why_it_matters": "Dá mecanismo padrão para delegar acesso a APIs sem repassar o token original do usuário a cada ferramenta. Útil para desenhar permissões de agentes que consultam dados corporativos, sujeito a teste de identidade e auditoria."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-13T07:36:00-03:00",
+      "edition_date": "2026-11-13",
+      "id": "radar-212152bea53f30a2",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "published": "2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Google Cloud — notas de versão do GKE de 12 de novembro",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
+      "summary": "O Agent Gateway para GKE entrou em preview no canal Rapid, para clusters a partir da versão `1.37.2-gke.1042000`, inicialmente nas regiões `europe-west1` e `us-central1`. A camada centraliza o controle do tráfego de entrada, saída e entre agentes hospedados em GKE. A documentação descreve políticas baseadas em identidade, integração com Agent Registry e Model Armor, além de observabilidade de interações com ferramentas e servidores MCP.",
+      "tags": [
+        "google-cloud",
+        "gke",
+        "agent-gateway",
+        "agentes-ia",
+        "mcp",
+        "governanca",
+        "seguranca",
+        "preview"
+      ],
+      "title": "Google abre Agent Gateway para agentes em GKE em preview",
+      "url": "https://docs.cloud.google.com/kubernetes-engine/docs/release-notes-new-features#November_12_2026",
+      "why_it_matters": "Referência de arquitetura para governar agentes autogerenciados e acesso a ferramentas. Ainda não está disponível em região brasileira; adoção nos projetos depende de requisitos de residência de dados e maturidade do preview."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-13T07:36:00-03:00",
+      "edition_date": "2026-11-13",
+      "id": "radar-bdd5739302598e87",
+      "image": "https://dataspace.copernicus.eu/sites/default/files/styles/opengraph/public/media/images/2023-03/og_share.png?itok=zjtW85Fb",
+      "published": "2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Copernicus Data Space Ecosystem — ativação dos novos processadores Sentinel-5P",
+      "source_meta": {
+        "domain": "dataspace.copernicus.eu"
+      },
+      "summary": "O Copernicus informou que atualizou em 11 de novembro o sistema operacional de processamento do Sentinel-5P. Os novos processadores abrangem produtos de nível 1B e nível 2 para metano (CH4), monóxido de carbono (CO), dióxido de nitrogênio (NO2), dióxido de enxofre (SO2) e outras variáveis atmosféricas. Os dados processados com as novas versões já estão no Copernicus Data Space Ecosystem: produtos de tempo quase real começam na órbita 47046, de 11 de novembro; produtos offline, na órbita 47001, de 8 de novembro. Produtos de tempo quase real adquiridos durante a parada de processamento não foram gerados.",
+      "tags": [
+        "copernicus",
+        "sentinel-5p",
+        "metano",
+        "oleo-e-gas",
+        "emissoes",
+        "processamento",
+        "dados",
+        "ciclo-de-vida"
+      ],
+      "title": "Copernicus muda processamento operacional de produtos Sentinel-5P",
+      "url": "https://dataspace.copernicus.eu/news/2026-11-12-copernicus-sentinel-5-precursor-s5p-products-improvement-operational-switch",
+      "why_it_matters": "Pipelines de emissões em óleo e gás devem registrar versão do processador e lacuna de dados antes de comparar séries temporais. Relação com monitoramento de gasodutos é potencial; o anúncio não demonstra detecção de vazamentos pontuais nesses ativos."
+    },
     {
       "confidence": "alta",
       "edition_at": "2026-11-12T07:28:00-03:00",
@@ -1060,180 +1237,6 @@
       "title": "OpenAI disponibiliza Decisions API para decisões delimitadas de agentes",
       "url": "https://openai.com/index/decisions-api/",
       "why_it_matters": "API agora em disponibilidade geral responde probabilidade, escolha ou escore a partir de texto, imagem ou JSON, com até 400 perguntas por requisição. Pode reduzir latência/custo de triagem e roteamento em agentes e eventos geoespaciais; o ganho de até 10 vezes é alegação da OpenAI, não garantia para estes projetos."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-23T07:29:00-03:00",
-      "edition_date": "2026-10-23",
-      "id": "radar-e992952e7eee2742",
-      "image": "https://ororatech.com/storage/files/iceye-x-ororatech-pr.png",
-      "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "OroraTech — parceria com ICEYE",
-      "source_meta": {
-        "domain": "ororatech.com"
-      },
-      "summary": "a parceria anuncia integração de detecção/avanço do fogo por satélites térmicos com observações SAR para avaliar impactos mesmo sob fumaça e nuvens. É combinação relevante para monitoramento florestal e resposta a incêndios; a fonte não traz validação independente de latência ou implantação em cliente.",
-      "tags": [
-        "sensoriamento-remoto",
-        "sar",
-        "termal",
-        "incendios",
-        "florestal",
-        "parceria",
-        "observacao-da-terra"
-      ],
-      "title": "ICEYE e OroraTech integram dados térmicos e SAR para incêndios",
-      "url": "https://ororatech.com/resources/news-blog/iceye-partners-with-ororatech-to-deliver-full-lifecycle-wildfire-intelligence-2",
-      "why_it_matters": "a parceria anuncia integração de detecção/avanço do fogo por satélites térmicos com observações SAR para avaliar impactos mesmo sob fumaça e nuvens. É combinação relevante para monitoramento florestal e resposta a incêndios; a fonte não traz validação independente de latência ou implantação em cliente."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-22T07:27:00-03:00",
-      "edition_date": "2026-10-22",
-      "id": "radar-1f4559e41bf13b35",
-      "image": "https://opengraph.githubassets.com/5883b35b28246294c2eeef6473aaa5d8511eae7fd80ff51d91cec12e4362dac8/anthropics/claude-code/releases/tag/v2.1.307",
-      "published": "2026-10-21 22:17 (horário exibido pelo GitHub; fuso não informado)",
-      "source": "Anthropic — Claude Code v2.1.307",
-      "source_meta": {
-        "domain": "github.com"
-      },
-      "summary": "se a conexão caía durante uma chamada MCP HTTP, ferramentas podiam ser acionadas duas vezes; agora só operações de leitura ou idempotentes são repetidas. Release também adiciona evento OpenTelemetry para decisões de segurança e corrige atualização de ferramentas de servidores MCP do SDK durante tarefas em segundo plano — pontos críticos para agentes que escrevem em sistemas corporativos.",
-      "tags": [
-        "anthropic",
-        "claude-code",
-        "mcp",
-        "agentes-ia",
-        "idempotencia",
-        "observabilidade",
-        "release"
-      ],
-      "title": "Claude Code 2.1.307 evita duplicar chamadas de escrita via MCP HTTP",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.307",
-      "why_it_matters": "se a conexão caía durante uma chamada MCP HTTP, ferramentas podiam ser acionadas duas vezes; agora só operações de leitura ou idempotentes são repetidas. Release também adiciona evento OpenTelemetry para decisões de segurança e corrige atualização de ferramentas de servidores MCP do SDK durante tarefas em segundo plano — pontos críticos para agentes que escrevem em sistemas corporativos."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-22T07:27:00-03:00",
-      "edition_date": "2026-10-22",
-      "id": "radar-3634ecbbbb3a5eca",
-      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Open-ai-google-models-hero.max-2500x2500.png",
-      "published": "2026-10-21 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — OpenAI models in Model Garden",
-      "source_meta": {
-        "domain": "cloud.google.com"
-      },
-      "summary": "GPT-6 Astra, GPT-6.1 Sol e GPT-6 Luna começam a chegar ao Model Garden para clientes empresariais selecionados; Google informa que esses clientes já podem conectar Codex CLI/Desktop para inferência na plataforma. Isso cria opção de testar agentes e desenvolvimento com governança, auditoria e faturamento Google Cloud, mas ainda não é disponibilidade geral.",
-      "tags": [
-        "openai",
-        "codex",
-        "google-cloud",
-        "model-garden",
-        "agentes-ia",
-        "parceria",
-        "preview"
-      ],
-      "title": "Modelos OpenAI e fluxos Codex entram no Google Cloud em prévia privada",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers",
-      "why_it_matters": "GPT-6 Astra, GPT-6.1 Sol e GPT-6 Luna começam a chegar ao Model Garden para clientes empresariais selecionados; Google informa que esses clientes já podem conectar Codex CLI/Desktop para inferência na plataforma. Isso cria opção de testar agentes e desenvolvimento com governança, auditoria e faturamento Google Cloud, mas ainda não é disponibilidade geral."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-22T07:27:00-03:00",
-      "edition_date": "2026-10-22",
-      "id": "radar-c063fbad0dd44a03",
-      "published": "2026-10-21 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Esri — Recent PHP Vulnerabilities",
-      "source_meta": {
-        "domain": "www.esri.com"
-      },
-      "summary": "PHP corrigiu CVE-2026-109618 e CVE-2026-109619, ambas com potencial de execução remota sem autenticação, nas versões 8.5.12, 8.4.27, 8.3.36 e 8.2.35. Esri informa que ArcGIS Online não usa PHP e ainda avalia demais produtos; não há impacto confirmado em ArcGIS Enterprise. Verificar componentes PHP próprios ou adjacentes e acompanhar conclusão da avaliação Esri.",
-      "tags": [
-        "esri",
-        "arcgis",
-        "php",
-        "seguranca",
-        "cve",
-        "infraestrutura",
-        "avaliacao-de-impacto"
-      ],
-      "title": "Esri avalia impacto de duas falhas críticas de PHP no ecossistema ArcGIS",
-      "url": "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/recent-php-vulnerabilities",
-      "why_it_matters": "PHP corrigiu CVE-2026-109618 e CVE-2026-109619, ambas com potencial de execução remota sem autenticação, nas versões 8.5.12, 8.4.27, 8.3.36 e 8.2.35. Esri informa que ArcGIS Online não usa PHP e ainda avalia demais produtos; não há impacto confirmado em ArcGIS Enterprise. Verificar componentes PHP próprios ou adjacentes e acompanhar conclusão da avaliação Esri."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-21T07:27:00-03:00",
-      "edition_date": "2026-10-21",
-      "id": "radar-11a9e9aebb65d4c7",
-      "image": "https://opengraph.githubassets.com/79fdcda20289413eb426b78042ede9f05bf82c27582a34f32ab82690c364ecf9/anthropics/claude-code/releases/tag/v2.1.305",
-      "published": "2026-10-20 20:46 (horário exibido pelo GitHub; fuso não informado)",
-      "source": "Anthropic — Claude Code v2.1.305",
-      "source_meta": {
-        "domain": "github.com"
-      },
-      "summary": "corrige a substituição indevida de servidores MCP fornecidos pela sessão em nuvem/SDK e falhas de requisições via Vertex, Bedrock ou gateways sem ToolSearch. A retomada de workflows deixa de reexecutar agentes já concluídos. A nova opção de namespaces aninhados no Linux permite Chromium/Podman, mas pode contornar proteções de arquivos do sandbox; requer avaliação antes de habilitar.",
-      "tags": [
-        "anthropic",
-        "claude-code",
-        "mcp",
-        "agentes-ia",
-        "workflow",
-        "seguranca",
-        "release"
-      ],
-      "title": "Claude Code 2.1.305 corrige integração MCP, gateways e retomada de agentes",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
-      "why_it_matters": "corrige a substituição indevida de servidores MCP fornecidos pela sessão em nuvem/SDK e falhas de requisições via Vertex, Bedrock ou gateways sem ToolSearch. A retomada de workflows deixa de reexecutar agentes já concluídos. A nova opção de namespaces aninhados no Linux permite Chromium/Podman, mas pode contornar proteções de arquivos do sandbox; requer avaliação antes de habilitar."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-21T07:27:00-03:00",
-      "edition_date": "2026-10-21",
-      "id": "radar-e8db8c6284f507e2",
-      "image": "https://github.githubassets.com/assets/advisory-database-show-f32c8207dfb2.png",
-      "published": "aviso original em 2026-10-05; publicado na base de advisories e atualizado em 2026-10-20 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "GitHub Advisory — GHSA-rvq5-wwqv-78pq / CVE-2026-111771",
-      "source_meta": {
-        "domain": "github.com"
-      },
-      "summary": "servidores MCP HTTP que usam `requireBearerAuth()`/`verifyBearerToken()` podem aceitar token emitido para outro serviço se o emissor atende múltiplos recursos e o verificador não checa `aud`. Versões corrigidas existem, mas só atualizar não ativa a proteção: é preciso configurar `expectedResource` e devolver `AuthInfo.resource`, ou validar `aud` no verificador.",
-      "tags": [
-        "mcp",
-        "typescript",
-        "sdk",
-        "oauth",
-        "seguranca",
-        "cve",
-        "agentes-ia"
-      ],
-      "title": "Alerta de segurança no SDK TypeScript do MCP exige validação explícita de audiência",
-      "url": "https://github.com/advisories/GHSA-rvq5-wwqv-78pq",
-      "why_it_matters": "servidores MCP HTTP que usam `requireBearerAuth()`/`verifyBearerToken()` podem aceitar token emitido para outro serviço se o emissor atende múltiplos recursos e o verificador não checa `aud`. Versões corrigidas existem, mas só atualizar não ativa a proteção: é preciso configurar `expectedResource` e devolver `AuthInfo.resource`, ou validar `aud` no verificador."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-21T07:27:00-03:00",
-      "edition_date": "2026-10-21",
-      "id": "radar-f589d35077387a1a",
-      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/41_-_Hybrid__Multicloud_qokHBFC.max-2600x2600.jpg",
-      "published": "2026-10-21 (horário/fuso não informados; posição exata na janela de 24 horas não confirmada)",
-      "source": "Google Cloud — Managed RAG search inside the sovereign perimeter",
-      "source_meta": {
-        "domain": "cloud.google.com"
-      },
-      "summary": "em *preview*, busca empresarial multimodal com citações roda em GDC air-gapped, com ingestão, embeddings, PostgreSQL e controles de identidade dentro do perímetro local. Arquitetura relevante para agentes sobre dados técnicos sigilosos de mineração e óleo e gás; ainda não é disponibilidade geral.",
-      "tags": [
-        "google-cloud",
-        "gemini",
-        "rag",
-        "air-gap",
-        "dados-sensiveis",
-        "agentes-ia",
-        "busca-empresarial"
-      ],
-      "title": "Gemini em Google Distributed Cloud ganha busca RAG isolada da internet",
-      "url": "https://cloud.google.com/blog/topics/hybrid-cloud/managed-rag-search-inside-the-sovereign-perimeter-gemini-on-gdc-enterprise-search",
-      "why_it_matters": "em *preview*, busca empresarial multimodal com citações roda em GDC air-gapped, com ingestão, embeddings, PostgreSQL e controles de identidade dentro do perímetro local. Arquitetura relevante para agentes sobre dados técnicos sigilosos de mineração e óleo e gás; ainda não é disponibilidade geral."
     }
   ],
   "methodology": {
@@ -1243,7 +1246,7 @@
   "metrics": {
     "high_confidence": 46,
     "signals": 50,
-    "sources": 23
+    "sources": 22
   },
   "schema_version": "1.0",
   "scope": "ultimas_50_publicacoes",

@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-12 07:28 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-13 07:36 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,76 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-13 07:36 BRT — Experience Builder incorpora AI Chat para operar mapas, dados e widgets
+
+- Fonte: [Esri — novidades do ArcGIS Experience Builder em novembro de 2026](https://www.esri.com/arcgis-blog/products/experience-builder/announcements/whats-new-in-arcgis-experience-builder-november-2026)
+- Publicado: 2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: A atualização de novembro do ArcGIS Experience Builder no ArcGIS Online acrescenta AI Chat em beta. Em aplicativos configurados, usuários podem consultar, filtrar, agrupar e resumir dados; navegar no mapa; e acionar operações de widgets compatíveis, como tabela, gráfico, rotas e impressão. A resposta pode mostrar mapas, tabelas ou detalhes de feições, e algumas alterações feitas pela conversa oferecem opção de desfazer. O autor habilita o recurso no painel geral do aplicativo, sem reconstruí-lo.
+- Por que importa: Permite testar interfaces conversacionais sobre aplicativos GIS existentes. Uso exige usuário autenticado e agentes de IA habilitados na organização; a Esri prevê cobrança de créditos após o beta. Cada ação precisa de revisão de permissões e resultado.
+- Tags: #esri #arcgis-online #experience-builder #agentes-ia #mapas #widgets #beta #release
+- Relações: [[NAVIS / GeoFramework]], [[IMAC — Plataforma GIS]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-13 07:36 BRT — Claude Code 2.1.323 adiciona Code Mode e valida compatibilidade de plugins
+
+- Fonte: [Anthropic — release Claude Code v2.1.323](https://github.com/anthropics/claude-code/releases/tag/v2.1.323)
+- Publicado: 2026-11-12 22:12 UTC, conforme API de releases do GitHub (dentro da janela pesquisada)
+- Resumo: A versão 2.1.323 introduz Code Mode experimental, opt-in, no qual Claude escreve JavaScript para chamar ferramentas. Plugins agora podem declarar em `engines["claude-code"]` as versões compatíveis; versões fora do intervalo não são instaladas nem carregadas. O comando `claude plugin validate` passa a verificar tipos de hooks TypeScript, com falha em modo `--strict`. A versão também ajusta proteções de sandbox e aprovação de servidores MCP, além de corrigir falhas de reconexão e histórico de ferramentas.
+- Por que importa: Quem mantém automações com plugins ou MCP precisa testar compatibilidade e fluxo de autorização antes de atualizar. Code Mode pode mudar a forma de orquestrar ferramentas, mas ainda é experimental.
+- Tags: #anthropic #claude-code #code-mode #plugins #mcp #seguranca #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-13 07:36 BRT — Codex 0.169.0 reforça confiança de projetos e amplia trabalho no terminal
+
+- Fonte: [OpenAI — release Codex 0.169.0](https://github.com/openai/codex/releases/tag/rust-v0.169.0)
+- Publicado: 2026-11-13 08:37 UTC, conforme API de releases do GitHub (dentro da janela pesquisada)
+- Resumo: O Codex 0.169.0 adiciona múltiplos side chats no workspace de terminal opt-in, busca de tarefas antigas e configuração de provedores de modelos diretamente no terminal. Na segurança, `codex exec` mantém configurações de projeto e servidores MCP desabilitados em diretórios não confiáveis mesmo com sandbox `workspace-write`; confiar no projeto passa a exigir `--trust` explícito. A versão também corrige casos de sandbox no Windows.
+- Por que importa: Evita que um repositório ainda não confiável ative MCPs por efeito colateral da permissão de escrita. Equipes que automatizam execução e revisão devem testar o novo fluxo de confiança antes de atualizar.
+- Tags: #openai #codex #mcp #seguranca #terminal #agentes-ia #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-13 07:36 BRT — AWS torna AgentCore Runtime V2 padrão para novos agentes
+
+- Fonte: [AWS — nova geração do Amazon Bedrock AgentCore Runtime](https://aws.amazon.com/about-aws/whats-new/2026/11/new-agentcore-runtime-default/)
+- Publicado: 2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: Novos runtimes do Amazon Bedrock AgentCore passam a usar a geração V2 por padrão nas regiões indicadas pela AWS, incluindo São Paulo. Cada sessão continua isolada em microVM Firecracker, mas agora pode restaurar o agente de um snapshot, escalar até 8 vCPU e 32 GB de memória, usar imagem de até 10 GB e reduzir recursos ociosos a zero. Segundo a AWS, uma imagem de 2 GB inicia em menos de 2 segundos no percentil 75, ante 29,7 segundos na geração anterior. Runtimes existentes não migram automaticamente; `platformVersion=V2` faz a opção explícita.
+- Por que importa: Afeta latência, custo e planejamento de implantação de agentes corporativos, inclusive na região brasileira. Números de desempenho são medições divulgadas pela AWS; validar com cargas próprias antes de migrar.
+- Tags: #aws #bedrock #agentcore #agentes-ia #runtime #escalabilidade #custo #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-13 07:36 BRT — Cognito libera troca OAuth de tokens para agentes e servidores MCP
+
+- Fonte: [AWS — suporte a OAuth 2.0 token exchange no Amazon Cognito](https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-token-exchange/)
+- Publicado: 2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: O Amazon Cognito passou a oferecer troca de tokens OAuth 2.0 conforme RFC 8693 pelo endpoint de token ou pela nova API `GetDerivedToken`. Um agente ou serviço que atua em nome do usuário pode receber um token restrito a escopo e destinatário específicos, sem refresh token. Com token de ator, a reivindicação `act` identifica o intermediário; a AWS cita servidores MCP como exemplo. A capacidade está nos planos Essentials e Plus nas regiões que oferecem Cognito.
+- Por que importa: Dá mecanismo padrão para delegar acesso a APIs sem repassar o token original do usuário a cada ferramenta. Útil para desenhar permissões de agentes que consultam dados corporativos, sujeito a teste de identidade e auditoria.
+- Tags: #aws #cognito #oauth #mcp #agentes-ia #identidade #seguranca #api
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-13 07:36 BRT — Google abre Agent Gateway para agentes em GKE em preview
+
+- Fonte: [Google Cloud — notas de versão do GKE de 12 de novembro](https://docs.cloud.google.com/kubernetes-engine/docs/release-notes-new-features#November_12_2026)
+- Publicado: 2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: O Agent Gateway para GKE entrou em preview no canal Rapid, para clusters a partir da versão `1.37.2-gke.1042000`, inicialmente nas regiões `europe-west1` e `us-central1`. A camada centraliza o controle do tráfego de entrada, saída e entre agentes hospedados em GKE. A documentação descreve políticas baseadas em identidade, integração com Agent Registry e Model Armor, além de observabilidade de interações com ferramentas e servidores MCP.
+- Por que importa: Referência de arquitetura para governar agentes autogerenciados e acesso a ferramentas. Ainda não está disponível em região brasileira; adoção nos projetos depende de requisitos de residência de dados e maturidade do preview.
+- Tags: #google-cloud #gke #agent-gateway #agentes-ia #mcp #governanca #seguranca #preview
+- Relações: [[NAVIS / GeoFramework]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-13 07:36 BRT — Copernicus muda processamento operacional de produtos Sentinel-5P
+
+- Fonte: [Copernicus Data Space Ecosystem — ativação dos novos processadores Sentinel-5P](https://dataspace.copernicus.eu/news/2026-11-12-copernicus-sentinel-5-precursor-s5p-products-improvement-operational-switch)
+- Publicado: 2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: O Copernicus informou que atualizou em 11 de novembro o sistema operacional de processamento do Sentinel-5P. Os novos processadores abrangem produtos de nível 1B e nível 2 para metano (CH4), monóxido de carbono (CO), dióxido de nitrogênio (NO2), dióxido de enxofre (SO2) e outras variáveis atmosféricas. Os dados processados com as novas versões já estão no Copernicus Data Space Ecosystem: produtos de tempo quase real começam na órbita 47046, de 11 de novembro; produtos offline, na órbita 47001, de 8 de novembro. Produtos de tempo quase real adquiridos durante a parada de processamento não foram gerados.
+- Por que importa: Pipelines de emissões em óleo e gás devem registrar versão do processador e lacuna de dados antes de comparar séries temporais. Relação com monitoramento de gasodutos é potencial; o anúncio não demonstra detecção de vazamentos pontuais nesses ativos.
+- Tags: #copernicus #sentinel-5p #metano #oleo-e-gas #emissoes #processamento #dados #ciclo-de-vida
+- Relações: [[TAG / TBG / NTS]]
+- Confiança: alta
 
 ### 2026-11-12 07:28 BRT — Google Maps libera ferramentas Pro para agentes e busca ao longo de rotas
 

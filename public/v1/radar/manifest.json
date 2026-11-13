@@ -1,5 +1,5 @@
 {
-  "edition_count": 58,
+  "edition_count": 59,
   "files": {
     "v1/radar/editions/2026-08-16.json": "67cf8294c2caee5f733ce8804e1ff3040040886d24590ec9c8d1f1985b0eb097",
     "v1/radar/editions/2026-08-17.json": "05b50fd29c469f3b3c9777d97895770eec06669aae0ed3813813ed9227d641cd",
@@ -59,13 +59,14 @@
     "v1/radar/editions/2026-11-10.json": "60f4083704d76928ac7d894aa1af7ef879dc6d7800d2ea3342fa1f31ed66f4c7",
     "v1/radar/editions/2026-11-11.json": "372366442b2b429dae7303fddda9f85dd821187dac9d085ecf1c74d3014dca5b",
     "v1/radar/editions/2026-11-12.json": "117ce5d698bcf5b57ec48ff12d0ebadde8f5a95407290dd3f18491c91c8ca7c1",
-    "v1/radar/feed.xml": "288084a54278ea306c2e2c63e91321970eb139c459dc8071ea181f68728cb597",
-    "v1/radar/kindle.json": "4852316a0d3c4e2413491328b0ce73df0ef3ed2d98ec71473c37409374a785b4",
-    "v1/radar/latest.json": "117ce5d698bcf5b57ec48ff12d0ebadde8f5a95407290dd3f18491c91c8ca7c1",
+    "v1/radar/editions/2026-11-13.json": "b319223141ed4758243cd229bc91829daf6191a65b3f87152e323d807b1040bd",
+    "v1/radar/feed.xml": "73f6acdbc6779332566384fc3c838ca5373e76cac30c17e2f0fb3f43984ed706",
+    "v1/radar/kindle.json": "5a768a25ce29645ce5f9fa8e661756d4da3fbbfb1a82a17720d8cadfa9656e95",
+    "v1/radar/latest.json": "b319223141ed4758243cd229bc91829daf6191a65b3f87152e323d807b1040bd",
     "v1/radar/quarantine.json": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97",
-    "v1/radar/radar-canonico.json": "9b5333ebe5be8a8e42029910e60099fed3d2b6912a21bd5c516ca6a2914493c8"
+    "v1/radar/radar-canonico.json": "702dcd6c47e1e4521e43591e6d0f3b95cbf1022f22ed6ad8b2643e973cdaacd5"
   },
-  "item_count": 113,
+  "item_count": 120,
   "quarantine_count": 0,
   "schema_version": "1.0"
 }
