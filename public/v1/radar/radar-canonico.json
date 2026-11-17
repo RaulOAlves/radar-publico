@@ -2,6 +2,202 @@
   "items": [
     {
       "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-8a9a7b795f3ed91f",
+      "published": "2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Esri — ArcGIS agentic developer toolkit",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
+      "summary": "A Esri apresentou o ArcGIS agentic developer toolkit como combinação de servidor MCP público de documentação e skills para agentes de desenvolvimento. O servidor permite buscar e recuperar guias, referências de APIs e SDKs e exemplos oficiais; as skills orientam padrões de implementação, autenticação e tratamento de erros em aplicações ArcGIS. A Esri entrega as skills também por plugin. O anúncio de 16 de novembro descreve componentes já disponíveis, sem comprovar que todos foram lançados naquele dia.",
+      "tags": [
+        "esri",
+        "arcgis",
+        "mcp",
+        "skills",
+        "agentes-ia",
+        "desenvolvimento",
+        "documentacao"
+      ],
+      "title": "Esri detalha toolkit agêntico para desenvolver aplicações ArcGIS",
+      "url": "https://www.esri.com/arcgis-blog/products/developers/developers/improving-ai-assisted-workflows-with-the-arcgis-agentic-developer-toolkit",
+      "why_it_matters": "Dá a Codex e Claude Code contexto técnico oficial para implementar aplicações geoespaciais. O MCP descrito consulta documentação; não é acesso automático a dados ou operações de uma organização ArcGIS."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-3e7ba11098925814",
+      "published": "ciclo de vida oficial marca lançamento em 2026-11-17; horário de disponibilidade não informado, portanto inclusão na janela exata de 24 horas não confirmada",
+      "source": "Esri — novidades do ArcGIS Enterprise 12.2",
+      "source_meta": {
+        "domain": "doc.esri.com"
+      },
+      "summary": "A documentação da versão 12.2 descreve configuração centralizada de recursos de IA, acesso de clientes externos à organização por MCP e catálogos MCP personalizados para agrupar ferramentas por fluxo de trabalho. Também lista o módulo `arcgis.ai` na API for Python para tarefas com conteúdo não estruturado e novos recursos para imagens orientadas, incluindo referência a imagens em armazenamento de nuvem. A página de ciclo de vida da Esri marca 17 de novembro de 2026 como data de lançamento; não há hora comprovada de disponibilização.",
+      "tags": [
+        "esri",
+        "arcgis-enterprise",
+        "mcp",
+        "agentes-ia",
+        "arcgis-python",
+        "imagens-orientadas",
+        "release"
+      ],
+      "title": "Esri marca ArcGIS Enterprise 12.2 e documenta acesso MCP externo",
+      "url": "https://doc.esri.com/en/arcgis-enterprise/latest/introduction/what-s-new-in-arcgis-enterprise.html",
+      "why_it_matters": "Relevante para desenho de agentes com governança no ArcGIS Enterprise e para pipelines de imagens. Antes de planejar migração, verificar disponibilidade efetiva, licenças, beta/GA por recurso e compatibilidade dos ambientes."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-4e2b4f1543d14800",
+      "image": "https://opengraph.githubassets.com/3040c3eaaedb0b2acd5bd42cdca9f7589df49c04f85cc0eeac6e357c6c6e8013/anthropics/claude-code/releases/tag/v2.1.326",
+      "published": "2026-11-16 22:11 UTC, conforme release oficial do GitHub (dentro da janela pesquisada)",
+      "source": "Anthropic — release Claude Code v2.1.326",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "A versão 2.1.326 permite usar Code Mode com equipes de agentes. Corrige casos em que duas chamadas MCP paralelas com resultados longos, concluídas no mesmo milissegundo, podiam ler o resultado salvo uma da outra; a busca de ferramentas também podia carregar ferramenta de outro servidor MCP com o mesmo nome. A versão ajusta avisos de permissões e sandbox, inclusive o resumo incorreto de comandos que apagam ou sobrescrevem arquivos como se fossem leitura.",
+      "tags": [
+        "anthropic",
+        "claude-code",
+        "mcp",
+        "agentes-ia",
+        "code-mode",
+        "seguranca",
+        "release"
+      ],
+      "title": "Claude Code 2.1.326 corrige isolamento de ferramentas MCP paralelas",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+      "why_it_matters": "Corrige riscos de atribuição errada de resultados e de interpretação de ações destrutivas em automações multiagente. Testar fluxos com MCP e hooks ao atualizar."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-66acb3c91887b765",
+      "published": "2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "AWS — novas capacidades de Amazon WorkSpaces para agentes",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
+      "summary": "A AWS anunciou que WorkSpaces para agentes passa a aceitar provedores de identidade OIDC além de SAML e oferece entrada em nome do usuário, preservando sua identidade, permissões e políticas de diretório no desktop. A nova reprodução de sessão combina capturas de tela em vídeo com transcrição das ações; os registros ficam em bucket S3 do cliente, criptografados com suas chaves. A AWS também descreve configuração guiada por skills MCP a partir de assistentes de código e conexão direta de agentes Bedrock AgentCore.",
+      "tags": [
+        "aws",
+        "workspaces",
+        "agentes-ia",
+        "mcp",
+        "oidc",
+        "identidade",
+        "auditoria",
+        "seguranca"
+      ],
+      "title": "AWS amplia identidade e auditoria em WorkSpaces para agentes",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-workspaces-AI-agents-connect-govern/",
+      "why_it_matters": "Oferece controles de identidade e trilha de auditoria para agentes que operam aplicativos corporativos. Avaliar privacidade das gravações, custo e políticas antes de uso em dados de projetos."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-5588ae29a251c1ae",
+      "published": "2026-11-16 08:00 EST (13:00 UTC; dentro da janela pesquisada)",
+      "source": "Kodiak AI e MicroVision — integração do LiDAR IRIS",
+      "source_meta": {
+        "domain": "kodiakrobotics.gcs-web.com"
+      },
+      "summary": "A Kodiak AI e a MicroVision anunciaram que o LiDAR IRIS de longo alcance já integra a sexta geração da plataforma autônoma da Kodiak, que combina LiDAR, câmeras e radar. Segundo as empresas, o sensor detecta objetos a mais de 250 metros e foi validado sob vibração, poeira, clima e iluminação de operações comerciais. A Kodiak informa 37 caminhões com sua tecnologia em frota operada por cliente em 3 de novembro. O serviço comercial de longa distância sem motorista está previsto, mas não concluído, para o fim de 2026.",
+      "tags": [
+        "logistica",
+        "caminhoes-autonomos",
+        "lidar",
+        "percepcao",
+        "sensores",
+        "integracao",
+        "implantacao"
+      ],
+      "title": "Kodiak integra LiDAR IRIS à plataforma de caminhões autônomos",
+      "url": "https://kodiakrobotics.gcs-web.com/news-releases/news-release-details/microvision-lidar-powers-commercial-driverless-trucking-scale",
+      "why_it_matters": "Evidência de percepção de longo alcance integrada a frota logística real. Aplicação a transporte florestal ou de grãos é hipótese, não implantação anunciada."
+    },
+    {
+      "confidence": "média",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-093f502ff1f882b5",
+      "image": "https://framerusercontent.com/images/ou5fvOLnvhnnYyN4N4FzUCadxB0.png?width=1920&height=1080",
+      "published": "2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Augment — parceria com Mastery Logistics Systems e casos Werner/Schneider",
+      "source_meta": {
+        "domain": "www.goaugment.com"
+      },
+      "summary": "Mastery Logistics Systems e Augment anunciaram a conexão do agente Augie ao TMS MasterMind por APIs abertas. O agente reúne dados recebidos fora do TMS, como e-mails, e grava atualizações no sistema. Segundo as empresas, Werner utiliza Augie para construir cargas fora de fluxos automáticos e Schneider para confirmação de entrega e etapas de faturamento.",
+      "tags": [
+        "logistica",
+        "tms",
+        "agentes-ia",
+        "api",
+        "automacao",
+        "frete",
+        "implantacao"
+      ],
+      "title": "Agente Augie integra trabalho fora do TMS ao MasterMind",
+      "url": "https://www.goaugment.com/blog/mastery-and-augment-partner",
+      "why_it_matters": "Caso operacional de agente conectado a sistema transacional de frete, com clientes identificados. Pode orientar integração logística; não comprova roteirização geoespacial ou ganhos quantitativos independentes."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-9a46a086430673fa",
+      "published": "aviso listado em 2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "USGS EROS — manutenção programada de 23 de novembro",
+      "source_meta": {
+        "domain": "www.usgs.gov"
+      },
+      "summary": "O USGS EROS programou manutenção dos sistemas de acesso e geração de produtos para 23 de novembro, das 07:00 às 14:00 no horário Central dos EUA. EarthExplorer, M2M, GloVis e outras ferramentas serão afetadas. O acesso direto a dados existentes na nuvem permanecerá disponível, mas novos dados não serão adicionados nesse intervalo; processamento Landsat ficará pausado e aquisições Landsat 8/9 aguardarão retomada.",
+      "tags": [
+        "usgs",
+        "landsat",
+        "m2m",
+        "api",
+        "manutencao",
+        "disponibilidade",
+        "sensoriamento-remoto"
+      ],
+      "title": "USGS programa pausa de ferramentas e processamento Landsat em 23 de novembro",
+      "url": "https://www.usgs.gov/centers/eros/2026-11-23-planned-maintenance",
+      "why_it_matters": "Pipelines dependentes de M2M ou de novos produtos Landsat devem tolerar indisponibilidade e atraso. Relação com projetos é condicional ao uso desses serviços."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-c7b6cd729c755d86",
+      "image": "https://dataspace.copernicus.eu/sites/default/files/styles/opengraph/public/media/images/2023-03/og_share.png?itok=zjtW85Fb",
+      "published": "2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Copernicus Data Space Ecosystem — aviso sobre QA após UPAS 3.0.1",
+      "source_meta": {
+        "domain": "dataspace.copernicus.eu"
+      },
+      "summary": "Após atualização dos processadores Sentinel-5P, o Copernicus identificou que, em casos raros de alta fração de nuvens, especialmente sobre América do Sul e África, os valores de qualidade (QA) dos produtos quase em tempo real de nuvens e ozônio (O3) podem ficar abaixo do esperado. O QA de O3 também é afetado por utilizar QA de nuvens como entrada. O problema não invalida os produtos; correção está em teste. Até lá, o operador recomenda limiar de QA 0,4 para O3 quase em tempo real.",
+      "tags": [
+        "copernicus",
+        "sentinel-5p",
+        "ozonio",
+        "nuvens",
+        "qualidade-de-dados",
+        "processamento",
+        "sensoriamento-remoto"
+      ],
+      "title": "Copernicus identifica erro de QA em produtos Sentinel-5P de ozônio e nuvens",
+      "url": "https://dataspace.copernicus.eu/news/2026-11-16-sentinel-5p-nrti-o3-and-cloud-products-qa-value-issue-following-upas-301-upgrade",
+      "why_it_matters": "Filtros automáticos podem descartar observações válidas nessas regiões. Revisar limiar em fluxos que usam O3; o aviso não indica impacto em produtos de metano."
+    },
+    {
+      "confidence": "alta",
       "edition_at": "2026-11-13T07:36:00-03:00",
       "edition_date": "2026-11-13",
       "id": "radar-42b3dd248bd458bd",

@@ -1,8 +1,204 @@
 {
-  "edition_date": "2026-11-13",
-  "edition_id": "radar-2026-11-13T07:36:00-03:00",
-  "generated_at": "2026-11-13T07:36:00-03:00",
+  "edition_date": "2026-11-17",
+  "edition_id": "radar-2026-11-17T07:35:00-03:00",
+  "generated_at": "2026-11-17T07:35:00-03:00",
   "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-8a9a7b795f3ed91f",
+      "published": "2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Esri — ArcGIS agentic developer toolkit",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
+      "summary": "A Esri apresentou o ArcGIS agentic developer toolkit como combinação de servidor MCP público de documentação e skills para agentes de desenvolvimento. O servidor permite buscar e recuperar guias, referências de APIs e SDKs e exemplos oficiais; as skills orientam padrões de implementação, autenticação e tratamento de erros em aplicações ArcGIS. A Esri entrega as skills também por plugin. O anúncio de 16 de novembro descreve componentes já disponíveis, sem comprovar que todos foram lançados naquele dia.",
+      "tags": [
+        "esri",
+        "arcgis",
+        "mcp",
+        "skills",
+        "agentes-ia",
+        "desenvolvimento",
+        "documentacao"
+      ],
+      "title": "Esri detalha toolkit agêntico para desenvolver aplicações ArcGIS",
+      "url": "https://www.esri.com/arcgis-blog/products/developers/developers/improving-ai-assisted-workflows-with-the-arcgis-agentic-developer-toolkit",
+      "why_it_matters": "Dá a Codex e Claude Code contexto técnico oficial para implementar aplicações geoespaciais. O MCP descrito consulta documentação; não é acesso automático a dados ou operações de uma organização ArcGIS."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-3e7ba11098925814",
+      "published": "ciclo de vida oficial marca lançamento em 2026-11-17; horário de disponibilidade não informado, portanto inclusão na janela exata de 24 horas não confirmada",
+      "source": "Esri — novidades do ArcGIS Enterprise 12.2",
+      "source_meta": {
+        "domain": "doc.esri.com"
+      },
+      "summary": "A documentação da versão 12.2 descreve configuração centralizada de recursos de IA, acesso de clientes externos à organização por MCP e catálogos MCP personalizados para agrupar ferramentas por fluxo de trabalho. Também lista o módulo `arcgis.ai` na API for Python para tarefas com conteúdo não estruturado e novos recursos para imagens orientadas, incluindo referência a imagens em armazenamento de nuvem. A página de ciclo de vida da Esri marca 17 de novembro de 2026 como data de lançamento; não há hora comprovada de disponibilização.",
+      "tags": [
+        "esri",
+        "arcgis-enterprise",
+        "mcp",
+        "agentes-ia",
+        "arcgis-python",
+        "imagens-orientadas",
+        "release"
+      ],
+      "title": "Esri marca ArcGIS Enterprise 12.2 e documenta acesso MCP externo",
+      "url": "https://doc.esri.com/en/arcgis-enterprise/latest/introduction/what-s-new-in-arcgis-enterprise.html",
+      "why_it_matters": "Relevante para desenho de agentes com governança no ArcGIS Enterprise e para pipelines de imagens. Antes de planejar migração, verificar disponibilidade efetiva, licenças, beta/GA por recurso e compatibilidade dos ambientes."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-4e2b4f1543d14800",
+      "image": "https://opengraph.githubassets.com/3040c3eaaedb0b2acd5bd42cdca9f7589df49c04f85cc0eeac6e357c6c6e8013/anthropics/claude-code/releases/tag/v2.1.326",
+      "published": "2026-11-16 22:11 UTC, conforme release oficial do GitHub (dentro da janela pesquisada)",
+      "source": "Anthropic — release Claude Code v2.1.326",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "A versão 2.1.326 permite usar Code Mode com equipes de agentes. Corrige casos em que duas chamadas MCP paralelas com resultados longos, concluídas no mesmo milissegundo, podiam ler o resultado salvo uma da outra; a busca de ferramentas também podia carregar ferramenta de outro servidor MCP com o mesmo nome. A versão ajusta avisos de permissões e sandbox, inclusive o resumo incorreto de comandos que apagam ou sobrescrevem arquivos como se fossem leitura.",
+      "tags": [
+        "anthropic",
+        "claude-code",
+        "mcp",
+        "agentes-ia",
+        "code-mode",
+        "seguranca",
+        "release"
+      ],
+      "title": "Claude Code 2.1.326 corrige isolamento de ferramentas MCP paralelas",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+      "why_it_matters": "Corrige riscos de atribuição errada de resultados e de interpretação de ações destrutivas em automações multiagente. Testar fluxos com MCP e hooks ao atualizar."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-66acb3c91887b765",
+      "published": "2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "AWS — novas capacidades de Amazon WorkSpaces para agentes",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
+      "summary": "A AWS anunciou que WorkSpaces para agentes passa a aceitar provedores de identidade OIDC além de SAML e oferece entrada em nome do usuário, preservando sua identidade, permissões e políticas de diretório no desktop. A nova reprodução de sessão combina capturas de tela em vídeo com transcrição das ações; os registros ficam em bucket S3 do cliente, criptografados com suas chaves. A AWS também descreve configuração guiada por skills MCP a partir de assistentes de código e conexão direta de agentes Bedrock AgentCore.",
+      "tags": [
+        "aws",
+        "workspaces",
+        "agentes-ia",
+        "mcp",
+        "oidc",
+        "identidade",
+        "auditoria",
+        "seguranca"
+      ],
+      "title": "AWS amplia identidade e auditoria em WorkSpaces para agentes",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-workspaces-AI-agents-connect-govern/",
+      "why_it_matters": "Oferece controles de identidade e trilha de auditoria para agentes que operam aplicativos corporativos. Avaliar privacidade das gravações, custo e políticas antes de uso em dados de projetos."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-5588ae29a251c1ae",
+      "published": "2026-11-16 08:00 EST (13:00 UTC; dentro da janela pesquisada)",
+      "source": "Kodiak AI e MicroVision — integração do LiDAR IRIS",
+      "source_meta": {
+        "domain": "kodiakrobotics.gcs-web.com"
+      },
+      "summary": "A Kodiak AI e a MicroVision anunciaram que o LiDAR IRIS de longo alcance já integra a sexta geração da plataforma autônoma da Kodiak, que combina LiDAR, câmeras e radar. Segundo as empresas, o sensor detecta objetos a mais de 250 metros e foi validado sob vibração, poeira, clima e iluminação de operações comerciais. A Kodiak informa 37 caminhões com sua tecnologia em frota operada por cliente em 3 de novembro. O serviço comercial de longa distância sem motorista está previsto, mas não concluído, para o fim de 2026.",
+      "tags": [
+        "logistica",
+        "caminhoes-autonomos",
+        "lidar",
+        "percepcao",
+        "sensores",
+        "integracao",
+        "implantacao"
+      ],
+      "title": "Kodiak integra LiDAR IRIS à plataforma de caminhões autônomos",
+      "url": "https://kodiakrobotics.gcs-web.com/news-releases/news-release-details/microvision-lidar-powers-commercial-driverless-trucking-scale",
+      "why_it_matters": "Evidência de percepção de longo alcance integrada a frota logística real. Aplicação a transporte florestal ou de grãos é hipótese, não implantação anunciada."
+    },
+    {
+      "confidence": "média",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-093f502ff1f882b5",
+      "image": "https://framerusercontent.com/images/ou5fvOLnvhnnYyN4N4FzUCadxB0.png?width=1920&height=1080",
+      "published": "2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Augment — parceria com Mastery Logistics Systems e casos Werner/Schneider",
+      "source_meta": {
+        "domain": "www.goaugment.com"
+      },
+      "summary": "Mastery Logistics Systems e Augment anunciaram a conexão do agente Augie ao TMS MasterMind por APIs abertas. O agente reúne dados recebidos fora do TMS, como e-mails, e grava atualizações no sistema. Segundo as empresas, Werner utiliza Augie para construir cargas fora de fluxos automáticos e Schneider para confirmação de entrega e etapas de faturamento.",
+      "tags": [
+        "logistica",
+        "tms",
+        "agentes-ia",
+        "api",
+        "automacao",
+        "frete",
+        "implantacao"
+      ],
+      "title": "Agente Augie integra trabalho fora do TMS ao MasterMind",
+      "url": "https://www.goaugment.com/blog/mastery-and-augment-partner",
+      "why_it_matters": "Caso operacional de agente conectado a sistema transacional de frete, com clientes identificados. Pode orientar integração logística; não comprova roteirização geoespacial ou ganhos quantitativos independentes."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-9a46a086430673fa",
+      "published": "aviso listado em 2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "USGS EROS — manutenção programada de 23 de novembro",
+      "source_meta": {
+        "domain": "www.usgs.gov"
+      },
+      "summary": "O USGS EROS programou manutenção dos sistemas de acesso e geração de produtos para 23 de novembro, das 07:00 às 14:00 no horário Central dos EUA. EarthExplorer, M2M, GloVis e outras ferramentas serão afetadas. O acesso direto a dados existentes na nuvem permanecerá disponível, mas novos dados não serão adicionados nesse intervalo; processamento Landsat ficará pausado e aquisições Landsat 8/9 aguardarão retomada.",
+      "tags": [
+        "usgs",
+        "landsat",
+        "m2m",
+        "api",
+        "manutencao",
+        "disponibilidade",
+        "sensoriamento-remoto"
+      ],
+      "title": "USGS programa pausa de ferramentas e processamento Landsat em 23 de novembro",
+      "url": "https://www.usgs.gov/centers/eros/2026-11-23-planned-maintenance",
+      "why_it_matters": "Pipelines dependentes de M2M ou de novos produtos Landsat devem tolerar indisponibilidade e atraso. Relação com projetos é condicional ao uso desses serviços."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-17T07:35:00-03:00",
+      "edition_date": "2026-11-17",
+      "id": "radar-c7b6cd729c755d86",
+      "image": "https://dataspace.copernicus.eu/sites/default/files/styles/opengraph/public/media/images/2023-03/og_share.png?itok=zjtW85Fb",
+      "published": "2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Copernicus Data Space Ecosystem — aviso sobre QA após UPAS 3.0.1",
+      "source_meta": {
+        "domain": "dataspace.copernicus.eu"
+      },
+      "summary": "Após atualização dos processadores Sentinel-5P, o Copernicus identificou que, em casos raros de alta fração de nuvens, especialmente sobre América do Sul e África, os valores de qualidade (QA) dos produtos quase em tempo real de nuvens e ozônio (O3) podem ficar abaixo do esperado. O QA de O3 também é afetado por utilizar QA de nuvens como entrada. O problema não invalida os produtos; correção está em teste. Até lá, o operador recomenda limiar de QA 0,4 para O3 quase em tempo real.",
+      "tags": [
+        "copernicus",
+        "sentinel-5p",
+        "ozonio",
+        "nuvens",
+        "qualidade-de-dados",
+        "processamento",
+        "sensoriamento-remoto"
+      ],
+      "title": "Copernicus identifica erro de QA em produtos Sentinel-5P de ozônio e nuvens",
+      "url": "https://dataspace.copernicus.eu/news/2026-11-16-sentinel-5p-nrti-o3-and-cloud-products-qa-value-issue-following-upas-301-upgrade",
+      "why_it_matters": "Filtros automáticos podem descartar observações válidas nessas regiões. Revisar limiar em fluxos que usam O3; o aviso não indica impacto em produtos de metano."
+    },
     {
       "confidence": "alta",
       "edition_at": "2026-11-13T07:36:00-03:00",
@@ -1036,207 +1232,6 @@
       "title": "Google publica skills oficiais para agentes criarem integrações via API",
       "url": "https://docs.cloud.google.com/application-integration/docs/agent-skills-overview",
       "why_it_matters": "três skills abertas orientam agentes a configurar, criar/publicar e diagnosticar integrações do Google Cloud Application Integration via REST API. Fornecem referência operacional para automatizar fluxos entre sistemas corporativos com IAM e versionamento; uso nos projetos depende da adoção dessa plataforma."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-29T07:35:00-03:00",
-      "edition_date": "2026-10-29",
-      "id": "radar-f0881e2805c75550",
-      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
-      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — release notes de 28/10, CodeMender 0.17.0",
-      "source_meta": {
-        "domain": "docs.cloud.google.com"
-      },
-      "summary": "nova versão separa configuração de sandbox da política de comandos, protege `.git/hooks`, `.git/config` e `.codemender` contra alterações durante correções e fecha travessia por symlinks fora de `allowedRoots`. Medidas relevantes ao avaliar agentes que editam repositórios com acesso a dados ou infraestrutura corporativa.",
-      "tags": [
-        "google-cloud",
-        "codemender",
-        "agentes-ia",
-        "seguranca",
-        "sandbox",
-        "desenvolvimento",
-        "release"
-      ],
-      "title": "CodeMender 0.17 reforça limites de sandbox e políticas de agentes de código",
-      "url": "https://docs.cloud.google.com/release-notes#October_28_2026",
-      "why_it_matters": "nova versão separa configuração de sandbox da política de comandos, protege `.git/hooks`, `.git/config` e `.codemender` contra alterações durante correções e fecha travessia por symlinks fora de `allowedRoots`. Medidas relevantes ao avaliar agentes que editam repositórios com acesso a dados ou infraestrutura corporativa."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-28T12:35:00-03:00",
-      "edition_date": "2026-10-28",
-      "id": "radar-6040bc289689cdfd",
-      "published": "2026-10-27 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Esri — Brotli Vulnerabilities (Broccoli2Shell)",
-      "source_meta": {
-        "domain": "www.esri.com"
-      },
-      "summary": "Esri investiga o impacto de CVE-2026-111497 em seus produtos e recomenda atualizar o .NET Framework usado por ArcGIS Pro, Web Adaptor em IIS e extensões SOE/SOI; ArcGIS Online já recebeu medidas mitigadoras. Quem opera ArcGIS Enterprise deve verificar versões e acompanhar a avaliação, sem presumir que todo produto está vulnerável.",
-      "tags": [
-        "esri",
-        "arcgis",
-        "arcgis-enterprise",
-        "brotli",
-        "cve",
-        "seguranca",
-        "patch"
-      ],
-      "title": "Esri publica medidas para falha crítica no Brotli; impacto em ArcGIS sob investigação",
-      "url": "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/brotli-vulnerabilities-broccoli2shell",
-      "why_it_matters": "Esri investiga o impacto de CVE-2026-111497 em seus produtos e recomenda atualizar o .NET Framework usado por ArcGIS Pro, Web Adaptor em IIS e extensões SOE/SOI; ArcGIS Online já recebeu medidas mitigadoras. Quem opera ArcGIS Enterprise deve verificar versões e acompanhar a avaliação, sem presumir que todo produto está vulnerável."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-28T12:35:00-03:00",
-      "edition_date": "2026-10-28",
-      "id": "radar-3514aff3e3d93b8d",
-      "image": "https://support.esri.com/content/dam/esrisites/en-us/support/technical-support",
-      "published": "2026-10-27 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Esri — ArcGIS Server 11.5 Geocoding Capability Patch",
-      "source_meta": {
-        "domain": "support.esri.com"
-      },
-      "summary": "serviços de geocodificação publicados do ArcGIS Pro 3.6 ou posterior no ArcGIS Server 11.5 podem devolver zero resultados, inclusive via `FindAddressCandidates` e `GeocodeAddresses`. Esri recomenda o patch para instalações afetadas; planejar reinício do serviço e rollback antes de aplicar.",
-      "tags": [
-        "esri",
-        "arcgis-enterprise",
-        "arcgis-pro",
-        "geocodificacao",
-        "api",
-        "patch",
-        "logistica"
-      ],
-      "title": "Patch corrige geocodificação quebrada entre ArcGIS Pro 3.6 e Server 11.5",
-      "url": "https://support.esri.com/en-us/patches-updates/2026/arcgis-server-11-5-geocoding-capability-patch",
-      "why_it_matters": "serviços de geocodificação publicados do ArcGIS Pro 3.6 ou posterior no ArcGIS Server 11.5 podem devolver zero resultados, inclusive via `FindAddressCandidates` e `GeocodeAddresses`. Esri recomenda o patch para instalações afetadas; planejar reinício do serviço e rollback antes de aplicar."
-    },
-    {
-      "confidence": "média",
-      "edition_at": "2026-10-28T12:35:00-03:00",
-      "edition_date": "2026-10-28",
-      "id": "radar-7562f82019fb942b",
-      "image": "https://cdn.prod.website-files.com/686d188831c929aef2a06fdf/6ae1aa1188d29a2dd6bfb1f6_6ae1a9e0726f7411cc1df641_edgx-transporter-16-sky-high-intelligence.jpeg",
-      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "EDGX — Sterna em órbita",
-      "source_meta": {
-        "domain": "www.edgx.space"
-      },
-      "summary": "empresa reporta que carga baseada em NVIDIA Jetson, lançada em março, já retornou dados operacionais em órbita; outra ainda está em comissionamento. Processar imagens a bordo pode reduzir volume transmitido e latência de alertas geoespaciais, mas a fonte não demonstra ainda serviço comercial ou desempenho dessas aplicações.",
-      "tags": [
-        "geoia",
-        "edge-ai",
-        "observacao-da-terra",
-        "satelites",
-        "nvidia",
-        "demonstracao"
-      ],
-      "title": "EDGX divulga demonstração de computação de IA em órbita",
-      "url": "https://www.edgx.space/blog/edgx-launches-ai-computing-platform-in-orbit-on-spacex-transporter-16-using-nvidia-accelerated-computing",
-      "why_it_matters": "empresa reporta que carga baseada em NVIDIA Jetson, lançada em março, já retornou dados operacionais em órbita; outra ainda está em comissionamento. Processar imagens a bordo pode reduzir volume transmitido e latência de alertas geoespaciais, mas a fonte não demonstra ainda serviço comercial ou desempenho dessas aplicações."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-23T07:29:00-03:00",
-      "edition_date": "2026-10-23",
-      "id": "radar-2f70043cc1819c04",
-      "image": "https://www.datocms-assets.com/64837/1792613095-olmoearth-v1-3-blog-thumbnail.png",
-      "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Ai2 — OlmoEarth v1.3",
-      "source_meta": {
-        "domain": "allenai.org"
-      },
-      "summary": "o Ai2 liberou modelo, dados e embeddings globais pré-computados (64/128 dimensões) e um explorador para encontrar áreas semelhantes e criar mapas com poucos exemplos. Reduz o esforço para testar classificação de culturas, vigor e mudança de cobertura em projetos GeoIA; desempenho local ainda precisa ser validado.",
-      "tags": [
-        "geoia",
-        "olmoearth",
-        "sensoriamento-remoto",
-        "embeddings",
-        "sentinel",
-        "landsat",
-        "agro",
-        "florestal",
-        "release"
-      ],
-      "title": "OlmoEarth v1.3 libera embeddings planetários anuais de 10 m",
-      "url": "https://allenai.org/blog/olmoearth-v1-3",
-      "why_it_matters": "o Ai2 liberou modelo, dados e embeddings globais pré-computados (64/128 dimensões) e um explorador para encontrar áreas semelhantes e criar mapas com poucos exemplos. Reduz o esforço para testar classificação de culturas, vigor e mudança de cobertura em projetos GeoIA; desempenho local ainda precisa ser validado."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-23T07:29:00-03:00",
-      "edition_date": "2026-10-23",
-      "id": "radar-47abee776e53ac9f",
-      "image": "https://www.datocms-assets.com/64837/1792681400-planteur-tropical-regions-tan.png",
-      "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Ai2 — PLANTEUR: benchmark de culturas tropicais",
-      "source_meta": {
-        "domain": "allenai.org"
-      },
-      "summary": "novo conjunto aberto reúne séries Sentinel-1/2 e Landsat-8 de 4.506 km² de parcelas, sete classes de culturas (incluindo cana) e testes fora da região de treino. Nos testes dos autores, todos os métodos perderam cerca de metade da acurácia em uma ilha não vista: alerta concreto para validar modelos agrícolas fora da área de treinamento.",
-      "tags": [
-        "geoia",
-        "paper",
-        "benchmark",
-        "agro",
-        "cana-de-acucar",
-        "classificacao-de-culturas",
-        "generalizacao",
-        "sentinel"
-      ],
-      "title": "PLANTEUR expõe lacuna de generalização na classificação de culturas tropicais",
-      "url": "https://allenai.org/blog/planteur",
-      "why_it_matters": "novo conjunto aberto reúne séries Sentinel-1/2 e Landsat-8 de 4.506 km² de parcelas, sete classes de culturas (incluindo cana) e testes fora da região de treino. Nos testes dos autores, todos os métodos perderam cerca de metade da acurácia em uma ilha não vista: alerta concreto para validar modelos agrícolas fora da área de treinamento."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-23T07:29:00-03:00",
-      "edition_date": "2026-10-23",
-      "id": "radar-0307ec1244417a61",
-      "image": "https://opengraph.githubassets.com/bee1aa92e21b63812e9b480ed18e7dbb603f613bea9fb7b974de0575a4b41bd2/anthropics/claude-code/releases/tag/v2.1.309",
-      "published": "2026-10-22 22:18 (horário exibido pelo GitHub; fuso não informado)",
-      "source": "Anthropic — Claude Code v2.1.309",
-      "source_meta": {
-        "domain": "github.com"
-      },
-      "summary": "o release corrige execução de arquivos de inicialização do shell fora do sandbox, falhas de regras de escrita via symlink, alteração indevida do arquivo `--mcp-config` e contornos de permissões Bash/worktree. É atualização prioritária para agentes com acesso a código, arquivos e servidores MCP; revisar políticas após atualizar.",
-      "tags": [
-        "anthropic",
-        "claude-code",
-        "mcp",
-        "agentes-ia",
-        "sandbox",
-        "seguranca",
-        "release"
-      ],
-      "title": "Claude Code 2.1.309 corrige contornos de sandbox e proteção de configuração MCP",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.309",
-      "why_it_matters": "o release corrige execução de arquivos de inicialização do shell fora do sandbox, falhas de regras de escrita via symlink, alteração indevida do arquivo `--mcp-config` e contornos de permissões Bash/worktree. É atualização prioritária para agentes com acesso a código, arquivos e servidores MCP; revisar políticas após atualizar."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-23T07:29:00-03:00",
-      "edition_date": "2026-10-23",
-      "id": "radar-42dc5172617fe2e4",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/2oP82PTDAPhlalF1TRNt8Q/af6bb8e886e29d6e0880c75a0de781f8/build-more-responsive-apps-with-the-decisions-api-social.png?w=1600&h=900&fit=fill",
-      "published": "2026-10-22 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "OpenAI — Decisions API",
-      "source_meta": {
-        "domain": "openai.com"
-      },
-      "summary": "API agora em disponibilidade geral responde probabilidade, escolha ou escore a partir de texto, imagem ou JSON, com até 400 perguntas por requisição. Pode reduzir latência/custo de triagem e roteamento em agentes e eventos geoespaciais; o ganho de até 10 vezes é alegação da OpenAI, não garantia para estes projetos.",
-      "tags": [
-        "openai",
-        "decisions-api",
-        "agentes-ia",
-        "api",
-        "classificacao",
-        "roteamento",
-        "release"
-      ],
-      "title": "OpenAI disponibiliza Decisions API para decisões delimitadas de agentes",
-      "url": "https://openai.com/index/decisions-api/",
-      "why_it_matters": "API agora em disponibilidade geral responde probabilidade, escolha ou escore a partir de texto, imagem ou JSON, com até 400 perguntas por requisição. Pode reduzir latência/custo de triagem e roteamento em agentes e eventos geoespaciais; o ganho de até 10 vezes é alegação da OpenAI, não garantia para estes projetos."
     }
   ],
   "methodology": {
@@ -1246,7 +1241,7 @@
   "metrics": {
     "high_confidence": 46,
     "signals": 50,
-    "sources": 22
+    "sources": 23
   },
   "schema_version": "1.0",
   "scope": "ultimas_50_publicacoes",

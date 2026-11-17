@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-16 07:30 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-17 07:35 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,86 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-17 07:35 BRT — Esri detalha toolkit agêntico para desenvolver aplicações ArcGIS
+
+- Fonte: [Esri — ArcGIS agentic developer toolkit](https://www.esri.com/arcgis-blog/products/developers/developers/improving-ai-assisted-workflows-with-the-arcgis-agentic-developer-toolkit)
+- Publicado: 2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: A Esri apresentou o ArcGIS agentic developer toolkit como combinação de servidor MCP público de documentação e skills para agentes de desenvolvimento. O servidor permite buscar e recuperar guias, referências de APIs e SDKs e exemplos oficiais; as skills orientam padrões de implementação, autenticação e tratamento de erros em aplicações ArcGIS. A Esri entrega as skills também por plugin. O anúncio de 16 de novembro descreve componentes já disponíveis, sem comprovar que todos foram lançados naquele dia.
+- Por que importa: Dá a Codex e Claude Code contexto técnico oficial para implementar aplicações geoespaciais. O MCP descrito consulta documentação; não é acesso automático a dados ou operações de uma organização ArcGIS.
+- Tags: #esri #arcgis #mcp #skills #agentes-ia #desenvolvimento #documentacao
+- Relações: [[NAVIS / GeoFramework]], [[IMAC — Plataforma GIS]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-17 07:35 BRT — Esri marca ArcGIS Enterprise 12.2 e documenta acesso MCP externo
+
+- Fonte: [Esri — novidades do ArcGIS Enterprise 12.2](https://doc.esri.com/en/arcgis-enterprise/latest/introduction/what-s-new-in-arcgis-enterprise.html)
+- Publicado: ciclo de vida oficial marca lançamento em 2026-11-17; horário de disponibilidade não informado, portanto inclusão na janela exata de 24 horas não confirmada
+- Resumo: A documentação da versão 12.2 descreve configuração centralizada de recursos de IA, acesso de clientes externos à organização por MCP e catálogos MCP personalizados para agrupar ferramentas por fluxo de trabalho. Também lista o módulo `arcgis.ai` na API for Python para tarefas com conteúdo não estruturado e novos recursos para imagens orientadas, incluindo referência a imagens em armazenamento de nuvem. A página de ciclo de vida da Esri marca 17 de novembro de 2026 como data de lançamento; não há hora comprovada de disponibilização.
+- Por que importa: Relevante para desenho de agentes com governança no ArcGIS Enterprise e para pipelines de imagens. Antes de planejar migração, verificar disponibilidade efetiva, licenças, beta/GA por recurso e compatibilidade dos ambientes.
+- Tags: #esri #arcgis-enterprise #mcp #agentes-ia #arcgis-python #imagens-orientadas #release
+- Relações: [[NAVIS / GeoFramework]], [[IMAC — Plataforma GIS]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-17 07:35 BRT — Claude Code 2.1.326 corrige isolamento de ferramentas MCP paralelas
+
+- Fonte: [Anthropic — release Claude Code v2.1.326](https://github.com/anthropics/claude-code/releases/tag/v2.1.326)
+- Publicado: 2026-11-16 22:11 UTC, conforme release oficial do GitHub (dentro da janela pesquisada)
+- Resumo: A versão 2.1.326 permite usar Code Mode com equipes de agentes. Corrige casos em que duas chamadas MCP paralelas com resultados longos, concluídas no mesmo milissegundo, podiam ler o resultado salvo uma da outra; a busca de ferramentas também podia carregar ferramenta de outro servidor MCP com o mesmo nome. A versão ajusta avisos de permissões e sandbox, inclusive o resumo incorreto de comandos que apagam ou sobrescrevem arquivos como se fossem leitura.
+- Por que importa: Corrige riscos de atribuição errada de resultados e de interpretação de ações destrutivas em automações multiagente. Testar fluxos com MCP e hooks ao atualizar.
+- Tags: #anthropic #claude-code #mcp #agentes-ia #code-mode #seguranca #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-17 07:35 BRT — AWS amplia identidade e auditoria em WorkSpaces para agentes
+
+- Fonte: [AWS — novas capacidades de Amazon WorkSpaces para agentes](https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-workspaces-AI-agents-connect-govern/)
+- Publicado: 2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: A AWS anunciou que WorkSpaces para agentes passa a aceitar provedores de identidade OIDC além de SAML e oferece entrada em nome do usuário, preservando sua identidade, permissões e políticas de diretório no desktop. A nova reprodução de sessão combina capturas de tela em vídeo com transcrição das ações; os registros ficam em bucket S3 do cliente, criptografados com suas chaves. A AWS também descreve configuração guiada por skills MCP a partir de assistentes de código e conexão direta de agentes Bedrock AgentCore.
+- Por que importa: Oferece controles de identidade e trilha de auditoria para agentes que operam aplicativos corporativos. Avaliar privacidade das gravações, custo e políticas antes de uso em dados de projetos.
+- Tags: #aws #workspaces #agentes-ia #mcp #oidc #identidade #auditoria #seguranca
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-17 07:35 BRT — Kodiak integra LiDAR IRIS à plataforma de caminhões autônomos
+
+- Fonte: [Kodiak AI e MicroVision — integração do LiDAR IRIS](https://kodiakrobotics.gcs-web.com/news-releases/news-release-details/microvision-lidar-powers-commercial-driverless-trucking-scale)
+- Publicado: 2026-11-16 08:00 EST (13:00 UTC; dentro da janela pesquisada)
+- Resumo: A Kodiak AI e a MicroVision anunciaram que o LiDAR IRIS de longo alcance já integra a sexta geração da plataforma autônoma da Kodiak, que combina LiDAR, câmeras e radar. Segundo as empresas, o sensor detecta objetos a mais de 250 metros e foi validado sob vibração, poeira, clima e iluminação de operações comerciais. A Kodiak informa 37 caminhões com sua tecnologia em frota operada por cliente em 3 de novembro. O serviço comercial de longa distância sem motorista está previsto, mas não concluído, para o fim de 2026.
+- Por que importa: Evidência de percepção de longo alcance integrada a frota logística real. Aplicação a transporte florestal ou de grãos é hipótese, não implantação anunciada.
+- Tags: #logistica #caminhoes-autonomos #lidar #percepcao #sensores #integracao #implantacao
+- Relações: [[Suzano — Rotas e logística]], [[GeoNext — LiDAR e rodovias]]
+- Confiança: alta
+
+### 2026-11-17 07:35 BRT — Agente Augie integra trabalho fora do TMS ao MasterMind
+
+- Fonte: [Augment — parceria com Mastery Logistics Systems e casos Werner/Schneider](https://www.goaugment.com/blog/mastery-and-augment-partner)
+- Publicado: 2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: Mastery Logistics Systems e Augment anunciaram a conexão do agente Augie ao TMS MasterMind por APIs abertas. O agente reúne dados recebidos fora do TMS, como e-mails, e grava atualizações no sistema. Segundo as empresas, Werner utiliza Augie para construir cargas fora de fluxos automáticos e Schneider para confirmação de entrega e etapas de faturamento.
+- Por que importa: Caso operacional de agente conectado a sistema transacional de frete, com clientes identificados. Pode orientar integração logística; não comprova roteirização geoespacial ou ganhos quantitativos independentes.
+- Tags: #logistica #tms #agentes-ia #api #automacao #frete #implantacao
+- Relações: [[Suzano — Rotas e logística]], [[NAVIS / GeoFramework]]
+- Confiança: média
+
+### 2026-11-17 07:35 BRT — USGS programa pausa de ferramentas e processamento Landsat em 23 de novembro
+
+- Fonte: [USGS EROS — manutenção programada de 23 de novembro](https://www.usgs.gov/centers/eros/2026-11-23-planned-maintenance)
+- Publicado: aviso listado em 2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: O USGS EROS programou manutenção dos sistemas de acesso e geração de produtos para 23 de novembro, das 07:00 às 14:00 no horário Central dos EUA. EarthExplorer, M2M, GloVis e outras ferramentas serão afetadas. O acesso direto a dados existentes na nuvem permanecerá disponível, mas novos dados não serão adicionados nesse intervalo; processamento Landsat ficará pausado e aquisições Landsat 8/9 aguardarão retomada.
+- Por que importa: Pipelines dependentes de M2M ou de novos produtos Landsat devem tolerar indisponibilidade e atraso. Relação com projetos é condicional ao uso desses serviços.
+- Tags: #usgs #landsat #m2m #api #manutencao #disponibilidade #sensoriamento-remoto
+- Relações: [[Amaggi — Monitoramento de desmatamento]], [[Eucatex — Monitoramento de vigor florestal]]
+- Confiança: alta
+
+### 2026-11-17 07:35 BRT — Copernicus identifica erro de QA em produtos Sentinel-5P de ozônio e nuvens
+
+- Fonte: [Copernicus Data Space Ecosystem — aviso sobre QA após UPAS 3.0.1](https://dataspace.copernicus.eu/news/2026-11-16-sentinel-5p-nrti-o3-and-cloud-products-qa-value-issue-following-upas-301-upgrade)
+- Publicado: 2026-11-16 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: Após atualização dos processadores Sentinel-5P, o Copernicus identificou que, em casos raros de alta fração de nuvens, especialmente sobre América do Sul e África, os valores de qualidade (QA) dos produtos quase em tempo real de nuvens e ozônio (O3) podem ficar abaixo do esperado. O QA de O3 também é afetado por utilizar QA de nuvens como entrada. O problema não invalida os produtos; correção está em teste. Até lá, o operador recomenda limiar de QA 0,4 para O3 quase em tempo real.
+- Por que importa: Filtros automáticos podem descartar observações válidas nessas regiões. Revisar limiar em fluxos que usam O3; o aviso não indica impacto em produtos de metano.
+- Tags: #copernicus #sentinel-5p #ozonio #nuvens #qualidade-de-dados #processamento #sensoriamento-remoto
+- Relações: [[NAVIS / GeoFramework]]
+- Confiança: alta
 
 ### 2026-11-16 07:30 BRT — sem_novidade
 
