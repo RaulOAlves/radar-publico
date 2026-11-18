@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-17 07:35 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-18 07:36 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,76 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-18 07:36 BRT — Servidores MCP de referência corrigem oito vulnerabilidades
+
+- Fonte: [Model Context Protocol — release dos servidores v2.5.0](https://github.com/modelcontextprotocol/servers/releases/tag/v2.5.0)
+- Publicado: 2026-11-18 09:13 UTC, conforme release oficial do GitHub (dentro da janela pesquisada)
+- Resumo: A versão 2.5.0 do repositório oficial de servidores MCP corrige oito vulnerabilidades em três servidores. As versões indicadas são `mcp-server-git 2026.11.18`, `@modelcontextprotocol/server-filesystem 2.4.0` e `@modelcontextprotocol/server-everything 2.3.1`. As correções do servidor Git tratam caminhos em que configurações de repositórios podiam disparar comandos durante operações ou até leituras; a versão também reforça limites do servidor de arquivos.
+- Por que importa: Projetos que expõem repositórios ou arquivos a agentes via esses servidores devem inventariar instalações e atualizar os componentes afetados. O risco depende dos servidores e versões efetivamente usados.
+- Tags: #mcp #agentes-ia #seguranca #git #filesystem #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-18 07:36 BRT — Esri disponibiliza patch crítico para ArcGIS Enterprise 11.5–12.2
+
+- Fonte: [Esri — aviso Brotli/Node.js atualizado em 17 de novembro](https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/brotli-vulnerabilities-broccoli2shell)
+- Publicado: aviso inicial de 2026-10-28, atualizado em 2026-11-17 (horário/fuso não informados; inclusão da atualização na janela exata de 24 horas não confirmada)
+- Resumo: A Esri atualizou o estado da vulnerabilidade Brotli/Node.js no ArcGIS Enterprise, classificada como crítica (CVSS 9,4), e informa patch cumulativo Security 2026 Update 4 para as versões 11.5, 12.0, 12.1 e 12.2. Há patch para ArcGIS Mission Server nas versões afetadas; para ArcGIS Pro 3.5 ou posterior, o patch ainda está pendente. A Esri também orienta atualizar versões de Node.js gerenciadas pelo cliente quando aplicável.
+- Por que importa: É uma ação de segurança diretamente relevante a ambientes ArcGIS corporativos. Verificar versão, componentes instalados e pré-requisitos do patch antes de aplicá-lo; não presumir que toda implantação usa a superfície afetada.
+- Tags: #esri #arcgis-enterprise #arcgis-pro #seguranca #vulnerabilidade #patch #nodejs
+- Relações: [[NAVIS / GeoFramework]], [[IMAC — Plataforma GIS]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-18 07:36 BRT — Codex 0.170.0 corrige autenticação MCP e preservação de sandbox
+
+- Fonte: [OpenAI — release Codex 0.170.0](https://github.com/openai/codex/releases/tag/rust-v0.170.0)
+- Publicado: 2026-11-18 03:40 UTC, conforme release oficial do GitHub (dentro da janela pesquisada)
+- Resumo: O Codex 0.170.0 adiciona suporte experimental a servidores MCP com o mesmo nome em ambientes diferentes. Corrige condições de corrida nas credenciais OAuth do MCP durante cancelamento, login e logout. Também corrige atualizações de permissões e threads filhas que podiam perder restrições existentes de sandbox, além de melhorar reconexão de conversas na nuvem.
+- Por que importa: Equipes que operam agentes com MCP e permissões restritas devem testar a atualização, especialmente fluxos de autenticação e isolamento. O suporte a nomes homônimos ainda é experimental.
+- Tags: #openai #codex #mcp #oauth #sandbox #agentes-ia #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-18 07:36 BRT — Claude Code 2.1.327 protege arquivos ignorados e configuração MCP
+
+- Fonte: [Anthropic — release Claude Code v2.1.327](https://github.com/anthropics/claude-code/releases/tag/v2.1.327)
+- Publicado: 2026-11-17 23:17 UTC, conforme release oficial do GitHub (dentro da janela pesquisada)
+- Resumo: A versão acrescenta `claude mcp add-json <name> -` para ler a configuração JSON pela entrada padrão, evitando expor tokens na linha de comando. Corrige comandos de adicionar/remover servidores MCP no escopo do projeto que apagavam outras chaves de `.mcp.json`. Corrige ainda um caso em que parar Remote Control em modo worktree apagava arquivos ignorados de uma sessão ativa, como `.env`.
+- Por que importa: A atualização reduz risco de perda de configuração e arquivos locais em automações de desenvolvimento. Convém validar plugins e worktrees antes de uso amplo.
+- Tags: #anthropic #claude-code #mcp #worktree #seguranca #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-18 07:36 BRT — ArcGIS Monitor 2026.1 abre MCP de observabilidade em beta
+
+- Fonte: [Esri — suporte a MCP no ArcGIS Monitor 2026.1](https://www.esri.com/arcgis-blog/products/monitor/administration/arcgis-monitor-2026-1-support-for-ai-with-model-context-protocol-mcp)
+- Publicado: 2026-11-17 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: A Esri anunciou suporte a MCP em beta público no ArcGIS Monitor 2026.1. Clientes de IA podem consultar métricas de saúde, desempenho e uso de ambientes GIS para apoiar investigação de incidentes, análise de impacto e planejamento de capacidade. A Esri distingue esse conector de observabilidade do MCP disponibilizado para o ArcGIS Enterprise.
+- Por que importa: Permite avaliar diagnóstico operacional assistido por agentes em plataformas ArcGIS. Por ser beta, requer teste de acesso, confiabilidade das respostas e limites de uso antes de produção.
+- Tags: #esri #arcgis-monitor #mcp #observabilidade #agentes-ia #beta
+- Relações: [[NAVIS / GeoFramework]], [[IMAC — Plataforma GIS]]
+- Confiança: alta
+
+### 2026-11-18 07:36 BRT — NASA encerrará coleta científica do satélite Terra em 1º de dezembro
+
+- Fonte: [NASA Science — encerramento da missão Terra](https://science.nasa.gov/blogs/science-news/2026/11/17/nasas-terra-mission-to-end/)
+- Publicado: 2026-11-17 12:50 (fuso não informado na página; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: A NASA anunciou que o satélite Terra deixará de coletar dados científicos em 1º de dezembro de 2026, após 27 anos de operação, por envelhecimento dos sistemas e deriva orbital. A missão inclui MODIS, ASTER, MISR e CERES; alguns componentes já haviam sido desligados. A equipe planeja baixar a órbita com o combustível restante e desligar os sistemas em janeiro de 2027. O acervo histórico continuará disponível gratuitamente.
+- Por que importa: Pipelines agrícolas e florestais dependentes de novas observações da plataforma Terra precisam planejar continuidade. O encerramento não retira o acervo nem implica fim de todas as observações MODIS.
+- Tags: #nasa #terra #modis #aster #sensoriamento-remoto #ciclo-de-vida #agro #florestal
+- Relações: [[Amaggi — Monitoramento de desmatamento]], [[Eucatex — Monitoramento de vigor florestal]], [[IMAC — Plataforma GIS]]
+- Confiança: alta
+
+### 2026-11-18 07:36 BRT — Anomalia no Sentinel-2C causa perda irrecuperável de aquisições
+
+- Fonte: [Copernicus Data Space Ecosystem — indisponibilidade de dados Sentinel-2C](https://dataspace.copernicus.eu/news/2026-11-17-copernicus-sentinel-2c-data-unavailability-17-november-2026)
+- Publicado: 2026-11-17 (horário/fuso do aviso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: O Copernicus informou que uma anomalia a bordo do Sentinel-2C causou perda irrecuperável de todos os dados adquiridos desde 17 de novembro às 08:25 UTC. Novas aquisições podem ser afetadas enquanto a falha persistir. O operador investiga o problema e prevê informar as aquisições afetadas no painel de eventos da missão.
+- Por que importa: Lacunas podem afetar séries de monitoramento de lavouras, florestas e desmatamento. Pipelines devem detectar ausências e avaliar alternativas; o aviso não quantifica impacto em áreas específicas dos projetos.
+- Tags: #copernicus #sentinel-2c #indisponibilidade #qualidade-de-dados #sensoriamento-remoto #agro #florestal
+- Relações: [[Amaggi — Monitoramento de desmatamento]], [[Eucatex — Monitoramento de vigor florestal]], [[São Martinho — Planejamento agrícola]]
+- Confiança: alta
 
 ### 2026-11-17 07:35 BRT — Esri detalha toolkit agêntico para desenvolver aplicações ArcGIS
 

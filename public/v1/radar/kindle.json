@@ -1,8 +1,179 @@
 {
-  "edition_date": "2026-11-17",
-  "edition_id": "radar-2026-11-17T07:35:00-03:00",
-  "generated_at": "2026-11-17T07:35:00-03:00",
+  "edition_date": "2026-11-18",
+  "edition_id": "radar-2026-11-18T07:36:00-03:00",
+  "generated_at": "2026-11-18T07:36:00-03:00",
   "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-18T07:36:00-03:00",
+      "edition_date": "2026-11-18",
+      "id": "radar-10f900db09319f67",
+      "image": "https://opengraph.githubassets.com/296244b0dacaed810d75ec310bf223facef47789757e108d7248c89aa17f8830/modelcontextprotocol/servers/releases/tag/v2.5.0",
+      "published": "2026-11-18 09:13 UTC, conforme release oficial do GitHub (dentro da janela pesquisada)",
+      "source": "Model Context Protocol — release dos servidores v2.5.0",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "A versão 2.5.0 do repositório oficial de servidores MCP corrige oito vulnerabilidades em três servidores. As versões indicadas são `mcp-server-git 2026.11.18`, `@modelcontextprotocol/server-filesystem 2.4.0` e `@modelcontextprotocol/server-everything 2.3.1`. As correções do servidor Git tratam caminhos em que configurações de repositórios podiam disparar comandos durante operações ou até leituras; a versão também reforça limites do servidor de arquivos.",
+      "tags": [
+        "mcp",
+        "agentes-ia",
+        "seguranca",
+        "git",
+        "filesystem",
+        "release"
+      ],
+      "title": "Servidores MCP de referência corrigem oito vulnerabilidades",
+      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.5.0",
+      "why_it_matters": "Projetos que expõem repositórios ou arquivos a agentes via esses servidores devem inventariar instalações e atualizar os componentes afetados. O risco depende dos servidores e versões efetivamente usados."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-18T07:36:00-03:00",
+      "edition_date": "2026-11-18",
+      "id": "radar-cdd80ca8d2b5dc4b",
+      "published": "aviso inicial de 2026-10-28, atualizado em 2026-11-17 (horário/fuso não informados; inclusão da atualização na janela exata de 24 horas não confirmada)",
+      "source": "Esri — aviso Brotli/Node.js atualizado em 17 de novembro",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
+      "summary": "A Esri atualizou o estado da vulnerabilidade Brotli/Node.js no ArcGIS Enterprise, classificada como crítica (CVSS 9,4), e informa patch cumulativo Security 2026 Update 4 para as versões 11.5, 12.0, 12.1 e 12.2. Há patch para ArcGIS Mission Server nas versões afetadas; para ArcGIS Pro 3.5 ou posterior, o patch ainda está pendente. A Esri também orienta atualizar versões de Node.js gerenciadas pelo cliente quando aplicável.",
+      "tags": [
+        "esri",
+        "arcgis-enterprise",
+        "arcgis-pro",
+        "seguranca",
+        "vulnerabilidade",
+        "patch",
+        "nodejs"
+      ],
+      "title": "Esri disponibiliza patch crítico para ArcGIS Enterprise 11.5–12.2",
+      "url": "https://www.esri.com/arcgis-blog/products/trust-arcgis/administration/brotli-vulnerabilities-broccoli2shell",
+      "why_it_matters": "É uma ação de segurança diretamente relevante a ambientes ArcGIS corporativos. Verificar versão, componentes instalados e pré-requisitos do patch antes de aplicá-lo; não presumir que toda implantação usa a superfície afetada."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-18T07:36:00-03:00",
+      "edition_date": "2026-11-18",
+      "id": "radar-ad076a99b8923baf",
+      "image": "https://opengraph.githubassets.com/f558a5f554fe1b077a534f82044fd2a5d202f2eeb0f5121d88192f6a94c5eda5/openai/codex/releases/tag/rust-v0.170.0",
+      "published": "2026-11-18 03:40 UTC, conforme release oficial do GitHub (dentro da janela pesquisada)",
+      "source": "OpenAI — release Codex 0.170.0",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "O Codex 0.170.0 adiciona suporte experimental a servidores MCP com o mesmo nome em ambientes diferentes. Corrige condições de corrida nas credenciais OAuth do MCP durante cancelamento, login e logout. Também corrige atualizações de permissões e threads filhas que podiam perder restrições existentes de sandbox, além de melhorar reconexão de conversas na nuvem.",
+      "tags": [
+        "openai",
+        "codex",
+        "mcp",
+        "oauth",
+        "sandbox",
+        "agentes-ia",
+        "release"
+      ],
+      "title": "Codex 0.170.0 corrige autenticação MCP e preservação de sandbox",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.170.0",
+      "why_it_matters": "Equipes que operam agentes com MCP e permissões restritas devem testar a atualização, especialmente fluxos de autenticação e isolamento. O suporte a nomes homônimos ainda é experimental."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-18T07:36:00-03:00",
+      "edition_date": "2026-11-18",
+      "id": "radar-8f7a055a1b360233",
+      "image": "https://opengraph.githubassets.com/e467c19d450f45943c4d319e53b510cb01287ebdee8b1040cccc0ee10f915458/anthropics/claude-code/releases/tag/v2.1.327",
+      "published": "2026-11-17 23:17 UTC, conforme release oficial do GitHub (dentro da janela pesquisada)",
+      "source": "Anthropic — release Claude Code v2.1.327",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "A versão acrescenta `claude mcp add-json <name> -` para ler a configuração JSON pela entrada padrão, evitando expor tokens na linha de comando. Corrige comandos de adicionar/remover servidores MCP no escopo do projeto que apagavam outras chaves de `.mcp.json`. Corrige ainda um caso em que parar Remote Control em modo worktree apagava arquivos ignorados de uma sessão ativa, como `.env`.",
+      "tags": [
+        "anthropic",
+        "claude-code",
+        "mcp",
+        "worktree",
+        "seguranca",
+        "release"
+      ],
+      "title": "Claude Code 2.1.327 protege arquivos ignorados e configuração MCP",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+      "why_it_matters": "A atualização reduz risco de perda de configuração e arquivos locais em automações de desenvolvimento. Convém validar plugins e worktrees antes de uso amplo."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-18T07:36:00-03:00",
+      "edition_date": "2026-11-18",
+      "id": "radar-3979026e5e76d6fc",
+      "published": "2026-11-17 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Esri — suporte a MCP no ArcGIS Monitor 2026.1",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
+      "summary": "A Esri anunciou suporte a MCP em beta público no ArcGIS Monitor 2026.1. Clientes de IA podem consultar métricas de saúde, desempenho e uso de ambientes GIS para apoiar investigação de incidentes, análise de impacto e planejamento de capacidade. A Esri distingue esse conector de observabilidade do MCP disponibilizado para o ArcGIS Enterprise.",
+      "tags": [
+        "esri",
+        "arcgis-monitor",
+        "mcp",
+        "observabilidade",
+        "agentes-ia",
+        "beta"
+      ],
+      "title": "ArcGIS Monitor 2026.1 abre MCP de observabilidade em beta",
+      "url": "https://www.esri.com/arcgis-blog/products/monitor/administration/arcgis-monitor-2026-1-support-for-ai-with-model-context-protocol-mcp",
+      "why_it_matters": "Permite avaliar diagnóstico operacional assistido por agentes em plataformas ArcGIS. Por ser beta, requer teste de acesso, confiabilidade das respostas e limites de uso antes de produção."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-18T07:36:00-03:00",
+      "edition_date": "2026-11-18",
+      "id": "radar-8747a1e2132fedd1",
+      "image": "https://assets.science.nasa.gov/content/dam/science/esd/blogs/2026/KSC-99pp1412~orig.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "published": "2026-11-17 12:50 (fuso não informado na página; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "NASA Science — encerramento da missão Terra",
+      "source_meta": {
+        "domain": "science.nasa.gov"
+      },
+      "summary": "A NASA anunciou que o satélite Terra deixará de coletar dados científicos em 1º de dezembro de 2026, após 27 anos de operação, por envelhecimento dos sistemas e deriva orbital. A missão inclui MODIS, ASTER, MISR e CERES; alguns componentes já haviam sido desligados. A equipe planeja baixar a órbita com o combustível restante e desligar os sistemas em janeiro de 2027. O acervo histórico continuará disponível gratuitamente.",
+      "tags": [
+        "nasa",
+        "terra",
+        "modis",
+        "aster",
+        "sensoriamento-remoto",
+        "ciclo-de-vida",
+        "agro",
+        "florestal"
+      ],
+      "title": "NASA encerrará coleta científica do satélite Terra em 1º de dezembro",
+      "url": "https://science.nasa.gov/blogs/science-news/2026/11/17/nasas-terra-mission-to-end/",
+      "why_it_matters": "Pipelines agrícolas e florestais dependentes de novas observações da plataforma Terra precisam planejar continuidade. O encerramento não retira o acervo nem implica fim de todas as observações MODIS."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-18T07:36:00-03:00",
+      "edition_date": "2026-11-18",
+      "id": "radar-0ee1040a1fd38315",
+      "image": "https://dataspace.copernicus.eu/sites/default/files/styles/opengraph/public/media/images/2023-03/og_share.png?itok=zjtW85Fb",
+      "published": "2026-11-17 (horário/fuso do aviso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Copernicus Data Space Ecosystem — indisponibilidade de dados Sentinel-2C",
+      "source_meta": {
+        "domain": "dataspace.copernicus.eu"
+      },
+      "summary": "O Copernicus informou que uma anomalia a bordo do Sentinel-2C causou perda irrecuperável de todos os dados adquiridos desde 17 de novembro às 08:25 UTC. Novas aquisições podem ser afetadas enquanto a falha persistir. O operador investiga o problema e prevê informar as aquisições afetadas no painel de eventos da missão.",
+      "tags": [
+        "copernicus",
+        "sentinel-2c",
+        "indisponibilidade",
+        "qualidade-de-dados",
+        "sensoriamento-remoto",
+        "agro",
+        "florestal"
+      ],
+      "title": "Anomalia no Sentinel-2C causa perda irrecuperável de aquisições",
+      "url": "https://dataspace.copernicus.eu/news/2026-11-17-copernicus-sentinel-2c-data-unavailability-17-november-2026",
+      "why_it_matters": "Lacunas podem afetar séries de monitoramento de lavouras, florestas e desmatamento. Pipelines devem detectar ausências e avaliar alternativas; o aviso não quantifica impacto em áreas específicas dos projetos."
+    },
     {
       "confidence": "alta",
       "edition_at": "2026-11-17T07:35:00-03:00",
@@ -1058,180 +1229,6 @@
       "title": "Codex CLI 0.166.0 amplia retomada de tarefas e diagnóstico de rede",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.166.0",
       "why_it_matters": "Retomada mais confiável e diagnóstico isolado ajudam a operar agentes de desenvolvimento em fluxos longos e ambientes corporativos. A disponibilidade de modelos em cada provedor ainda depende da conta e da região."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-30T07:33:00-03:00",
-      "edition_date": "2026-10-30",
-      "id": "radar-09b9bd644d688ff9",
-      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Data_Analytics_JooYPJr.max-2500x2500.jpg",
-      "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — suporte ampliado a modelos semânticos no Knowledge Catalog",
-      "source_meta": {
-        "domain": "cloud.google.com"
-      },
-      "summary": "O Google Cloud anunciou disponibilidade geral do suporte ampliado a modelos semânticos no Knowledge Catalog. A plataforma indexa definições de métricas e relações de LookML, BigQuery Graph, dbt MetricFlow, Snowflake Semantic Views, Databricks Metric Views e SAP CSN em um grafo de contexto, associando-as a metadados como linhagem, qualidade e glossário. Definições divergentes são mantidas com proveniência para revisão, sem exigir migração dos dados ou reescrita da lógica de negócio.",
-      "tags": [
-        "google-cloud",
-        "knowledge-catalog",
-        "agentes-ia",
-        "modelo-semantico",
-        "grafo-de-contexto",
-        "governanca",
-        "release"
-      ],
-      "title": "Google Knowledge Catalog passa a reunir modelos semânticos para agentes",
-      "url": "https://cloud.google.com/blog/products/data-analytics/expanded-semantic-model-support-in-knowledge-catalog/",
-      "why_it_matters": "Agentes analíticos podem consultar conceitos e métricas governados em vez de inferir junções e fórmulas a cada pergunta. É referência de arquitetura para ligar dados corporativos e projetos, não evidência de implantação nesses projetos."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-30T07:33:00-03:00",
-      "edition_date": "2026-10-30",
-      "id": "radar-d6a5b43b8fe9d9fd",
-      "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Esri — novidades do Calcite Design System 5.2",
-      "source_meta": {
-        "domain": "www.esri.com"
-      },
-      "summary": "A Esri detalhou o Calcite Design System 5.2, biblioteca de componentes usada em aplicações da plataforma ArcGIS. A versão acrescenta edição inline em campos de entrada, cabeçalho fixo em tabelas, novos comportamentos de barra de ações e grupos, suporte ao esquema de cores do navegador e melhorias de acessibilidade e internacionalização. O componente Inline Editable foi descontinuado e está previsto para remoção em uma futura versão com mudanças incompatíveis.",
-      "tags": [
-        "esri",
-        "arcgis",
-        "calcite",
-        "interface-gis",
-        "acessibilidade",
-        "ciclo-de-vida",
-        "release"
-      ],
-      "title": "Esri Calcite 5.2 melhora componentes de interfaces ArcGIS",
-      "url": "https://www.esri.com/arcgis-blog/products/developers/announcements/calcite-design-system-whats-new-in-5-2",
-      "why_it_matters": "Equipes que mantêm interfaces GIS customizadas podem aproveitar os componentes novos e planejar a substituição do componente descontinuado antes da próxima quebra de compatibilidade."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-30T07:33:00-03:00",
-      "edition_date": "2026-10-30",
-      "id": "radar-ad7611751baac45b",
-      "image": "https://ag.purdue.edu/news/2026/10/_media/jingjing-liang-social.jpg",
-      "published": "2026-10-29 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Purdue University — protótipo MATRIX Peru",
-      "source_meta": {
-        "domain": "ag.purdue.edu"
-      },
-      "summary": "Pesquisadores da Purdue University, com a FAO e o serviço florestal peruano SERFOR, relataram a demonstração de um protótipo do Global Forest MATRIX adaptado ao Peru durante oficina realizada em agosto. O trabalho busca usar inventários florestais locais para projetar mudanças sob cenários de ambiente e manejo; um harmonizador de dados foi apresentado para converter registros coletados por protocolos distintos a um formato comum.",
-      "tags": [
-        "florestal",
-        "geoia",
-        "ia",
-        "inventario-florestal",
-        "modelagem",
-        "peru",
-        "prototipo"
-      ],
-      "title": "Purdue demonstra protótipo de modelo de crescimento florestal para o Peru",
-      "url": "https://ag.purdue.edu/news/2026/10/prototype-forest-growth-model-demonstrated-for-peru-application.html",
-      "why_it_matters": "A adaptação ilustra um caminho prático para conectar inventários heterogêneos a modelos de dinâmica florestal. Ainda é protótipo em desenvolvimento, sem validação publicada para florestas brasileiras."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-29T07:35:00-03:00",
-      "edition_date": "2026-10-29",
-      "id": "radar-ebc97573a6a94023",
-      "image": "https://images.ctfassets.net/kftzwdyauwt9/Gp8jNpLlW9YG0p7vG3UfM/c73fa4b5caa4ad978b022dc0123b801b/openai-servicenow-partnership-expansion-social.png?w=1600&h=900&fit=fill",
-      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "OpenAI — expansão da parceria com ServiceNow",
-      "source_meta": {
-        "domain": "openai.com"
-      },
-      "summary": "plugin MCP já disponível conecta contexto e ações de instâncias ServiceNow ao ChatGPT, respeitando regras e permissões do cliente. É referência concreta para agentes corporativos que consultam incidentes e executam ações governadas; integração Codex no AI Workflow Factory é apenas planejada para 2027, não recurso atual.",
-      "tags": [
-        "openai",
-        "servicenow",
-        "mcp",
-        "agentes-ia",
-        "codex",
-        "integracao",
-        "governanca"
-      ],
-      "title": "Plugin MCP do ServiceNow chega ao marketplace OpenAI",
-      "url": "https://openai.com/index/openai-servicenow-partnership-expansion/",
-      "why_it_matters": "plugin MCP já disponível conecta contexto e ações de instâncias ServiceNow ao ChatGPT, respeitando regras e permissões do cliente. É referência concreta para agentes corporativos que consultam incidentes e executam ações governadas; integração Codex no AI Workflow Factory é apenas planejada para 2027, não recurso atual."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-29T07:35:00-03:00",
-      "edition_date": "2026-10-29",
-      "id": "radar-9d6fea0b42eb9f3c",
-      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
-      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — release notes de 28/10",
-      "source_meta": {
-        "domain": "docs.cloud.google.com"
-      },
-      "summary": "Google anuncia região brasileira para Gemini Enterprise, com dados em repouso e processamento de ML na região; disponibilidade geral condicionada a allowlist. Pode destravar avaliação de agentes sobre dados corporativos brasileiros sensíveis, mas requer acesso liberado e verificação contratual antes de qualquer arquitetura.",
-      "tags": [
-        "google-cloud",
-        "gemini-enterprise",
-        "brasil",
-        "residencia-de-dados",
-        "agentes-ia",
-        "governanca",
-        "release"
-      ],
-      "title": "Gemini Enterprise passa a oferecer região Brasil com residência local de dados",
-      "url": "https://docs.cloud.google.com/release-notes#October_28_2026",
-      "why_it_matters": "Google anuncia região brasileira para Gemini Enterprise, com dados em repouso e processamento de ML na região; disponibilidade geral condicionada a allowlist. Pode destravar avaliação de agentes sobre dados corporativos brasileiros sensíveis, mas requer acesso liberado e verificação contratual antes de qualquer arquitetura."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-29T07:35:00-03:00",
-      "edition_date": "2026-10-29",
-      "id": "radar-d8651470f28270c3",
-      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
-      "published": "2026-10-28 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — release notes do AlloyDB AI",
-      "source_meta": {
-        "domain": "docs.cloud.google.com"
-      },
-      "summary": "índice ScaNN 4LT em PostgreSQL 17+ entra em disponibilidade geral, com manutenção automática e busca filtrada com melhor recuperação; `Vector assist` também passa a GA. Amplia opção de busca semântica em grandes acervos geoespaciais/documentais, sem implicar necessidade de escala bilionária nos projetos atuais.",
-      "tags": [
-        "google-cloud",
-        "alloydb",
-        "busca-vetorial",
-        "embeddings",
-        "rag",
-        "postgresql",
-        "release"
-      ],
-      "title": "AlloyDB libera índice vetorial de quatro níveis para até 10 bilhões de linhas",
-      "url": "https://docs.cloud.google.com/release-notes#October_28_2026",
-      "why_it_matters": "índice ScaNN 4LT em PostgreSQL 17+ entra em disponibilidade geral, com manutenção automática e busca filtrada com melhor recuperação; `Vector assist` também passa a GA. Amplia opção de busca semântica em grandes acervos geoespaciais/documentais, sem implicar necessidade de escala bilionária nos projetos atuais."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-29T07:35:00-03:00",
-      "edition_date": "2026-10-29",
-      "id": "radar-96e37f1546c14c56",
-      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
-      "published": "2026-10-28 (data do release e da atualização da documentação; horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — Application Integration agent skills",
-      "source_meta": {
-        "domain": "docs.cloud.google.com"
-      },
-      "summary": "três skills abertas orientam agentes a configurar, criar/publicar e diagnosticar integrações do Google Cloud Application Integration via REST API. Fornecem referência operacional para automatizar fluxos entre sistemas corporativos com IAM e versionamento; uso nos projetos depende da adoção dessa plataforma.",
-      "tags": [
-        "google-cloud",
-        "skills",
-        "agentes-ia",
-        "integracao",
-        "api",
-        "automacao",
-        "release"
-      ],
-      "title": "Google publica skills oficiais para agentes criarem integrações via API",
-      "url": "https://docs.cloud.google.com/application-integration/docs/agent-skills-overview",
-      "why_it_matters": "três skills abertas orientam agentes a configurar, criar/publicar e diagnosticar integrações do Google Cloud Application Integration via REST API. Fornecem referência operacional para automatizar fluxos entre sistemas corporativos com IAM e versionamento; uso nos projetos depende da adoção dessa plataforma."
     }
   ],
   "methodology": {
@@ -1241,7 +1238,7 @@
   "metrics": {
     "high_confidence": 46,
     "signals": 50,
-    "sources": 23
+    "sources": 22
   },
   "schema_version": "1.0",
   "scope": "ultimas_50_publicacoes",
