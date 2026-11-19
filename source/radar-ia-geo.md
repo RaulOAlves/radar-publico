@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-18 07:36 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-19 07:31 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,86 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-19 07:31 BRT — Duas versões de `agent-framework` no PyPI continham código para roubo de credenciais
+
+- Fonte: [GitHub Advisory Database — código malicioso em agent-framework](https://github.com/advisories/GHSA-764m-3ppc-5m73)
+- Publicado: aviso em 2026-11-18 (horário/fuso não informados; inclusão do aviso na janela exata de 24 horas não confirmada). Pacotes afetados foram publicados em 2026-11-17.
+- Resumo: O aviso de segurança identifica as versões 1.26.1 e 1.26.2 do pacote PyPI `agent-framework`, do Microsoft Agent Framework, como maliciosas. Elas acrescentaram um arquivo `.pth` que executa código ao iniciar o Python, mesmo sem importar o pacote, para coletar e enviar credenciais e variáveis de ambiente. As duas versões foram removidas do PyPI; 1.26.0 é a última versão não afetada identificada no aviso. O alerta não é um comunicado da Microsoft.
+- Por que importa: Quem instalou 1.26.1 ou 1.26.2 deve tratar o ambiente como exposto, verificar instalações e rotacionar segredos acessíveis, inclusive de CI. A remoção do PyPI não desfaz instalações já realizadas.
+- Tags: #microsoft #agent-framework #pypi #cadeia-de-suprimentos #seguranca #agentes-ia #credenciais
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-19 07:31 BRT — ArcGIS Pro 3.8 adiciona análise semântica e novas ferramentas GeoAI
+
+- Fonte: [Esri — novidades do ArcGIS Pro 3.8](https://doc.esri.com/en/arcgis-pro/latest/get-started/whats-new-in-arcgis-pro.html)
+- Publicado: ciclo de vida oficial da Esri marca 2026-11-19 para 3.8 e 3.8.1; horário de liberação não informado, portanto inclusão na janela exata de 24 horas não confirmada
+- Resumo: A documentação da versão 3.8 lista três ferramentas novas na caixa GeoAI: `Detect Changes Using Embeddings` para comparar mudanças semânticas entre dados geoespaciais, `Detect Objects In 3D Space` para extrair objetos 3D de imagens orientadas com modelo treinado e `Find Features By Description` para buscar feições por semelhança com uma descrição. O ModelBuilder também ganha inspeção de problemas antes da execução, agendamento e compartilhamento de modelos como ferramentas web. O ciclo de vida da Esri registra 19 de novembro como data da versão, sem hora de disponibilidade.
+- Por que importa: Amplia opções nativas para monitorar mudanças, objetos e feições em projetos GeoIA. Antes de adoção, validar requisitos de modelos, licenças, acurácia e compatibilidade dos fluxos existentes.
+- Tags: #esri #arcgis-pro #geoai #embeddings #deteccao-de-mudancas #imagem-orientada #modelbuilder #release
+- Relações: [[Vale — GeoIA SAB.IA]], [[Amaggi — Monitoramento de desmatamento]], [[Bracell — POC RGB + LiDAR]]
+- Confiança: alta
+
+### 2026-11-19 07:31 BRT — ArcGIS Enterprise 12.2 permite implantar Solutions sem conexão à internet
+
+- Fonte: [Esri — ArcGIS Solutions em Enterprise desconectado](https://www.esri.com/arcgis-blog/products/arcgis-enterprise/announcements/deploy-arcgis-solutions-content-in-a-disconnected-enterprise-environment)
+- Publicado: 2026-11-18 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: A Esri detalhou que administradores do ArcGIS Enterprise 12.2 podem obter um pacote `.epk` no My Esri, transferi-lo para um ambiente isolado e hospedar localmente o conteúdo de ArcGIS Solutions. A versão inclui 29 soluções compatíveis com implantação desconectada, com galeria, mapas, aplicativos, fluxos e documentação acessíveis sem ArcGIS Online. São necessários privilégios de administração e pacote correspondente à versão do Enterprise.
+- Por que importa: Viabiliza uso de soluções prontas em instalações GIS segregadas, comuns em operações sensíveis. A aplicabilidade a cada projeto depende de suas políticas de rede e do catálogo das 29 soluções, não de implantação anunciada nesses clientes.
+- Tags: #esri #arcgis-enterprise #arcgis-solutions #ambiente-desconectado #implantacao #gis
+- Relações: [[NAVIS / GeoFramework]], [[IMAC — Plataforma GIS]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-19 07:31 BRT — Claude Code 2.1.328 permite bloquear falha de hook MCP
+
+- Fonte: [Anthropic — release Claude Code v2.1.328](https://github.com/anthropics/claude-code/releases/tag/v2.1.328)
+- Publicado: 2026-11-19 01:14 UTC, conforme release oficial do GitHub (dentro da janela pesquisada)
+- Resumo: A versão adiciona `onFailure: "block"` a hooks `mcp_tool`: quando o hook falha, a ação pode ser bloqueada. Também amplia o modo automático para modelos Claude Opus e Sonnet 4.6 em Bedrock, Google Cloud Agent Platform, Microsoft Foundry e gateway Claude apps. Corrige perda de outras tarefas agendadas ao salvar quando o arquivo de tarefas não podia ser lido, além de evitar apagar uma tarefa com erro de digitação no arquivo.
+- Por que importa: Hooks MCP passam a ter opção explícita de falhar de forma fechada, relevante para controles de agentes. Quem usa tarefas agendadas e provedores externos deve testar a atualização e seus modos de permissão.
+- Tags: #anthropic #claude-code #mcp #hooks #agentes-ia #seguranca #tarefas-agendadas #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-19 07:31 BRT — Microsoft Foundry libera observação de agentes externos sem migração
+
+- Fonte: [Microsoft — agentes externos no Foundry em disponibilidade geral](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/external-agents-in-microsoft-foundry-are-now-generally-available/4572630)
+- Publicado: 2026-11-18 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: A Microsoft disponibilizou de forma geral o registro de agentes externos no Foundry, com visualização de traces, Agent Insights e avaliação contínua de traces de produção. O agente continua em seu ambiente e envia telemetria OpenTelemetry ao Application Insights; o registro exige convenções semânticas GenAI e `gen_ai.agent.id`. Outros recursos citados no artigo ainda estão em preview. A própria Microsoft alerta que gravar prompts e respostas nos traces exige decisão sobre acesso, retenção e ocultação de conteúdo sensível.
+- Por que importa: Dá caminho para governar e avaliar agentes já implantados sem reconstruí-los no Foundry. Em projetos com dados corporativos, configurar privacidade dos traces antes de habilitar captura de conteúdo.
+- Tags: #microsoft #foundry #agentes-ia #opentelemetry #observabilidade #avaliacao #governanca #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-19 07:31 BRT — AWS Glue libera agente de otimização Spark acessível por MCP
+
+- Fonte: [AWS — Apache Spark Optimization Agent para Glue ETL](https://aws.amazon.com/about-aws/whats-new/2026/11/apache-spark-aws-glue-etl/)
+- Publicado: 2026-11-18 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: O AWS Glue ETL passou a oferecer um agente que analisa execuções Spark concluídas e recomenda mudanças de configuração para custo ou desempenho, apoiadas em logs, configuração e telemetria do job. O acesso ocorre no console Glue ou por ferramentas externas via servidor MCP do SageMaker Unified Studio. A AWS informa disponibilidade sem custo adicional para jobs Glue 4.0 ou posterior nas regiões Glue, exceto GovCloud dos EUA e China; permanecem os custos normais do serviço.
+- Por que importa: Pode acelerar diagnóstico de ETL geoespacial pesado quando esse processamento usa Glue. Recomendações precisam ser testadas com cargas próprias; o anúncio não prova redução de custo em projetos específicos.
+- Tags: #aws #glue #spark #etl #mcp #agentes-ia #otimizacao #release
+- Relações: [[NAVIS / GeoFramework]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-19 07:31 BRT — Copernicus anuncia migração do catálogo CSV e fim do acesso direto ao bucket
+
+- Fonte: [Copernicus Data Space Ecosystem — nova interface do catálogo CSV](https://dataspace.copernicus.eu/news/2026-11-17-new-copernicus-catalogue-csv-interface)
+- Publicado: 2026-11-18 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)
+- Resumo: O Copernicus anunciou que a interface antiga do catálogo CSV será substituída em 20 de janeiro de 2027. Até lá, as interfaces antiga e nova funcionarão em paralelo. O acesso direto ao bucket `s3.waw3-1.cloudferro.com/swift/v1/CatalogueCSV/` será encerrado, e o operador orienta migrar automações desse acesso para a API documentada. O endereço `api.csv.dataspace.copernicus.eu` não será alterado pela troca de interface.
+- Por que importa: Pipelines de inventário de imagens Sentinel que leem o bucket diretamente precisam testar a migração. Relação com projetos depende de usarem esse acesso; a API CSV atual não tem mudança de endereço anunciada.
+- Tags: #copernicus #catalogo-csv #api #sentinel #automacao #migracao #ciclo-de-vida
+- Relações: [[NAVIS / GeoFramework]], [[Amaggi — Monitoramento de desmatamento]]
+- Confiança: alta
+
+### 2026-11-19 07:31 BRT — ICMM publica base global de mineração e biodiversidade
+
+- Fonte: [ICMM — lançamento da Global Mining and Metals Biodiversity Dataset](https://www.prnewswire.com/news-releases/new-global-dataset-maps-where-mining-and-metals-intersect-with-biodiversity-302940342.html)
+- Publicado: 2026-11-18 05:00 ET (10:00 UTC). Capturado na rotina setorial das 06:47 BRT; 28 minutos anterior ao início da janela exata desta consolidação.
+- Resumo: O ICMM publicou um conjunto de dados que cruza cerca de 12 mil instalações de mineração e metalurgia com indicadores de condição de ecossistemas, áreas-chave para biodiversidade e áreas protegidas ou conservadas. Segundo a entidade, 22% das instalações ficam em paisagens de condição ecológica alta ou muito alta; 5% intersectam áreas-chave para biodiversidade e 4% áreas protegidas ou conservadas. São resultados divulgados pelo ICMM, não validados independentemente neste radar.
+- Por que importa: A base serve para triagem geoespacial e planejamento de recuperação ou fechamento de minas. Instalações são representadas por pontos, não limites operacionais; a análise não mede impacto de cada ativo nem substitui dados locais.
+- Tags: #mineracao #biodiversidade #dados-geoespaciais #ecossistemas #areas-protegidas #fechamento-de-minas
+- Relações: [[Vale — Fechamento de minas]], [[IMAC — Plataforma GIS]]
+- Confiança: média
 
 ### 2026-11-18 07:36 BRT — Servidores MCP de referência corrigem oito vulnerabilidades
 

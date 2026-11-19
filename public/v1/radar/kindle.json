@@ -1,8 +1,206 @@
 {
-  "edition_date": "2026-11-18",
-  "edition_id": "radar-2026-11-18T07:36:00-03:00",
-  "generated_at": "2026-11-18T07:36:00-03:00",
+  "edition_date": "2026-11-19",
+  "edition_id": "radar-2026-11-19T07:31:00-03:00",
+  "generated_at": "2026-11-19T07:31:00-03:00",
   "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-19T07:31:00-03:00",
+      "edition_date": "2026-11-19",
+      "id": "radar-2ad26709981472ec",
+      "image": "https://github.githubassets.com/assets/advisory-database-show-f32c8207dfb2.png",
+      "published": "aviso em 2026-11-18 (horário/fuso não informados; inclusão do aviso na janela exata de 24 horas não confirmada). Pacotes afetados foram publicados em 2026-11-17.",
+      "source": "GitHub Advisory Database — código malicioso em agent-framework",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "O aviso de segurança identifica as versões 1.26.1 e 1.26.2 do pacote PyPI `agent-framework`, do Microsoft Agent Framework, como maliciosas. Elas acrescentaram um arquivo `.pth` que executa código ao iniciar o Python, mesmo sem importar o pacote, para coletar e enviar credenciais e variáveis de ambiente. As duas versões foram removidas do PyPI; 1.26.0 é a última versão não afetada identificada no aviso. O alerta não é um comunicado da Microsoft.",
+      "tags": [
+        "microsoft",
+        "agent-framework",
+        "pypi",
+        "cadeia-de-suprimentos",
+        "seguranca",
+        "agentes-ia",
+        "credenciais"
+      ],
+      "title": "Duas versões de `agent-framework` no PyPI continham código para roubo de credenciais",
+      "url": "https://github.com/advisories/GHSA-764m-3ppc-5m73",
+      "why_it_matters": "Quem instalou 1.26.1 ou 1.26.2 deve tratar o ambiente como exposto, verificar instalações e rotacionar segredos acessíveis, inclusive de CI. A remoção do PyPI não desfaz instalações já realizadas."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-19T07:31:00-03:00",
+      "edition_date": "2026-11-19",
+      "id": "radar-e14bee76231ce6d3",
+      "published": "ciclo de vida oficial da Esri marca 2026-11-19 para 3.8 e 3.8.1; horário de liberação não informado, portanto inclusão na janela exata de 24 horas não confirmada",
+      "source": "Esri — novidades do ArcGIS Pro 3.8",
+      "source_meta": {
+        "domain": "doc.esri.com"
+      },
+      "summary": "A documentação da versão 3.8 lista três ferramentas novas na caixa GeoAI: `Detect Changes Using Embeddings` para comparar mudanças semânticas entre dados geoespaciais, `Detect Objects In 3D Space` para extrair objetos 3D de imagens orientadas com modelo treinado e `Find Features By Description` para buscar feições por semelhança com uma descrição. O ModelBuilder também ganha inspeção de problemas antes da execução, agendamento e compartilhamento de modelos como ferramentas web. O ciclo de vida da Esri registra 19 de novembro como data da versão, sem hora de disponibilidade.",
+      "tags": [
+        "esri",
+        "arcgis-pro",
+        "geoai",
+        "embeddings",
+        "deteccao-de-mudancas",
+        "imagem-orientada",
+        "modelbuilder",
+        "release"
+      ],
+      "title": "ArcGIS Pro 3.8 adiciona análise semântica e novas ferramentas GeoAI",
+      "url": "https://doc.esri.com/en/arcgis-pro/latest/get-started/whats-new-in-arcgis-pro.html",
+      "why_it_matters": "Amplia opções nativas para monitorar mudanças, objetos e feições em projetos GeoIA. Antes de adoção, validar requisitos de modelos, licenças, acurácia e compatibilidade dos fluxos existentes."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-19T07:31:00-03:00",
+      "edition_date": "2026-11-19",
+      "id": "radar-af594e3ad39a5c98",
+      "published": "2026-11-18 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Esri — ArcGIS Solutions em Enterprise desconectado",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
+      "summary": "A Esri detalhou que administradores do ArcGIS Enterprise 12.2 podem obter um pacote `.epk` no My Esri, transferi-lo para um ambiente isolado e hospedar localmente o conteúdo de ArcGIS Solutions. A versão inclui 29 soluções compatíveis com implantação desconectada, com galeria, mapas, aplicativos, fluxos e documentação acessíveis sem ArcGIS Online. São necessários privilégios de administração e pacote correspondente à versão do Enterprise.",
+      "tags": [
+        "esri",
+        "arcgis-enterprise",
+        "arcgis-solutions",
+        "ambiente-desconectado",
+        "implantacao",
+        "gis"
+      ],
+      "title": "ArcGIS Enterprise 12.2 permite implantar Solutions sem conexão à internet",
+      "url": "https://www.esri.com/arcgis-blog/products/arcgis-enterprise/announcements/deploy-arcgis-solutions-content-in-a-disconnected-enterprise-environment",
+      "why_it_matters": "Viabiliza uso de soluções prontas em instalações GIS segregadas, comuns em operações sensíveis. A aplicabilidade a cada projeto depende de suas políticas de rede e do catálogo das 29 soluções, não de implantação anunciada nesses clientes."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-19T07:31:00-03:00",
+      "edition_date": "2026-11-19",
+      "id": "radar-1590e3f6387642d1",
+      "image": "https://opengraph.githubassets.com/cb956e0313e453d1ba5080e2bb2510ad156dcebf68610b6ec5e7618b48f0d4e6/anthropics/claude-code/releases/tag/v2.1.328",
+      "published": "2026-11-19 01:14 UTC, conforme release oficial do GitHub (dentro da janela pesquisada)",
+      "source": "Anthropic — release Claude Code v2.1.328",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "A versão adiciona `onFailure: \"block\"` a hooks `mcp_tool`: quando o hook falha, a ação pode ser bloqueada. Também amplia o modo automático para modelos Claude Opus e Sonnet 4.6 em Bedrock, Google Cloud Agent Platform, Microsoft Foundry e gateway Claude apps. Corrige perda de outras tarefas agendadas ao salvar quando o arquivo de tarefas não podia ser lido, além de evitar apagar uma tarefa com erro de digitação no arquivo.",
+      "tags": [
+        "anthropic",
+        "claude-code",
+        "mcp",
+        "hooks",
+        "agentes-ia",
+        "seguranca",
+        "tarefas-agendadas",
+        "release"
+      ],
+      "title": "Claude Code 2.1.328 permite bloquear falha de hook MCP",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
+      "why_it_matters": "Hooks MCP passam a ter opção explícita de falhar de forma fechada, relevante para controles de agentes. Quem usa tarefas agendadas e provedores externos deve testar a atualização e seus modos de permissão."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-19T07:31:00-03:00",
+      "edition_date": "2026-11-19",
+      "id": "radar-2ec003fd1caa968c",
+      "image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTcyNjMwLXdSWm51SQ?revision=23",
+      "published": "2026-11-18 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Microsoft — agentes externos no Foundry em disponibilidade geral",
+      "source_meta": {
+        "domain": "techcommunity.microsoft.com"
+      },
+      "summary": "A Microsoft disponibilizou de forma geral o registro de agentes externos no Foundry, com visualização de traces, Agent Insights e avaliação contínua de traces de produção. O agente continua em seu ambiente e envia telemetria OpenTelemetry ao Application Insights; o registro exige convenções semânticas GenAI e `gen_ai.agent.id`. Outros recursos citados no artigo ainda estão em preview. A própria Microsoft alerta que gravar prompts e respostas nos traces exige decisão sobre acesso, retenção e ocultação de conteúdo sensível.",
+      "tags": [
+        "microsoft",
+        "foundry",
+        "agentes-ia",
+        "opentelemetry",
+        "observabilidade",
+        "avaliacao",
+        "governanca",
+        "release"
+      ],
+      "title": "Microsoft Foundry libera observação de agentes externos sem migração",
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/external-agents-in-microsoft-foundry-are-now-generally-available/4572630",
+      "why_it_matters": "Dá caminho para governar e avaliar agentes já implantados sem reconstruí-los no Foundry. Em projetos com dados corporativos, configurar privacidade dos traces antes de habilitar captura de conteúdo."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-19T07:31:00-03:00",
+      "edition_date": "2026-11-19",
+      "id": "radar-1de95ca0b37599bb",
+      "published": "2026-11-18 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "AWS — Apache Spark Optimization Agent para Glue ETL",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
+      "summary": "O AWS Glue ETL passou a oferecer um agente que analisa execuções Spark concluídas e recomenda mudanças de configuração para custo ou desempenho, apoiadas em logs, configuração e telemetria do job. O acesso ocorre no console Glue ou por ferramentas externas via servidor MCP do SageMaker Unified Studio. A AWS informa disponibilidade sem custo adicional para jobs Glue 4.0 ou posterior nas regiões Glue, exceto GovCloud dos EUA e China; permanecem os custos normais do serviço.",
+      "tags": [
+        "aws",
+        "glue",
+        "spark",
+        "etl",
+        "mcp",
+        "agentes-ia",
+        "otimizacao",
+        "release"
+      ],
+      "title": "AWS Glue libera agente de otimização Spark acessível por MCP",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/apache-spark-aws-glue-etl/",
+      "why_it_matters": "Pode acelerar diagnóstico de ETL geoespacial pesado quando esse processamento usa Glue. Recomendações precisam ser testadas com cargas próprias; o anúncio não prova redução de custo em projetos específicos."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-19T07:31:00-03:00",
+      "edition_date": "2026-11-19",
+      "id": "radar-95c0262b30d9ce45",
+      "image": "https://dataspace.copernicus.eu/sites/default/files/styles/opengraph/public/media/images/2023-03/og_share.png?itok=zjtW85Fb",
+      "published": "2026-11-18 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
+      "source": "Copernicus Data Space Ecosystem — nova interface do catálogo CSV",
+      "source_meta": {
+        "domain": "dataspace.copernicus.eu"
+      },
+      "summary": "O Copernicus anunciou que a interface antiga do catálogo CSV será substituída em 20 de janeiro de 2027. Até lá, as interfaces antiga e nova funcionarão em paralelo. O acesso direto ao bucket `s3.waw3-1.cloudferro.com/swift/v1/CatalogueCSV/` será encerrado, e o operador orienta migrar automações desse acesso para a API documentada. O endereço `api.csv.dataspace.copernicus.eu` não será alterado pela troca de interface.",
+      "tags": [
+        "copernicus",
+        "catalogo-csv",
+        "api",
+        "sentinel",
+        "automacao",
+        "migracao",
+        "ciclo-de-vida"
+      ],
+      "title": "Copernicus anuncia migração do catálogo CSV e fim do acesso direto ao bucket",
+      "url": "https://dataspace.copernicus.eu/news/2026-11-17-new-copernicus-catalogue-csv-interface",
+      "why_it_matters": "Pipelines de inventário de imagens Sentinel que leem o bucket diretamente precisam testar a migração. Relação com projetos depende de usarem esse acesso; a API CSV atual não tem mudança de endereço anunciada."
+    },
+    {
+      "confidence": "média",
+      "edition_at": "2026-11-19T07:31:00-03:00",
+      "edition_date": "2026-11-19",
+      "id": "radar-9f961c8d9a57b558",
+      "published": "2026-11-18 05:00 ET (10:00 UTC). Capturado na rotina setorial das 06:47 BRT; 28 minutos anterior ao início da janela exata desta consolidação.",
+      "source": "ICMM — lançamento da Global Mining and Metals Biodiversity Dataset",
+      "source_meta": {
+        "domain": "www.prnewswire.com"
+      },
+      "summary": "O ICMM publicou um conjunto de dados que cruza cerca de 12 mil instalações de mineração e metalurgia com indicadores de condição de ecossistemas, áreas-chave para biodiversidade e áreas protegidas ou conservadas. Segundo a entidade, 22% das instalações ficam em paisagens de condição ecológica alta ou muito alta; 5% intersectam áreas-chave para biodiversidade e 4% áreas protegidas ou conservadas. São resultados divulgados pelo ICMM, não validados independentemente neste radar.",
+      "tags": [
+        "mineracao",
+        "biodiversidade",
+        "dados-geoespaciais",
+        "ecossistemas",
+        "areas-protegidas",
+        "fechamento-de-minas"
+      ],
+      "title": "ICMM publica base global de mineração e biodiversidade",
+      "url": "https://www.prnewswire.com/news-releases/new-global-dataset-maps-where-mining-and-metals-intersect-with-biodiversity-302940342.html",
+      "why_it_matters": "A base serve para triagem geoespacial e planejamento de recuperação ou fechamento de minas. Instalações são representadas por pontos, não limites operacionais; a análise não mede impacto de cada ativo nem substitui dados locais."
+    },
     {
       "confidence": "alta",
       "edition_at": "2026-11-18T07:36:00-03:00",
@@ -1033,202 +1231,6 @@
       "title": "Gemini ganha conectores para consulta governada de dados corporativos",
       "url": "https://cloud.google.com/blog/products/data-analytics/query-enterprise-data-in-gemini-with-data-cloud-connectors/",
       "why_it_matters": "Arquitetura concreta para perguntas sobre bases heterogêneas sem conceder privilégios globais ao agente. Relevância para sistemas corporativos e acervos geoespaciais é inferência de aplicação, não implantação nos projetos."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-07T12:33:00-03:00",
-      "edition_date": "2026-11-07",
-      "id": "radar-4323de8fac7bc032",
-      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Data_Analytics_JooYPJr.max-2500x2500.jpg",
-      "published": "2026-11-06 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — BigQuery AI Functions in Pandas",
-      "source_meta": {
-        "domain": "cloud.google.com"
-      },
-      "summary": "O Google Cloud documentou um novo acessor `.bigquery` do BigQuery DataFrames para chamar funções de IA a partir de DataFrames pandas. No exemplo, `ai.predict()` traduz a operação para GoogleSQL e executa o modelo TabFM na infraestrutura do BigQuery, devolvendo resultados em pandas. A proposta abrange previsão, classificação e embeddings sem transferir a computação principal para o notebook local; uso requer projeto Google Cloud autorizado e configuração da biblioteca.",
-      "tags": [
-        "google-cloud",
-        "bigquery",
-        "pandas",
-        "ia",
-        "api",
-        "analise-de-dados",
-        "release"
-      ],
-      "title": "BigQuery DataFrames expõe funções de IA em objetos pandas",
-      "url": "https://cloud.google.com/blog/products/data-analytics/bigquery-ai-functions-in-pandas",
-      "why_it_matters": "Pode reduzir código de integração entre notebooks e análise escalável de tabelas operacionais. Aplicação a séries agrícolas, florestais ou logísticas é possibilidade técnica, não resultado já validado."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-03T07:31:00-03:00",
-      "edition_date": "2026-11-03",
-      "id": "radar-b7d448737fd24ec2",
-      "image": "https://www.nesdis.noaa.gov/s3/2023-05/NOAA-logo_16x9_NoBorder.png",
-      "published": "2026-11-02 18:00 UTC; interrupção efetiva em 2026-11-02 15:40 UTC (ambos dentro da janela pesquisada)",
-      "source": "NOAA/NESDIS — aviso operacional de encerramento do S-NPP",
-      "source_meta": {
-        "domain": "www.nesdis.noaa.gov"
-      },
-      "summary": "A NOAA confirmou o fim permanente da distribuição de produtos científicos do satélite Suomi NPP às 15:40 UTC de 2 de novembro. A transmissão direta HRD também foi desligada. A mudança afeta, entre outros instrumentos, o VIIRS; a agência indica NOAA-21 como fonte principal e NOAA-20 como secundária para produtos científicos semelhantes.",
-      "tags": [
-        "noaa",
-        "snpp",
-        "viirs",
-        "sensoriamento-remoto",
-        "florestal",
-        "ciclo-de-vida",
-        "dados"
-      ],
-      "title": "NOAA encerra distribuição de dados do satélite S-NPP",
-      "url": "https://www.nesdis.noaa.gov/news/update-4-cessation-of-suomi-national-polar-orbiting-partnership-s-npp-data-users-november-02-2026-1540-utc-and-decommissioning-issued-november-2-2026-1800-utc",
-      "why_it_matters": "Fluxos de monitoramento florestal, queimadas ou ambiente que dependam especificamente de S-NPP/VIIRS precisam verificar fonte substituta e continuidade da série. Não implica fim de todos os produtos VIIRS."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-03T07:31:00-03:00",
-      "edition_date": "2026-11-03",
-      "id": "radar-bdcfdcaee06557e5",
-      "published": "2026-11-03 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Halliburton — Agile Asset Management",
-      "source_meta": {
-        "domain": "ir.halliburton.com"
-      },
-      "summary": "A Halliburton anunciou o Agile Asset Management (AAM), solução em nuvem da Landmark que integra dados e fluxos de subsuperfície, poços, instalações e economia para comparar alternativas de desenvolvimento de campos. Segundo a empresa, agentes de IA apoiam recuperação de dados, checagens de qualidade e orientação ao usuário. Aker BP participou do codesenvolvimento e descreve uso para avaliar alternativas com trilha auditável de premissas e decisões.",
-      "tags": [
-        "oleo-e-gas",
-        "halliburton",
-        "landmark",
-        "agentes-ia",
-        "planejamento",
-        "dados",
-        "lancamento"
-      ],
-      "title": "Halliburton lança plataforma para decisões de desenvolvimento de campos de óleo e gás",
-      "url": "https://ir.halliburton.com/node/36696/pdf",
-      "why_it_matters": "Integração multidisciplinar e rastreabilidade são referência técnica para projetos de conhecimento e planejamento no setor de óleo e gás. Ganhos de tempo anunciados ainda não constituem validação independente."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-03T07:31:00-03:00",
-      "edition_date": "2026-11-03",
-      "id": "radar-00dac1f51d8cbffb",
-      "published": "2026-11-02 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "ADNOC — parceria com OpenAI e G42",
-      "source_meta": {
-        "domain": "www.adnoc.ae"
-      },
-      "summary": "A ADNOC anunciou parceria plurianual com OpenAI e G42 para desenvolver e implantar capacidade de decisão baseada em agentes, usando modelos da OpenAI e infraestrutura de IA nos Emirados Árabes Unidos. O primeiro foco é planejamento integrado de campos, conectando dados de poços, reservatórios, instalações e custos; o segundo é análise de decisões ao longo da cadeia de produção, refino, logística e comercialização. A empresa afirma que especialistas manterão supervisão das decisões consequenciais.",
-      "tags": [
-        "oleo-e-gas",
-        "adnoc",
-        "openai",
-        "g42",
-        "agentes-ia",
-        "planejamento",
-        "parceria"
-      ],
-      "title": "ADNOC, OpenAI e G42 firmam parceria para decisões integradas em energia",
-      "url": "https://www.adnoc.ae/media-center/news/2026/11/ADNOC-Signs-Landmark-Partnership-Agreement-with-OpenAI",
-      "why_it_matters": "Caso setorial de arquitetura que conecta dados técnicos e comerciais em vez de otimizar cada etapa isoladamente. Trata-se de parceria e plano de implantação; resultados operacionais das duas aplicações ainda não foram demonstrados publicamente."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-03T07:31:00-03:00",
-      "edition_date": "2026-11-03",
-      "id": "radar-044e6de4ffbcb9d2",
-      "published": "2026-11-02 conforme página do periódico (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Turkish Journal of Forestry — sistema espacial para acessibilidade de estradas florestais",
-      "source_meta": {
-        "domain": "dergipark.org.tr"
-      },
-      "summary": "Taha Yasin Hatay apresentou um sistema web de apoio à decisão que automatiza análise de acesso em redes de estradas florestais com GeoPandas, Shapely e Leaflet. Em estudo com 245,9 km de estradas e 11.463,4 ha, a área considerada acessível variou de 18,33% a 66,00% conforme cenário de buffer de 50 a 250 m, apesar de a densidade nominal da rede ser 26,23 m/ha. O artigo mostra que densidade de estradas, sozinha, não descreve a cobertura operacional.",
-      "tags": [
-        "florestal",
-        "estradas-florestais",
-        "gis",
-        "logistica",
-        "paper",
-        "acessibilidade",
-        "planejamento"
-      ],
-      "title": "Artigo testa indicadores espaciais de acesso em estradas florestais",
-      "url": "https://dergipark.org.tr/en/pub/tjf/article/1946209",
-      "why_it_matters": "Métrica espacial e análise por cenários são transferíveis como hipótese de avaliação para malhas florestais; percentuais do estudo turco não devem ser aplicados diretamente a operações brasileiras."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-03T07:31:00-03:00",
-      "edition_date": "2026-11-03",
-      "id": "radar-8e5cbef2e724f76f",
-      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
-      "published": "recurso adicionado em 2026-11-02; documentação atualizada em 2026-11-03 UTC (horário de lançamento não informado; janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — Agent Anomaly Detection",
-      "source_meta": {
-        "domain": "docs.cloud.google.com"
-      },
-      "summary": "O Google Cloud adicionou à prévia de Agent Anomaly Detection a inscrição automática de agentes elegíveis encontrados em um projeto. O serviço analisa logs e rastros OpenTelemetry de forma assíncrona para detectar uso indevido de ferramentas, abuso de privilégios, falhas em cascata e consumo anormal de recursos. A ativação depende de requisitos como ADK Python 2.1.0+, telemetria configurada e acesso aprovado ao produto; agentes descobertos não geram análise ou custo até serem habilitados.",
-      "tags": [
-        "google-cloud",
-        "agentes-ia",
-        "observabilidade",
-        "seguranca",
-        "opentelemetry",
-        "preview"
-      ],
-      "title": "Google amplia detecção de anomalias em agentes com inscrição automática",
-      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agent-anomalies-overview",
-      "why_it_matters": "Governança de agentes pode ganhar cobertura automática, mas exige instrumentação e política explícita de coleta de prompts e respostas. É referência para arquiteturas corporativas, não recurso disponível universalmente."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-03T07:31:00-03:00",
-      "edition_date": "2026-11-03",
-      "id": "radar-098ee6ddbe901d2f",
-      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/03_ThreatIntelligenceWebsiteBannerIdeas_BA.max-2600x2600.png",
-      "published": "2026-11-02 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Google Threat Intelligence/Mandiant — LLMJacking",
-      "source_meta": {
-        "domain": "cloud.google.com"
-      },
-      "summary": "A Mandiant relatou incidentes reais de 2026 em que invasores usaram chaves de API válidas ou endpoints de modelos expostos para consumir recursos de IA de empresas sem autorização. A investigação cobre múltiplos provedores e organizações de vários continentes, inclusive transporte; em casos observados, as cobranças fraudulentas ultrapassaram US$ 100 mil em um único dia. O relatório descreve também intermediários que revendem o acesso desviado.",
-      "tags": [
-        "agentes-ia",
-        "seguranca",
-        "api",
-        "credenciais",
-        "custos",
-        "mandiant",
-        "incidente"
-      ],
-      "title": "Mandiant documenta abuso de credenciais e endpoints de modelos de IA",
-      "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/",
-      "why_it_matters": "Projetos com agentes e modelos em nuvem precisam controlar credenciais, exposição de endpoints, limites de uso e alertas de custo. Valores relatados são dos incidentes investigados, não previsão de risco para estes projetos."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-10-30T07:33:00-03:00",
-      "edition_date": "2026-10-30",
-      "id": "radar-10be109ee0bd01c4",
-      "image": "https://opengraph.githubassets.com/85a7e5fa54c0b28bde06588dae3003e8544d58795b2c562c7132d22d88415450/openai/codex/releases/tag/rust-v0.166.0",
-      "published": "2026-10-29 19:47 (horário exibido pelo GitHub; fuso não informado)",
-      "source": "OpenAI — Codex CLI 0.166.0",
-      "source_meta": {
-        "domain": "github.com"
-      },
-      "summary": "A OpenAI lançou o Codex CLI 0.166.0 com `codex queue --resume`, que retoma uma conversa não carregada após enfileirar uma mensagem, e `codex doctor --network-only`, voltado a diagnósticos de configuração, conexão e WebSocket. O release também adiciona GPT-6.1 Terra aos catálogos de modelos locais, Vertex AI e Amazon Bedrock, além de melhorar a explicação de bloqueios de segurança e a preservação de permissões ao retomar ou bifurcar conversas.",
-      "tags": [
-        "openai",
-        "codex",
-        "agentes-ia",
-        "cli",
-        "automacao",
-        "diagnostico",
-        "release"
-      ],
-      "title": "Codex CLI 0.166.0 amplia retomada de tarefas e diagnóstico de rede",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.166.0",
-      "why_it_matters": "Retomada mais confiável e diagnóstico isolado ajudam a operar agentes de desenvolvimento em fluxos longos e ambientes corporativos. A disponibilidade de modelos em cada provedor ainda depende da conta e da região."
     }
   ],
   "methodology": {
@@ -1236,9 +1238,9 @@
     "version": "1"
   },
   "metrics": {
-    "high_confidence": 46,
+    "high_confidence": 45,
     "signals": 50,
-    "sources": 22
+    "sources": 19
   },
   "schema_version": "1.0",
   "scope": "ultimas_50_publicacoes",
