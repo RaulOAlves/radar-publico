@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-19 07:31 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-20 07:37 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,76 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-20 07:37 BRT — Codex CLI 0.171.0 amplia workspace e execução remota
+
+- Fonte: [OpenAI — release Codex 0.171.0](https://github.com/openai/codex/releases/tag/rust-v0.171.0)
+- Publicado: 2026-11-20 00:44, conforme página do GitHub (fuso não exibido; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: A versão torna padrão o workspace da interface de terminal, com prévias pesquisáveis de documentos, imagens e transcrições de subagentes ao lado da conversa. Adiciona `codex exec --remote` para iniciar ou retomar sessões não interativas em um app server existente, além de comandos de controle remoto e linha de status MCP configurável. Corrige preservação de perfis de permissão ao mudar diretórios e login MCP com alguns provedores corporativos.
+- Por que importa: Facilita acompanhar trabalho paralelo e operar sessões remotas em fluxos de desenvolvimento com agentes. Quem depende de permissões por diretório ou MCP corporativo deve validar a atualização.
+- Tags: #openai #codex #agentes-ia #mcp #execucao-remota #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-20 07:37 BRT — Claude Code 2.1.329 reúne tarefas e reforça diagnóstico MCP
+
+- Fonte: [Anthropic — release Claude Code v2.1.329](https://github.com/anthropics/claude-code/releases/tag/v2.1.329)
+- Publicado: 2026-11-19 22:14, conforme página do GitHub (fuso não exibido; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: O comando `/tasks` passa a mostrar tarefas agendadas da sessão, ativações de `/loop`, objetivo e forks da conversa. A tela `/mcp` mostra a mensagem de erro JSON-RPC quando um servidor HTTP remoto recusa conexão. A versão também alerta sobre a origem de hooks de uma pasta e corrige casos de perda de configurações locais, tarefas MCP paradas após reconexão e revisões de código feitas sobre o branch errado.
+- Por que importa: Dá mais visibilidade à execução de agentes e reduz diagnósticos ambíguos em integrações MCP. É especialmente útil para rotinas agendadas e revisão assistida de código.
+- Tags: #anthropic #claude-code #mcp #tarefas-agendadas #agentes-ia #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-20 07:37 BRT — ArcGIS Pro amplia integração BIM/CAD para infraestrutura linear
+
+- Fonte: [Esri — novidades de BIM e CAD no ArcGIS Pro](https://www.esri.com/arcgis-blog/products/arcgis-pro/announcements/whats-new-for-bim-and-cad-in-arcgis-pro-november-2026)
+- Publicado: 2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: A atualização de novembro do ArcGIS Pro permite acessar alinhamentos, perfis, equações de estaca e superfícies TIN do OpenRoads Designer e combiná-los com conteúdo de Revit, Civil 3D e outros formatos. Também permite propagar propriedades de camadas de edifícios e escolher níveis de detalhe Fine, Medium ou Coarse para modelos Revit.
+- Por que importa: Pode reduzir conversão manual de dados de projeto viário para GIS e apoiar análise conjunta de traçado, terreno e ativos. A adoção depende dos formatos efetivamente usados nos projetos.
+- Tags: #esri #arcgis-pro #bim #cad #openroads #infraestrutura-linear #release
+- Relações: [[GeoNext — LiDAR e rodovias]], [[Bracell — GeoIA Estradas]]
+- Confiança: alta
+
+### 2026-11-20 07:37 BRT — AWS STS permite credenciais temporárias com escopo reduzido para agentes
+
+- Fonte: [AWS — anúncio da API GetScopedCredentials](https://aws.amazon.com/about-aws/whats-new/2026/11/sts-getscopedcredentials/)
+- Publicado: 2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: A nova API `GetScopedCredentials` deriva credenciais temporárias com permissões, duração ou ambas reduzidas em relação à sessão chamadora, preservando a identidade original. Seu uso depende de política IAM e cada chamada é registrada no CloudTrail. A AWS informa disponibilidade nas regiões comerciais, GovCloud, European Sovereign Cloud e China.
+- Por que importa: Permite atribuir privilégio mínimo a agentes e subagentes sem criar nova identidade para cada tarefa. Equipes devem definir políticas e testar a propagação de permissões antes de usar em produção.
+- Tags: #aws #sts #iam #agentes-ia #credenciais #seguranca #api
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-20 07:37 BRT — Google Cloud Storage lança enriquecimento de objetos para contexto de agentes
+
+- Fonte: [Google Cloud — object enrichments no Cloud Storage](https://cloud.google.com/blog/products/storage-data-transfer/cost-effective-ai-context-extraction-from-unstructured-gcs-data)
+- Publicado: 2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: Em preview, `object enrichments` aplica modelos de IA a objetos no Cloud Storage e grava metadados contextuais junto aos próprios objetos. O anúncio cobre anotações de imagens, como detecção e rotulação, e classificação de PDFs, com configuração via console ou API. Funções mais amplas com Gemini para texto, áudio e vídeo são futuras e exigem solicitação de acesso; não fazem parte da disponibilidade geral deste preview.
+- Por que importa: Oferece uma forma gerenciada de indexar acervos de imagens e documentos usados por agentes, reduzindo infraestrutura própria de pré-processamento. Custo e adequação a imagens geoespaciais precisam ser testados em amostras reais.
+- Tags: #google-cloud #cloud-storage #metadados #imagens #documentos #agentes-ia #preview
+- Relações: [[NAVIS / GeoFramework]], [[Bracell — POC RGB + LiDAR]]
+- Confiança: alta
+
+### 2026-11-20 07:37 BRT — AWS AppConfig versiona prompts e parâmetros de modelos sem redeploy
+
+- Fonte: [AWS — perfis nativos de configuração de IA no AppConfig](https://aws.amazon.com/about-aws/whats-new/2026/11/aws-appconfig-native-ai-model-invocation-prompt-configurations/)
+- Publicado: 2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: O AppConfig adicionou perfis para configurações de invocação de modelos e para prompts, permitindo alterar modelo, parâmetros e mensagens em aplicações em execução sem novo deploy. Os perfis podem ser versionados e distribuídos gradualmente, com rollback automático por alarmes de observabilidade. A AWS informa disponibilidade nas regiões do AppConfig sem custo adicional do recurso.
+- Por que importa: Dá controle de mudança e reversão a agentes em produção, inclusive quando um ajuste de prompt ou modelo piora resultados ou custos. Não substitui avaliação funcional dos fluxos GeoIA.
+- Tags: #aws #appconfig #prompts #agentes-ia #rollout #rollback #release
+- Relações: [[NAVIS / GeoFramework]], [[Vale — GeoIA SAB.IA]]
+- Confiança: alta
+
+### 2026-11-20 07:37 BRT — Google Agent Registry adiciona metadados de controle para ferramentas MCP
+
+- Fonte: [Google Cloud — release notes do Agent Registry](https://docs.cloud.google.com/agent-registry/release-notes#november_19_2026)
+- Publicado: 2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: O Agent Registry passou a aceitar, em preview, metadados de protocolo de ferramentas MCP, incluindo indicadores de política do Identity-Aware Proxy para habilitação de ferramentas, controles de aprovação humana e atributos de provedor. A nota de versão não afirma que esses controles são aplicados automaticamente a todas as ferramentas registradas.
+- Por que importa: Aumenta a capacidade de descrever requisitos de acesso e supervisão humana de ferramentas disponibilizadas a agentes. Antes de adoção, verificar como os metadados são interpretados pelo cliente e pelo ambiente de execução.
+- Tags: #google-cloud #agent-registry #mcp #iap #human-in-the-loop #governanca #preview
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
 
 ### 2026-11-19 07:31 BRT — Duas versões de `agent-framework` no PyPI continham código para roubo de credenciais
 

@@ -1,8 +1,178 @@
 {
-  "edition_date": "2026-11-19",
-  "edition_id": "radar-2026-11-19T07:31:00-03:00",
-  "generated_at": "2026-11-19T07:31:00-03:00",
+  "edition_date": "2026-11-20",
+  "edition_id": "radar-2026-11-20T07:37:00-03:00",
+  "generated_at": "2026-11-20T07:37:00-03:00",
   "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-1e02ab9c34ce90d4",
+      "image": "https://opengraph.githubassets.com/073a65751744d9bcb748b6930fec8f225ffd3daef997fc2da7cc378b7fe32f3d/openai/codex/releases/tag/rust-v0.171.0",
+      "published": "2026-11-20 00:44, conforme página do GitHub (fuso não exibido; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "OpenAI — release Codex 0.171.0",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "A versão torna padrão o workspace da interface de terminal, com prévias pesquisáveis de documentos, imagens e transcrições de subagentes ao lado da conversa. Adiciona `codex exec --remote` para iniciar ou retomar sessões não interativas em um app server existente, além de comandos de controle remoto e linha de status MCP configurável. Corrige preservação de perfis de permissão ao mudar diretórios e login MCP com alguns provedores corporativos.",
+      "tags": [
+        "openai",
+        "codex",
+        "agentes-ia",
+        "mcp",
+        "execucao-remota",
+        "release"
+      ],
+      "title": "Codex CLI 0.171.0 amplia workspace e execução remota",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+      "why_it_matters": "Facilita acompanhar trabalho paralelo e operar sessões remotas em fluxos de desenvolvimento com agentes. Quem depende de permissões por diretório ou MCP corporativo deve validar a atualização."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-f3d370a5121afbf2",
+      "image": "https://opengraph.githubassets.com/5b42bee5d440f0e84ecda22947f89cf6c4fa8ccb21c7ee3aac2297099480c966/anthropics/claude-code/releases/tag/v2.1.329",
+      "published": "2026-11-19 22:14, conforme página do GitHub (fuso não exibido; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Anthropic — release Claude Code v2.1.329",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "O comando `/tasks` passa a mostrar tarefas agendadas da sessão, ativações de `/loop`, objetivo e forks da conversa. A tela `/mcp` mostra a mensagem de erro JSON-RPC quando um servidor HTTP remoto recusa conexão. A versão também alerta sobre a origem de hooks de uma pasta e corrige casos de perda de configurações locais, tarefas MCP paradas após reconexão e revisões de código feitas sobre o branch errado.",
+      "tags": [
+        "anthropic",
+        "claude-code",
+        "mcp",
+        "tarefas-agendadas",
+        "agentes-ia",
+        "release"
+      ],
+      "title": "Claude Code 2.1.329 reúne tarefas e reforça diagnóstico MCP",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
+      "why_it_matters": "Dá mais visibilidade à execução de agentes e reduz diagnósticos ambíguos em integrações MCP. É especialmente útil para rotinas agendadas e revisão assistida de código."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-6c1778457adb08fd",
+      "published": "2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Esri — novidades de BIM e CAD no ArcGIS Pro",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
+      "summary": "A atualização de novembro do ArcGIS Pro permite acessar alinhamentos, perfis, equações de estaca e superfícies TIN do OpenRoads Designer e combiná-los com conteúdo de Revit, Civil 3D e outros formatos. Também permite propagar propriedades de camadas de edifícios e escolher níveis de detalhe Fine, Medium ou Coarse para modelos Revit.",
+      "tags": [
+        "esri",
+        "arcgis-pro",
+        "bim",
+        "cad",
+        "openroads",
+        "infraestrutura-linear",
+        "release"
+      ],
+      "title": "ArcGIS Pro amplia integração BIM/CAD para infraestrutura linear",
+      "url": "https://www.esri.com/arcgis-blog/products/arcgis-pro/announcements/whats-new-for-bim-and-cad-in-arcgis-pro-november-2026",
+      "why_it_matters": "Pode reduzir conversão manual de dados de projeto viário para GIS e apoiar análise conjunta de traçado, terreno e ativos. A adoção depende dos formatos efetivamente usados nos projetos."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-57e64292fd1254b4",
+      "published": "2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "AWS — anúncio da API GetScopedCredentials",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
+      "summary": "A nova API `GetScopedCredentials` deriva credenciais temporárias com permissões, duração ou ambas reduzidas em relação à sessão chamadora, preservando a identidade original. Seu uso depende de política IAM e cada chamada é registrada no CloudTrail. A AWS informa disponibilidade nas regiões comerciais, GovCloud, European Sovereign Cloud e China.",
+      "tags": [
+        "aws",
+        "sts",
+        "iam",
+        "agentes-ia",
+        "credenciais",
+        "seguranca",
+        "api"
+      ],
+      "title": "AWS STS permite credenciais temporárias com escopo reduzido para agentes",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sts-getscopedcredentials/",
+      "why_it_matters": "Permite atribuir privilégio mínimo a agentes e subagentes sem criar nova identidade para cada tarefa. Equipes devem definir políticas e testar a propagação de permissões antes de usar em produção."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-44c6827e1f93012f",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/33_-_Storage__Data_Transfer_QsgjqZW.max-2600x2600.jpg",
+      "published": "2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Google Cloud — object enrichments no Cloud Storage",
+      "source_meta": {
+        "domain": "cloud.google.com"
+      },
+      "summary": "Em preview, `object enrichments` aplica modelos de IA a objetos no Cloud Storage e grava metadados contextuais junto aos próprios objetos. O anúncio cobre anotações de imagens, como detecção e rotulação, e classificação de PDFs, com configuração via console ou API. Funções mais amplas com Gemini para texto, áudio e vídeo são futuras e exigem solicitação de acesso; não fazem parte da disponibilidade geral deste preview.",
+      "tags": [
+        "google-cloud",
+        "cloud-storage",
+        "metadados",
+        "imagens",
+        "documentos",
+        "agentes-ia",
+        "preview"
+      ],
+      "title": "Google Cloud Storage lança enriquecimento de objetos para contexto de agentes",
+      "url": "https://cloud.google.com/blog/products/storage-data-transfer/cost-effective-ai-context-extraction-from-unstructured-gcs-data",
+      "why_it_matters": "Oferece uma forma gerenciada de indexar acervos de imagens e documentos usados por agentes, reduzindo infraestrutura própria de pré-processamento. Custo e adequação a imagens geoespaciais precisam ser testados em amostras reais."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-dba4e363a4b5f74e",
+      "published": "2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "AWS — perfis nativos de configuração de IA no AppConfig",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
+      "summary": "O AppConfig adicionou perfis para configurações de invocação de modelos e para prompts, permitindo alterar modelo, parâmetros e mensagens em aplicações em execução sem novo deploy. Os perfis podem ser versionados e distribuídos gradualmente, com rollback automático por alarmes de observabilidade. A AWS informa disponibilidade nas regiões do AppConfig sem custo adicional do recurso.",
+      "tags": [
+        "aws",
+        "appconfig",
+        "prompts",
+        "agentes-ia",
+        "rollout",
+        "rollback",
+        "release"
+      ],
+      "title": "AWS AppConfig versiona prompts e parâmetros de modelos sem redeploy",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-appconfig-native-ai-model-invocation-prompt-configurations/",
+      "why_it_matters": "Dá controle de mudança e reversão a agentes em produção, inclusive quando um ajuste de prompt ou modelo piora resultados ou custos. Não substitui avaliação funcional dos fluxos GeoIA."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-330285e7ea951858",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "published": "2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Google Cloud — release notes do Agent Registry",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
+      "summary": "O Agent Registry passou a aceitar, em preview, metadados de protocolo de ferramentas MCP, incluindo indicadores de política do Identity-Aware Proxy para habilitação de ferramentas, controles de aprovação humana e atributos de provedor. A nota de versão não afirma que esses controles são aplicados automaticamente a todas as ferramentas registradas.",
+      "tags": [
+        "google-cloud",
+        "agent-registry",
+        "mcp",
+        "iap",
+        "human-in-the-loop",
+        "governanca",
+        "preview"
+      ],
+      "title": "Google Agent Registry adiciona metadados de controle para ferramentas MCP",
+      "url": "https://docs.cloud.google.com/agent-registry/release-notes#november_19_2026",
+      "why_it_matters": "Aumenta a capacidade de descrever requisitos de acesso e supervisão humana de ferramentas disponibilizadas a agentes. Antes de adoção, verificar como os metadados são interpretados pelo cliente e pelo ambiente de execução."
+    },
     {
       "confidence": "alta",
       "edition_at": "2026-11-19T07:31:00-03:00",
@@ -1063,174 +1233,6 @@
       "title": "ModelBuilder do Map Viewer passa a combinar análise raster e vetorial em beta",
       "url": "https://www.esri.com/arcgis-blog/products/arcgis-online/announcements/raster-analysis-comes-to-modelbuilder-in-map-viewer-beta",
       "why_it_matters": "Permite prototipar processos reproduzíveis de terreno, vegetação e imagem sem separar modelos raster e vetoriais. A restrição a serviços de imagem hospedados e o consumo de créditos precisam entrar na avaliação."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-10T07:34:00-03:00",
-      "edition_date": "2026-11-10",
-      "id": "radar-e12f660232687418",
-      "published": "2026-11-09 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Esri — Semantic search (beta) no ArcGIS",
-      "source_meta": {
-        "domain": "www.esri.com"
-      },
-      "summary": "A Esri lançou busca semântica em beta no ArcGIS Online, com chegada anunciada ao ArcGIS Enterprise 12.2 ainda em novembro. O recurso usa embeddings de título, resumo e descrição dos itens para recuperar conteúdo por significado, além da correspondência literal de palavras-chave. No Online, um administrador precisa permitir recursos beta e a distribuição ocorre gradualmente; no Enterprise, a configuração requer credenciais de uma organização ArcGIS Online para o serviço de embeddings. A função retorna itens relacionados, não respostas gerais de um chatbot.",
-      "tags": [
-        "esri",
-        "arcgis-online",
-        "arcgis-enterprise",
-        "busca-semantica",
-        "embeddings",
-        "metadados",
-        "beta"
-      ],
-      "title": "Busca semântica chega em beta ao ArcGIS Online e ao Enterprise 12.2",
-      "url": "https://www.esri.com/arcgis-blog/products/arcgis-online/announcements/semantic-search",
-      "why_it_matters": "Pode melhorar descoberta de camadas e mapas em catálogos grandes, desde que metadados estejam bem descritos. A dependência do serviço de embeddings e o status beta exigem revisão de governança."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-10T07:34:00-03:00",
-      "edition_date": "2026-11-10",
-      "id": "radar-0d90114bb3b7b006",
-      "published": "2026-11-09 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Esri — ArcGIS Workforce is retired",
-      "source_meta": {
-        "domain": "www.esri.com"
-      },
-      "summary": "A Esri confirmou a aposentadoria do ArcGIS Workforce com a atualização de novembro do ArcGIS Online e o ArcGIS Enterprise 12.2; o produto não recebe mais suporte. A função de coordenação de trabalho passa a Tasks no ArcGIS Field Maps, compatível com ArcGIS Online e Enterprise 11.5 ou posterior. O aplicativo móvel Workforce permanecerá nas lojas até outubro de 2027 para transição, mas sem atualizações, correções ou garantia de funcionamento contínuo.",
-      "tags": [
-        "esri",
-        "arcgis-workforce",
-        "field-maps",
-        "tarefas",
-        "campo",
-        "ciclo-de-vida"
-      ],
-      "title": "ArcGIS Workforce é aposentado; tarefas migram para Field Maps",
-      "url": "https://www.esri.com/arcgis-blog/products/field-maps/field-mobility/arcgis-workforce-is-retired",
-      "why_it_matters": "Operações de campo que ainda usem Workforce precisam planejar migração de projetos e treinamento para Tasks. A relação com os projetos citados é condicional ao uso desse produto."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-10T07:34:00-03:00",
-      "edition_date": "2026-11-10",
-      "id": "radar-a989f1582084d0cf",
-      "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/b2dab182c77b4ccfd36423470106915b20f676ae-1200x630.jpg",
-      "published": "2026-11-09 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Anthropic — Claude Fable 5.2 and Mythos 5.2",
-      "source_meta": {
-        "domain": "www.anthropic.com"
-      },
-      "summary": "A Anthropic lançou Fable 5.2 e Mythos 5.2, variantes do mesmo modelo com salvaguardas de segurança diferentes. Fable é disponibilizado amplamente para tarefas técnicas, inclusive Claude Code; Mythos exige verificação para aplicações sensíveis em segurança cibernética ou biomedicina. A empresa informa preço de US$ 8 por milhão de tokens de entrada e US$ 40 por milhão de saída, com modo rápido opcional a US$ 16/US$ 80. Ganhos de desempenho e velocidade apresentados no anúncio são avaliações da própria Anthropic, não validação de resultados nos projetos.",
-      "tags": [
-        "anthropic",
-        "claude-code",
-        "agentes-ia",
-        "modelos",
-        "api",
-        "preco",
-        "release"
-      ],
-      "title": "Anthropic lança Claude Fable 5.2 e Mythos 5.2 para trabalho técnico complexo",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-      "why_it_matters": "Muda a opção de modelo e custo para agentes de programação e pesquisa. Vale testar em tarefas próprias antes de adotar métricas de benchmark como ganho operacional."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-10T07:34:00-03:00",
-      "edition_date": "2026-11-10",
-      "id": "radar-18cb606e89908fe4",
-      "image": "https://dataspace.copernicus.eu/sites/default/files/styles/opengraph/public/media/images/2023-03/og_share.png?itok=zjtW85Fb",
-      "published": "2026-11-09 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Copernicus Data Space Ecosystem — atualização programada do Browser e Sentinel Hub",
-      "source_meta": {
-        "domain": "dataspace.copernicus.eu"
-      },
-      "summary": "O Copernicus Data Space Ecosystem anunciou uma atualização de seus serviços Copernicus Browser e Sentinel Hub, prevista entre 10 e 13 de novembro de 2026. O aviso informa possibilidade de breves interrupções nas APIs Batch Processing, Asynchronous Processing e Batch Statistical, além de pequenos atrasos em visualizações de novos produtos de observação da Terra e na ingestão de tiles BYOC ou criação de coleções e configurações OGC. O comunicado não afirma indisponibilidade contínua durante todo o período.",
-      "tags": [
-        "copernicus",
-        "sentinel-hub",
-        "api",
-        "sensoriamento-remoto",
-        "disponibilidade",
-        "operacao"
-      ],
-      "title": "Copernicus avisa possível interrupção de APIs de processamento entre 10 e 13 de novembro",
-      "url": "https://dataspace.copernicus.eu/news/2026-11-9-upgrade-copernicus-browser-and-sentinel-hub-services",
-      "why_it_matters": "Pipelines de imagens e estatísticas que dependem dessas APIs devem prever tentativas de repetição, monitoramento e tolerância a atraso. Impacto nos projetos citados é condicional ao uso efetivo do serviço."
-    },
-    {
-      "confidence": "média",
-      "edition_at": "2026-11-10T07:34:00-03:00",
-      "edition_date": "2026-11-10",
-      "id": "radar-75965b0ad6e02774",
-      "published": "2026-11-09 12:04 ET (17:04 UTC; dentro da janela pesquisada)",
-      "source": "Aydi Technologies/DALTEX — anúncio da implantação do ORTH",
-      "source_meta": {
-        "domain": "www.globenewswire.com"
-      },
-      "summary": "A DALTEX, grupo agrícola egípcio, anunciou implantação da plataforma ORTH, da Aydi Technologies, em suas operações. Segundo as empresas, a solução reúne registros de campo, histórico de culturas, irrigação, previsões meteorológicas e imagens de satélite para fornecer respostas e alertas contextualizados a agrônomos e equipes de campo. O anúncio descreve uso operacional, mas não fornece avaliação independente dos alegados ganhos de produtividade ou redução de perdas.",
-      "tags": [
-        "agronegocio",
-        "agentes-ia",
-        "sensoriamento-remoto",
-        "irrigacao",
-        "agronomia",
-        "implantacao"
-      ],
-      "title": "DALTEX anuncia implantação da plataforma agronômica ORTH em suas operações",
-      "url": "https://www.globenewswire.com/news-release/2026/11/09/3398825/0/en/daltex-one-of-the-world-s-largest-fresh-potato-exporters-deploys-ai-at-scale-with-orth.html",
-      "why_it_matters": "Exemplo verificável de integração de dados agronômicos e sensoriamento remoto em assistência à decisão no campo. Transferência a cana ou grãos exige validação própria; resultados anunciados não são prova de desempenho nesses cultivos."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-07T12:33:00-03:00",
-      "edition_date": "2026-11-07",
-      "id": "radar-199af8aea5b61129",
-      "image": "https://opengraph.githubassets.com/a4785344a9cc2f82dd8c3d0aa62fa761536deeb3a3f70d05986705305ae54af5/anthropics/claude-code/issues/107757",
-      "published": "2026-11-06 (horário/fuso da resposta não informados; janela exata de 24 horas não confirmada)",
-      "source": "Anthropic — discussão técnica e resposta da equipe no repositório Claude Code",
-      "source_meta": {
-        "domain": "github.com"
-      },
-      "summary": "Usuários relataram que o Claude Code incluiu o e-mail da conta em cabeçalhos `User-Agent` de requisições geradas pelo agente. Integrantes da equipe Anthropic confirmaram que o endereço foi colocado no contexto do modelo e informaram que a versão 2.1.317 ou posterior traz uma proteção integrada, ativada por padrão, para barrar ou pedir confirmação em determinadas chamadas web e comandos `curl` que contenham o e-mail. A equipe também declarou que pretende retirar o endereço do contexto do modelo em um próximo release; essa remoção ainda não foi confirmada como entregue. A proteção atual não cobre todos os caminhos, como scripts escritos e executados pelo agente.",
-      "tags": [
-        "anthropic",
-        "claude-code",
-        "agentes-ia",
-        "seguranca",
-        "privacidade",
-        "release"
-      ],
-      "title": "Claude Code adiciona proteção provisória contra exposição de e-mail em chamadas web",
-      "url": "https://github.com/anthropics/claude-code/issues/107757",
-      "why_it_matters": "Agentes com acesso à rede e dados corporativos precisam de controles de saída independentes do modelo. Equipes que usam Claude Code devem conferir versão/canal e evitar tratar a mitigação provisória como correção completa."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-07T12:33:00-03:00",
-      "edition_date": "2026-11-07",
-      "id": "radar-2d1e4a70a5c9991c",
-      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Data_Analytics_JooYPJr.max-2500x2500.jpg",
-      "published": "2026-11-06 (horário/fuso não informados; janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — Data Cloud connectors no Gemini",
-      "source_meta": {
-        "domain": "cloud.google.com"
-      },
-      "summary": "O Google Cloud apresentou, em prévia, conectores do Data Cloud que permitem consultar dados empresariais diretamente no Gemini por linguagem natural. A integração usa Knowledge Catalog para localizar fontes e interpretar termos, gera consultas sob a identidade do usuário e respeita permissões por linha e coluna. A cobertura descrita inclui BigQuery, Spanner, AlloyDB, Cloud SQL e Looker, com estados de disponibilidade distintos; administradores configuram conexões de leitura. Agentes analíticos configurados pela equipe de dados permanecem opção separada para fluxos mais controlados.",
-      "tags": [
-        "google-cloud",
-        "gemini",
-        "agentes-ia",
-        "bigquery",
-        "governanca",
-        "dados",
-        "preview"
-      ],
-      "title": "Gemini ganha conectores para consulta governada de dados corporativos",
-      "url": "https://cloud.google.com/blog/products/data-analytics/query-enterprise-data-in-gemini-with-data-cloud-connectors/",
-      "why_it_matters": "Arquitetura concreta para perguntas sobre bases heterogêneas sem conceder privilégios globais ao agente. Relevância para sistemas corporativos e acervos geoespaciais é inferência de aplicação, não implantação nos projetos."
     }
   ],
   "methodology": {
@@ -1238,9 +1240,9 @@
     "version": "1"
   },
   "metrics": {
-    "high_confidence": 45,
+    "high_confidence": 46,
     "signals": 50,
-    "sources": 19
+    "sources": 17
   },
   "schema_version": "1.0",
   "scope": "ultimas_50_publicacoes",

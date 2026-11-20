@@ -1,205 +1,177 @@
 {
-  "edition_date": "2026-11-19",
-  "edition_id": "radar-2026-11-19T07:31:00-03:00",
-  "generated_at": "2026-11-19T07:31:00-03:00",
+  "edition_date": "2026-11-20",
+  "edition_id": "radar-2026-11-20T07:37:00-03:00",
+  "generated_at": "2026-11-20T07:37:00-03:00",
   "items": [
     {
       "confidence": "alta",
-      "edition_at": "2026-11-19T07:31:00-03:00",
-      "edition_date": "2026-11-19",
-      "id": "radar-2ad26709981472ec",
-      "image": "https://github.githubassets.com/assets/advisory-database-show-f32c8207dfb2.png",
-      "published": "aviso em 2026-11-18 (horário/fuso não informados; inclusão do aviso na janela exata de 24 horas não confirmada). Pacotes afetados foram publicados em 2026-11-17.",
-      "source": "GitHub Advisory Database — código malicioso em agent-framework",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-1e02ab9c34ce90d4",
+      "image": "https://opengraph.githubassets.com/073a65751744d9bcb748b6930fec8f225ffd3daef997fc2da7cc378b7fe32f3d/openai/codex/releases/tag/rust-v0.171.0",
+      "published": "2026-11-20 00:44, conforme página do GitHub (fuso não exibido; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "OpenAI — release Codex 0.171.0",
       "source_meta": {
         "domain": "github.com"
       },
-      "summary": "O aviso de segurança identifica as versões 1.26.1 e 1.26.2 do pacote PyPI `agent-framework`, do Microsoft Agent Framework, como maliciosas. Elas acrescentaram um arquivo `.pth` que executa código ao iniciar o Python, mesmo sem importar o pacote, para coletar e enviar credenciais e variáveis de ambiente. As duas versões foram removidas do PyPI; 1.26.0 é a última versão não afetada identificada no aviso. O alerta não é um comunicado da Microsoft.",
+      "summary": "A versão torna padrão o workspace da interface de terminal, com prévias pesquisáveis de documentos, imagens e transcrições de subagentes ao lado da conversa. Adiciona `codex exec --remote` para iniciar ou retomar sessões não interativas em um app server existente, além de comandos de controle remoto e linha de status MCP configurável. Corrige preservação de perfis de permissão ao mudar diretórios e login MCP com alguns provedores corporativos.",
       "tags": [
-        "microsoft",
-        "agent-framework",
-        "pypi",
-        "cadeia-de-suprimentos",
-        "seguranca",
+        "openai",
+        "codex",
         "agentes-ia",
-        "credenciais"
-      ],
-      "title": "Duas versões de `agent-framework` no PyPI continham código para roubo de credenciais",
-      "url": "https://github.com/advisories/GHSA-764m-3ppc-5m73",
-      "why_it_matters": "Quem instalou 1.26.1 ou 1.26.2 deve tratar o ambiente como exposto, verificar instalações e rotacionar segredos acessíveis, inclusive de CI. A remoção do PyPI não desfaz instalações já realizadas."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-19T07:31:00-03:00",
-      "edition_date": "2026-11-19",
-      "id": "radar-e14bee76231ce6d3",
-      "published": "ciclo de vida oficial da Esri marca 2026-11-19 para 3.8 e 3.8.1; horário de liberação não informado, portanto inclusão na janela exata de 24 horas não confirmada",
-      "source": "Esri — novidades do ArcGIS Pro 3.8",
-      "source_meta": {
-        "domain": "doc.esri.com"
-      },
-      "summary": "A documentação da versão 3.8 lista três ferramentas novas na caixa GeoAI: `Detect Changes Using Embeddings` para comparar mudanças semânticas entre dados geoespaciais, `Detect Objects In 3D Space` para extrair objetos 3D de imagens orientadas com modelo treinado e `Find Features By Description` para buscar feições por semelhança com uma descrição. O ModelBuilder também ganha inspeção de problemas antes da execução, agendamento e compartilhamento de modelos como ferramentas web. O ciclo de vida da Esri registra 19 de novembro como data da versão, sem hora de disponibilidade.",
-      "tags": [
-        "esri",
-        "arcgis-pro",
-        "geoai",
-        "embeddings",
-        "deteccao-de-mudancas",
-        "imagem-orientada",
-        "modelbuilder",
+        "mcp",
+        "execucao-remota",
         "release"
       ],
-      "title": "ArcGIS Pro 3.8 adiciona análise semântica e novas ferramentas GeoAI",
-      "url": "https://doc.esri.com/en/arcgis-pro/latest/get-started/whats-new-in-arcgis-pro.html",
-      "why_it_matters": "Amplia opções nativas para monitorar mudanças, objetos e feições em projetos GeoIA. Antes de adoção, validar requisitos de modelos, licenças, acurácia e compatibilidade dos fluxos existentes."
+      "title": "Codex CLI 0.171.0 amplia workspace e execução remota",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+      "why_it_matters": "Facilita acompanhar trabalho paralelo e operar sessões remotas em fluxos de desenvolvimento com agentes. Quem depende de permissões por diretório ou MCP corporativo deve validar a atualização."
     },
     {
       "confidence": "alta",
-      "edition_at": "2026-11-19T07:31:00-03:00",
-      "edition_date": "2026-11-19",
-      "id": "radar-af594e3ad39a5c98",
-      "published": "2026-11-18 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
-      "source": "Esri — ArcGIS Solutions em Enterprise desconectado",
-      "source_meta": {
-        "domain": "www.esri.com"
-      },
-      "summary": "A Esri detalhou que administradores do ArcGIS Enterprise 12.2 podem obter um pacote `.epk` no My Esri, transferi-lo para um ambiente isolado e hospedar localmente o conteúdo de ArcGIS Solutions. A versão inclui 29 soluções compatíveis com implantação desconectada, com galeria, mapas, aplicativos, fluxos e documentação acessíveis sem ArcGIS Online. São necessários privilégios de administração e pacote correspondente à versão do Enterprise.",
-      "tags": [
-        "esri",
-        "arcgis-enterprise",
-        "arcgis-solutions",
-        "ambiente-desconectado",
-        "implantacao",
-        "gis"
-      ],
-      "title": "ArcGIS Enterprise 12.2 permite implantar Solutions sem conexão à internet",
-      "url": "https://www.esri.com/arcgis-blog/products/arcgis-enterprise/announcements/deploy-arcgis-solutions-content-in-a-disconnected-enterprise-environment",
-      "why_it_matters": "Viabiliza uso de soluções prontas em instalações GIS segregadas, comuns em operações sensíveis. A aplicabilidade a cada projeto depende de suas políticas de rede e do catálogo das 29 soluções, não de implantação anunciada nesses clientes."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-19T07:31:00-03:00",
-      "edition_date": "2026-11-19",
-      "id": "radar-1590e3f6387642d1",
-      "image": "https://opengraph.githubassets.com/cb956e0313e453d1ba5080e2bb2510ad156dcebf68610b6ec5e7618b48f0d4e6/anthropics/claude-code/releases/tag/v2.1.328",
-      "published": "2026-11-19 01:14 UTC, conforme release oficial do GitHub (dentro da janela pesquisada)",
-      "source": "Anthropic — release Claude Code v2.1.328",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-f3d370a5121afbf2",
+      "image": "https://opengraph.githubassets.com/5b42bee5d440f0e84ecda22947f89cf6c4fa8ccb21c7ee3aac2297099480c966/anthropics/claude-code/releases/tag/v2.1.329",
+      "published": "2026-11-19 22:14, conforme página do GitHub (fuso não exibido; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Anthropic — release Claude Code v2.1.329",
       "source_meta": {
         "domain": "github.com"
       },
-      "summary": "A versão adiciona `onFailure: \"block\"` a hooks `mcp_tool`: quando o hook falha, a ação pode ser bloqueada. Também amplia o modo automático para modelos Claude Opus e Sonnet 4.6 em Bedrock, Google Cloud Agent Platform, Microsoft Foundry e gateway Claude apps. Corrige perda de outras tarefas agendadas ao salvar quando o arquivo de tarefas não podia ser lido, além de evitar apagar uma tarefa com erro de digitação no arquivo.",
+      "summary": "O comando `/tasks` passa a mostrar tarefas agendadas da sessão, ativações de `/loop`, objetivo e forks da conversa. A tela `/mcp` mostra a mensagem de erro JSON-RPC quando um servidor HTTP remoto recusa conexão. A versão também alerta sobre a origem de hooks de uma pasta e corrige casos de perda de configurações locais, tarefas MCP paradas após reconexão e revisões de código feitas sobre o branch errado.",
       "tags": [
         "anthropic",
         "claude-code",
         "mcp",
-        "hooks",
-        "agentes-ia",
-        "seguranca",
         "tarefas-agendadas",
-        "release"
-      ],
-      "title": "Claude Code 2.1.328 permite bloquear falha de hook MCP",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
-      "why_it_matters": "Hooks MCP passam a ter opção explícita de falhar de forma fechada, relevante para controles de agentes. Quem usa tarefas agendadas e provedores externos deve testar a atualização e seus modos de permissão."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-19T07:31:00-03:00",
-      "edition_date": "2026-11-19",
-      "id": "radar-2ec003fd1caa968c",
-      "image": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00NTcyNjMwLXdSWm51SQ?revision=23",
-      "published": "2026-11-18 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
-      "source": "Microsoft — agentes externos no Foundry em disponibilidade geral",
-      "source_meta": {
-        "domain": "techcommunity.microsoft.com"
-      },
-      "summary": "A Microsoft disponibilizou de forma geral o registro de agentes externos no Foundry, com visualização de traces, Agent Insights e avaliação contínua de traces de produção. O agente continua em seu ambiente e envia telemetria OpenTelemetry ao Application Insights; o registro exige convenções semânticas GenAI e `gen_ai.agent.id`. Outros recursos citados no artigo ainda estão em preview. A própria Microsoft alerta que gravar prompts e respostas nos traces exige decisão sobre acesso, retenção e ocultação de conteúdo sensível.",
-      "tags": [
-        "microsoft",
-        "foundry",
         "agentes-ia",
-        "opentelemetry",
-        "observabilidade",
-        "avaliacao",
-        "governanca",
         "release"
       ],
-      "title": "Microsoft Foundry libera observação de agentes externos sem migração",
-      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/external-agents-in-microsoft-foundry-are-now-generally-available/4572630",
-      "why_it_matters": "Dá caminho para governar e avaliar agentes já implantados sem reconstruí-los no Foundry. Em projetos com dados corporativos, configurar privacidade dos traces antes de habilitar captura de conteúdo."
+      "title": "Claude Code 2.1.329 reúne tarefas e reforça diagnóstico MCP",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
+      "why_it_matters": "Dá mais visibilidade à execução de agentes e reduz diagnósticos ambíguos em integrações MCP. É especialmente útil para rotinas agendadas e revisão assistida de código."
     },
     {
       "confidence": "alta",
-      "edition_at": "2026-11-19T07:31:00-03:00",
-      "edition_date": "2026-11-19",
-      "id": "radar-1de95ca0b37599bb",
-      "published": "2026-11-18 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
-      "source": "AWS — Apache Spark Optimization Agent para Glue ETL",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-6c1778457adb08fd",
+      "published": "2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Esri — novidades de BIM e CAD no ArcGIS Pro",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
+      "summary": "A atualização de novembro do ArcGIS Pro permite acessar alinhamentos, perfis, equações de estaca e superfícies TIN do OpenRoads Designer e combiná-los com conteúdo de Revit, Civil 3D e outros formatos. Também permite propagar propriedades de camadas de edifícios e escolher níveis de detalhe Fine, Medium ou Coarse para modelos Revit.",
+      "tags": [
+        "esri",
+        "arcgis-pro",
+        "bim",
+        "cad",
+        "openroads",
+        "infraestrutura-linear",
+        "release"
+      ],
+      "title": "ArcGIS Pro amplia integração BIM/CAD para infraestrutura linear",
+      "url": "https://www.esri.com/arcgis-blog/products/arcgis-pro/announcements/whats-new-for-bim-and-cad-in-arcgis-pro-november-2026",
+      "why_it_matters": "Pode reduzir conversão manual de dados de projeto viário para GIS e apoiar análise conjunta de traçado, terreno e ativos. A adoção depende dos formatos efetivamente usados nos projetos."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-57e64292fd1254b4",
+      "published": "2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "AWS — anúncio da API GetScopedCredentials",
       "source_meta": {
         "domain": "aws.amazon.com"
       },
-      "summary": "O AWS Glue ETL passou a oferecer um agente que analisa execuções Spark concluídas e recomenda mudanças de configuração para custo ou desempenho, apoiadas em logs, configuração e telemetria do job. O acesso ocorre no console Glue ou por ferramentas externas via servidor MCP do SageMaker Unified Studio. A AWS informa disponibilidade sem custo adicional para jobs Glue 4.0 ou posterior nas regiões Glue, exceto GovCloud dos EUA e China; permanecem os custos normais do serviço.",
+      "summary": "A nova API `GetScopedCredentials` deriva credenciais temporárias com permissões, duração ou ambas reduzidas em relação à sessão chamadora, preservando a identidade original. Seu uso depende de política IAM e cada chamada é registrada no CloudTrail. A AWS informa disponibilidade nas regiões comerciais, GovCloud, European Sovereign Cloud e China.",
       "tags": [
         "aws",
-        "glue",
-        "spark",
-        "etl",
-        "mcp",
+        "sts",
+        "iam",
         "agentes-ia",
-        "otimizacao",
-        "release"
+        "credenciais",
+        "seguranca",
+        "api"
       ],
-      "title": "AWS Glue libera agente de otimização Spark acessível por MCP",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/apache-spark-aws-glue-etl/",
-      "why_it_matters": "Pode acelerar diagnóstico de ETL geoespacial pesado quando esse processamento usa Glue. Recomendações precisam ser testadas com cargas próprias; o anúncio não prova redução de custo em projetos específicos."
+      "title": "AWS STS permite credenciais temporárias com escopo reduzido para agentes",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sts-getscopedcredentials/",
+      "why_it_matters": "Permite atribuir privilégio mínimo a agentes e subagentes sem criar nova identidade para cada tarefa. Equipes devem definir políticas e testar a propagação de permissões antes de usar em produção."
     },
     {
       "confidence": "alta",
-      "edition_at": "2026-11-19T07:31:00-03:00",
-      "edition_date": "2026-11-19",
-      "id": "radar-95c0262b30d9ce45",
-      "image": "https://dataspace.copernicus.eu/sites/default/files/styles/opengraph/public/media/images/2023-03/og_share.png?itok=zjtW85Fb",
-      "published": "2026-11-18 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
-      "source": "Copernicus Data Space Ecosystem — nova interface do catálogo CSV",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-44c6827e1f93012f",
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/33_-_Storage__Data_Transfer_QsgjqZW.max-2600x2600.jpg",
+      "published": "2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Google Cloud — object enrichments no Cloud Storage",
       "source_meta": {
-        "domain": "dataspace.copernicus.eu"
+        "domain": "cloud.google.com"
       },
-      "summary": "O Copernicus anunciou que a interface antiga do catálogo CSV será substituída em 20 de janeiro de 2027. Até lá, as interfaces antiga e nova funcionarão em paralelo. O acesso direto ao bucket `s3.waw3-1.cloudferro.com/swift/v1/CatalogueCSV/` será encerrado, e o operador orienta migrar automações desse acesso para a API documentada. O endereço `api.csv.dataspace.copernicus.eu` não será alterado pela troca de interface.",
+      "summary": "Em preview, `object enrichments` aplica modelos de IA a objetos no Cloud Storage e grava metadados contextuais junto aos próprios objetos. O anúncio cobre anotações de imagens, como detecção e rotulação, e classificação de PDFs, com configuração via console ou API. Funções mais amplas com Gemini para texto, áudio e vídeo são futuras e exigem solicitação de acesso; não fazem parte da disponibilidade geral deste preview.",
       "tags": [
-        "copernicus",
-        "catalogo-csv",
-        "api",
-        "sentinel",
-        "automacao",
-        "migracao",
-        "ciclo-de-vida"
+        "google-cloud",
+        "cloud-storage",
+        "metadados",
+        "imagens",
+        "documentos",
+        "agentes-ia",
+        "preview"
       ],
-      "title": "Copernicus anuncia migração do catálogo CSV e fim do acesso direto ao bucket",
-      "url": "https://dataspace.copernicus.eu/news/2026-11-17-new-copernicus-catalogue-csv-interface",
-      "why_it_matters": "Pipelines de inventário de imagens Sentinel que leem o bucket diretamente precisam testar a migração. Relação com projetos depende de usarem esse acesso; a API CSV atual não tem mudança de endereço anunciada."
+      "title": "Google Cloud Storage lança enriquecimento de objetos para contexto de agentes",
+      "url": "https://cloud.google.com/blog/products/storage-data-transfer/cost-effective-ai-context-extraction-from-unstructured-gcs-data",
+      "why_it_matters": "Oferece uma forma gerenciada de indexar acervos de imagens e documentos usados por agentes, reduzindo infraestrutura própria de pré-processamento. Custo e adequação a imagens geoespaciais precisam ser testados em amostras reais."
     },
     {
-      "confidence": "média",
-      "edition_at": "2026-11-19T07:31:00-03:00",
-      "edition_date": "2026-11-19",
-      "id": "radar-9f961c8d9a57b558",
-      "published": "2026-11-18 05:00 ET (10:00 UTC). Capturado na rotina setorial das 06:47 BRT; 28 minutos anterior ao início da janela exata desta consolidação.",
-      "source": "ICMM — lançamento da Global Mining and Metals Biodiversity Dataset",
+      "confidence": "alta",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-dba4e363a4b5f74e",
+      "published": "2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "AWS — perfis nativos de configuração de IA no AppConfig",
       "source_meta": {
-        "domain": "www.prnewswire.com"
+        "domain": "aws.amazon.com"
       },
-      "summary": "O ICMM publicou um conjunto de dados que cruza cerca de 12 mil instalações de mineração e metalurgia com indicadores de condição de ecossistemas, áreas-chave para biodiversidade e áreas protegidas ou conservadas. Segundo a entidade, 22% das instalações ficam em paisagens de condição ecológica alta ou muito alta; 5% intersectam áreas-chave para biodiversidade e 4% áreas protegidas ou conservadas. São resultados divulgados pelo ICMM, não validados independentemente neste radar.",
+      "summary": "O AppConfig adicionou perfis para configurações de invocação de modelos e para prompts, permitindo alterar modelo, parâmetros e mensagens em aplicações em execução sem novo deploy. Os perfis podem ser versionados e distribuídos gradualmente, com rollback automático por alarmes de observabilidade. A AWS informa disponibilidade nas regiões do AppConfig sem custo adicional do recurso.",
       "tags": [
-        "mineracao",
-        "biodiversidade",
-        "dados-geoespaciais",
-        "ecossistemas",
-        "areas-protegidas",
-        "fechamento-de-minas"
+        "aws",
+        "appconfig",
+        "prompts",
+        "agentes-ia",
+        "rollout",
+        "rollback",
+        "release"
       ],
-      "title": "ICMM publica base global de mineração e biodiversidade",
-      "url": "https://www.prnewswire.com/news-releases/new-global-dataset-maps-where-mining-and-metals-intersect-with-biodiversity-302940342.html",
-      "why_it_matters": "A base serve para triagem geoespacial e planejamento de recuperação ou fechamento de minas. Instalações são representadas por pontos, não limites operacionais; a análise não mede impacto de cada ativo nem substitui dados locais."
+      "title": "AWS AppConfig versiona prompts e parâmetros de modelos sem redeploy",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-appconfig-native-ai-model-invocation-prompt-configurations/",
+      "why_it_matters": "Dá controle de mudança e reversão a agentes em produção, inclusive quando um ajuste de prompt ou modelo piora resultados ou custos. Não substitui avaliação funcional dos fluxos GeoIA."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-20T07:37:00-03:00",
+      "edition_date": "2026-11-20",
+      "id": "radar-330285e7ea951858",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "published": "2026-11-19 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Google Cloud — release notes do Agent Registry",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
+      "summary": "O Agent Registry passou a aceitar, em preview, metadados de protocolo de ferramentas MCP, incluindo indicadores de política do Identity-Aware Proxy para habilitação de ferramentas, controles de aprovação humana e atributos de provedor. A nota de versão não afirma que esses controles são aplicados automaticamente a todas as ferramentas registradas.",
+      "tags": [
+        "google-cloud",
+        "agent-registry",
+        "mcp",
+        "iap",
+        "human-in-the-loop",
+        "governanca",
+        "preview"
+      ],
+      "title": "Google Agent Registry adiciona metadados de controle para ferramentas MCP",
+      "url": "https://docs.cloud.google.com/agent-registry/release-notes#november_19_2026",
+      "why_it_matters": "Aumenta a capacidade de descrever requisitos de acesso e supervisão humana de ferramentas disponibilizadas a agentes. Antes de adoção, verificar como os metadados são interpretados pelo cliente e pelo ambiente de execução."
     }
   ],
   "methodology": {
@@ -208,8 +180,8 @@
   },
   "metrics": {
     "high_confidence": 7,
-    "signals": 8,
-    "sources": 7
+    "signals": 7,
+    "sources": 5
   },
   "schema_version": "1.0",
   "status": "publicado"
