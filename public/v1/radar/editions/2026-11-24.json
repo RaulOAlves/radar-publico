@@ -1,0 +1,169 @@
+{
+  "edition_date": "2026-11-24",
+  "edition_id": "radar-2026-11-24T07:31:00-03:00",
+  "generated_at": "2026-11-24T07:31:00-03:00",
+  "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-24T07:31:00-03:00",
+      "edition_date": "2026-11-24",
+      "id": "radar-824283cf95f0a1c6",
+      "image": "https://opengraph.githubassets.com/5b0227cd27c481fa506dae2af50ff0a248d998e45104f60947c9c7cf6c3a23f2/openai/codex/releases/tag/rust-v0.172.0",
+      "published": "2026-11-24 00:03, conforme página do GitHub (fuso não exibido; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "OpenAI — release Codex CLI 0.172.0",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "A versão passa a iniciar servidores MCP `stdio` opcionais, com listas de ferramentas em cache, na primeira chamada de ferramenta. Também permite definir um revisor de aprovação para cada ferramenta de aplicativo conectado em `config.toml`. A correção de `codex exec resume` restaura as permissões de sandbox, o diretório de trabalho e as raízes do workspace salvos, salvo substituição explícita.",
+      "tags": [
+        "openai",
+        "codex",
+        "mcp",
+        "agentes-ia",
+        "aprovacao",
+        "sandbox",
+        "release"
+      ],
+      "title": "Codex CLI 0.172.0 inicia MCP sob demanda e refina aprovações",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0",
+      "why_it_matters": "Reduz inicializações desnecessárias de integrações MCP e permite controles de aprovação mais específicos. A correção de retomada ajuda a evitar que automações continuem com contexto de execução diferente do esperado."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-24T07:31:00-03:00",
+      "edition_date": "2026-11-24",
+      "id": "radar-a9972b90c90a6092",
+      "image": "https://opengraph.githubassets.com/024b07707ad2eebad60c40b7aa2fa7d9bae5b770f3d2f6f73ce77b08ec266bd2/anthropics/claude-code/releases/tag/v2.1.331",
+      "published": "2026-11-23 21:34, conforme página do GitHub (fuso não exibido; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Anthropic — release Claude Code v2.1.331",
+      "source_meta": {
+        "domain": "github.com"
+      },
+      "summary": "O Claude Code adiciona Code Mode em sessões de terminal com Amazon Bedrock, Google Cloud Agent Platform, Microsoft Foundry e Claude Platform on AWS. Seus rastros OpenTelemetry passam a incluir atributos de uso de tokens, modelo e operação. A versão corrige chamadas de ferramentas MCP que podiam ficar pendentes por até 30 minutos após respostas malformadas de servidores locais ou WebSocket.",
+      "tags": [
+        "anthropic",
+        "claude-code",
+        "mcp",
+        "code-mode",
+        "opentelemetry",
+        "agentes-ia",
+        "release"
+      ],
+      "title": "Claude Code 2.1.331 amplia Code Mode e corrige travamento MCP",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+      "why_it_matters": "Expande opções de execução em nuvem e melhora observabilidade e confiabilidade de agentes que dependem de MCP. A aplicação a projetos concretos depende da infraestrutura adotada."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-24T07:31:00-03:00",
+      "edition_date": "2026-11-24",
+      "id": "radar-2a02896fe90f053c",
+      "published": "2026-11-23 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada). A versão 3.8 do ArcGIS Pro foi lançada anteriormente.",
+      "source": "Esri — ferramenta Change Dataset Schema no ArcGIS Pro 3.8",
+      "source_meta": {
+        "domain": "www.esri.com"
+      },
+      "summary": "A Esri detalhou a ferramenta `Change Dataset Schema`, que permite a um administrador mover tabelas, classes de feição e feature datasets registrados em geodatabases corporativas SQL Server para outro esquema. Ela atualiza os metadados da geodatabase e preserva, por exemplo, o histórico de arquivamento da tabela. A operação exige permissões adequadas no banco; serviços, consultas SQL, scripts e outros consumidores que referenciem o dataset podem precisar de ajustes, e o novo proprietário deve conceder novamente as permissões necessárias.",
+      "tags": [
+        "esri",
+        "arcgis-pro",
+        "geodatabase",
+        "sql-server",
+        "esquema",
+        "governanca-de-dados",
+        "release"
+      ],
+      "title": "ArcGIS Pro 3.8 migra esquema de datasets em geodatabase SQL Server",
+      "url": "https://www.esri.com/arcgis-blog/products/arcgis-pro/announcements/introducing-the-change-dataset-schema-tool-in-arcgis-pro-3-8",
+      "why_it_matters": "Ajuda a transferir responsabilidade por bases GIS sem copiar e recriar datasets, preservando histórico relevante para auditoria. Antes de usar, é preciso mapear dependências e testar a migração."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-24T07:31:00-03:00",
+      "edition_date": "2026-11-24",
+      "id": "radar-47d9616689820810",
+      "image": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2026/11/23/main-image-2x1-1-1260x630.jpg",
+      "published": "2026-11-23 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "AWS — lançamento de API Portal, API Security e AI Security",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
+      "summary": "A AWS anunciou disponibilidade geral do API Portal no Amazon API Gateway e de dois grupos de regras gerenciadas no AWS WAF: API Security e AI Security. O portal inventaria APIs e endpoints de inferência, MCP e A2A a partir de configurações e tráfego em CloudFront, Application Load Balancer e API Gateway. As regras de WAF cobrem abusos de API, validam solicitações MCP/A2A conforme protocolo e podem verificar prompts e respostas por meio de Bedrock Guardrails; precisam ser associadas aos recursos protegidos via web ACL.",
+      "tags": [
+        "aws",
+        "api-gateway",
+        "waf",
+        "mcp",
+        "a2a",
+        "agentes-ia",
+        "seguranca",
+        "lancamento"
+      ],
+      "title": "AWS lança descoberta e proteção de APIs, MCP e endpoints de IA",
+      "url": "https://aws.amazon.com/blogs/security/introducing-api-and-ai-security-on-aws-from-discovery-to-protection/",
+      "why_it_matters": "Dá visibilidade a servidores MCP e APIs expostos fora dos inventários formais e oferece controles na borda. Não substitui autenticação, autorização nem testes de segurança da aplicação."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-24T07:31:00-03:00",
+      "edition_date": "2026-11-24",
+      "id": "radar-16887342972fd3be",
+      "image": "https://developers.google.com/static/maps/images/google-maps-platform-1200x675.png",
+      "published": "2026-11-23 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Google Maps Platform — release notes do Navigation Connect",
+      "source_meta": {
+        "domain": "developers.google.com"
+      },
+      "summary": "A API Navigation Connect, ainda em preview, passou a aceitar viagens iniciadas no Google Maps para iOS, além de Waze, enviando dados de viagem em tempo real ao backend. O motorista precisa da versão 26.45 ou posterior do Maps; o mesmo URL de lançamento usado no Android pode ser aberto como Universal Link. No iOS, os relatos de rota restante e desvio de rota ainda não estão disponíveis.",
+      "tags": [
+        "google-maps",
+        "navigation-connect",
+        "ios",
+        "api",
+        "logistica",
+        "frotas",
+        "preview"
+      ],
+      "title": "Google Navigation Connect passa a receber viagens do Maps no iOS",
+      "url": "https://developers.google.com/maps/documentation/navigation/connect/release-notes",
+      "why_it_matters": "Pode simplificar integração de localização e ETA de frota com aplicativos de navegação já usados pelos motoristas. É preciso avaliar lacunas de telemetria no iOS antes de depender dessa API para operação logística."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-24T07:31:00-03:00",
+      "edition_date": "2026-11-24",
+      "id": "radar-56bfe577cbd39a87",
+      "image": "https://support.planet.com/hc/theming_assets/01K1D0VPZKEBJ5T3EYVVKM30Z2",
+      "published": "2026-11-23 22:35 (fuso não informado na página; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Planet — continuidade dos produtos Surface Reflectance",
+      "source_meta": {
+        "domain": "support.planet.com"
+      },
+      "summary": "A Planet anunciou que, em 30 de novembro, passará a usar dados VIIRS no lugar de MODIS como entrada da correção atmosférica dos produtos de reflectância de superfície de PlanetScope, SkySat e Pelican. Novos GeoTIFFs indicarão a origem dos parâmetros atmosféricos nos campos `aot_source`, `water_vapor_source` e `ozone_source`, com valores `viirs` ou `viirs_nrt`. A empresa não planeja reprocessar o histórico produzido com MODIS.\n\nA Planet espera manter a latência de entrega, mas alerta que, em alguns casos, a diferença de horário entre passagens VIIRS e imagens PlanetScope pode causar pequena alteração ou escurecimento artificial dos valores de reflectância.",
+      "tags": [
+        "planet",
+        "viirs",
+        "modis",
+        "reflectancia-de-superficie",
+        "correcao-atmosferica",
+        "planet-scope",
+        "qualidade-de-dados",
+        "sensoriamento-remoto"
+      ],
+      "title": "Planet trocará MODIS por VIIRS na reflectância de superfície",
+      "url": "https://support.planet.com/hc/en-us/articles/40893230900253-Ensuring-Long-Term-Data-Continuity-for-Planet-s-Surface-Reflectance-Products",
+      "why_it_matters": "Séries de vegetação, vigor e desmatamento que misturam cenas anteriores e posteriores à mudança devem registrar a origem da correção e validar limiares e tendências. O impacto em projetos específicos depende do uso desses produtos Planet."
+    }
+  ],
+  "methodology": {
+    "summary": "Edição diária com seleção editorial de novidades de alto sinal, deduplicação e fontes rastreáveis.",
+    "version": "1"
+  },
+  "metrics": {
+    "high_confidence": 6,
+    "signals": 6,
+    "sources": 5
+  },
+  "schema_version": "1.0",
+  "status": "publicado"
+}

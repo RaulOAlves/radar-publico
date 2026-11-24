@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-23 14:40 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-24 07:31 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,68 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-24 07:31 BRT — Codex CLI 0.172.0 inicia MCP sob demanda e refina aprovações
+
+- Fonte: [OpenAI — release Codex CLI 0.172.0](https://github.com/openai/codex/releases/tag/rust-v0.172.0)
+- Publicado: 2026-11-24 00:03, conforme página do GitHub (fuso não exibido; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: A versão passa a iniciar servidores MCP `stdio` opcionais, com listas de ferramentas em cache, na primeira chamada de ferramenta. Também permite definir um revisor de aprovação para cada ferramenta de aplicativo conectado em `config.toml`. A correção de `codex exec resume` restaura as permissões de sandbox, o diretório de trabalho e as raízes do workspace salvos, salvo substituição explícita.
+- Por que importa: Reduz inicializações desnecessárias de integrações MCP e permite controles de aprovação mais específicos. A correção de retomada ajuda a evitar que automações continuem com contexto de execução diferente do esperado.
+- Tags: #openai #codex #mcp #agentes-ia #aprovacao #sandbox #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-24 07:31 BRT — Claude Code 2.1.331 amplia Code Mode e corrige travamento MCP
+
+- Fonte: [Anthropic — release Claude Code v2.1.331](https://github.com/anthropics/claude-code/releases/tag/v2.1.331)
+- Publicado: 2026-11-23 21:34, conforme página do GitHub (fuso não exibido; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: O Claude Code adiciona Code Mode em sessões de terminal com Amazon Bedrock, Google Cloud Agent Platform, Microsoft Foundry e Claude Platform on AWS. Seus rastros OpenTelemetry passam a incluir atributos de uso de tokens, modelo e operação. A versão corrige chamadas de ferramentas MCP que podiam ficar pendentes por até 30 minutos após respostas malformadas de servidores locais ou WebSocket.
+- Por que importa: Expande opções de execução em nuvem e melhora observabilidade e confiabilidade de agentes que dependem de MCP. A aplicação a projetos concretos depende da infraestrutura adotada.
+- Tags: #anthropic #claude-code #mcp #code-mode #opentelemetry #agentes-ia #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-24 07:31 BRT — ArcGIS Pro 3.8 migra esquema de datasets em geodatabase SQL Server
+
+- Fonte: [Esri — ferramenta Change Dataset Schema no ArcGIS Pro 3.8](https://www.esri.com/arcgis-blog/products/arcgis-pro/announcements/introducing-the-change-dataset-schema-tool-in-arcgis-pro-3-8)
+- Publicado: 2026-11-23 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada). A versão 3.8 do ArcGIS Pro foi lançada anteriormente.
+- Resumo: A Esri detalhou a ferramenta `Change Dataset Schema`, que permite a um administrador mover tabelas, classes de feição e feature datasets registrados em geodatabases corporativas SQL Server para outro esquema. Ela atualiza os metadados da geodatabase e preserva, por exemplo, o histórico de arquivamento da tabela. A operação exige permissões adequadas no banco; serviços, consultas SQL, scripts e outros consumidores que referenciem o dataset podem precisar de ajustes, e o novo proprietário deve conceder novamente as permissões necessárias.
+- Por que importa: Ajuda a transferir responsabilidade por bases GIS sem copiar e recriar datasets, preservando histórico relevante para auditoria. Antes de usar, é preciso mapear dependências e testar a migração.
+- Tags: #esri #arcgis-pro #geodatabase #sql-server #esquema #governanca-de-dados #release
+- Relações: [[IMAC — Plataforma GIS]], [[NAVIS / GeoFramework]], [[GeoFiscal-Sinter]]
+- Confiança: alta
+
+### 2026-11-24 07:31 BRT — AWS lança descoberta e proteção de APIs, MCP e endpoints de IA
+
+- Fonte: [AWS — lançamento de API Portal, API Security e AI Security](https://aws.amazon.com/blogs/security/introducing-api-and-ai-security-on-aws-from-discovery-to-protection/)
+- Publicado: 2026-11-23 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: A AWS anunciou disponibilidade geral do API Portal no Amazon API Gateway e de dois grupos de regras gerenciadas no AWS WAF: API Security e AI Security. O portal inventaria APIs e endpoints de inferência, MCP e A2A a partir de configurações e tráfego em CloudFront, Application Load Balancer e API Gateway. As regras de WAF cobrem abusos de API, validam solicitações MCP/A2A conforme protocolo e podem verificar prompts e respostas por meio de Bedrock Guardrails; precisam ser associadas aos recursos protegidos via web ACL.
+- Por que importa: Dá visibilidade a servidores MCP e APIs expostos fora dos inventários formais e oferece controles na borda. Não substitui autenticação, autorização nem testes de segurança da aplicação.
+- Tags: #aws #api-gateway #waf #mcp #a2a #agentes-ia #seguranca #lancamento
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-24 07:31 BRT — Google Navigation Connect passa a receber viagens do Maps no iOS
+
+- Fonte: [Google Maps Platform — release notes do Navigation Connect](https://developers.google.com/maps/documentation/navigation/connect/release-notes)
+- Publicado: 2026-11-23 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: A API Navigation Connect, ainda em preview, passou a aceitar viagens iniciadas no Google Maps para iOS, além de Waze, enviando dados de viagem em tempo real ao backend. O motorista precisa da versão 26.45 ou posterior do Maps; o mesmo URL de lançamento usado no Android pode ser aberto como Universal Link. No iOS, os relatos de rota restante e desvio de rota ainda não estão disponíveis.
+- Por que importa: Pode simplificar integração de localização e ETA de frota com aplicativos de navegação já usados pelos motoristas. É preciso avaliar lacunas de telemetria no iOS antes de depender dessa API para operação logística.
+- Tags: #google-maps #navigation-connect #ios #api #logistica #frotas #preview
+- Relações: [[Suzano — Rotas e logística]]
+- Confiança: alta
+
+### 2026-11-24 07:31 BRT — Planet trocará MODIS por VIIRS na reflectância de superfície
+
+- Fonte: [Planet — continuidade dos produtos Surface Reflectance](https://support.planet.com/hc/en-us/articles/40893230900253-Ensuring-Long-Term-Data-Continuity-for-Planet-s-Surface-Reflectance-Products)
+- Publicado: 2026-11-23 22:35 (fuso não informado na página; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: A Planet anunciou que, em 30 de novembro, passará a usar dados VIIRS no lugar de MODIS como entrada da correção atmosférica dos produtos de reflectância de superfície de PlanetScope, SkySat e Pelican. Novos GeoTIFFs indicarão a origem dos parâmetros atmosféricos nos campos `aot_source`, `water_vapor_source` e `ozone_source`, com valores `viirs` ou `viirs_nrt`. A empresa não planeja reprocessar o histórico produzido com MODIS.
+
+  A Planet espera manter a latência de entrega, mas alerta que, em alguns casos, a diferença de horário entre passagens VIIRS e imagens PlanetScope pode causar pequena alteração ou escurecimento artificial dos valores de reflectância.
+- Por que importa: Séries de vegetação, vigor e desmatamento que misturam cenas anteriores e posteriores à mudança devem registrar a origem da correção e validar limiares e tendências. O impacto em projetos específicos depende do uso desses produtos Planet.
+- Tags: #planet #viirs #modis #reflectancia-de-superficie #correcao-atmosferica #planet-scope #qualidade-de-dados #sensoriamento-remoto
+- Relações: [[Amaggi — Monitoramento de desmatamento]], [[Eucatex — Monitoramento de vigor florestal]], [[São Martinho — Planejamento agrícola]]
+- Confiança: alta
 
 ### 2026-11-23 14:40 BRT — sem_novidade
 
