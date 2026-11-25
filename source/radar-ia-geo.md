@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-24 07:31 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-25 07:31 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,76 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-25 07:31 BRT — Google disponibiliza MCP do Workspace e define migração de agentes
+
+- Fonte: [Google Cloud — interfaces e controles para agentes no Workspace](https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise)
+- Publicado: 2026-11-24 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: O Google anunciou disponibilidade geral de servidores MCP remotos para Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat e Tasks, além do Workspace CLI para agentes locais e automações. Também apresentou o Cloud Agent Gateway para tráfego LLM, MCP e A2A, com verificação de identidades e políticas IAM. O adendo de ferramentas de IA do Workspace exige que agentes usem os servidores MCP ou o CLI, em vez das APIs REST tradicionais; a aplicação técnica começa em 1º de fevereiro de 2027. Agentes precisarão de IDs OAuth dedicados; a cobrança por cotas anunciadas começa em 1º de abril de 2027. Alguns controles adicionais, como aprovações temporárias e restrições ampliadas de acesso a dados, ainda são futuros.
+- Por que importa: Integrações de agentes com arquivos, e-mail ou planilhas do Workspace precisam revisar interface, identidade, permissões e custos antes do prazo. A exigência não implica migração de aplicações tradicionais que usam REST sem atuar como agentes.
+- Tags: #google-workspace #google-cloud #mcp #agentes-ia #oauth #governanca #api #ciclo-de-vida
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-25 07:31 BRT — Claude Code 2.1.332 aceita skills MCP e reforça controle de shell
+
+- Fonte: [Anthropic — release Claude Code v2.1.332](https://github.com/anthropics/claude-code/releases/tag/v2.1.332)
+- Publicado: 2026-11-25 01:32, conforme página do GitHub (fuso não exibido; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: A versão adiciona, em beta, skills servidas por servidores MCP, identificadas como `server:skill` no menu de comandos. O novo evento de hook `PreSkillShellCommand` pode recusar comandos shell embutidos em uma skill ou comando durante seu carregamento. A release também corrige casos de servidores MCP por SSE que travavam após interrupção e reconexão do fluxo de eventos, além de congelamento quando um servidor local produzia saída excessiva.
+- Por que importa: Amplia distribuição de capacidades de agentes por MCP, mas aumenta a importância de revisar permissões e comandos de skills remotas. As correções reduzem falhas em integrações persistentes.
+- Tags: #anthropic #claude-code #mcp #skills #hooks #seguranca #agentes-ia #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-25 07:31 BRT — ArcGIS Pro 3.8 acessa Databricks SQL Warehouse diretamente
+
+- Fonte: [Esri — suporte a Databricks SQL Warehouse no ArcGIS Pro 3.8](https://www.esri.com/arcgis-blog/products/arcgis-pro/announcements/introducing-databricks-sql-warehouse-support-in-arcgis-pro-3-8)
+- Publicado: 2026-11-24 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada). A versão 3.8 do ArcGIS Pro foi lançada anteriormente.
+- Resumo: A Esri detalhou a conexão direta do ArcGIS Pro 3.8 a Databricks SQL Warehouse para dados espaciais e não espaciais. O fluxo requer driver ODBC de 64 bits e aceita OAuth de usuário ou de serviço. Permite criar camadas de consulta, trabalhar com visões materializadas e usar agregação espacial de pontos (*feature binning*) sem copiar previamente os dados para outro banco. Cada conexão aponta a um catálogo e esquema por vez. O suporte equivalente no ArcGIS Enterprise é plano para 2027, não capacidade atual.
+- Por que importa: Pode reduzir cópias e latência entre lakehouse e análise GIS em projetos com grandes volumes de dados. Desempenho, permissões e custo de consultas precisam ser medidos no ambiente real.
+- Tags: #esri #arcgis-pro #databricks #lakehouse #sql-warehouse #feature-binning #integracao-de-dados
+- Relações: [[NAVIS / GeoFramework]], [[Vale — GeoIA SAB.IA]], [[IMAC — Plataforma GIS]]
+- Confiança: alta
+
+### 2026-11-25 07:31 BRT — ArcGIS Server 12.1 recebe correções para serviços de mapa e feição
+
+- Fonte: [Esri — Map, Feature and Print Service Patch para ArcGIS Server 12.1](https://support.esri.com/en-us/patches-updates/2026/arcgis-server-12-1-map-feature-and-print-service-patch)
+- Publicado: 2026-11-24 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: A Esri publicou um patch para ArcGIS Server 12.1 que corrige operações de serviços de mapa, feição e impressão. Entre os defeitos listados estão falhas de edição com anotações, resultados incorretos em consultas espaciais e crescimento contínuo de memória em processos ArcSOC durante solicitações `Identify` a serviços com mosaicos. A instalação interrompe e reinicia o serviço ArcGIS Server; a Esri recomenda plano de reversão e aplicação em todos os nós pertinentes.
+- Por que importa: Ambientes que dependem de serviços de feições ou mosaicos devem avaliar o patch para reduzir erros e consumo de memória. Testar em homologação antes de interromper produção.
+- Tags: #esri #arcgis-server #arcgis-enterprise #patch #feature-service #mosaic-dataset #confiabilidade
+- Relações: [[IMAC — Plataforma GIS]], [[NAVIS / GeoFramework]]
+- Confiança: alta
+
+### 2026-11-25 07:31 BRT — ArcGIS Pro 3.8 protege edição de arquivos GIS no OneDrive
+
+- Fonte: [Esri — acesso protegido a arquivos OneDrive no ArcGIS Pro](https://www.esri.com/arcgis-blog/products/arcgis-pro/sharing-collaboration/protect-your-onedrive-files-in-arcgis-pro)
+- Publicado: 2026-11-24 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada). A versão 3.8 do ArcGIS Pro foi lançada anteriormente.
+- Resumo: O ArcGIS Pro 3.8 adiciona check-out e check-in de acesso exclusivo para arquivos GIS em OneDrive e atalhos do SharePoint, incluindo projetos `.aprx`, geodatabases `.gdb`, toolboxes, shapefiles e rasters suportados. Outros usuários abrem o arquivo em modo somente leitura enquanto ele estiver reservado. O administrador precisa habilitar o recurso e todos os computadores que compartilham os dados devem usar Pro 3.8 ou posterior com a proteção ativada; edições fora desse ambiente não são protegidas.
+- Por que importa: Reduz risco de conflitos e corrupção em equipes que armazenam projetos GIS no OneDrive. Não substitui colaboração multiusuário nem dispensa política de sincronização e versão.
+- Tags: #esri #arcgis-pro #onedrive #sharepoint #geodatabase #colaboracao #integridade-de-dados
+- Relações: [[IMAC — Plataforma GIS]], [[NAVIS / GeoFramework]]
+- Confiança: alta
+
+### 2026-11-25 07:31 BRT — AWS CloudFormation adiciona recursos de infraestrutura de agentes
+
+- Fonte: [AWS — expansão de cobertura do CloudFormation e Cloud Control API](https://aws.amazon.com/about-aws/whats-new/2026/11/cloudformation-coverage-expansion/)
+- Publicado: 2026-11-24 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: A AWS anunciou suporte a 206 novos tipos de recurso em 88 serviços no CloudFormation, entre eles Amazon Bedrock AgentCore PolicyEngine e Amazon SageMaker Hub. A Cloud Control API passa a suportar esses novos tipos e mais 224 tipos somente leitura em 99 serviços. A disponibilidade acompanha as regiões dos serviços subjacentes; o comunicado não detalha mudanças de preço.
+- Por que importa: Amplia a possibilidade de provisionar e auditar componentes de agentes por infraestrutura como código, em vez de configurar manualmente cada recurso. Relevância prática depende dos serviços AWS usados por cada projeto.
+- Tags: #aws #cloudformation #cloud-control-api #bedrock-agentcore #agentes-ia #infraestrutura-como-codigo #release
+- Relações: [[NAVIS / GeoFramework]], [[Petrobras — Segundo cérebro]]
+- Confiança: alta
+
+### 2026-11-25 07:31 BRT — INPE tornará autenticação obrigatória no Brazil Data Cube
+
+- Fonte: [INPE — Autenticação BIG/BDC](https://data.inpe.br/autenticacao-big-bdc/)
+- Publicado: 2026-11-24 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: O INPE disponibilizou autenticação para acesso aos dados da plataforma Brazil Data Cube no novo portal de dados geoespaciais BIG. Códigos, scripts e aplicações que hoje acessam os dados sem credenciais precisarão ser adaptados. O acesso anônimo continua permitido durante a transição até 4 de janeiro de 2027; depois, a autenticação será obrigatória. A documentação oficial descreve a geração e o uso das credenciais. O portal e seus serviços web ainda são apresentados como experimentais.
+- Por que importa: Pipelines automatizados de imagens e cubos de dados do INPE podem parar após o prazo se não incorporarem credenciais. Convém inventariar integrações, testar autenticação e proteger segredos; relação com projetos depende de uso efetivo do Brazil Data Cube.
+- Tags: #inpe #brazil-data-cube #big #autenticacao #api #sensoriamento-remoto #automacao #ciclo-de-vida
+- Relações: [[NAVIS / GeoFramework]], [[Amaggi — Monitoramento de desmatamento]], [[Eucatex — Monitoramento de vigor florestal]]
+- Confiança: alta
 
 ### 2026-11-24 07:31 BRT — Codex CLI 0.172.0 inicia MCP sob demanda e refina aprovações
 
