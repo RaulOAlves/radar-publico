@@ -1,8 +1,107 @@
 {
-  "edition_date": "2026-11-25",
-  "edition_id": "radar-2026-11-25T07:31:00-03:00",
-  "generated_at": "2026-11-25T07:31:00-03:00",
+  "edition_date": "2026-11-26",
+  "edition_id": "radar-2026-11-26T10:36:00-03:00",
+  "generated_at": "2026-11-26T10:36:00-03:00",
   "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-26T10:36:00-03:00",
+      "edition_date": "2026-11-26",
+      "id": "radar-388c2a2ab8d290ea",
+      "published": "2026-11-25 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "AWS — Lambda durable functions e MicroVMs",
+      "source_meta": {
+        "domain": "aws.amazon.com"
+      },
+      "summary": "A AWS lançou em *developer preview* uma extensão que permite a Lambda durable functions executar tarefas em Lambda MicroVMs e gerenciar seu ciclo de vida. O fluxo pode manter checkpoints, tentar novamente tarefas que falharam e orquestrar múltiplas MicroVMs em paralelo; sessões de MicroVM compartilham arquivos e memória entre tarefas. A proposta cobre, entre outros usos, código não confiável ou gerado por agentes em ambientes isolados. Há SDKs de prévia para TypeScript e Python. A AWS alerta que o recurso ainda pode mudar e não deve ser usado em produção.",
+      "tags": [
+        "aws",
+        "lambda",
+        "microvm",
+        "agentes-ia",
+        "sandbox",
+        "orquestracao",
+        "developer-preview"
+      ],
+      "title": "AWS Lambda passa a orquestrar MicroVMs em fluxos duráveis",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/",
+      "why_it_matters": "Oferece arquitetura experimental para executar código de agentes com isolamento de VM e retomada de trabalhos longos. Antes de adoção operacional, esperar maturidade e validar custos, limites e controles de segurança."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-26T10:36:00-03:00",
+      "edition_date": "2026-11-26",
+      "id": "radar-9fbed2dccb2337c5",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "published": "2026-11-25 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Google Cloud — release notes do BigQuery",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
+      "summary": "O Google Cloud disponibilizou, em caráter geral, conexões *cross-cloud* para consultar dados de AWS, Azure e Salesforce Data 360 a partir de todas as regiões do BigQuery. A nota informa que essas conexões oferecem mais recursos que as conexões padrão baseadas em BigQuery Omni, mas não detalha nessa entrada os custos nem o desempenho de cada origem.",
+      "tags": [
+        "google-cloud",
+        "bigquery",
+        "multicloud",
+        "aws",
+        "azure",
+        "integracao-de-dados",
+        "ga"
+      ],
+      "title": "BigQuery habilita conexões analíticas multicloud em todas as regiões",
+      "url": "https://docs.cloud.google.com/bigquery/docs/release-notes#november_25_2026",
+      "why_it_matters": "Pode simplificar análises que cruzam dados operacionais e geoespaciais distribuídos entre nuvens. Ganho real depende de arquitetura, controles de acesso, transferência de dados e custo de consulta."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-26T10:36:00-03:00",
+      "edition_date": "2026-11-26",
+      "id": "radar-012bb046d1ab106f",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "published": "2026-11-25 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Google Cloud — ciclo de vida da BigQuery Storage API",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
+      "summary": "A API `v1beta1` do BigQuery Storage foi depreciada e será desligada em 31 de agosto de 2027; chamadas ao endpoint antigo passarão a retornar `NOT_FOUND`. Desde 20 de novembro de 2026, o acesso já está restrito a projetos com uso registrado no período indicado pela nota. O Google orienta migrar para a API `v1`, compatível com a `v1beta1`, e atualizar conectores, SDKs ou chamadas gRPC diretas que ainda apontem para a versão beta.",
+      "tags": [
+        "google-cloud",
+        "bigquery",
+        "storage-api",
+        "api",
+        "migracao",
+        "ciclo-de-vida",
+        "pipeline-de-dados"
+      ],
+      "title": "BigQuery Storage API v1beta1 tem data de desligamento",
+      "url": "https://docs.cloud.google.com/bigquery/docs/release-notes#november_25_2026",
+      "why_it_matters": "Pipelines de extração e integração que fixaram `v1beta1` podem falhar no prazo de desligamento. Convém inventariar dependências e testar a migração sem presumir que todos os clientes já usam `v1`."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-26T10:36:00-03:00",
+      "edition_date": "2026-11-26",
+      "id": "radar-6928ba3a8f2cda96",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "published": "2026-11-26 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Google Cloud — release notes do Managed Service for Apache Airflow",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
+      "summary": "O Google Cloud disponibilizou no console uma verificação de upgrade conduzida pelo Managed Airflow Agent. Antes de selecionar nova versão de build ou imagem do ambiente, a ferramenta analisa quais mudanças as DAGs exigem para funcionar com a versão escolhida. A nota de lançamento não afirma que o agente aplica as alterações automaticamente nem que elimina a necessidade de testes de execução.",
+      "tags": [
+        "google-cloud",
+        "managed-airflow",
+        "agentes-ia",
+        "dags",
+        "upgrade",
+        "automacao",
+        "release"
+      ],
+      "title": "Google Managed Airflow adiciona verificação de upgrade por agente",
+      "url": "https://docs.cloud.google.com/composer/docs/release-notes#november_26_2026",
+      "why_it_matters": "Pode antecipar incompatibilidades em pipelines orquestrados por Airflow e reduzir risco de atualização. Relevância para projetos depende de usarem Managed Airflow no Google Cloud."
+    },
     {
       "confidence": "alta",
       "edition_at": "2026-11-25T07:31:00-03:00",
@@ -1137,108 +1236,6 @@
       "title": "Codex 0.169.0 reforça confiança de projetos e amplia trabalho no terminal",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0",
       "why_it_matters": "Evita que um repositório ainda não confiável ative MCPs por efeito colateral da permissão de escrita. Equipes que automatizam execução e revisão devem testar o novo fluxo de confiança antes de atualizar."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-13T07:36:00-03:00",
-      "edition_date": "2026-11-13",
-      "id": "radar-0810bb8b12c05d8e",
-      "published": "2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
-      "source": "AWS — nova geração do Amazon Bedrock AgentCore Runtime",
-      "source_meta": {
-        "domain": "aws.amazon.com"
-      },
-      "summary": "Novos runtimes do Amazon Bedrock AgentCore passam a usar a geração V2 por padrão nas regiões indicadas pela AWS, incluindo São Paulo. Cada sessão continua isolada em microVM Firecracker, mas agora pode restaurar o agente de um snapshot, escalar até 8 vCPU e 32 GB de memória, usar imagem de até 10 GB e reduzir recursos ociosos a zero. Segundo a AWS, uma imagem de 2 GB inicia em menos de 2 segundos no percentil 75, ante 29,7 segundos na geração anterior. Runtimes existentes não migram automaticamente; `platformVersion=V2` faz a opção explícita.",
-      "tags": [
-        "aws",
-        "bedrock",
-        "agentcore",
-        "agentes-ia",
-        "runtime",
-        "escalabilidade",
-        "custo",
-        "release"
-      ],
-      "title": "AWS torna AgentCore Runtime V2 padrão para novos agentes",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/new-agentcore-runtime-default/",
-      "why_it_matters": "Afeta latência, custo e planejamento de implantação de agentes corporativos, inclusive na região brasileira. Números de desempenho são medições divulgadas pela AWS; validar com cargas próprias antes de migrar."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-13T07:36:00-03:00",
-      "edition_date": "2026-11-13",
-      "id": "radar-317db2d05b4bd26c",
-      "published": "2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
-      "source": "AWS — suporte a OAuth 2.0 token exchange no Amazon Cognito",
-      "source_meta": {
-        "domain": "aws.amazon.com"
-      },
-      "summary": "O Amazon Cognito passou a oferecer troca de tokens OAuth 2.0 conforme RFC 8693 pelo endpoint de token ou pela nova API `GetDerivedToken`. Um agente ou serviço que atua em nome do usuário pode receber um token restrito a escopo e destinatário específicos, sem refresh token. Com token de ator, a reivindicação `act` identifica o intermediário; a AWS cita servidores MCP como exemplo. A capacidade está nos planos Essentials e Plus nas regiões que oferecem Cognito.",
-      "tags": [
-        "aws",
-        "cognito",
-        "oauth",
-        "mcp",
-        "agentes-ia",
-        "identidade",
-        "seguranca",
-        "api"
-      ],
-      "title": "Cognito libera troca OAuth de tokens para agentes e servidores MCP",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-token-exchange/",
-      "why_it_matters": "Dá mecanismo padrão para delegar acesso a APIs sem repassar o token original do usuário a cada ferramenta. Útil para desenhar permissões de agentes que consultam dados corporativos, sujeito a teste de identidade e auditoria."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-13T07:36:00-03:00",
-      "edition_date": "2026-11-13",
-      "id": "radar-212152bea53f30a2",
-      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
-      "published": "2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
-      "source": "Google Cloud — notas de versão do GKE de 12 de novembro",
-      "source_meta": {
-        "domain": "docs.cloud.google.com"
-      },
-      "summary": "O Agent Gateway para GKE entrou em preview no canal Rapid, para clusters a partir da versão `1.37.2-gke.1042000`, inicialmente nas regiões `europe-west1` e `us-central1`. A camada centraliza o controle do tráfego de entrada, saída e entre agentes hospedados em GKE. A documentação descreve políticas baseadas em identidade, integração com Agent Registry e Model Armor, além de observabilidade de interações com ferramentas e servidores MCP.",
-      "tags": [
-        "google-cloud",
-        "gke",
-        "agent-gateway",
-        "agentes-ia",
-        "mcp",
-        "governanca",
-        "seguranca",
-        "preview"
-      ],
-      "title": "Google abre Agent Gateway para agentes em GKE em preview",
-      "url": "https://docs.cloud.google.com/kubernetes-engine/docs/release-notes-new-features#November_12_2026",
-      "why_it_matters": "Referência de arquitetura para governar agentes autogerenciados e acesso a ferramentas. Ainda não está disponível em região brasileira; adoção nos projetos depende de requisitos de residência de dados e maturidade do preview."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-13T07:36:00-03:00",
-      "edition_date": "2026-11-13",
-      "id": "radar-bdd5739302598e87",
-      "image": "https://dataspace.copernicus.eu/sites/default/files/styles/opengraph/public/media/images/2023-03/og_share.png?itok=zjtW85Fb",
-      "published": "2026-11-12 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada)",
-      "source": "Copernicus Data Space Ecosystem — ativação dos novos processadores Sentinel-5P",
-      "source_meta": {
-        "domain": "dataspace.copernicus.eu"
-      },
-      "summary": "O Copernicus informou que atualizou em 11 de novembro o sistema operacional de processamento do Sentinel-5P. Os novos processadores abrangem produtos de nível 1B e nível 2 para metano (CH4), monóxido de carbono (CO), dióxido de nitrogênio (NO2), dióxido de enxofre (SO2) e outras variáveis atmosféricas. Os dados processados com as novas versões já estão no Copernicus Data Space Ecosystem: produtos de tempo quase real começam na órbita 47046, de 11 de novembro; produtos offline, na órbita 47001, de 8 de novembro. Produtos de tempo quase real adquiridos durante a parada de processamento não foram gerados.",
-      "tags": [
-        "copernicus",
-        "sentinel-5p",
-        "metano",
-        "oleo-e-gas",
-        "emissoes",
-        "processamento",
-        "dados",
-        "ciclo-de-vida"
-      ],
-      "title": "Copernicus muda processamento operacional de produtos Sentinel-5P",
-      "url": "https://dataspace.copernicus.eu/news/2026-11-12-copernicus-sentinel-5-precursor-s5p-products-improvement-operational-switch",
-      "why_it_matters": "Pipelines de emissões em óleo e gás devem registrar versão do processador e lacuna de dados antes de comparar séries temporais. Relação com monitoramento de gasodutos é potencial; o anúncio não demonstra detecção de vazamentos pontuais nesses ativos."
     }
   ],
   "methodology": {

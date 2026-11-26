@@ -1,181 +1,106 @@
 {
-  "edition_date": "2026-11-25",
-  "edition_id": "radar-2026-11-25T07:31:00-03:00",
-  "generated_at": "2026-11-25T07:31:00-03:00",
+  "edition_date": "2026-11-26",
+  "edition_id": "radar-2026-11-26T10:36:00-03:00",
+  "generated_at": "2026-11-26T10:36:00-03:00",
   "items": [
     {
       "confidence": "alta",
-      "edition_at": "2026-11-25T07:31:00-03:00",
-      "edition_date": "2026-11-25",
-      "id": "radar-bbe6960ce28561b7",
-      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Security__Identity.max-2500x2500.jpg",
-      "published": "2026-11-24 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
-      "source": "Google Cloud — interfaces e controles para agentes no Workspace",
-      "source_meta": {
-        "domain": "cloud.google.com"
-      },
-      "summary": "O Google anunciou disponibilidade geral de servidores MCP remotos para Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat e Tasks, além do Workspace CLI para agentes locais e automações. Também apresentou o Cloud Agent Gateway para tráfego LLM, MCP e A2A, com verificação de identidades e políticas IAM. O adendo de ferramentas de IA do Workspace exige que agentes usem os servidores MCP ou o CLI, em vez das APIs REST tradicionais; a aplicação técnica começa em 1º de fevereiro de 2027. Agentes precisarão de IDs OAuth dedicados; a cobrança por cotas anunciadas começa em 1º de abril de 2027. Alguns controles adicionais, como aprovações temporárias e restrições ampliadas de acesso a dados, ainda são futuros.",
-      "tags": [
-        "google-workspace",
-        "google-cloud",
-        "mcp",
-        "agentes-ia",
-        "oauth",
-        "governanca",
-        "api",
-        "ciclo-de-vida"
-      ],
-      "title": "Google disponibiliza MCP do Workspace e define migração de agentes",
-      "url": "https://cloud.google.com/blog/products/identity-security/deploying-agents-safely-in-your-enterprise",
-      "why_it_matters": "Integrações de agentes com arquivos, e-mail ou planilhas do Workspace precisam revisar interface, identidade, permissões e custos antes do prazo. A exigência não implica migração de aplicações tradicionais que usam REST sem atuar como agentes."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-25T07:31:00-03:00",
-      "edition_date": "2026-11-25",
-      "id": "radar-d1a8a8c302ae6a4a",
-      "image": "https://opengraph.githubassets.com/919324041eedcaf4a424c836139814d4046b4da5b938e45291280317bc14f2e0/anthropics/claude-code/releases/tag/v2.1.332",
-      "published": "2026-11-25 01:32, conforme página do GitHub (fuso não exibido; inclusão na janela exata de 24 horas não confirmada).",
-      "source": "Anthropic — release Claude Code v2.1.332",
-      "source_meta": {
-        "domain": "github.com"
-      },
-      "summary": "A versão adiciona, em beta, skills servidas por servidores MCP, identificadas como `server:skill` no menu de comandos. O novo evento de hook `PreSkillShellCommand` pode recusar comandos shell embutidos em uma skill ou comando durante seu carregamento. A release também corrige casos de servidores MCP por SSE que travavam após interrupção e reconexão do fluxo de eventos, além de congelamento quando um servidor local produzia saída excessiva.",
-      "tags": [
-        "anthropic",
-        "claude-code",
-        "mcp",
-        "skills",
-        "hooks",
-        "seguranca",
-        "agentes-ia",
-        "release"
-      ],
-      "title": "Claude Code 2.1.332 aceita skills MCP e reforça controle de shell",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
-      "why_it_matters": "Amplia distribuição de capacidades de agentes por MCP, mas aumenta a importância de revisar permissões e comandos de skills remotas. As correções reduzem falhas em integrações persistentes."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-25T07:31:00-03:00",
-      "edition_date": "2026-11-25",
-      "id": "radar-e425b6f56cdef3eb",
-      "published": "2026-11-24 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada). A versão 3.8 do ArcGIS Pro foi lançada anteriormente.",
-      "source": "Esri — suporte a Databricks SQL Warehouse no ArcGIS Pro 3.8",
-      "source_meta": {
-        "domain": "www.esri.com"
-      },
-      "summary": "A Esri detalhou a conexão direta do ArcGIS Pro 3.8 a Databricks SQL Warehouse para dados espaciais e não espaciais. O fluxo requer driver ODBC de 64 bits e aceita OAuth de usuário ou de serviço. Permite criar camadas de consulta, trabalhar com visões materializadas e usar agregação espacial de pontos (*feature binning*) sem copiar previamente os dados para outro banco. Cada conexão aponta a um catálogo e esquema por vez. O suporte equivalente no ArcGIS Enterprise é plano para 2027, não capacidade atual.",
-      "tags": [
-        "esri",
-        "arcgis-pro",
-        "databricks",
-        "lakehouse",
-        "sql-warehouse",
-        "feature-binning",
-        "integracao-de-dados"
-      ],
-      "title": "ArcGIS Pro 3.8 acessa Databricks SQL Warehouse diretamente",
-      "url": "https://www.esri.com/arcgis-blog/products/arcgis-pro/announcements/introducing-databricks-sql-warehouse-support-in-arcgis-pro-3-8",
-      "why_it_matters": "Pode reduzir cópias e latência entre lakehouse e análise GIS em projetos com grandes volumes de dados. Desempenho, permissões e custo de consultas precisam ser medidos no ambiente real."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-25T07:31:00-03:00",
-      "edition_date": "2026-11-25",
-      "id": "radar-66c71da9347359bb",
-      "image": "https://support.esri.com/content/dam/esrisites/en-us/support/technical-support",
-      "published": "2026-11-24 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
-      "source": "Esri — Map, Feature and Print Service Patch para ArcGIS Server 12.1",
-      "source_meta": {
-        "domain": "support.esri.com"
-      },
-      "summary": "A Esri publicou um patch para ArcGIS Server 12.1 que corrige operações de serviços de mapa, feição e impressão. Entre os defeitos listados estão falhas de edição com anotações, resultados incorretos em consultas espaciais e crescimento contínuo de memória em processos ArcSOC durante solicitações `Identify` a serviços com mosaicos. A instalação interrompe e reinicia o serviço ArcGIS Server; a Esri recomenda plano de reversão e aplicação em todos os nós pertinentes.",
-      "tags": [
-        "esri",
-        "arcgis-server",
-        "arcgis-enterprise",
-        "patch",
-        "feature-service",
-        "mosaic-dataset",
-        "confiabilidade"
-      ],
-      "title": "ArcGIS Server 12.1 recebe correções para serviços de mapa e feição",
-      "url": "https://support.esri.com/en-us/patches-updates/2026/arcgis-server-12-1-map-feature-and-print-service-patch",
-      "why_it_matters": "Ambientes que dependem de serviços de feições ou mosaicos devem avaliar o patch para reduzir erros e consumo de memória. Testar em homologação antes de interromper produção."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-25T07:31:00-03:00",
-      "edition_date": "2026-11-25",
-      "id": "radar-fa92063a5f07e4c4",
-      "published": "2026-11-24 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada). A versão 3.8 do ArcGIS Pro foi lançada anteriormente.",
-      "source": "Esri — acesso protegido a arquivos OneDrive no ArcGIS Pro",
-      "source_meta": {
-        "domain": "www.esri.com"
-      },
-      "summary": "O ArcGIS Pro 3.8 adiciona check-out e check-in de acesso exclusivo para arquivos GIS em OneDrive e atalhos do SharePoint, incluindo projetos `.aprx`, geodatabases `.gdb`, toolboxes, shapefiles e rasters suportados. Outros usuários abrem o arquivo em modo somente leitura enquanto ele estiver reservado. O administrador precisa habilitar o recurso e todos os computadores que compartilham os dados devem usar Pro 3.8 ou posterior com a proteção ativada; edições fora desse ambiente não são protegidas.",
-      "tags": [
-        "esri",
-        "arcgis-pro",
-        "onedrive",
-        "sharepoint",
-        "geodatabase",
-        "colaboracao",
-        "integridade-de-dados"
-      ],
-      "title": "ArcGIS Pro 3.8 protege edição de arquivos GIS no OneDrive",
-      "url": "https://www.esri.com/arcgis-blog/products/arcgis-pro/sharing-collaboration/protect-your-onedrive-files-in-arcgis-pro",
-      "why_it_matters": "Reduz risco de conflitos e corrupção em equipes que armazenam projetos GIS no OneDrive. Não substitui colaboração multiusuário nem dispensa política de sincronização e versão."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-25T07:31:00-03:00",
-      "edition_date": "2026-11-25",
-      "id": "radar-70a443f03aac3b16",
-      "published": "2026-11-24 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
-      "source": "AWS — expansão de cobertura do CloudFormation e Cloud Control API",
+      "edition_at": "2026-11-26T10:36:00-03:00",
+      "edition_date": "2026-11-26",
+      "id": "radar-388c2a2ab8d290ea",
+      "published": "2026-11-25 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "AWS — Lambda durable functions e MicroVMs",
       "source_meta": {
         "domain": "aws.amazon.com"
       },
-      "summary": "A AWS anunciou suporte a 206 novos tipos de recurso em 88 serviços no CloudFormation, entre eles Amazon Bedrock AgentCore PolicyEngine e Amazon SageMaker Hub. A Cloud Control API passa a suportar esses novos tipos e mais 224 tipos somente leitura em 99 serviços. A disponibilidade acompanha as regiões dos serviços subjacentes; o comunicado não detalha mudanças de preço.",
+      "summary": "A AWS lançou em *developer preview* uma extensão que permite a Lambda durable functions executar tarefas em Lambda MicroVMs e gerenciar seu ciclo de vida. O fluxo pode manter checkpoints, tentar novamente tarefas que falharam e orquestrar múltiplas MicroVMs em paralelo; sessões de MicroVM compartilham arquivos e memória entre tarefas. A proposta cobre, entre outros usos, código não confiável ou gerado por agentes em ambientes isolados. Há SDKs de prévia para TypeScript e Python. A AWS alerta que o recurso ainda pode mudar e não deve ser usado em produção.",
       "tags": [
         "aws",
-        "cloudformation",
-        "cloud-control-api",
-        "bedrock-agentcore",
+        "lambda",
+        "microvm",
         "agentes-ia",
-        "infraestrutura-como-codigo",
-        "release"
+        "sandbox",
+        "orquestracao",
+        "developer-preview"
       ],
-      "title": "AWS CloudFormation adiciona recursos de infraestrutura de agentes",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudformation-coverage-expansion/",
-      "why_it_matters": "Amplia a possibilidade de provisionar e auditar componentes de agentes por infraestrutura como código, em vez de configurar manualmente cada recurso. Relevância prática depende dos serviços AWS usados por cada projeto."
+      "title": "AWS Lambda passa a orquestrar MicroVMs em fluxos duráveis",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/",
+      "why_it_matters": "Oferece arquitetura experimental para executar código de agentes com isolamento de VM e retomada de trabalhos longos. Antes de adoção operacional, esperar maturidade e validar custos, limites e controles de segurança."
     },
     {
       "confidence": "alta",
-      "edition_at": "2026-11-25T07:31:00-03:00",
-      "edition_date": "2026-11-25",
-      "id": "radar-45ffa28fb6072df8",
-      "published": "2026-11-24 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
-      "source": "INPE — Autenticação BIG/BDC",
+      "edition_at": "2026-11-26T10:36:00-03:00",
+      "edition_date": "2026-11-26",
+      "id": "radar-9fbed2dccb2337c5",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "published": "2026-11-25 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Google Cloud — release notes do BigQuery",
       "source_meta": {
-        "domain": "data.inpe.br"
+        "domain": "docs.cloud.google.com"
       },
-      "summary": "O INPE disponibilizou autenticação para acesso aos dados da plataforma Brazil Data Cube no novo portal de dados geoespaciais BIG. Códigos, scripts e aplicações que hoje acessam os dados sem credenciais precisarão ser adaptados. O acesso anônimo continua permitido durante a transição até 4 de janeiro de 2027; depois, a autenticação será obrigatória. A documentação oficial descreve a geração e o uso das credenciais. O portal e seus serviços web ainda são apresentados como experimentais.",
+      "summary": "O Google Cloud disponibilizou, em caráter geral, conexões *cross-cloud* para consultar dados de AWS, Azure e Salesforce Data 360 a partir de todas as regiões do BigQuery. A nota informa que essas conexões oferecem mais recursos que as conexões padrão baseadas em BigQuery Omni, mas não detalha nessa entrada os custos nem o desempenho de cada origem.",
       "tags": [
-        "inpe",
-        "brazil-data-cube",
-        "big",
-        "autenticacao",
-        "api",
-        "sensoriamento-remoto",
-        "automacao",
-        "ciclo-de-vida"
+        "google-cloud",
+        "bigquery",
+        "multicloud",
+        "aws",
+        "azure",
+        "integracao-de-dados",
+        "ga"
       ],
-      "title": "INPE tornará autenticação obrigatória no Brazil Data Cube",
-      "url": "https://data.inpe.br/autenticacao-big-bdc/",
-      "why_it_matters": "Pipelines automatizados de imagens e cubos de dados do INPE podem parar após o prazo se não incorporarem credenciais. Convém inventariar integrações, testar autenticação e proteger segredos; relação com projetos depende de uso efetivo do Brazil Data Cube."
+      "title": "BigQuery habilita conexões analíticas multicloud em todas as regiões",
+      "url": "https://docs.cloud.google.com/bigquery/docs/release-notes#november_25_2026",
+      "why_it_matters": "Pode simplificar análises que cruzam dados operacionais e geoespaciais distribuídos entre nuvens. Ganho real depende de arquitetura, controles de acesso, transferência de dados e custo de consulta."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-26T10:36:00-03:00",
+      "edition_date": "2026-11-26",
+      "id": "radar-012bb046d1ab106f",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "published": "2026-11-25 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Google Cloud — ciclo de vida da BigQuery Storage API",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
+      "summary": "A API `v1beta1` do BigQuery Storage foi depreciada e será desligada em 31 de agosto de 2027; chamadas ao endpoint antigo passarão a retornar `NOT_FOUND`. Desde 20 de novembro de 2026, o acesso já está restrito a projetos com uso registrado no período indicado pela nota. O Google orienta migrar para a API `v1`, compatível com a `v1beta1`, e atualizar conectores, SDKs ou chamadas gRPC diretas que ainda apontem para a versão beta.",
+      "tags": [
+        "google-cloud",
+        "bigquery",
+        "storage-api",
+        "api",
+        "migracao",
+        "ciclo-de-vida",
+        "pipeline-de-dados"
+      ],
+      "title": "BigQuery Storage API v1beta1 tem data de desligamento",
+      "url": "https://docs.cloud.google.com/bigquery/docs/release-notes#november_25_2026",
+      "why_it_matters": "Pipelines de extração e integração que fixaram `v1beta1` podem falhar no prazo de desligamento. Convém inventariar dependências e testar a migração sem presumir que todos os clientes já usam `v1`."
+    },
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-26T10:36:00-03:00",
+      "edition_date": "2026-11-26",
+      "id": "radar-6928ba3a8f2cda96",
+      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "published": "2026-11-26 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "Google Cloud — release notes do Managed Service for Apache Airflow",
+      "source_meta": {
+        "domain": "docs.cloud.google.com"
+      },
+      "summary": "O Google Cloud disponibilizou no console uma verificação de upgrade conduzida pelo Managed Airflow Agent. Antes de selecionar nova versão de build ou imagem do ambiente, a ferramenta analisa quais mudanças as DAGs exigem para funcionar com a versão escolhida. A nota de lançamento não afirma que o agente aplica as alterações automaticamente nem que elimina a necessidade de testes de execução.",
+      "tags": [
+        "google-cloud",
+        "managed-airflow",
+        "agentes-ia",
+        "dags",
+        "upgrade",
+        "automacao",
+        "release"
+      ],
+      "title": "Google Managed Airflow adiciona verificação de upgrade por agente",
+      "url": "https://docs.cloud.google.com/composer/docs/release-notes#november_26_2026",
+      "why_it_matters": "Pode antecipar incompatibilidades em pipelines orquestrados por Airflow e reduzir risco de atualização. Relevância para projetos depende de usarem Managed Airflow no Google Cloud."
     }
   ],
   "methodology": {
@@ -183,9 +108,9 @@
     "version": "1"
   },
   "metrics": {
-    "high_confidence": 7,
-    "signals": 7,
-    "sources": 6
+    "high_confidence": 4,
+    "signals": 4,
+    "sources": 2
   },
   "schema_version": "1.0",
   "status": "publicado"
