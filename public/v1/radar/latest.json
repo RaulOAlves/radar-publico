@@ -1,106 +1,35 @@
 {
-  "edition_date": "2026-11-26",
-  "edition_id": "radar-2026-11-26T10:36:00-03:00",
-  "generated_at": "2026-11-26T10:36:00-03:00",
+  "edition_date": "2026-11-27",
+  "edition_id": "radar-2026-11-27T07:29:00-03:00",
+  "generated_at": "2026-11-27T07:29:00-03:00",
   "items": [
     {
       "confidence": "alta",
-      "edition_at": "2026-11-26T10:36:00-03:00",
-      "edition_date": "2026-11-26",
-      "id": "radar-388c2a2ab8d290ea",
-      "published": "2026-11-25 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
-      "source": "AWS — Lambda durable functions e MicroVMs",
-      "source_meta": {
-        "domain": "aws.amazon.com"
-      },
-      "summary": "A AWS lançou em *developer preview* uma extensão que permite a Lambda durable functions executar tarefas em Lambda MicroVMs e gerenciar seu ciclo de vida. O fluxo pode manter checkpoints, tentar novamente tarefas que falharam e orquestrar múltiplas MicroVMs em paralelo; sessões de MicroVM compartilham arquivos e memória entre tarefas. A proposta cobre, entre outros usos, código não confiável ou gerado por agentes em ambientes isolados. Há SDKs de prévia para TypeScript e Python. A AWS alerta que o recurso ainda pode mudar e não deve ser usado em produção.",
-      "tags": [
-        "aws",
-        "lambda",
-        "microvm",
-        "agentes-ia",
-        "sandbox",
-        "orquestracao",
-        "developer-preview"
-      ],
-      "title": "AWS Lambda passa a orquestrar MicroVMs em fluxos duráveis",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/",
-      "why_it_matters": "Oferece arquitetura experimental para executar código de agentes com isolamento de VM e retomada de trabalhos longos. Antes de adoção operacional, esperar maturidade e validar custos, limites e controles de segurança."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-26T10:36:00-03:00",
-      "edition_date": "2026-11-26",
-      "id": "radar-9fbed2dccb2337c5",
-      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
-      "published": "2026-11-25 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
-      "source": "Google Cloud — release notes do BigQuery",
-      "source_meta": {
-        "domain": "docs.cloud.google.com"
-      },
-      "summary": "O Google Cloud disponibilizou, em caráter geral, conexões *cross-cloud* para consultar dados de AWS, Azure e Salesforce Data 360 a partir de todas as regiões do BigQuery. A nota informa que essas conexões oferecem mais recursos que as conexões padrão baseadas em BigQuery Omni, mas não detalha nessa entrada os custos nem o desempenho de cada origem.",
-      "tags": [
-        "google-cloud",
-        "bigquery",
-        "multicloud",
-        "aws",
-        "azure",
-        "integracao-de-dados",
-        "ga"
-      ],
-      "title": "BigQuery habilita conexões analíticas multicloud em todas as regiões",
-      "url": "https://docs.cloud.google.com/bigquery/docs/release-notes#november_25_2026",
-      "why_it_matters": "Pode simplificar análises que cruzam dados operacionais e geoespaciais distribuídos entre nuvens. Ganho real depende de arquitetura, controles de acesso, transferência de dados e custo de consulta."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-26T10:36:00-03:00",
-      "edition_date": "2026-11-26",
-      "id": "radar-012bb046d1ab106f",
-      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
-      "published": "2026-11-25 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
-      "source": "Google Cloud — ciclo de vida da BigQuery Storage API",
-      "source_meta": {
-        "domain": "docs.cloud.google.com"
-      },
-      "summary": "A API `v1beta1` do BigQuery Storage foi depreciada e será desligada em 31 de agosto de 2027; chamadas ao endpoint antigo passarão a retornar `NOT_FOUND`. Desde 20 de novembro de 2026, o acesso já está restrito a projetos com uso registrado no período indicado pela nota. O Google orienta migrar para a API `v1`, compatível com a `v1beta1`, e atualizar conectores, SDKs ou chamadas gRPC diretas que ainda apontem para a versão beta.",
-      "tags": [
-        "google-cloud",
-        "bigquery",
-        "storage-api",
-        "api",
-        "migracao",
-        "ciclo-de-vida",
-        "pipeline-de-dados"
-      ],
-      "title": "BigQuery Storage API v1beta1 tem data de desligamento",
-      "url": "https://docs.cloud.google.com/bigquery/docs/release-notes#november_25_2026",
-      "why_it_matters": "Pipelines de extração e integração que fixaram `v1beta1` podem falhar no prazo de desligamento. Convém inventariar dependências e testar a migração sem presumir que todos os clientes já usam `v1`."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-26T10:36:00-03:00",
-      "edition_date": "2026-11-26",
-      "id": "radar-6928ba3a8f2cda96",
-      "image": "https://docs.cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png",
+      "edition_at": "2026-11-27T07:29:00-03:00",
+      "edition_date": "2026-11-27",
+      "id": "radar-3baf8b2a1716b684",
+      "image": "https://gda.esa.int/wp-content/uploads/2026/11/Banner_Amazon_groundwater_1920x576-1024x307.png",
       "published": "2026-11-26 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
-      "source": "Google Cloud — release notes do Managed Service for Apache Airflow",
+      "source": "ESA GDA — monitoramento dos aquíferos amazônicos por observação da Terra",
       "source_meta": {
-        "domain": "docs.cloud.google.com"
+        "domain": "gda.esa.int"
       },
-      "summary": "O Google Cloud disponibilizou no console uma verificação de upgrade conduzida pelo Managed Airflow Agent. Antes de selecionar nova versão de build ou imagem do ambiente, a ferramenta analisa quais mudanças as DAGs exigem para funcionar com a versão escolhida. A nota de lançamento não afirma que o agente aplica as alterações automaticamente nem que elimina a necessidade de testes de execução.",
+      "summary": "O programa Global Development Assistance da ESA informou que Gisat, Argans e Treemetrics entregaram ao BID, à Organização do Tratado de Cooperação Amazônica e ao PNUMA demonstradores para avaliar pressões sobre aquíferos compartilhados por oito países. Os serviços combinam variações de armazenamento de água observadas por GRACE, subsidência medida com radar Sentinel-1 na região do rio Acre e mapas de expansão urbana e perda de cobertura arbórea. Um assistente experimental da Treemetrics permite consultar parte dos resultados em linguagem natural.\n\nSegundo a ESA, os mapas e guias já foram entregues e revisados pelo BID. Os resultados servem para triagem e indicação de áreas que exigem investigação local; não são medições diretas para decisões de engenharia ou regulação. A incorporação operacional pelos órgãos participantes ainda depende de etapas de capacitação e adoção.",
       "tags": [
-        "google-cloud",
-        "managed-airflow",
-        "agentes-ia",
-        "dags",
-        "upgrade",
-        "automacao",
-        "release"
+        "esa",
+        "amazonia",
+        "aquiferos",
+        "grace",
+        "sentinel-1",
+        "insar",
+        "cobertura-florestal",
+        "geoia",
+        "recursos-hidricos",
+        "demonstrador"
       ],
-      "title": "Google Managed Airflow adiciona verificação de upgrade por agente",
-      "url": "https://docs.cloud.google.com/composer/docs/release-notes#november_26_2026",
-      "why_it_matters": "Pode antecipar incompatibilidades em pipelines orquestrados por Airflow e reduzir risco de atualização. Relevância para projetos depende de usarem Managed Airflow no Google Cloud."
+      "title": "ESA entrega demonstradores para triagem de pressões sobre aquíferos amazônicos",
+      "url": "https://gda.esa.int/story/mapping-where-the-amazons-shared-groundwater-is-under-pressure/",
+      "why_it_matters": "Fluxo verificável de integração entre sensores, mudança de cobertura florestal e interface de IA para priorizar monitoramento ambiental na Amazônia. Uso nos projetos cadastrados é possibilidade técnica, não implantação confirmada."
     }
   ],
   "methodology": {
@@ -108,9 +37,9 @@
     "version": "1"
   },
   "metrics": {
-    "high_confidence": 4,
-    "signals": 4,
-    "sources": 2
+    "high_confidence": 1,
+    "signals": 1,
+    "sources": 1
   },
   "schema_version": "1.0",
   "status": "publicado"

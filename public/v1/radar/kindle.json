@@ -1,8 +1,36 @@
 {
-  "edition_date": "2026-11-26",
-  "edition_id": "radar-2026-11-26T10:36:00-03:00",
-  "generated_at": "2026-11-26T10:36:00-03:00",
+  "edition_date": "2026-11-27",
+  "edition_id": "radar-2026-11-27T07:29:00-03:00",
+  "generated_at": "2026-11-27T07:29:00-03:00",
   "items": [
+    {
+      "confidence": "alta",
+      "edition_at": "2026-11-27T07:29:00-03:00",
+      "edition_date": "2026-11-27",
+      "id": "radar-3baf8b2a1716b684",
+      "image": "https://gda.esa.int/wp-content/uploads/2026/11/Banner_Amazon_groundwater_1920x576-1024x307.png",
+      "published": "2026-11-26 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).",
+      "source": "ESA GDA — monitoramento dos aquíferos amazônicos por observação da Terra",
+      "source_meta": {
+        "domain": "gda.esa.int"
+      },
+      "summary": "O programa Global Development Assistance da ESA informou que Gisat, Argans e Treemetrics entregaram ao BID, à Organização do Tratado de Cooperação Amazônica e ao PNUMA demonstradores para avaliar pressões sobre aquíferos compartilhados por oito países. Os serviços combinam variações de armazenamento de água observadas por GRACE, subsidência medida com radar Sentinel-1 na região do rio Acre e mapas de expansão urbana e perda de cobertura arbórea. Um assistente experimental da Treemetrics permite consultar parte dos resultados em linguagem natural.\n\nSegundo a ESA, os mapas e guias já foram entregues e revisados pelo BID. Os resultados servem para triagem e indicação de áreas que exigem investigação local; não são medições diretas para decisões de engenharia ou regulação. A incorporação operacional pelos órgãos participantes ainda depende de etapas de capacitação e adoção.",
+      "tags": [
+        "esa",
+        "amazonia",
+        "aquiferos",
+        "grace",
+        "sentinel-1",
+        "insar",
+        "cobertura-florestal",
+        "geoia",
+        "recursos-hidricos",
+        "demonstrador"
+      ],
+      "title": "ESA entrega demonstradores para triagem de pressões sobre aquíferos amazônicos",
+      "url": "https://gda.esa.int/story/mapping-where-the-amazons-shared-groundwater-is-under-pressure/",
+      "why_it_matters": "Fluxo verificável de integração entre sensores, mudança de cobertura florestal e interface de IA para priorizar monitoramento ambiental na Amazônia. Uso nos projetos cadastrados é possibilidade técnica, não implantação confirmada."
+    },
     {
       "confidence": "alta",
       "edition_at": "2026-11-26T10:36:00-03:00",
@@ -1211,31 +1239,6 @@
       "title": "Claude Code 2.1.323 adiciona Code Mode e valida compatibilidade de plugins",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
       "why_it_matters": "Quem mantém automações com plugins ou MCP precisa testar compatibilidade e fluxo de autorização antes de atualizar. Code Mode pode mudar a forma de orquestrar ferramentas, mas ainda é experimental."
-    },
-    {
-      "confidence": "alta",
-      "edition_at": "2026-11-13T07:36:00-03:00",
-      "edition_date": "2026-11-13",
-      "id": "radar-a0c08c461d827e1c",
-      "image": "https://opengraph.githubassets.com/02a97479389cf18d651dbdc5b23188e7801125d21dac1db75b043b35f474cf98/openai/codex/releases/tag/rust-v0.169.0",
-      "published": "2026-11-13 08:37 UTC, conforme API de releases do GitHub (dentro da janela pesquisada)",
-      "source": "OpenAI — release Codex 0.169.0",
-      "source_meta": {
-        "domain": "github.com"
-      },
-      "summary": "O Codex 0.169.0 adiciona múltiplos side chats no workspace de terminal opt-in, busca de tarefas antigas e configuração de provedores de modelos diretamente no terminal. Na segurança, `codex exec` mantém configurações de projeto e servidores MCP desabilitados em diretórios não confiáveis mesmo com sandbox `workspace-write`; confiar no projeto passa a exigir `--trust` explícito. A versão também corrige casos de sandbox no Windows.",
-      "tags": [
-        "openai",
-        "codex",
-        "mcp",
-        "seguranca",
-        "terminal",
-        "agentes-ia",
-        "release"
-      ],
-      "title": "Codex 0.169.0 reforça confiança de projetos e amplia trabalho no terminal",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0",
-      "why_it_matters": "Evita que um repositório ainda não confiável ative MCPs por efeito colateral da permissão de escrita. Equipes que automatizam execução e revisão devem testar o novo fluxo de confiança antes de atualizar."
     }
   ],
   "methodology": {
@@ -1245,7 +1248,7 @@
   "metrics": {
     "high_confidence": 48,
     "signals": 50,
-    "sources": 17
+    "sources": 18
   },
   "schema_version": "1.0",
   "scope": "ultimas_50_publicacoes",

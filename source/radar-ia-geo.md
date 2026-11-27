@@ -1,6 +1,6 @@
 # Radar IA, GeoIA e Setores
 
-> Base relacional de notícias para projetos. Atualizado: 2026-11-26 10:36 (BRT).
+> Base relacional de notícias para projetos. Atualizado: 2026-11-27 07:29 (BRT).
 
 ## Critério de sinal
 
@@ -9,6 +9,18 @@
 - Relevância: primeiro `ArcGIS`, automação geoespacial, agentes, Claude Code e Codex; depois impacto nos setores-alvo.
 
 ## Registros
+
+### 2026-11-27 07:29 BRT — ESA entrega demonstradores para triagem de pressões sobre aquíferos amazônicos
+
+- Fonte: [ESA GDA — monitoramento dos aquíferos amazônicos por observação da Terra](https://gda.esa.int/story/mapping-where-the-amazons-shared-groundwater-is-under-pressure/)
+- Publicado: 2026-11-26 (horário/fuso não informados; inclusão na janela exata de 24 horas não confirmada).
+- Resumo: O programa Global Development Assistance da ESA informou que Gisat, Argans e Treemetrics entregaram ao BID, à Organização do Tratado de Cooperação Amazônica e ao PNUMA demonstradores para avaliar pressões sobre aquíferos compartilhados por oito países. Os serviços combinam variações de armazenamento de água observadas por GRACE, subsidência medida com radar Sentinel-1 na região do rio Acre e mapas de expansão urbana e perda de cobertura arbórea. Um assistente experimental da Treemetrics permite consultar parte dos resultados em linguagem natural.
+
+  Segundo a ESA, os mapas e guias já foram entregues e revisados pelo BID. Os resultados servem para triagem e indicação de áreas que exigem investigação local; não são medições diretas para decisões de engenharia ou regulação. A incorporação operacional pelos órgãos participantes ainda depende de etapas de capacitação e adoção.
+- Por que importa: Fluxo verificável de integração entre sensores, mudança de cobertura florestal e interface de IA para priorizar monitoramento ambiental na Amazônia. Uso nos projetos cadastrados é possibilidade técnica, não implantação confirmada.
+- Tags: #esa #amazonia #aquiferos #grace #sentinel-1 #insar #cobertura-florestal #geoia #recursos-hidricos #demonstrador
+- Relações: [[IMAC — Plataforma GIS]], [[Amaggi — Monitoramento de desmatamento]]
+- Confiança: alta
 
 ### 2026-11-26 10:36 BRT — AWS Lambda passa a orquestrar MicroVMs em fluxos duráveis
 
